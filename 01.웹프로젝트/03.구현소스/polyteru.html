@@ -31,34 +31,55 @@
     .navli a{
       text-decoration: none;
       color: black;
+      font-size: 15px;
     }
 
     .navi{
       display: flex;
       justify-content: space-evenly;
-      margin: 0 350px;
+      margin: 0 500px;
     }
 
-    .navbx>div{
+    .gnb>div{
       transform: translate(1450px, -150px);
       position: absolute;
-      
     }
 
-    .cont>div{
-      background-color: black;
-      width: 300px;
-      height: 1500px;
+    .gnb ul>li{
+      position: relative;
+    }
+
+    .smenu{
       position: absolute;
-      right: 0;
-      top: 0;
+      left: 50%;
+      z-index: 1;
+      transform: translateX(-50%);
+      width: 100px;
+      background-color: rgb(255, 255, 255);
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all .4s ease-out;
+      outline: 2px dashed red;
     }
 
-    .cont>div:hover{
-      background-color: rgb(18, 196, 33);
-      transform: translateX(150px);
-      
+    .gnb>ul>li:hover .smenu{
+      opacity: 1;
     }
+
+    .gnb>ul>li:nth-child(2):hover .smenu{
+      height: 80px;
+    }
+
+
+    .smenu a{
+      display: block;
+      text-align: center;
+      padding: 1px 0;
+      font-size: 14px;
+    }
+
+
 
 
 
@@ -71,17 +92,36 @@
       <img src="./CSS/images/polyterulogo.jpg"
       alt="로고이미지" width="250px">
     </div>
-    <nav class="navbx">
+    <nav class="gnb">
       <div>
         hi
       </div>
       <ul class="navi">
-        <li class="navli"><a href="">HOME</a></li>
-        <li class="navli"><a href="">ITEM</a></li>
-        <li class="navli"><a href="">STYLE</a></li>
-        <li class="navli"><a href="">Q&A</a></li>
-        <li class="navli"><a href="">ABOUT</a></li>
-        <li class="navli"><a href="">CONTACT</a></li>
+        <li class="navli">
+          <a href="">HOME</a>
+        </li>
+        <li class="navli">
+          <a href="">ITEM</a>
+          <div class="smenu">
+            <ol>
+              <li><a href="#">OUTER</a></li>
+              <li><a href="#">TOP</a></li>
+              <li><a href="#">BOTTOM</a></li>
+            </ol>
+          </div>
+        </li>
+        <li class="navli">
+          <a href="">STYLE</a>
+        </li>
+        <li class="navli">
+          <a href="">Q&A</a>
+        </li>
+        <li class="navli">
+          <a href="">ABOUT</a>
+        </li>
+        <li class="navli">
+          <a href="">CONTACT</a>
+        </li>
       </ul>
     </nav>
   </header>
