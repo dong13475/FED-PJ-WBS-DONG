@@ -13,6 +13,27 @@ body *{
   outline: 2px dotted red;
 }
 /************************ 상단영역 ************************/
-
+#logo{
+}
+.logo{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logo img{
+  width: 75px;
+}
+.gnb{
+  position: sticky;
+  padding: 120px 0 0 0; 
+}
+.gnb ul{
+  display: flex;
+  justify-content: center;
+}
 /************************ 메인영역 ************************/
+.cont{
+  text-align: center;
+  width: 100%;
+}
 /************************ 하단영역 ************************/
