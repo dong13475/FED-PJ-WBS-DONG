@@ -51,6 +51,9 @@
       transform: translateX(-50%);
       width: 100%;
     }
+    .gnb ul>li{
+      position: relative;
+    }
     .gnb ul:hover{
       background-color: #fff;
     }
@@ -136,7 +139,7 @@
     }
     .cont>.mp{
       top: 90px;
-      height: 800px;
+      height: 1000px;
       background: url(./CSS/images/main04.jpg) 
       no-repeat center/cover;
     }
