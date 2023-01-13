@@ -54,9 +54,9 @@ header.top{
 }
 .smenu{
   position: absolute;
-  transform: translateX(-30%);
+  transform: translateX(-33%);
 }
-.smenu a{
+.smenu li{
   text-align: center;
 }
 /******************* 메인영역 *******************/
