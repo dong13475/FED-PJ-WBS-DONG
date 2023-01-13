@@ -62,8 +62,14 @@ header.top{
   justify-content: center;
   /* margin-top: 50px; */
 }
+.gnb ul:hover{
+  background-color: #fff;
+}
+.gnb ul:hover a{
+  color: #222;
+}
 .gnb ul li{
-  padding: 5px 20px 0;
+  padding: 5px 20px 5px;
 }
 .gnb a{
   font-size: 1.4rem;
@@ -73,15 +79,18 @@ header.top{
 .smenu{
   position: absolute;
   transform: translateX(-33%);
+  top: 145px;
 }
 .smenu li{
   text-align: center;
 }
+.smenu a{
+  font-size: 1.2rem;
+}
 /******************* 메인영역 *******************/
 #cont{
-  /* width: 100%; */
-  /* margin-top: 100px; */
 }
+/* 속박스 */
 .cont{
   background: url(./CSS/images/main04.jpg) no-repeat
   center/cover;
