@@ -13,7 +13,7 @@ ul,ol{
 }
 /* 공사중 */
 body *{
-  outline: 1px dotted red;
+  /* outline: 1px dotted red; */
 }
 /* 이미지 관련 */
 img{
@@ -50,7 +50,7 @@ header.top{
   text-align: center;
   background-color: #fff;
   padding-top: 15px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #e4e4e4;
   line-height: 100px;
 }
 .logo img{
@@ -64,6 +64,7 @@ header.top{
 }
 .gnb ul:hover{
   background-color: #fff;
+  border-bottom: 1px solid #e4e4e4;
 }
 .gnb ul:hover a{
   color: #222;
