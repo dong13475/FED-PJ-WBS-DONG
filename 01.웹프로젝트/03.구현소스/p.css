@@ -15,6 +15,23 @@ ul,ol{
 body *{
   outline: 1px dotted red;
 }
+/* 이미지 관련 */
+img{
+  border: none;
+  /* 이미지 링크시 기본보더 없앰
+  - 서버 배포시에 나올 수 있음! */
+  
+  vertical-align: top;
+  /* 인라인요소간 세로정렬속성을 셋팅한이유는?
+      -> 블록박스안에 이미지가 단독으로 들어간
+      경우 하단에 4px공백이 생김. 이때 이것을
+      없애기 위해 vaertical-align속성을
+      top/middle/bottom 이런 값을 사용하면
+      공백이 없어진다!(단, 블록박스의 높이값은
+      auto 이며 이미지에 의해 블록박스의 높이가
+      결정되는 경우에 한한다!)
+  */
+}
 /******************* 상단영역 *******************/
 /* 상단영역 고정 */
 #top{
@@ -29,11 +46,12 @@ header.top{
 .logobx{
 }
 .logo{
-  height: 100px;
+  /* height: 100px; */
   text-align: center;
   background-color: #fff;
   padding-top: 15px;
   border-bottom: 1px solid #000;
+  line-height: 100px;
 }
 .logo img{
   width: 70px;
