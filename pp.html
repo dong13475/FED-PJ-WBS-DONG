@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      outline: 1px solid red;
+    }
+    html,body,ul,ol{
+      margin: 0;
+      padding: 0;
+    }
+
+    #top{
+      position: relative;
+    }
+    .top{
+      position: fixed;
+      width: 100vw;
+    }
+    /* 로고 */
+    .logo{
+      text-align: center;
+    }
+    .logo img{
+      width: 70px;
+      height: 83px;
+    }
+    /* GNB */
+    .gnb{
+    }
+    .gnb ul{
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+    }
+
+    .gnb ul a{
+      text-decoration: none;
+      color: #000;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 상단영역 -->
+  <div id="top">
+    <div class="top">
+      <div class="logo">
+        <a href="#">
+          <img src="./01.웹프로젝트/03.구현소스/CSS/images/polyterulogo3.png" alt="로고이미지">
+        </a>
+      </div>
+      <!-- GNB영역 -->
+      <nav class="gnb">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ITEM</a></li>
+          <li><a href="#">STYLE</a></li>
+          <li><a href="#">Q&A</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- 메인영역 -->
+  <main class="cont">
+
+  </main>
+  <!-- 하단영역 -->
+  <footer class="info">
+
+  </footer>
+</body>
+</html>
