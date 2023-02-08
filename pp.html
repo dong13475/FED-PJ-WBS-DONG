@@ -5,43 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    * {
-      outline: 1px solid red;
-    }
-    html,body,ul,ol{
+    * {outline: 1px solid red;}
+    html,body,ul{
       margin: 0;
       padding: 0;
     }
-
-    #top{
-      position: relative;
+    body{
     }
     .top{
-      position: fixed;
       width: 100vw;
     }
-    /* 로고 */
     .logo{
+      width: 100%;
+      height: 100%;
       text-align: center;
+      margin: 15px;
     }
     .logo img{
       width: 70px;
       height: 83px;
     }
-    /* GNB */
-    .gnb{
-    }
     .gnb ul{
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       list-style: none;
     }
+    .gnb li{
+      margin: 0 30px; 
 
-    .gnb ul a{
+    }
+    .gnb li a{
+      flex: 1;
       text-decoration: none;
       color: #000;
     }
-
+    .cont div{
+      background-color: #e4e4e4;
+      height: 100vh;
+      /* object-fit: cover; */
+    }
   </style>
 </head>
 <body>
@@ -68,11 +70,15 @@
   </div>
   <!-- 메인영역 -->
   <main class="cont">
+    <div>
 
+    </div>
   </main>
   <!-- 하단영역 -->
   <footer class="info">
+    <div>
 
+    </div>
   </footer>
 </body>
 </html>
