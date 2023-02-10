@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* 공통 핵심 CSS - core.css */
+
+
+
+/* 초기화 */
+html,body,h1,h2,ul,ol{
+  margin: 0;
+  padding: 0;
+}
+ul,ol{
+  list-style: none;
+}
+
+
+/* a요소 리셋 */
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+/* 글자크기 고정 */
+html{
+  font-size: 10px;
+}
+
+/* 이미지 리셋 */
+img {
+  border: none;
+  /* 이미지 링크시 서버에서 볼때 파란색 자동보더 없애기 */
+  vertical-align: bottom;
+  /* 박스 이미지 하단간극 없애기(약4px)
+    값으로 top, middle등 도 효과있음! */
+}
+
+/* 중앙 속박스 */
+.ibx{
+  max-width: 1300px;
+  margin: 0 auto;
+}

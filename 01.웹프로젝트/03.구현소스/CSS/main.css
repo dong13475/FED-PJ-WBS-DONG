@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* 메인페이지 CSS - main.css */
+
+
+/* 외부CSS합치기 */
+@import url(./common.css);
+@import url(./core.css);
+
+/* 공사중 표시 */
+body * {
+  outline: 1px dashed red;
+}
+
+.cont{
+  background: url(./images/main04.jpg) no-repeat
+  center/cover;
+}

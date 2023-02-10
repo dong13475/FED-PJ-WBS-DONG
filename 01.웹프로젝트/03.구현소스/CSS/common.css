@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* 공용 모듈 CSS - common.css */
+
+/*********************** 1. 상단영역 ***********************/
+.top{
+  position: relative;
+  min-height: 160px;
+}
+.logo{
+  text-align: center;
+}
+.logo img{
+  height: 75px;
+}
+.gnb ul{
+  display: flex;
+  justify-content: center;
+}
+.gnb li+li{
+  padding-left: 25px;
+}
+
+/*********************** 2. 메인영역 ***********************/
+.cont{
+  min-height: 100vh;
+}
+/*********************** 3. 하단영역 ***********************/
+.info{
+  min-height: 286px;
+}
