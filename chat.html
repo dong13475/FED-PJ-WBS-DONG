@@ -16,7 +16,7 @@
 
       nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         max-width: 1200px;
         margin: 0 auto;
@@ -35,11 +35,51 @@
         display: flex;
         list-style: none;
         justify-content: center;
+        margin: 0;
+        padding: 15px 0;
       }
 
       nav li {
+        position: relative;
         margin-right: 20px;
       }
+      nav li.submenu ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100px;
+  background-color: #f9f9f9;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+}
+
+nav li.submenu:hover ul {
+  display: block;
+}
+nav li.submenu ul li {
+  display: block;
+}
+
+nav li.submenu ul li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+nav li.submenu:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+
 
       nav a {
         text-decoration: none;
@@ -77,7 +117,17 @@
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Services</a></li>
-          <li><a href="#">Products</a></li>
+          <li class="submenu">
+            <a href="#">Products</a>
+            <ul>
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 2</a></li>
+              <li><a href="#">Product 3</a></li>
+              <li><a href="#">Product 4</a></li>
+              <li><a href="#">Product 5</a></li>
+            </ul>
+          </li>
+
           <li><a href="#">Contact Us</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
