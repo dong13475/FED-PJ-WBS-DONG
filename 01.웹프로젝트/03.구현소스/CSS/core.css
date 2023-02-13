@@ -2,7 +2,13 @@
 
 /* 공통 핵심 CSS - core.css */
 
+/* 웹폰트 CND */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Open+Sans&display=swap');
 
+/* 
+font-family: 'IBM Plex Sans KR', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
 
 /* 초기화 */
 html,body,h1,h2,ul,ol{
@@ -36,6 +42,6 @@ img {
 
 /* 중앙 속박스 */
 .ibx{
-  max-width: 1300px;
+  /* max-width: 1300px; */
   margin: 0 auto;
 }

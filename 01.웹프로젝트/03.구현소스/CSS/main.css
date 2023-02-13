@@ -15,4 +15,12 @@ body * {
 .cont{
   background: url(./images/main04.jpg) no-repeat
   center/cover;
+  min-height: 100vh;
 }
+.dglist{
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4.1fr);
+}
+

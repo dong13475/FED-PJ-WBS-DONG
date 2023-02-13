@@ -5,29 +5,36 @@
 /*********************** 1. 상단영역 ***********************/
 .top{
   position: fixed;
-  min-height: 160px;
   top: 0;
   left: 0;
   right: 0;
 }
 .logo{
+  background-color: #f8f8ff;
   text-align: center;
+  padding: 20px 0 20px;
 }
 .logo img{
-  height: 75px;
+  width: 60px;
+  height: 73px;
 }
 .gnb ul{
   display: flex;
   justify-content: center;
 }
+.gnb li{
+  margin: 5px 0;
+}
 .gnb li+li{
-  padding-left: 25px;
+  padding-left: 35px;
+}
+.gnb a {
+  font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*********************** 2. 메인영역 ***********************/
-.cont{
-  min-height: 100vh;
-}
+
 /*********************** 3. 하단영역 ***********************/
 .info{
   min-height: 286px;
