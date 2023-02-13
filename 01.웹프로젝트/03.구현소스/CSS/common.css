@@ -4,8 +4,11 @@
 
 /*********************** 1. 상단영역 ***********************/
 .top{
-  position: relative;
+  position: fixed;
   min-height: 160px;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .logo{
   text-align: center;
