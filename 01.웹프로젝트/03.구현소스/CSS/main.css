@@ -23,7 +23,7 @@ body * {
 .dglist{
   display: grid;
   max-width: 1200px;
-  margin: 0 120px;
+  margin: 0 auto;
   grid-template-columns: repeat(4,1fr);
   /* justify-items: center; */
   grid-column-gap: min(55px);
