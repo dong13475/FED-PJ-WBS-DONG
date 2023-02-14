@@ -25,12 +25,12 @@
 
 }
 .gnb li{
-  padding: 6px 25px;
+  padding: 6px 20px;
   text-align: center;
 }
 
 .gnb a {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
 }
