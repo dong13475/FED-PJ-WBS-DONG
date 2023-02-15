@@ -9,7 +9,7 @@
 
 /* 공사중 표시 */
 body * {
-  /* outline: 1px dashed red; */
+  outline: 1px dashed red;
 }
 
 .cont{
