@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 가로 4칸으로 나눔 */
+  grid-template-rows: repeat(4, 1fr); /* 세로 4칸으로 나눔 */
+  gap: 10px; /* 그리드 간격 설정 */
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #f2f2f2; /* 배경색 지정 */
+}
+
+.grid-item img {
+  max-width: 100%; /* 이미지 크기 조정 */
+  height: auto;
+}
+
+.grid-item h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="image1.jpg" alt="Image 1">
+      <h3>Text 1</h3>
+    </div>
+    <div class="grid-item">
+      <img src="image2.jpg" alt="Image 2">
+      <h3>Text 2</h3>
+    </div>
+    <div class="grid-item">
+      <img src="image3.jpg" alt="Image 3">
+      <h3>Text 3</h3>
+    </div>
+    <div class="grid-item">
+      <img src="image4.jpg" alt="Image 4">
+      <h3>Text 4</h3>
+    </div>
+    <!-- 나머지 그리드 아이템도 동일하게 작성 -->
+  </div>
+</body>
+</html>

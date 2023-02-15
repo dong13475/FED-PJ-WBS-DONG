@@ -16,7 +16,7 @@
   padding: 20px 0 20px;
 }
 .logo img {
-  width: 50px;
+  /* width: 50px; */
   height: 56px;
 }
 .gnb ul {
@@ -40,4 +40,14 @@
 /*********************** 3. 하단영역 ***********************/
 .info {
   min-height: 286px;
+}
+.info{
+  text-align: center;
+  font-size: 1.3rem;
+}
+.blogo{
+  display: flex;
+}
+.blogo img{
+  height: 54px;
 }
