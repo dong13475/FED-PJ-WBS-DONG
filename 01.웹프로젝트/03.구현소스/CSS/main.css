@@ -9,16 +9,17 @@
 
 /* 공사중 표시 */
 body * {
-  outline: 1px dashed red;
+  /* outline: 1px dashed red; */
 }
 
 .cont{
-  background: url(./images/main05.jpg) no-repeat
+  background: url(./images/main01.jpg) no-repeat
   center/cover;
   min-height: 100vh;
 }
 .bx1{
   height: 150px;
+  background-color: #e4e4e4;
 }
 .dglist{
   display: grid;
@@ -51,4 +52,8 @@ body * {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+}
+.bx2{
+  height: 100px;
+  background-color: #e4e4e4;
 }
