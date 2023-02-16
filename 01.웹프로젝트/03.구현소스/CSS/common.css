@@ -50,6 +50,32 @@
 }
 
 /*********************** 2. 메인영역 ***********************/
+/* 메인 그리드영역 */
+.gridbx{
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+}
+.itbx{
+  display: flex;
+  /* margin: 0 auto; */
+}
+.iimg{
+  aspect-ratio: 280/ 400;
+  overflow: hidden;
+}
+.iimg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mg{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 /*********************** 3. 하단영역 ***********************/
 .info {

@@ -12,6 +12,7 @@ body * {
   /* outline: 1px dashed red; */
 }
 
+/* 배인배경이미지 */
 .cont{
   background: url(./images/main01.jpg) no-repeat
   center/cover;
@@ -21,39 +22,36 @@ body * {
   height: 150px;
   background-color: #e4e4e4;
 }
-.dglist{
-  display: grid;
-  max-width: 1200px;
-  margin: 0 auto;
-  grid-template-columns: repeat(4,1fr);
-  /* justify-items: center; */
-  grid-column-gap: min(55px);
-  grid-row-gap: min(115px);
+
+/********** 아이템박스별 이미지 **********/
+.mg1{
+  background-image: url(./images/pddcoat1.jpg);
 }
-.dglist>div{
-  position: relative;
-  aspect-ratio: 2.8 / 4;
+.mg2{
+  background-image: url(./images/balaclava1.jpg);
 }
-.dglist img{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.mg3{
+  background-image: url(./images/coat1.jpg);
 }
-.df{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.mg4{
+  background-image: url(./images/boots1.jpg);
 }
-.df a{
-  color: #000;
-  margin-top: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
+.mg5{
+  background-image: url(./images/lightpufferB1.jpg);
 }
+.mg6{
+  background-image: url(./images/lightpufferG1.jpg);
+}
+.mg7{
+  background-image: url(./images/paddedvest1.jpg);
+}
+.mg8{
+  background-image: url(./images/gloves1.jpg);
+}
+/********** 아이템박스별 이미지 **********/
 .bx2{
   height: 100px;
   background-color: #e4e4e4;
 }
+
+
