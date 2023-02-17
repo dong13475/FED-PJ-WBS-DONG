@@ -99,6 +99,14 @@
   /* address요소 기본 이탤릭해제 */
   font-style: normal;
 }
+.blink{
+  box-sizing: border-box;
+  margin: 8px 0;
+}
+.blink a{
+  margin:0 6px;
+  color: #c0c0c0;
+}
 .blogo{
   position: absolute;
   top: 20px;
