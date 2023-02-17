@@ -96,6 +96,8 @@
   text-align: center;
   font-size: 1.3rem;
   color: #c0c0c0;
+  /* address요소 기본 이탤릭해제 */
+  font-style: normal;
 }
 .blogo{
   position: absolute;
