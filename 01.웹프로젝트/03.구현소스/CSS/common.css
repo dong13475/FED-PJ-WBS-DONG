@@ -58,22 +58,27 @@
   grid-template-columns: repeat(4,1fr);
   gap: 30px;
 }
+/* 각 아이템겉박스 */
 .itbx{
   display: flex;
   /* margin: 0 auto; */
 }
+/* 아이템 공통속박스 */
 .iimg{
   aspect-ratio: 280/ 400;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+/* 아이템 공통 이미지 */
 .iimg img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.mg{
-  background-repeat: no-repeat;
-  background-size: cover;
+/* 아이템 공통 텍스트겉박스 */
+.itxt{
+  text-align: center;
 }
 
 

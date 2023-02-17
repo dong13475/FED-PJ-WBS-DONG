@@ -46,16 +46,3 @@ img {
   /* max-width: 1300px; */
   margin: 0 auto;
 }
-
-/* 컨텐츠 타이틀 박스 */
-.cbx{
-  position: relative;
-}
-.cbx a{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  box-sizing: border-box;
-}
