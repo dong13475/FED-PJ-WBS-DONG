@@ -34,7 +34,7 @@ ul:hover a{
   color: #000;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
-.gnb li {
+.gnb>ul>li {
   position: relative;
   /* padding: 6px 20px; */
   text-align: center;
@@ -46,7 +46,7 @@ ul:hover a{
   font-family: "Open Sans", sans-serif;
   color: #fff;
   font-weight: lighter;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px rgb(48, 48, 48);
 }
 /* 서브메뉴 */
 .smenu{
@@ -55,20 +55,25 @@ ul:hover a{
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
-  width: 90px;
-  border: 1px solid rgba(119, 119, 119, 0.253);
-  line-height: 14px;
+  width: 85px;
+  border: 1px solid rgba(119, 119, 119, 0.384);
+}
+.smenu>ol>li{
+  line-height: 25px;
+  height: 25px;
+}
+.smenu li:hover{
+  background-color: #e9e9e9c7;
 }
 .smenu a{
   text-align: center;
   font-size: 1.2rem;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px rgb(48, 48, 48);
   color: #000;
 }
-.gnb li:nth-child(2):hover .smenu{
+.gnb>ul>li:nth-child(2):hover .smenu{
   display: block;
 }
-
 
 /*********************** 2. 메인영역 ***********************/
 /* 메인 그리드영역 */
@@ -136,6 +141,7 @@ ul:hover a{
   color: #c0c0c0;
   /* address요소 기본 이탤릭해제 */
   font-style: normal;
+  font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .blink{
   box-sizing: border-box;
