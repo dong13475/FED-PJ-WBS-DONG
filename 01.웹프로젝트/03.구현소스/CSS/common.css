@@ -68,7 +68,7 @@ ul:hover a{
 .smenu a{
   text-align: center;
   font-size: 1.2rem;
-  text-shadow: 1px 1px 1px rgb(48, 48, 48);
+  text-shadow: 0 0 1px rgb(87, 87, 87);
   color: #000;
 }
 .gnb>ul>li:nth-child(2):hover .smenu{
@@ -148,7 +148,7 @@ ul:hover a{
   margin: 8px 0;
 }
 .blink a{
-  margin:0 6px;
+  margin:0 12px;
   color: #c0c0c0;
 }
 .blogo{
