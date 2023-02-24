@@ -1,18 +1,21 @@
 @charset "UTF-8";
+
+/* CDN 구글웹폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+body * {
+  outline: 1px solid red;
+}
+
 html,
 body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 ul,
 ol,
 li,
-dl,
-dt,
-dd {
+h1,
+h2 {
   margin: 0;
   padding: 0;
 }
@@ -23,4 +26,254 @@ a {
 ul,
 ol {
   list-style: none;
+}
+/* 5. 이미지 리셋 */
+img {
+  border: none;
+  /* 이미지 링크시 서버에서 볼때 파란색 자동보더 없애기 */
+  vertical-align: bottom;
+  /* 박스 이미지 하단간극 없애기(약4px)
+  값으로 top, middle등 도 효과있음! */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  background: url(../img/sp.png) no-repeat center/cover;
+}
+
+.part {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/******************** 상단영역 ********************/
+#top {
+  position: relative;
+  height: 80px;
+  z-index: 99;
+}
+.tit {
+  text-align: center;
+  font: 40px/4 "Noto Sans KR";
+  color: cyan;
+  text-shadow: 0 0 0px aquamarine;
+  animation: titani 2s ease-in-out infinite alternate;
+}
+.tit a {
+  color: cyan;
+}
+.gnb {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+}
+.gnb ul {
+  display: flex;
+}
+.gnb ul li {
+  padding: 0 15px;
+}
+
+/******************** 메인영역 ********************/
+#cont {
+  position: relative;
+}
+.tsec {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 100px;
+}
+.tsecI{
+  opacity: 0;
+}
+.tsecI img {
+  height: 600px;
+  margin: 70px;
+}
+.tsecT {
+  font-size: min(20px, 1.7vw);
+  color: #fff;
+  line-height: 60px;
+  margin: 70px;
+  text-shadow: 1px 1px 1px rgb(68, 150, 218);
+}
+.msecL {
+  text-align: center;
+  margin: 40px 0;
+}
+.msecL img {
+  height: 210px;
+}
+.msecT {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* 글자스테이지 */
+
+
+/* 글자개별박스 셋팅 */
+.tsecT span {
+  /* 트랜스폼 적용위해 */
+  display: inline-block;
+  /* 현재위치로부터 이동 */
+  transform: translate(500%, -300%);
+  /* 투명도 0 */
+  /* opacity: 0; */
+  /* 트랜지션: 속시이지 */
+  transition: .3s ease-in;
+}
+/* 스테이지로 들어오기 */
+.tsecT.on span{
+  transform: translate(0, 0);
+  opacity: 1;
+}
+/* 개별 지연시간을 JS에서 셋업한다! */
+/******************** 하단영역 ********************/
+#info {
+  position: relative;
+  height: 100px;
+}
+
+#info address {
+  font-style: normal;
+  color: #fff;
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  line-height: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.int {
+  display: block;
+  margin-left: 15%;
+}
+
+#info address img {
+  position: absolute;
+  transform: scale(0.5);
+  float: left;
+  margin-right: 2px;
+  margin-top: -32px;
+}
+
+.sns {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.bld {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.sns li {
+  width: 34px;
+  height: 34px;
+  float: left;
+  margin: 2px;
+  background: url(../img/sprites_logo.png) no-repeat;
+}
+
+.sns li:nth-child(1) {
+  background-position: -509px -429px;
+}
+
+.sns li:nth-child(2) {
+  background-position: -551px -429px;
+}
+
+.sns li:nth-child(3) {
+  background-position: -593px -429px;
+}
+
+.sns a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes titani {
+  to {
+    text-shadow: 0 0 30px aquamarine;
+  }
+}
+
+#act1 {
+  position: absolute;
+  transform: scale(0);
+  animation: act1ani 5s ease-in infinite;
+  z-index: -3;
+}
+
+@keyframes act1ani {
+  0% {
+    top: -20%;
+    left: -20%;
+    transform: scale(0);
+  }
+
+  40% {
+    top: 40%;
+    left: 40%;
+    transform: scale(0.8);
+  }
+
+  60% {
+    top: 40%;
+    left: 40%;
+    transform: scale(0.8);
+  }
+
+  100% {
+    top: 120%;
+    left: 120%;
+    transform: scale(2.5);
+  }
+}
+
+.earth {
+  position: absolute;
+  transform: scale(0.8);
+  left: -20%;
+  bottom: -600px;
+  animation: earthani 15s ease-in-out infinite alternate;
+  z-index: -2;
+}
+
+@keyframes earthani {
+  to {
+    transform: scale(0.9);
+    left: -20%;
+    bottom: -600px;
+  }
+}
+
+.deth {
+  position: absolute;
+  transform: scale(0.35);
+  left: -200px;
+  bottom: -300px;
+  animation: dethani 5s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+@keyframes dethani {
+  to {
+    transform: scale(0.4);
+    left: -150px;
+    bottom: -250px;
+  }
 }
