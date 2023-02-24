@@ -8,7 +8,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
 
       /* font-family: 'Noto Sans KR', sans-serif; */
-      @import url(CSS/reset.css);
+      @import url(CSS/sub01.css);
 
       html,
       body {
@@ -23,7 +23,7 @@
       }
 
       .part {
-        width: 1200px;
+        max-width: 1200px;
         margin: 0 auto;
       }
       /******************** 상단영역 ********************/
@@ -40,13 +40,13 @@
         animation: titani 2s ease-in-out infinite alternate;
       }
       .gnb{
+        top: 40px;
+        right: 100px;
         position: absolute;
-        top: 0;
-        right: 0;
-      }
-      .gnb ul{
-        display: flex;
-        justify-content: center;
+    }
+    .gnb ul{
+        /* display: flex; */
+        /* justify-content: center; */
       }
       /******************** 메인영역 ********************/
       #cont {
@@ -54,7 +54,6 @@
       }
       .tsec {
         display: flex;
-        margin: 0 auto;
         align-items: center;
         justify-content: space-evenly;
       }
