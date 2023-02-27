@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const myImage = document.getElementById("my-image");
+      let scrolled = false;
+
+      window.addEventListener("scroll", function () {
+        if (!scrolled) {
+          scrolled = true;
+          setTimeout(function () {
+            if (window.pageYOffset > 0) {
+              myImage.style.display = "none";
+            }
+            scrolled = false;
+          }, 200);
+        }
+      });
+    });
+  </script>
+  <body>
+    <div id="my-image">
+      <img src="./팀프로젝트/stawars/img/bader01.png" alt="My Image" />
+      <img src="./팀프로젝트/stawars/img/bader01.png" alt="My Image" />
+      <img src="./팀프로젝트/stawars/img/bader01.png" alt="My Image" />
+      <img src="./팀프로젝트/stawars/img/bader01.png" alt="My Image" />
+    </div>
+  </body>
+</html>

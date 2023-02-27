@@ -6,7 +6,7 @@
 /* font-family: 'Noto Sans KR', sans-serif; */
 
 body * {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 html,
@@ -108,10 +108,11 @@ body {
   position: fixed;
   top: 35%;
   right: 23%;
-  width: 400px;
-  font-size: min(20px, 1.7vw);
+  width: 460px;
+  /* font-size: min(20px, 1.7vw); */
+  font-size: 22px;
   color: #fff;
-  /* line-height: 60px; */
+  line-height: 40px;
   /* margin: 70px; */
   text-shadow: 1px 1px 1px rgb(68, 150, 218);
 }
@@ -173,7 +174,6 @@ body {
 #info address img {
   position: absolute;
   transform: scale(0.5);
-  float: left;
   margin-right: 2px;
   margin-top: -32px;
 }
