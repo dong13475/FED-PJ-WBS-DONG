@@ -8,6 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const mytxt = 
   `*Star Wars: The Phantom Menace (Episode I)*Rating: PG*Runtime: 2 hr 16min*Release Date: May 19, 1999*Genre:*Action, Adventure, Fantasy, Science Fiction
   `;
+  
 
   // 메인 상단 타임아웃함수
   const showIt = ()=>{
@@ -34,11 +35,17 @@ window.addEventListener("DOMContentLoaded", () => {
   }; /////////// showIt 함수 ///////////
   showIt();
   
-  /////////// 스크롤 함수 ////////////
-  window.addEventListener("scroll",goScroll);
+  window.addEventListener("scroll", () => {
+    const scrl = window.scrollY;
+    console.log(scrl);
+    if (scrl > 200) {
+      tsecI.style.opacity = "0";
+      tsecT.style.opacity = "0";
+    } else {
+      tsecI.style.opacity = "1";
+      tsecT.style.opacity = "1";
+    }
+  }); /////////// 스크롤 함수 ////////////
   
-  function goScroll(){
-    console.log("gdgd");
-  }
   ////////// scroll //////////
 }); ///////// 로드구역 /////////////////////////////

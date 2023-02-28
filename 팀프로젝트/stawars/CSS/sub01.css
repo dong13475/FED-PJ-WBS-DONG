@@ -40,12 +40,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  overflow-x: hidden;
 }
 
 body {
-  background: url(../img/sp.png) no-repeat center/cover;
+  background: url(../img/sp.png) no-repeat fixed center/cover;
+  overflow-x: hidden;
 }
 
 .part {
@@ -83,7 +82,7 @@ body {
 /******************** 메인영역 ********************/
 #cont {
   /* position: relative; */
-  height: 100vh;
+  /* height: 100vh; */
 }
 /***** 메인상단 *****/
 .tsec {
@@ -155,7 +154,7 @@ body {
 /******************** 하단영역 ********************/
 #info {
   height: 100px;
-  padding-top: 1100px;
+  /* padding-top: 1100px; */
 }
 .bot{
   position: relative;
