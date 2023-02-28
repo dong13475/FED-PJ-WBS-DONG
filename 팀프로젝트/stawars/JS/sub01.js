@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", () => {
       else if (x === "*") hcode += `<div></div>`;
       else hcode += `<span style="transition-delay:${idx * 0.03}s">${x}</span>`;
       idx++;
-      
+
       setTimeout(() => {
         tsecT.classList.add("on");
       },500); /// 텍스트 타임아웃
@@ -36,6 +36,8 @@ window.addEventListener("DOMContentLoaded", () => {
   
   /////////// 스크롤 함수 ////////////
   window.addEventListener("scroll",()=>{
-    console.log("스크롤");
+    if(document.documentElement.scrollTop > 50){
+      tsecI.style.opacity = "0";
+    }
   }); ////////// scroll //////////
 }); ///////// 로드구역 /////////////////////////////
