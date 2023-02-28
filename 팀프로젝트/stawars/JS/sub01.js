@@ -35,9 +35,10 @@ window.addEventListener("DOMContentLoaded", () => {
   showIt();
   
   /////////// 스크롤 함수 ////////////
-  window.addEventListener("scroll",()=>{
-    if(document.documentElement.scrollTop > 50){
-      tsecI.style.opacity = "0";
-    }
-  }); ////////// scroll //////////
+  window.addEventListener("scroll",goScroll);
+  
+  function goScroll(){
+    console.log("gdgd");
+  }
+  ////////// scroll //////////
 }); ///////// 로드구역 /////////////////////////////
