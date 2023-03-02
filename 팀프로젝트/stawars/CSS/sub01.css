@@ -136,7 +136,7 @@ body {
 /* 전체박스 */
 .msec{
   padding-top: 900px;
-  height: calc(100vh + 1000px);
+  height: calc(100vh + 2000px);
 }
 /* 메인중반로고 */
 .msecL {
@@ -152,18 +152,52 @@ body {
 }
 .msecL img {
   height: 210px;
+  
 }
 /* 메인중반텍스트 */
-.msecT {
-  padding-top: 300px;
+.msecT li{
+  padding-top: 100px;
   text-align: center;
   color: #fff;
   font-size: 30px;
   opacity: 0;
   transition: .3s ease-in;
 }
-.msecT.on{
-  opacity: 1;
+.msecT li:nth-child(1).on{
+  top: 25vh;
+  position: sticky;
+}
+.msecT li:nth-child(2).on{
+  top: 28vh;
+  position: sticky;
+}
+.msecT li:nth-child(3).on{
+  top: 31vh;
+  position: sticky;
+}
+.msecT li:nth-child(4).on{
+  top: 34vh;
+  position: sticky;
+}
+.msecT li:nth-child(5).on{
+  top: 37vh;
+  position: sticky;
+}
+.msecT li:nth-child(6).on{
+  top: 40vh;
+  position: sticky;
+}
+.msecT li:nth-child(7).on{
+  top: 43vh;
+  position: sticky;
+}
+.msecT li:nth-child(8).on{
+  top: 46vh;
+  position: sticky;
+}
+.msecT li:nth-child(9).on{
+  top: 49vh;
+  position: sticky;
 }
 
 
@@ -171,7 +205,7 @@ body {
 /******************** 하단영역 ********************/
 #info {
   height: 100px;
-  /* padding-top: 1100px; */
+  padding-top: 1100px;
 }
 .bot{
   position: relative;

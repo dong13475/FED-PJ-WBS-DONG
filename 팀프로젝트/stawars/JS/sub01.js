@@ -18,10 +18,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // 화면 높이값의 2/3 구하기
   const hv = (window.innerHeight / 3) * 2;
+  const winH = window.innerHeight;
+  const docH = document.body.clientHeight;
   const retVal = (ele) => ele.getBoundingClientRect().top;
 
   // 메인 상단 타임아웃함수
-  const showIt = (x)=>{
+  const showIt = ()=>{
+    
     setTimeout(() => {
       tsecI.style.opacity = "1";
       tsecI.style.transition = ".5s ease-in-out";
@@ -42,6 +45,7 @@ window.addEventListener("DOMContentLoaded", () => {
       tsecT.innerHTML = hcode;
     } ////// for of //////
 
+
   }; /////////// showIt 함수 ///////////
   showIt();
   
@@ -49,7 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // 스크롤시 스크롤 위치값 찍기
     let scrl = window.scrollY;
 
-    console.log(scrl);
+    // console.log(scrl);
 
     if (scrl > 200) {
       tsec.style.opacity = "0";
@@ -63,15 +67,47 @@ window.addEventListener("DOMContentLoaded", () => {
       msecL.classList.add("on");
     } ///// 중간 로고 보이기 if문 ////////
     
-    if(scrl>1100){
-      // msect.classList.add("on");
-    }
 
-    let li1 = retVal(msecT[0]);
-    console.log(li1);
-    if(scrl > 1500){
+    for(let x of msecT) {
+      
+      let li1 = retVal(msecT[0]);
+      let li2 = retVal(msecT[1]);
+      let li3 = retVal(msecT[2]);
+      let li4 = retVal(msecT[3]);
+      let li5 = retVal(msecT[4]);
+      let li6 = retVal(msecT[5]);
+      let li7 = retVal(msecT[6]);
+      let li8 = retVal(msecT[7]);
+      let li9 = retVal(msecT[8]);
+      x.classList.add("on");
+    if(li1 < winH/3 && li1 > 0){
       msecT[0].style.opacity = "1";
     }
+    else if(li2 < hv && li2 > 0){
+      msecT[1].style.opacity = "1";
+    }
+    else if(li3 < hv && li3 > 0){
+      msecT[2].style.opacity = "1";
+    }
+    else if(li4 < hv && li4 > 0){
+      msecT[3].style.opacity = "1";
+    }
+    else if(li5 < hv && li5 > 0){
+      msecT[4].style.opacity = "1";
+    }
+    else if(li6 < hv && li6 > 0){
+      msecT[5].style.opacity = "1";
+    }
+    else if(li7 < hv && li7 > 0){
+      msecT[6].style.opacity = "1";
+    }
+    else if(li8 < hv && li8 > 0){
+      msecT[7].style.opacity = "1";
+    }
+    else if(li9 < hv && li9 > 0){
+      msecT[8].style.opacity = "1";
+    }
+  }
   }); /////////// 스크롤 함수 ////////////
 
 
