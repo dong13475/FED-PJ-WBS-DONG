@@ -139,6 +139,16 @@ body {
 .msecL {
   text-align: center;
   margin: 40px 0;
+  opacity: 0;
+  transition: 3.3s;
+  transform: translateX(0);
+}
+.msecL.on{
+  top: 5vh;
+  position: fixed;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .msecL img {
   height: 210px;

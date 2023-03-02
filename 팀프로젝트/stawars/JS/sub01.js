@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
   console.log("로딩완료!");
 
   // 메인 상단 변수
+  const tsec = document.querySelector(".tsec");
   const tsecI = document.querySelector(".tsecI");
   const tsecT = document.querySelector(".tsecT");
   const mytxt = 
@@ -17,6 +18,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // 화면 높이값의 2/3 구하기
   const hv = (window.innerHeight / 3) * 2;
+  const retVal = (ele) => ele.getBoundingClientRect().top;
+  const tt = window.innerHeight;
 
   // 메인 상단 타임아웃함수
   const showIt = ()=>{
@@ -47,29 +50,38 @@ window.addEventListener("DOMContentLoaded", () => {
     const scrl = window.scrollY;
     // console.log(scrl);
     if (scrl > 200) {
-      tsecI.style.opacity = "0";
-      tsecT.style.opacity = "0";
+      tsec.style.opacity = "0";
+    } else if (scrl < 200) {
+      tsec.style.opacity = "1";
     } else {
-      tsecI.style.opacity = "1";
-      tsecT.style.opacity = "1";
+      tsec.classList.remove("on");
+      tsec.style.transition = "1s"
+      // scrl.remove();
     }
-    setTimeout(()=>{
-      tsecI.style.display = "none";
-      tsecT.style.display = "none";
-    },3000)
+    
+    if(scrl < hv && scrl > 0 ){
+      msecL.classList.add("on");
+    }
+    
   }); /////////// 스크롤 함수 ////////////
+  // scrl = window.onscroll = () => {
+  //   if(scrl < hv && scrl > 0 ){
+  //     msecL.classList.add("on");
+  //   }
+  //   if(scrl == 100){
+  //     msecL.style.position = "fixed";
+  //   }
+  // }
 
-  const mshowIt = () => {
-    // msecL.style.opacity = "0";
-    msect.style.opacity = "0";
-    for(let x of msecT){
-      // console.log(x);
-      if (x===hv){
-        msecT.style.opacity = "1";
-      }
-    }
-  }; 
+  // let mshowIt = (ele) => {
+  //   let xval = retVal(ele);
+  //   if(xval < hv && xval > 0){
+  //     msecL.classList.add("on");
+  //   }
+  // };
+  // mshowIt();
+
   
-  mshowIt();
+  
 
 }); ///////// 로드구역 /////////////////////////////
