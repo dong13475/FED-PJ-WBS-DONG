@@ -12,17 +12,16 @@ window.addEventListener("DOMContentLoaded", () => {
   `;
   // 메인 중반 변수
   const msecL = document.querySelector(".msecL");
-  const msect = document.querySelector(".msecT ul");
+  const msect = document.querySelector(".msecT");
   const msecT = document.querySelectorAll(".msecT li");
-  // console.log(msecT);
+  console.log(msecT);
 
   // 화면 높이값의 2/3 구하기
   const hv = (window.innerHeight / 3) * 2;
   const retVal = (ele) => ele.getBoundingClientRect().top;
-  const tt = window.innerHeight;
 
   // 메인 상단 타임아웃함수
-  const showIt = ()=>{
+  const showIt = (x)=>{
     setTimeout(() => {
       tsecI.style.opacity = "1";
       tsecI.style.transition = ".5s ease-in-out";
@@ -47,41 +46,34 @@ window.addEventListener("DOMContentLoaded", () => {
   showIt();
   
   window.addEventListener("scroll", () => {
-    const scrl = window.scrollY;
-    // console.log(scrl);
+    // 스크롤시 스크롤 위치값 찍기
+    let scrl = window.scrollY;
+
+    console.log(scrl);
+
     if (scrl > 200) {
       tsec.style.opacity = "0";
     } else if (scrl < 200) {
       tsec.style.opacity = "1";
     } else {
-      tsec.classList.remove("on");
       tsec.style.transition = "1s"
       // scrl.remove();
-    }
-    
+    } /////// 상단이미지 보이기 if문 ////////
     if(scrl < hv && scrl > 0 ){
       msecL.classList.add("on");
-    }
+    } ///// 중간 로고 보이기 if문 ////////
     
+    if(scrl>1100){
+      // msect.classList.add("on");
+    }
+
+    let li1 = retVal(msecT[0]);
+    console.log(li1);
+    if(scrl > 1500){
+      msecT[0].style.opacity = "1";
+    }
   }); /////////// 스크롤 함수 ////////////
-  // scrl = window.onscroll = () => {
-  //   if(scrl < hv && scrl > 0 ){
-  //     msecL.classList.add("on");
-  //   }
-  //   if(scrl == 100){
-  //     msecL.style.position = "fixed";
-  //   }
-  // }
 
-  // let mshowIt = (ele) => {
-  //   let xval = retVal(ele);
-  //   if(xval < hv && xval > 0){
-  //     msecL.classList.add("on");
-  //   }
-  // };
-  // mshowIt();
 
   
-  
-
 }); ///////// 로드구역 /////////////////////////////
