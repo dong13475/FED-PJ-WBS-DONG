@@ -3,19 +3,27 @@
 window.addEventListener("DOMContentLoaded", () => {
   console.log("로딩완료!");
 
+  // 메인 상단 변수
   const tsecI = document.querySelector(".tsecI");
   const tsecT = document.querySelector(".tsecT");
   const mytxt = 
   `*Star Wars: The Phantom Menace (Episode I)*Rating: PG*Runtime: 2 hr 16min*Release Date: May 19, 1999*Genre:*Action, Adventure, Fantasy, Science Fiction
   `;
-  
+  // 메인 중반 변수
+  const msecL = document.querySelector(".msecL");
+  const msect = document.querySelector(".msecT ul");
+  const msecT = document.querySelectorAll(".msecT li");
+  // console.log(msecT);
+
+  // 화면 높이값의 2/3 구하기
+  const hv = (window.innerHeight / 3) * 2;
 
   // 메인 상단 타임아웃함수
   const showIt = ()=>{
     setTimeout(() => {
       tsecI.style.opacity = "1";
       tsecI.style.transition = ".5s ease-in-out";
-    }, 2000); ////////// 이미지 타임아웃
+    }, 1000); ////////// 이미지 타임아웃
   
     let hcode = "";
     let idx = 0;
@@ -28,7 +36,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
       setTimeout(() => {
         tsecT.classList.add("on");
-      },500); /// 텍스트 타임아웃
+      },1000); /// 텍스트 타임아웃
       tsecT.innerHTML = hcode;
     } ////// for of //////
 
@@ -37,7 +45,7 @@ window.addEventListener("DOMContentLoaded", () => {
   
   window.addEventListener("scroll", () => {
     const scrl = window.scrollY;
-    console.log(scrl);
+    // console.log(scrl);
     if (scrl > 200) {
       tsecI.style.opacity = "0";
       tsecT.style.opacity = "0";
@@ -45,7 +53,23 @@ window.addEventListener("DOMContentLoaded", () => {
       tsecI.style.opacity = "1";
       tsecT.style.opacity = "1";
     }
+    setTimeout(()=>{
+      tsecI.style.display = "none";
+      tsecT.style.display = "none";
+    },3000)
   }); /////////// 스크롤 함수 ////////////
+
+  const mshowIt = () => {
+    // msecL.style.opacity = "0";
+    msect.style.opacity = "0";
+    for(let x of msecT){
+      // console.log(x);
+      if (x===hv){
+        msecT.style.opacity = "1";
+      }
+    }
+  }; 
   
-  ////////// scroll //////////
+  mshowIt();
+
 }); ///////// 로드구역 /////////////////////////////
