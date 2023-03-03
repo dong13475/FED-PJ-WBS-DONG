@@ -2,9 +2,9 @@
 
 /* CDN 구글웹폰트 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
-
 /* font-family: 'Noto Sans KR', sans-serif; */
-
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+/* font-family: 'Russo One', sans-serif; */
 body * {
   /* outline: 1px solid red; */
 }
@@ -108,10 +108,12 @@ body {
 .tsecT {
   width: 585px;
   /* font-size: min(20px, 1.7vw); */
-  font-size: 29px;
-  color: #fff;
+  font-size: 26px;
+  color: rgb(247, 148, 1);
   line-height: 55px;
-  text-shadow: 1px 1px 1px rgb(68, 150, 218);
+  text-shadow: 1px 1px 1px rgb(6, 9, 12);
+  font-family: 'Russo One', sans-serif;
+  /* letter-spacing: normal; */
 }
 
 /* 글자개별박스 셋팅 */
@@ -143,7 +145,7 @@ body {
   text-align: center;
   margin: 40px 0;
   opacity: 0;
-  transition: 3s;
+  transition: 3s ease-in-out;
 }
 .msecL.on{
   top: 5vh;
@@ -157,57 +159,23 @@ body {
 /* 메인중반텍스트 */
 .msecT ul{
   /* height: 1700px; */
-}
-.msecT a{
-  perspective: 50vw;
-
+  padding-top: 100px;
 }
 .msecT li{
   /* top: 25vh; */
   /* position: sticky; */
-  padding-top: 100px;
+  padding-top: 50px;
   text-align: center;
-  color: #fff;
-  font-size: 30px;
+  font-family: 'Russo One', sans-serif;
+  font-size: 40px;
+  color: rgb(247, 148, 1);
+  text-shadow: 1px 1px 1px rgb(8, 5, 5);
+  transition: .1s ease-in;
   opacity: 0;
-  transition: .3s ease-in;
 }
-/* .msecT li:nth-child(1).on{
-  top: 25vh;
-  position: sticky;
-  }
-.msecT li:nth-child(2).on{
-  top: 28vh;
-  position: sticky;
-  }
-.msecT li:nth-child(3).on{
-  top: 31vh;
-  position: sticky;
-  }
-.msecT li:nth-child(4).on{
-  top: 34vh;
-  position: sticky;
-  }
-.msecT li:nth-child(5).on{
-  top: 37vh;
-  position: sticky;
-  }
-.msecT li:nth-child(6).on{
-  top: 40vh;
-  position: sticky;
-  }
-.msecT li:nth-child(7).on{
-  top: 43vh;
-  position: sticky;
-  }
-.msecT li:nth-child(8).on{
-  top: 46vh;
-  position: sticky;
-  }
-.msecT li:nth-child(9).on{
-  top: 49vh;
-  position: sticky;
-  } */
+
+/******* 메인하단 *******/
+
 
 
 

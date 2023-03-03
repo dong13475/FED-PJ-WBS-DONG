@@ -3,22 +3,27 @@
 window.addEventListener("DOMContentLoaded", () => {
   console.log("로딩완료!");
 
-  // 메인 상단 변수
+  // 메인 상단 변수 ///////////
   const tsec = document.querySelector(".tsec");
   const tsecI = document.querySelector(".tsecI");
   const tsecT = document.querySelector(".tsecT");
   const mytxt = 
   `*Star Wars: The Phantom Menace (Episode I)*Rating: PG*Runtime: 2 hr 16min*Release Date: May 19, 1999*Genre:*Action, Adventure, Fantasy, Science Fiction
   `;
-  // 메인 중반 변수
+  // 메인 중반 변수 //////////
   const msecL = document.querySelector(".msecL");
   const msect = document.querySelector(".msecT");
   const msecT = document.querySelectorAll(".msecT li");
   console.log(msecT);
 
+  // 메인 하단 변수 /////////
+  // 슬라이드 박스
+  const slide = document.querySelector(".slide");
+
   // 화면 높이값의 2/3 구하기
   const hv = (window.innerHeight / 3) * 2;
   const winH = window.innerHeight;
+  console.log(winH);
   const docH = document.body.clientHeight;
   const retVal = (ele) => ele.getBoundingClientRect().top;
 
@@ -50,6 +55,7 @@ window.addEventListener("DOMContentLoaded", () => {
   showIt();
   
   window.addEventListener("scroll", () => {
+
     // 스크롤시 스크롤 위치값 찍기
     let scrl = window.scrollY;
 
@@ -67,63 +73,36 @@ window.addEventListener("DOMContentLoaded", () => {
       msecL.classList.add("on");
     } ///// 중간 로고 보이기 if문 ////////
 
-
     for(let i = 0; i < msecT.length; i++){
       const li = msecT[i];
       const liTop = retVal(li);
 
       if(liTop < (winH/5)*4){
         li.style.opacity = "1";
-        // li.style.top = `${i * 3}vh`;
+      }
+      else{
+        li.style.opacity ="0";
+      }
+
+      if (liTop <= 350) {
+        li.style.opacity = "0";
       }
     } /////// 중간 텍스트 보이기 for문 /////////
 
-    // for (let i = 0; i < msecT.length; i++){
-    //   msecT[i].style.transitionDelay = `${i * 0.2}s`;
-    //   msecT[i].classList.add("on");
-    // }
-  //   for(let x of msecT) {
-  //     x.classList.add("on");
-  //   let li1 = retVal(msecT[0]);
-  //   let li2 = retVal(msecT[1]);
-  //   let li3 = retVal(msecT[2]);
-  //   let li4 = retVal(msecT[3]);
-  //   let li5 = retVal(msecT[4]);
-  //   let li6 = retVal(msecT[5]);
-  //   let li7 = retVal(msecT[6]);
-  //   let li8 = retVal(msecT[7]);
-  //   let li9 = retVal(msecT[8]);
-  //   // console.log(li1);
+    function goSlide(){
+      let slide_img ="<ul>";
+      for(let x=1; x<4; x++){
+        slide_img += `
+          <li>
+            <img src="img/slide0${x}.jpeg" alt="슬라이드 이미지">
+          </li>
+        `;
+      } //////// for문 ///////
+      slide_img += "</ul>";
+      slide.innerHTML = slide_img;
+    } //////// goSlide 함수 /////////
 
-  //   if(li1 < hv && li1 > 0){
-  //     msecT[0].style.opacity = "1";
-  //   }
-  //   else if(li2 < hv && li2 > 0){
-  //     msecT[1].style.opacity = "1";
-  //   }
-  //   else if(li3 < hv && li3 > 0){
-  //     msecT[2].style.opacity = "1";
-  //   }
-  //   else if(li4 < hv && li4 > 0){
-  //     msecT[3].style.opacity = "1";
-  //   }
-  //   else if(li5 < hv && li5 > 0){
-  //     msecT[4].style.opacity = "1";
-  //   }
-  //   else if(li6 < hv && li6 > 0){
-  //     msecT[5].style.opacity = "1";
-  //   }
-  //   else if(li7 < hv && li7 > 0){
-  //     msecT[6].style.opacity = "1";
-  //   }
-  //   else if(li8 < hv && li8 > 0){
-  //     msecT[7].style.opacity = "1";
-  //   }
-  //   else if(li9 < hv && li9 > 0){
-  //     msecT[8].style.opacity = "1";
-  //   }
-
-  // }
+    goSlide();
   }); /////////// 스크롤 함수 ////////////
   
 
