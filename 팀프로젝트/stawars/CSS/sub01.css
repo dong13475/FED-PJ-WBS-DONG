@@ -136,7 +136,7 @@ body {
 /* 전체박스 */
 .msec{
   padding-top: 900px;
-  height: calc(100vh + 2000px);
+  height: calc(100vh + 1200px);
 }
 /* 메인중반로고 */
 .msecL {
@@ -158,6 +158,10 @@ body {
 .msecT ul{
   /* height: 1700px; */
 }
+.msecT a{
+  perspective: 50vw;
+
+}
 .msecT li{
   /* top: 25vh; */
   /* position: sticky; */
@@ -168,51 +172,42 @@ body {
   opacity: 0;
   transition: .3s ease-in;
 }
-.msecT li:nth-child(1).on{
+/* .msecT li:nth-child(1).on{
   top: 25vh;
   position: sticky;
-  /* opacity: 1; */
-}
+  }
 .msecT li:nth-child(2).on{
   top: 28vh;
   position: sticky;
-  /* opacity: 1; */
-}
+  }
 .msecT li:nth-child(3).on{
   top: 31vh;
   position: sticky;
-  /* opacity: 1; */
-}
+  }
 .msecT li:nth-child(4).on{
   top: 34vh;
   position: sticky;
-  /* opacity: 1; */
-}
+  }
 .msecT li:nth-child(5).on{
   top: 37vh;
   position: sticky;
-  /* opacity: 1; */
-}
+  }
 .msecT li:nth-child(6).on{
   top: 40vh;
   position: sticky;
-  /* opacity: 1; */
-}
+  }
 .msecT li:nth-child(7).on{
   top: 43vh;
   position: sticky;
-  /* opacity: 1; */
-}
+  }
 .msecT li:nth-child(8).on{
   top: 46vh;
   position: sticky;
-  /* opacity: 1; */
-}
+  }
 .msecT li:nth-child(9).on{
   top: 49vh;
   position: sticky;
-  /* opacity: 1; */
-}
+  } */
 
 
 

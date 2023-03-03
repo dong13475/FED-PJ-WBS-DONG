@@ -72,12 +72,12 @@ window.addEventListener("DOMContentLoaded", () => {
       const li = msecT[i];
       const liTop = retVal(li);
 
-      if(liTop < winH/2){
+      if(liTop < (winH/5)*4){
         li.style.opacity = "1";
-        li.classList.add("on");
+        // li.style.top = `${i * 3}vh`;
       }
     } /////// 중간 텍스트 보이기 for문 /////////
-    
+
     // for (let i = 0; i < msecT.length; i++){
     //   msecT[i].style.transitionDelay = `${i * 0.2}s`;
     //   msecT[i].classList.add("on");
@@ -125,6 +125,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // }
   }); /////////// 스크롤 함수 ////////////
+  
 
 
   
