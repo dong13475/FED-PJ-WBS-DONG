@@ -67,20 +67,21 @@ window.addEventListener("DOMContentLoaded", () => {
       msecL.classList.add("on");
     } ///// 중간 로고 보이기 if문 ////////
     
-
+    
     for(let x of msecT) {
-      
-      let li1 = retVal(msecT[0]);
-      let li2 = retVal(msecT[1]);
-      let li3 = retVal(msecT[2]);
-      let li4 = retVal(msecT[3]);
-      let li5 = retVal(msecT[4]);
-      let li6 = retVal(msecT[5]);
-      let li7 = retVal(msecT[6]);
-      let li8 = retVal(msecT[7]);
-      let li9 = retVal(msecT[8]);
       x.classList.add("on");
-    if(li1 < winH/3 && li1 > 0){
+    let li1 = retVal(msecT[0]);
+    let li2 = retVal(msecT[1]);
+    let li3 = retVal(msecT[2]);
+    let li4 = retVal(msecT[3]);
+    let li5 = retVal(msecT[4]);
+    let li6 = retVal(msecT[5]);
+    let li7 = retVal(msecT[6]);
+    let li8 = retVal(msecT[7]);
+    let li9 = retVal(msecT[8]);
+    // console.log(li1);
+
+    if(li1 < hv && li1 > 0){
       msecT[0].style.opacity = "1";
     }
     else if(li2 < hv && li2 > 0){
@@ -107,6 +108,7 @@ window.addEventListener("DOMContentLoaded", () => {
     else if(li9 < hv && li9 > 0){
       msecT[8].style.opacity = "1";
     }
+
   }
   }); /////////// 스크롤 함수 ////////////
 
