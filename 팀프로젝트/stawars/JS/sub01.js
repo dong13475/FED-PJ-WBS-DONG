@@ -66,15 +66,18 @@ window.addEventListener("DOMContentLoaded", () => {
     if(scrl < hv && scrl > 0 ){
       msecL.classList.add("on");
     } ///// 중간 로고 보이기 if문 ////////
+
+
     for(let i = 0; i < msecT.length; i++){
       const li = msecT[i];
       const liTop = retVal(li);
 
-      if(liTop < hv){
+      if(liTop < winH/2){
         li.style.opacity = "1";
         li.classList.add("on");
       }
-    }
+    } /////// 중간 텍스트 보이기 for문 /////////
+    
     // for (let i = 0; i < msecT.length; i++){
     //   msecT[i].style.transitionDelay = `${i * 0.2}s`;
     //   msecT[i].classList.add("on");
