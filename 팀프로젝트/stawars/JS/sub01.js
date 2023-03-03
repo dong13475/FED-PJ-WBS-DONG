@@ -66,50 +66,61 @@ window.addEventListener("DOMContentLoaded", () => {
     if(scrl < hv && scrl > 0 ){
       msecL.classList.add("on");
     } ///// 중간 로고 보이기 if문 ////////
-    
-    
-    for(let x of msecT) {
-      x.classList.add("on");
-    let li1 = retVal(msecT[0]);
-    let li2 = retVal(msecT[1]);
-    let li3 = retVal(msecT[2]);
-    let li4 = retVal(msecT[3]);
-    let li5 = retVal(msecT[4]);
-    let li6 = retVal(msecT[5]);
-    let li7 = retVal(msecT[6]);
-    let li8 = retVal(msecT[7]);
-    let li9 = retVal(msecT[8]);
-    // console.log(li1);
+    for(let i = 0; i < msecT.length; i++){
+      const li = msecT[i];
+      const liTop = retVal(li);
 
-    if(li1 < hv && li1 > 0){
-      msecT[0].style.opacity = "1";
+      if(liTop < hv){
+        li.style.opacity = "1";
+        li.classList.add("on");
+      }
     }
-    else if(li2 < hv && li2 > 0){
-      msecT[1].style.opacity = "1";
-    }
-    else if(li3 < hv && li3 > 0){
-      msecT[2].style.opacity = "1";
-    }
-    else if(li4 < hv && li4 > 0){
-      msecT[3].style.opacity = "1";
-    }
-    else if(li5 < hv && li5 > 0){
-      msecT[4].style.opacity = "1";
-    }
-    else if(li6 < hv && li6 > 0){
-      msecT[5].style.opacity = "1";
-    }
-    else if(li7 < hv && li7 > 0){
-      msecT[6].style.opacity = "1";
-    }
-    else if(li8 < hv && li8 > 0){
-      msecT[7].style.opacity = "1";
-    }
-    else if(li9 < hv && li9 > 0){
-      msecT[8].style.opacity = "1";
-    }
+    // for (let i = 0; i < msecT.length; i++){
+    //   msecT[i].style.transitionDelay = `${i * 0.2}s`;
+    //   msecT[i].classList.add("on");
+    // }
+  //   for(let x of msecT) {
+  //     x.classList.add("on");
+  //   let li1 = retVal(msecT[0]);
+  //   let li2 = retVal(msecT[1]);
+  //   let li3 = retVal(msecT[2]);
+  //   let li4 = retVal(msecT[3]);
+  //   let li5 = retVal(msecT[4]);
+  //   let li6 = retVal(msecT[5]);
+  //   let li7 = retVal(msecT[6]);
+  //   let li8 = retVal(msecT[7]);
+  //   let li9 = retVal(msecT[8]);
+  //   // console.log(li1);
 
-  }
+  //   if(li1 < hv && li1 > 0){
+  //     msecT[0].style.opacity = "1";
+  //   }
+  //   else if(li2 < hv && li2 > 0){
+  //     msecT[1].style.opacity = "1";
+  //   }
+  //   else if(li3 < hv && li3 > 0){
+  //     msecT[2].style.opacity = "1";
+  //   }
+  //   else if(li4 < hv && li4 > 0){
+  //     msecT[3].style.opacity = "1";
+  //   }
+  //   else if(li5 < hv && li5 > 0){
+  //     msecT[4].style.opacity = "1";
+  //   }
+  //   else if(li6 < hv && li6 > 0){
+  //     msecT[5].style.opacity = "1";
+  //   }
+  //   else if(li7 < hv && li7 > 0){
+  //     msecT[6].style.opacity = "1";
+  //   }
+  //   else if(li8 < hv && li8 > 0){
+  //     msecT[7].style.opacity = "1";
+  //   }
+  //   else if(li9 < hv && li9 > 0){
+  //     msecT[8].style.opacity = "1";
+  //   }
+
+  // }
   }); /////////// 스크롤 함수 ////////////
 
 
