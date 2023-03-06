@@ -197,18 +197,36 @@ body {
   height: 500px;
 }
 
-/* 최하단영역 */
-.b_img{
-  
-}
+/***** 최하단영역 *****/
 
+/* 공통텍스트 */
+.b_text{
+  color: #fff;
+  font-size: 22px;
+}
+/* 첫번째 섹션 */
+.b_img.b1 img{
+  height: 400px;
+}
+.b_sec1{
+  display: flex;
+  padding-top: 300px;
+}
+/* 두번째 섹션 */
+.b_img.b2 img{
+  height: 600px;
+}
+.b_sec2{
+  display: flex;
+  padding-top: 200px;
+}
 
 
 
 /******************** 하단영역 ********************/
 #info {
   height: 100px;
-  padding-top: 1100px;
+  padding-top: 400px;
 }
 .bot{
   position: relative;

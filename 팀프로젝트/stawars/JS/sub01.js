@@ -3,12 +3,18 @@
 window.addEventListener("DOMContentLoaded", () => {
   console.log("로딩완료!");
 
+  // 새로고침시 맨위로 보내기 ///////
+  // scrollTo(가로,세로) -> 스크롤위치이동 내장함수
+  // 브라우저가 스크롤 위치 캐싱을 적용한 후 위로 이동
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+  }, 100); // 0.1초정도는 줘야효과있음!
+
   // 메인 상단 변수 ///////////
   const tsec = document.querySelector(".tsec");
   const tsecI = document.querySelector(".tsecI");
   const tsecT = document.querySelector(".tsecT");
-  const mytxt = 
-  `*Star Wars: The Phantom Menace (Episode I)*Rating: PG*Runtime: 2 hr 16min*Release Date: May 19, 1999*Genre:*Action, Adventure, Fantasy, Science Fiction
+  const mytxt = `*Star Wars: The Phantom Menace (Episode I)*Rating: PG*Runtime: 2 hr 16min*Release Date: May 19, 1999*Genre:*Action, Adventure, Fantasy, Science Fiction
   `;
   // 메인 중반 변수 //////////
   const msecL = document.querySelector(".msecL");
@@ -28,13 +34,12 @@ window.addEventListener("DOMContentLoaded", () => {
   const retVal = (ele) => ele.getBoundingClientRect().top;
 
   // 메인 상단 타임아웃함수
-  const showIt = ()=>{
-    
+  const showIt = () => {
     setTimeout(() => {
       tsecI.style.opacity = "1";
       tsecI.style.transition = ".5s ease-in-out";
     }, 1000); ////////// 이미지 타임아웃
-  
+
     let hcode = "";
     let idx = 0;
 
@@ -46,16 +51,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
       setTimeout(() => {
         tsecT.classList.add("on");
-      },1000); /// 텍스트 타임아웃
+      }, 1000); /// 텍스트 타임아웃
       tsecT.innerHTML = hcode;
     } ////// for of //////
-
-
   }; /////////// showIt 함수 ///////////
   showIt();
-  
-  window.addEventListener("scroll", () => {
 
+  window.addEventListener("scroll", () => {
     // 스크롤시 스크롤 위치값 찍기
     let scrl = window.scrollY;
 
@@ -66,22 +68,21 @@ window.addEventListener("DOMContentLoaded", () => {
     } else if (scrl < 200) {
       tsec.style.opacity = "1";
     } else {
-      tsec.style.transition = "1s"
+      tsec.style.transition = "1s";
       // scrl.remove();
     } /////// 상단이미지 보이기 if문 ////////
-    if(scrl < hv && scrl > 0 ){
+    if (scrl < hv && scrl > 0) {
       msecL.classList.add("on");
     } ///// 중간 로고 보이기 if문 ////////
 
-    for(let i = 0; i < msecT.length; i++){
+    for (let i = 0; i < msecT.length; i++) {
       const li = msecT[i];
       const liTop = retVal(li);
 
-      if(liTop < (winH/5)*4){
+      if (liTop < (winH / 5) * 4) {
         li.style.opacity = "1";
-      }
-      else{
-        li.style.opacity ="0";
+      } else {
+        li.style.opacity = "0";
       }
 
       if (liTop <= 350) {
@@ -91,9 +92,9 @@ window.addEventListener("DOMContentLoaded", () => {
   }); /////////// 스크롤 함수 ////////////
 
   ////////// 슬라이드 함수 ////////////
-  function goSlide(){
-    let slide_img ="<ul>";
-    for(let x=1; x<5; x++){
+  function goSlide() {
+    let slide_img = "<ul>";
+    for (let x = 1; x < 5; x++) {
       slide_img += `
         <li>
           <img src="img/slide0${x}.jpeg" alt="슬라이드 이미지">
@@ -105,8 +106,4 @@ window.addEventListener("DOMContentLoaded", () => {
   } //////// goSlide 함수 /////////
 
   goSlide();
-  
-
-
-  
 }); ///////// 로드구역 /////////////////////////////
