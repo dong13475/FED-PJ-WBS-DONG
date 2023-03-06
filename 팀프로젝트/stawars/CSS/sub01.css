@@ -175,6 +175,32 @@ body {
 }
 
 /******* 메인하단 *******/
+/* 하단로고 */
+.blogo{
+  padding-top: 750px;
+  text-align: center;
+}
+.blogo img{
+  height: 110px;
+}
+
+/* 하단슬라이드 */
+.slide>ul{
+  display: flex;
+  padding-top: 100px;
+}
+.slide>ul>li{
+  flex: 1;
+}
+.slide img{
+  width: 1000px;
+  height: 500px;
+}
+
+/* 최하단영역 */
+.b_img{
+  
+}
 
 
 

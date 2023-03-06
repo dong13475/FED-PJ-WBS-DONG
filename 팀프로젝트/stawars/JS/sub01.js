@@ -88,22 +88,23 @@ window.addEventListener("DOMContentLoaded", () => {
         li.style.opacity = "0";
       }
     } /////// 중간 텍스트 보이기 for문 /////////
-
-    function goSlide(){
-      let slide_img ="<ul>";
-      for(let x=1; x<4; x++){
-        slide_img += `
-          <li>
-            <img src="img/slide0${x}.jpeg" alt="슬라이드 이미지">
-          </li>
-        `;
-      } //////// for문 ///////
-      slide_img += "</ul>";
-      slide.innerHTML = slide_img;
-    } //////// goSlide 함수 /////////
-
-    goSlide();
   }); /////////// 스크롤 함수 ////////////
+
+  ////////// 슬라이드 함수 ////////////
+  function goSlide(){
+    let slide_img ="<ul>";
+    for(let x=1; x<5; x++){
+      slide_img += `
+        <li>
+          <img src="img/slide0${x}.jpeg" alt="슬라이드 이미지">
+        </li>
+      `;
+    } //////// for문 ///////
+    slide_img += "</ul>";
+    slide.innerHTML = slide_img;
+  } //////// goSlide 함수 /////////
+
+  goSlide();
   
 
 
