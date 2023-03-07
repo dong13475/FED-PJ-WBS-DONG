@@ -71,7 +71,7 @@ window.addEventListener("DOMContentLoaded", () => {
       tsec.style.transition = "1s";
       // scrl.remove();
     } /////// 상단이미지 보이기 if문 ////////
-    
+
     if (scrl < hv && scrl > 0) {
       msecL.classList.add("on");
     } ///// 중간 로고 보이기 if문 ////////
@@ -92,19 +92,45 @@ window.addEventListener("DOMContentLoaded", () => {
     } /////// 중간 텍스트 보이기 for문 /////////
   }); /////////// 스크롤 함수 ////////////
 
-  ////////// 슬라이드 함수 ////////////
-  function goSlide() {
-    let slide_img = "<ul>";
-    for (let x = 1; x < 5; x++) {
-      slide_img += `
-        <li>
-          <img src="img/slide0${x}.jpeg" alt="슬라이드 이미지">
-        </li>
-      `;
-    } //////// for문 ///////
+  
+  let slide_img = "<ul>";
+  for (let x = 1; x < 5; x++) {
+    slide_img += `
+    <li>
+    <img src="img/slide0${x}.jpeg" alt="슬라이드 이미지">
+    </li>
+    `;
+  } //////// for문 ///////
     slide_img += "</ul>";
+    
     slide.innerHTML = slide_img;
-  } //////// goSlide 함수 /////////
+    
+    
+    // 버튼 변수
+    const abtn = document.querySelectorAll(".abtn");
+    // 슬라이드 변수
+    // const slide = document.querySelector(".slide>ul");
 
-  goSlide();
-}); ///////// 로드구역 /////////////////////////////
+
+    // 슬라이드 함수 ////////////////////////
+    const goSlide = (seq) => {
+
+      // 슬라이드의 li 변수
+      let clist = slide.querySelectorAll("li");
+      console.log(clist);
+
+      // 슬라이드 방향 분기
+      if(seq){
+        slide.style.left = "-100%";
+        slide.style.transition = "left .4s ease-in-out";
+      } //////// 오른쪽 버튼 if문 ////////////
+      else {
+        
+      }
+
+    } ///////// goSlide 함수 ///////////
+
+    
+    
+  }); ///////// 로드구역 /////////////////////////////
+  
