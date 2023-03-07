@@ -71,6 +71,7 @@ window.addEventListener("DOMContentLoaded", () => {
       tsec.style.transition = "1s";
       // scrl.remove();
     } /////// 상단이미지 보이기 if문 ////////
+    
     if (scrl < hv && scrl > 0) {
       msecL.classList.add("on");
     } ///// 중간 로고 보이기 if문 ////////
