@@ -3,6 +3,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   console.log("로딩완료!");
 
+
   // 새로고침시 맨위로 보내기 ///////
   // scrollTo(가로,세로) -> 스크롤위치이동 내장함수
   // 브라우저가 스크롤 위치 캐싱을 적용한 후 위로 이동
@@ -94,7 +95,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   
   let slide_img = "<ul>";
-  for (let x = 1; x < 5; x++) {
+  for (let x = 1; x < 8; x++) {
     slide_img += `
     <li>
     <img src="img/slide0${x}.jpeg" alt="슬라이드 이미지">
@@ -108,13 +109,24 @@ window.addEventListener("DOMContentLoaded", () => {
     
     // 버튼 변수
     const abtn = document.querySelectorAll(".abtn");
+    console.log(abtn);
     // 슬라이드 변수
-    // const slide = document.querySelector(".slide>ul");
+    
 
 
+    // 광클금지 변수 
+    let prot = 0;
     // 슬라이드 함수 ////////////////////////
     const goSlide = (seq) => {
 
+      // 광클금지 설정하기 //
+      if(prot) return;
+      prot = 1;
+      setTimeout(()=>{
+        prot = 0;
+      },400);
+
+      let slide = document.querySelector(".slide>ul");
       // 슬라이드의 li 변수
       let clist = slide.querySelectorAll("li");
       console.log(clist);
@@ -123,12 +135,59 @@ window.addEventListener("DOMContentLoaded", () => {
       if(seq){
         slide.style.left = "-100%";
         slide.style.transition = "left .4s ease-in-out";
+
+        // 슬라이드 이동후 0.4초
+        setTimeout(()=>{
+          slide.appendChild(clist[0]);
+          slide.style.left = "0";
+          slide.style.transition = "none";
+        },400); ///// 오른쪽 버튼 타임아웃 /////
       } //////// 오른쪽 버튼 if문 ////////////
       else {
-        
-      }
+        slide.insertBefore(clist[clist.length-1],clist[0]);
+        slide.style.left = "-100%";
+        slide.style.transition = "none";
+
+        // 슬라이드 이동후 0초
+        setTimeout(()=>{
+          slide.style.left = "0";
+          slide.style.transition = "left .4s ease-in-out";
+        },0); ///////// 타임아웃 ///////////
+      } /////////// 왼쪽버튼 else문 /////////////
 
     } ///////// goSlide 함수 ///////////
+
+    abtn.forEach((ele,idx)=>{
+      ele.onclick = () => {
+        // a요소 기본이동막기
+        event.preventDefault();
+        // 인터발지우기함수 호출!
+        clearAuto();
+        // 슬라이드 함수 호출
+        goSlide(idx);
+      }; ///////// click ///////////
+    }); ///////// forEach ///////////
+
+    // 인터발함수 지우기 변수
+    let autoI;
+    // 타임아웃함수 지우기 변수
+    let autoT
+
+    function autoSlide(){
+      autoI = setInterval(()=>goSlide(1),3000);
+    } ///////// autoSlide함수 자동넘기기! ///////
+
+    autoSlide();
+
+
+    function clearAuto(){
+      // 인터발함수 지우기
+      clearInterval(autoI);
+      // 타임아웃함수 지우기
+      clearTimeout(autoT);
+      // 클릭후 인터발 재실행을 위한 타임아웃함수 설정
+      autoT = setTimeout(autoSlide,5000);
+    } ///////// clearAuto함수 ////////////
 
     
     
