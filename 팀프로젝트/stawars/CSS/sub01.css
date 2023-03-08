@@ -191,21 +191,27 @@ body {
   height: 110px;
 }
 
+/* 슬라이드 박스 */
+.slidebx{
+  position: relative;
+  padding-top: 100px;
+}
 /* 하단슬라이드 */
 .slide{
   position: relative;
-  width: 1000px;
-  height: 500px;
+  margin: 0 auto;
+  width: 900px;
+  height: 515px;
 }
 .slide>ul{
   display: flex;
-  padding-top: 100px;
 
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .slide>ul>li{
   flex-shrink: 0;
@@ -215,6 +221,24 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* box-sizing: border-box; */
+}
+/* 이동버튼 */
+.abtn{
+  position: absolute;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  z-index: 1;
+  color: #fff;
+  font-size: 70px;
+}
+.ab1{
+  top: 50%;
+  left: 2%;
+}
+.ab2{
+  top: 50%;
+  right: 2%;
 }
 
 /* 최하단영역 */
@@ -320,11 +344,3 @@ body {
   overflow: hidden;
 }
 
-/* 이동버튼 */
-.abtn{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  color: #fff;
-}
