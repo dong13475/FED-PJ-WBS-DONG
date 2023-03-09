@@ -146,8 +146,6 @@ window.addEventListener("DOMContentLoaded", () => {
         b_sec2.style.transition = "1s";
       }
 
-
-
   }); /////////// 스크롤 함수 ////////////
 
   
@@ -250,6 +248,27 @@ window.addEventListener("DOMContentLoaded", () => {
       // 클릭후 인터발 재실행을 위한 타임아웃함수 설정
       autoT = setTimeout(autoSlide,5000);
     } ///////// clearAuto함수 ////////////
+
+    /**************************************** 
+      따라다니는 마우스 포인터 .lightS
+    ****************************************/
+    let mover = document.querySelector(".lightS");
+    console.log(mover);
+    // 무버크기의 절반 계산하기
+    let gap = mover.clientWidth / 2;
+    console.log("무버",gap);
+
+    // mousemove 가 body위에서 움직일때 발생
+    document.body.onmousemove = function(){
+      // 무버가 포인터 가운데 안오게하기
+      let posx = event.clientX - gap;
+      let posy = event.clientY - gap;
+      console.log(posx,posy);
+
+      // 무버에서 위치값 이동 셋팅
+      mover.style.top = posy + "px";
+      mover.style.left = posx + "px";
+    }; ///////// mousemove 함수 //////////////
 
     
     

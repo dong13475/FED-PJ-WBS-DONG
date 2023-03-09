@@ -413,3 +413,34 @@ body {
   height: 0;
   overflow: hidden;
 }
+
+
+/* 마우스포인터 액션 */
+/* 부모박스 */
+.saberS{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: .3s ease-out;
+}
+.redS{
+  position: absolute;
+  /* top: 50px; */
+  /* left: 50px; */
+  width: 7px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 20px 20px 7px 7px;
+  transform: rotate(45deg);
+}
+.blueS{
+  position: absolute;
+  /* top: 50px; */
+  /* left: 50px; */
+  width: 7px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 20px 20px 7px 7px;
+  transform: rotate(-45deg);
+}
