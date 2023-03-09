@@ -149,7 +149,7 @@ body {
 /* 전체박스 */
 .msec {
   padding-top: 900px;
-  padding-bottom: 750px;
+  padding-bottom: 550px;
   height: calc(100vh + 1300px);
   
 }
