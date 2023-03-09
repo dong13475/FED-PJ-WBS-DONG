@@ -21,17 +21,22 @@ window.addEventListener("DOMContentLoaded", () => {
   const msecL = document.querySelector(".msecL");
   const msect = document.querySelector(".msecT");
   const msecT = document.querySelectorAll(".msecT li");
-  console.log(msecT);
+  // console.log(msecT);
 
   // 메인 하단 변수 /////////
   // 슬라이드 박스
   const slide = document.querySelector(".slide");
+  const blogo = document.querySelector(".blogo");
+  const slidebx = document.querySelector(".slidebx");
+  // 메인 최하단 박스 /////////
+  const b_sec1 = document.querySelector(".b_sec1");
+  const b_sec2 = document.querySelector(".b_sec2");
 
   // 화면 높이값의 2/3 구하기
   const hv = (window.innerHeight / 3) * 2;
   const winH = window.innerHeight;
-  console.log(winH);
-  const docH = document.body.clientHeight;
+  // console.log(winH);
+  // const docH = document.body.clientHeight;
   const retVal = (ele) => ele.getBoundingClientRect().top;
 
   // 메인 상단 타임아웃함수
@@ -91,9 +96,66 @@ window.addEventListener("DOMContentLoaded", () => {
         li.style.opacity = "0";
       }
     } /////// 중간 텍스트 보이기 for문 /////////
+
+    // 하단로고 스크롤
+    // const blogoT = retVal(blogo);
+    if(scrl > 3320){
+      blogo.classList.add("on");
+      blogo.style.transition = ".8s ease-in-out";
+    } /////// 하단로고 클래스 "on" 더하기 if 문
+    else{
+      blogo.classList.remove("on");
+      blogo.style.transition = "none";
+    } /////// 하단로고 클래스 "on" 빼기 if 문
+    console.log(scrl);
+
+    // 하단 슬라이드 박스 사라지기
+    if(scrl > 3800){
+      slidebx.style.opacity = "0";
+      slidebx.style.transition = "0.5s ease-in-out"
+    }
+    else{
+      slidebx.style.opacity = "1";
+      slidebx.style.transition = "0.5s ease-in-out"
+    } ////////// 슬라이드박스 나타나기 / 사라지기
+
+
+    // 최하단 박스 나타났다 등장액션
+    const bsec1_Top = retVal(b_sec1);
+
+      if (bsec1_Top < (winH / 5) * 4) {
+        b_sec1.style.opacity = "1";
+        b_sec1.style.transition = "1s";
+      } else {
+        b_sec1.style.opacity = "0";
+        b_sec1.style.transition = "1s";
+      }
+
+      if (scrl >= 4550) {
+        b_sec1.style.opacity = "0";
+        b_sec1.style.transition = "1s";
+      }
+
+    const bsec2_Top = retVal(b_sec2);
+      
+      if (bsec2_Top < (winH / 5)*4){
+        b_sec2.style.opacity = "1";
+        b_sec2.style.transition = "1s";
+      } else {
+        b_sec2.style.opacity = "0";
+        b_sec2.style.transition = "1s";
+      }
+
+
+
   }); /////////// 스크롤 함수 ////////////
 
   
+
+
+  /***************************************************** 
+    버튼 / 슬라이드 함수영역
+  *****************************************************/
   let slide_img = "<ul>";
   for (let x = 1; x < 8; x++) {
     slide_img += `
@@ -109,7 +171,7 @@ window.addEventListener("DOMContentLoaded", () => {
     
     // 버튼 변수
     const abtn = document.querySelectorAll(".abtn");
-    console.log(abtn);
+    // console.log(abtn);
     // 슬라이드 변수
     
 
@@ -129,7 +191,7 @@ window.addEventListener("DOMContentLoaded", () => {
       let slide = document.querySelector(".slide>ul");
       // 슬라이드의 li 변수
       let clist = slide.querySelectorAll("li");
-      console.log(clist);
+      // console.log(clist);
 
       // 슬라이드 방향 분기
       if(seq){
