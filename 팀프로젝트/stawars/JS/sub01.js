@@ -256,14 +256,14 @@ window.addEventListener("DOMContentLoaded", () => {
     console.log(mover);
     // 무버크기의 절반 계산하기
     let gap = mover.clientWidth / 2;
-    console.log("무버",gap);
+    // console.log("무버",gap);
 
     // mousemove 가 body위에서 움직일때 발생
     document.body.onmousemove = function(){
       // 무버가 포인터 가운데 안오게하기
-      let posx = event.clientX - gap;
-      let posy = event.clientY - gap;
-      console.log(posx,posy);
+      let posx = event.clientX;
+      let posy = event.clientY;
+      // console.log(posx,posy);
 
       // 무버에서 위치값 이동 셋팅
       mover.style.top = posy + "px";
