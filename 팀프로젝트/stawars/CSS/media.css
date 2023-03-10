@@ -89,8 +89,17 @@
     /***** 메인하단영역 *****/
   /* 슬라이드 */
   .slide {
-    width: 800px;
-    height: 490px;
+    width: 550px;
+    height: 330px;
+  }
+  /* 슬라이드 버튼 */
+  .ab1{
+    top: 120%;
+    left: 40vw;
+  }
+  .ab2{
+    top: 120%;
+    right: 40vw;
   }
   /* 공통 텍스트 */
   .b_text {
@@ -101,19 +110,29 @@
     text-align: center;
   }
   /* 메인하단 첫번째 구역 */
+  .b_sec1 {
+    flex-direction: column;
+    align-items: center;
+}
   .b_img.b1 img {
     height: 300px;
   }
   .b_text.b1 li:first-child {
     padding: 15px 0;
   }
+  
   /* 메인하단 두번째 구역 */
+  .b_sec2{
+    flex-direction: column;
+    align-items: center;
+  }
   .b_img.b2 img {
     height: 440px;
   }
   .b_text.b2 li:first-child {
     padding: 15px 0;
   }
+  /* footer 영역 */
 } /* 990px사이즈 이하 미디어쿼리 끝 */
 
 /* 1200px사이즈 이하 미디어쿼리 시작 */
