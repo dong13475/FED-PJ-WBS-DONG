@@ -251,10 +251,9 @@ body {
 /* 이동버튼 */
 .abtn {
   position: absolute;
-  /* top: 50%; */
-  /* transform: translateY(-50%); */
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1;
-  top: 52%;
   /* 폰트 */
   font-size: 70px;
   color: rgb(243, 109, 0);
@@ -420,29 +419,52 @@ body {
 /* 부모박스 */
 .lightS{
   position: fixed;
-  /* width: 50px; */
-  /* height: 50px; */
+  width: 0;
+  height: 0;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
   z-index: 1;
   outline: 1px dashed lime;
   transition: .3s ease-out;
+  /* z-index: -1; */
 }
 .redS{
   position: absolute;
-  /* top: 50%; */
-  /* left: 50%; */
+  top: 36px;
+  left: 44px;
   width: 7px;
-  height: 50px;
-  background-color: #fff;
-  border-radius: 20px 20px 7px 7px;
-  transform: rotate(45deg);
+  height: 17px;
+  border-radius: 0 0 3px 3px;
+  transform: rotate(-45deg);
+
+  background-color: rgb(141, 141, 141);
+  /* box-shadow: 0 0 0 red; */
+  /* animation: redS 2s ease-in-out infinite alternate; */
 }
 .blueS{
   position: absolute;
-  /* top: 50%; */
-  /* left: 50%; */
+  top: 5px;
+  left: 25px;
   width: 7px;
-  height: 50px;
-  background-color: #fff;
-  border-radius: 20px 20px 7px 7px;
+  height: 40px;
+  border-radius: 20px 20px 0 0;
   transform: rotate(-45deg);
+
+  background-color: rgba(0, 110, 255, 0.603);
+  box-shadow: 0 0 0 blue;
+  animation: blueS 2s ease-in-out infinite alternate;
+}
+
+@keyframes redS {
+  to{
+    /* background-color: red; */
+    box-shadow: 0 0 20px rgba(248, 29, 0, 0.959);
+  }
+}
+@keyframes blueS {
+  to{
+    /* background-color: rgb(0, 110, 255); */
+    box-shadow: 0 0 20px rgb(0, 174, 255);
+  }
 }

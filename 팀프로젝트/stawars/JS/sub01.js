@@ -261,14 +261,25 @@ window.addEventListener("DOMContentLoaded", () => {
     // mousemove 가 body위에서 움직일때 발생
     document.body.onmousemove = function(){
       // 무버가 포인터 가운데 안오게하기
-      let posx = event.clientX;
-      let posy = event.clientY;
+      let posx = event.clientX-gap;
+      let posy = event.clientY-gap;
       // console.log(posx,posy);
 
       // 무버에서 위치값 이동 셋팅
       mover.style.top = posy + "px";
       mover.style.left = posx + "px";
     }; ///////// mousemove 함수 //////////////
+
+    // body영역 바깥으로 나가면 사라지고 들어오면 나타남 //
+    document.body.onmouseenter = () => {
+      // 들어오면 나타남
+      mover.style.display = "block";
+    }; ///// mouseenter /////
+    
+    document.body.onmouseleave = () => {
+      // 나가면 사라짐
+      mover.style.display = "none";
+    }; ///// mouseleave /////
 
     
     
