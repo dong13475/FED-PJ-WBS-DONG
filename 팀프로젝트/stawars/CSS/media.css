@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* 팀프로젝트 스타워즈 미디어쿼리 CSS - media.css */
+
+/* 1200px사이즈 이하 미디어쿼리 시작 */
+@media screen and (max-width: 1200px) {
+  /***** 메인 상단영역 *****/
+  .tsec {
+    max-width: 900px;
+    gap: 100px;
+  }
+  .tsec img {
+    height: 530px;
+  }
+  /* 메인 상단 텍스트 */
+  .tsecT {
+    font-size: 20px;
+    line-height: 43px;
+  }
+
+  /***** 메인 중반영역 *****/
+  .msec {
+    margin: 0 auto;
+    max-width: 950px;
+  }
+  .msecL img {
+    height: 180px;
+  }
+  .msecT li {
+    font-size: 34px;
+  }
+  /***** 메인하단영역 *****/
+  /* 슬라이드 */
+  .slide {
+    width: 800px;
+    height: 490px;
+  }
+  /* 공통 텍스트 */
+  .b_text {
+    color: #fff;
+    font-size: 22px;
+    width: 600px;
+
+    text-align: center;
+  }
+  /* 메인하단 첫번째 구역 */
+  .b_img.b1 img {
+    height: 300px;
+  }
+  .b_text.b1 li:first-child {
+    padding: 15px 0;
+  }
+  /* 메인하단 두번째 구역 */
+  .b_img.b2 img {
+    height: 440px;
+  }
+  .b_text.b2 li:first-child {
+    padding: 15px 0;
+  }
+} /* 1200px사이즈 이하 미디어쿼리 끝 */
+
+
+/* 990px사이즈 이하 미디어쿼리 시작 */
+@media screen and (max-width: 990px) {
+  /***** 메인 상단영역 *****/
+  .tsec {
+    max-width: 800px;
+    gap: 50px;
+  }
+  .tsec img {
+    height: 450px;
+  }
+  /* 메인 상단 텍스트 */
+  .tsecT {
+    font-size: 19px;
+    line-height: 43px;
+  }
+  /***** 메인 중반영역 *****/ 
+  .msec {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  .msecL img {
+    height: 150px;
+  }
+  .msecT li {
+    font-size: 31px;
+  }
+    /***** 메인하단영역 *****/
+  /* 슬라이드 */
+  .slide {
+    width: 800px;
+    height: 490px;
+  }
+  /* 공통 텍스트 */
+  .b_text {
+    color: #fff;
+    font-size: 22px;
+    width: 600px;
+
+    text-align: center;
+  }
+  /* 메인하단 첫번째 구역 */
+  .b_img.b1 img {
+    height: 300px;
+  }
+  .b_text.b1 li:first-child {
+    padding: 15px 0;
+  }
+  /* 메인하단 두번째 구역 */
+  .b_img.b2 img {
+    height: 440px;
+  }
+  .b_text.b2 li:first-child {
+    padding: 15px 0;
+  }
+} /* 990px사이즈 이하 미디어쿼리 끝 */
+
+/* 1200px사이즈 이하 미디어쿼리 시작 */
+@media screen and (max-width: 1200px) {
+} /* 1200px사이즈 이하 미디어쿼리 끝 */

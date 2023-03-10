@@ -1,4 +1,4 @@
-// 팀프로젝트 스타워즈 PJ - sub01.js
+// 팀프로젝트 스타워즈 JS - sub01.js
 
 window.addEventListener("DOMContentLoaded", () => {
   console.log("로딩완료!");
@@ -155,7 +155,7 @@ window.addEventListener("DOMContentLoaded", () => {
     버튼 / 슬라이드 함수영역
   *****************************************************/
   let slide_img = "<ul>";
-  for (let x = 1; x < 8; x++) {
+  for (let x = 1; x < 7; x++) {
     slide_img += `
     <li>
     <img src="img/slide0${x}.jpeg" alt="슬라이드 이미지">
@@ -231,7 +231,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // 인터발함수 지우기 변수
     let autoI;
     // 타임아웃함수 지우기 변수
-    let autoT
+    let autoT;
 
     function autoSlide(){
       autoI = setInterval(()=>goSlide(1),3000);
@@ -253,7 +253,7 @@ window.addEventListener("DOMContentLoaded", () => {
       따라다니는 마우스 포인터 .lightS
     ****************************************/
     let mover = document.querySelector(".lightS");
-    console.log(mover);
+    // console.log(mover);
     // 무버크기의 절반 계산하기
     let gap = mover.clientWidth / 2;
     // console.log("무버",gap);

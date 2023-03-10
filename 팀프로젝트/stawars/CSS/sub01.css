@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* 팀프로젝트 스타워즈 서브01 CSS - sub01 */
+
 /* CDN 구글웹폰트 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
 /* font-family: 'Noto Sans KR', sans-serif; */
@@ -243,9 +245,9 @@ body {
   flex-basis: 100%;
 }
 .slide ul li img {
-  width: 900px;
-  height: 515px;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
   /* box-sizing: border-box; */
 }
 /* 이동버튼 */
@@ -312,8 +314,9 @@ body {
 }
 .b_sec1 {
   display: flex;
+  justify-content: space-evenly;
   padding-top: 300px;
-  gap: 40px;
+  /* gap: 40px; */
   opacity: 0;
 }
 
@@ -323,7 +326,6 @@ body {
 }
 .b_text.b2{
   line-height: 1.8;
-  padding-right: 100px;
 }
 .b_text.b2 li:first-child{
   padding: 80px 0 15px;
@@ -333,6 +335,7 @@ body {
 }
 .b_sec2 {
   display: flex;
+  justify-content: space-evenly;
   padding-top: 200px;
   /* gap: 60px; */
   opacity: 0;
@@ -437,7 +440,8 @@ body {
   height: 17px;
   border-radius: 0 0 3px 3px;
   transform: rotate(-45deg);
-
+  background: linear-gradient(rgba(104, 99, 99, 0.349),silver);
+  
   background-color: rgb(141, 141, 141);
   /* box-shadow: 0 0 0 red; */
   /* animation: redS 2s ease-in-out infinite alternate; */
