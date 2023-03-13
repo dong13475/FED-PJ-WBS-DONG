@@ -193,6 +193,8 @@
   .msec {
     margin: 0 auto;
     max-width: 450px;
+    padding-bottom: 550px;
+    height: calc(100vh + 1300px)
   }
 
   .msecL.on {
@@ -204,7 +206,7 @@
     height: 25vw;
   }
   .msecT ul{
-    padding-top: 0;
+    padding-top: 100px;
   }
   .msecT li {
     padding: 50px 15px 0;

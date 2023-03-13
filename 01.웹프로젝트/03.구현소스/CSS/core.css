@@ -2,6 +2,9 @@
 
 /* 공통 핵심 CSS - core.css */
 
+/* 폰트어썸 CND */
+
+
 /* 웹폰트 CND */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Open+Sans&display=swap');
 
@@ -46,3 +49,13 @@ img {
   /* max-width: 1300px; */
   margin: 0 auto;
 }
+
+/* 배경이미지 설명넣기 숨기기 클래스
+IR(Image Replacement) */
+.ir{
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
