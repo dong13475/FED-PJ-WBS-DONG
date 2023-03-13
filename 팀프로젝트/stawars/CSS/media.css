@@ -194,6 +194,11 @@
     margin: 0 auto;
     max-width: 800px;
   }
+  .msecL.on {
+    position: sticky;
+    top: 5vh;
+    opacity: 1;
+  }
   .msecL img {
     height: 25vw;
   }
@@ -224,11 +229,11 @@
     right: 40vw;
   }
   /* 공통 텍스트 */
-  .b_text {
+  .b_text ul{
+    display: inline-block;
     color: #fff;
     font-size: 4vw;
-    /* white-space: nowrap; */
-    /* width: 600px; */
+    width: 300px;
 
     text-align: center;
   }
@@ -258,7 +263,8 @@
     font-size: 5vw;
     padding: 30px 0;
   }
-  /* footer 영역 */
+  
+  /***** footer 영역 *****/
   #info address{
     font-size: 2vw;
     line-height: 15px;
@@ -282,6 +288,12 @@
   padding: 20px;
 }
 .lightS{
+  display: none;
+}
+.redS{
+  display: none;
+}
+.blueS{
   display: none;
 }
   /***** 하단영역 *****/

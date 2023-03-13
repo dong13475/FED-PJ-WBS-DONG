@@ -35,6 +35,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // 화면 높이값의 2/3 구하기
   const hv = (window.innerHeight / 3) * 2;
   const winH = window.innerHeight;
+  const winW = window.innerWidth;
   // console.log(winH);
   // const docH = document.body.clientHeight;
   const retVal = (ele) => ele.getBoundingClientRect().top;
@@ -103,12 +104,16 @@ window.addEventListener("DOMContentLoaded", () => {
       blogo.classList.add("on");
       blogo.style.transition = ".8s ease-in-out";
     } /////// 하단로고 클래스 "on" 더하기 if 문
-
     else{
       blogo.classList.remove("on");
       blogo.style.transition = "none";
     } /////// 하단로고 클래스 "on" 빼기 if 문
     console.log(scrl);
+    if(scrl > 5000){
+      
+      blogo.classList.remove("on");
+      blogo.style.transition = "none";
+    }
 
 
     // 하단 슬라이드 박스 사라지기
@@ -172,7 +177,6 @@ window.addEventListener("DOMContentLoaded", () => {
     // 버튼 변수
     const abtn = document.querySelectorAll(".abtn");
     // console.log(abtn);
-    // 슬라이드 변수
     
 
 
@@ -282,6 +286,10 @@ window.addEventListener("DOMContentLoaded", () => {
       // 나가면 사라짐
       mover.style.display = "none";
     }; ///// mouseleave /////
+    if(winW < 500){
+      console.log(winW);
+      mover.style.display = "none";
+    }
 
     
     
