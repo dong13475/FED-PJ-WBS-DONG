@@ -50,10 +50,21 @@ body {
 }
 
 body {
-  background: url(../img/sp.png) no-repeat fixed center/cover;
+  /* background: url(../img/sp.png) no-repeat fixed center/cover; */
+  background-attachment: fixed;
   overflow-x: hidden;
+  
 }
-
+body::before{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/sp.png) no-repeat fixed center/cover;
+}
 .part {
   max-width: 1200px;
   margin: 0 auto;
@@ -163,8 +174,9 @@ body {
   transition: 3s ease-in-out;
 }
 .msecL.on {
-  top: 5vh;
+  /* top: 5vh; */
   position: sticky;
+  position: -webkit-sticky;
   opacity: 1;
 }
 .msecL img {

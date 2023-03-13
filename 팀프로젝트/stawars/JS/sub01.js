@@ -19,6 +19,8 @@ window.addEventListener("DOMContentLoaded", () => {
   `;
   // 메인 중반 변수 //////////
   const msecL = document.querySelector(".msecL");
+  const msecLpos = msecL.offsetTop;
+  console.log("위치:",msecLpos);
   const msect = document.querySelector(".msecT");
   const msecT = document.querySelectorAll(".msecT li");
   // console.log(msecT);
@@ -30,7 +32,13 @@ window.addEventListener("DOMContentLoaded", () => {
   const slidebx = document.querySelector(".slidebx");
   // 메인 최하단 박스 /////////
   const b_sec1 = document.querySelector(".b_sec1");
+  const b_sec1pos = b_sec1.offsetTop;
+  const b_sec1H = b_sec1.clientHeight;
+  console.log("하단위치1:",b_sec1pos,"\하단높이1:",b_sec1H);
   const b_sec2 = document.querySelector(".b_sec2");
+  const b_sec2pos = b_sec2.offsetTop;
+  const b_sec2H = b_sec2.clientHeight;
+  console.log("하단위치2:",b_sec2pos,"\하단높이2:",b_sec2H);
 
   // 화면 높이값의 2/3 구하기
   const hv = (window.innerHeight / 3) * 2;
@@ -79,9 +87,26 @@ window.addEventListener("DOMContentLoaded", () => {
       // scrl.remove();
     } /////// 상단이미지 보이기 if문 ////////
 
-    if (scrl < hv && scrl > 0) {
+    if (scrl < msecLpos && scrl < msecLpos+winH+1000) {
       msecL.classList.add("on");
-    } ///// 중간 로고 보이기 if문 ////////
+    } 
+    else if (scrl >= msecLpos+winH+1000){
+      msecL.classList.remove("on");
+    }
+
+    if (scrl > msecLpos-100) {
+      msecL.style.position = "fixed";
+      msecL.style.top = "5%";
+      msecL.style.left = "0";
+      msecL.style.right = "0";
+      msecL.style.textAlign = "center";
+      msecL.style.margin = "0";
+
+    } 
+    else{      
+      msecL.style.position = "sticky";
+      msecL.style.width = "auto";
+    }
 
     for (let i = 0; i < msecT.length; i++) {
       const li = msecT[i];
@@ -109,11 +134,20 @@ window.addEventListener("DOMContentLoaded", () => {
       blogo.style.transition = "none";
     } /////// 하단로고 클래스 "on" 빼기 if 문
     console.log(scrl);
-    if(scrl > (5000)){
+
+    
       
-      blogo.classList.remove("on");
-      blogo.style.transition = "none";
+    if (scrl > b_sec1pos){
+        blogo.classList.remove("on");
+        blogo.style.transition = "none";
     }
+
+
+    // if(scrl > (5000)){
+      
+    //   blogo.classList.remove("on");
+    //   blogo.style.transition = "none";
+    // }
 
 
     // 하단 슬라이드 박스 사라지기
@@ -144,7 +178,7 @@ window.addEventListener("DOMContentLoaded", () => {
       }
 
     const bsec2_Top = retVal(b_sec2);
-      
+
       if (bsec2_Top < (winH / 5)*4){
         b_sec2.style.opacity = "1";
         b_sec2.style.transition = "1s";
