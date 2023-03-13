@@ -194,6 +194,7 @@
     margin: 0 auto;
     max-width: 450px;
   }
+
   .msecL.on {
     position: sticky;
     top: 5vh;
@@ -201,6 +202,9 @@
   }
   .msecL img {
     height: 25vw;
+  }
+  .msecT ul{
+    padding-top: 0;
   }
   .msecT li {
     padding: 50px 15px 0;
