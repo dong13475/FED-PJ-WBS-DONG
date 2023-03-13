@@ -163,7 +163,7 @@ body {
   transition: 3s ease-in-out;
 }
 .msecL.on {
-  top: 5vh;
+  top: 30%;
   position: sticky;
   opacity: 1;
 }

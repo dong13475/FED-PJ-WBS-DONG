@@ -10,14 +10,14 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 body * {
   /* outline: 1px solid red; */
 }
 body {
   background: url(../img/sp.png) no-repeat fixed center/cover;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .part {
