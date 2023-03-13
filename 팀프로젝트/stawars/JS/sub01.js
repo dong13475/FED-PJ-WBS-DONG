@@ -103,11 +103,13 @@ window.addEventListener("DOMContentLoaded", () => {
       blogo.classList.add("on");
       blogo.style.transition = ".8s ease-in-out";
     } /////// 하단로고 클래스 "on" 더하기 if 문
+
     else{
       blogo.classList.remove("on");
       blogo.style.transition = "none";
     } /////// 하단로고 클래스 "on" 빼기 if 문
     console.log(scrl);
+
 
     // 하단 슬라이드 박스 사라지기
     if(scrl > 3800){
