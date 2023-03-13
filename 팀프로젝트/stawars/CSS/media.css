@@ -241,6 +241,7 @@
   .b_sec1 {
     flex-direction: column;
     align-items: center;
+    padding-top: 100px;
   }
   .b_img.b1 img {
     height: 200px;
