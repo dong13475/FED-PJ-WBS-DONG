@@ -99,7 +99,7 @@ body {
 /***** 메인상단 *****/
 .tsec {
   position: fixed;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -163,7 +163,7 @@ body {
   transition: 3s ease-in-out;
 }
 .msecL.on {
-  top: 30%;
+  top: 5vh;
   position: sticky;
   opacity: 1;
 }
@@ -361,7 +361,8 @@ body {
 }
 .int {
   display: block;
-  margin-left: 15%;
+  text-align: center;
+  /* margin-left: 15%; */
 }
 
 #info address img {

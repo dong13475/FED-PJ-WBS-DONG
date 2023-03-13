@@ -57,6 +57,10 @@
   .b_text.b2 li:first-child {
     padding: 15px 0;
   }
+  /***** footer 영역 *****/
+  .int{
+    font-size: 13px;
+  }
 } /* 1200px사이즈 이하 미디어쿼리 끝 */
 
 /* 990px사이즈 이하 미디어쿼리 시작 */
@@ -148,13 +152,26 @@
   }
   /* footer 영역 */
   #info address{
-    font-size: 12px;
-  }
+    font-size: 2vw;
+    line-height: 15px;
+    padding-top: 0;
+    padding-left: 0;
+}
+  
   #info address img {
     position: absolute;
-    transform: scale(0.4);
-    margin-left: -35px;
-    margin-top: -37px;
+    left: 6%;
+    top: -70%;
+}
+.sns {
+  position: absolute;
+  top: -26%;
+  right: 5%;
+}
+.int{
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
 }
 } /* 990px사이즈 이하 미디어쿼리 끝 */
 
@@ -178,19 +195,20 @@
     position: absolute;
     margin: 0 auto;
     flex-direction: column;
-    padding-top: 100px;
+    width: 300px;
+    /* padding-top: 100px; */
     /* max-width: 800px; */
-    /* gap: 50px; */
+    gap: 25px;
   }
   .tsec img {
     height: 40vh;
   }
   /* 메인 상단 텍스트 */
   .tsecT {
-    text-align: center;
-    font-size: 4vw;
+    /* text-align: center; */
+    font-size: 13px;
     line-height: 2;
-    width: 100%;
+    width: 310px;
   }
   /***** 메인 중반영역 *****/
   .msec {
@@ -267,6 +285,7 @@
 
   /* 메인하단 두번째 구역 */
   .b_sec2 {
+    padding-top: 100px;
     flex-direction: column;
     align-items: center;
   }

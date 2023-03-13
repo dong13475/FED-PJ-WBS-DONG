@@ -31,6 +31,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // 메인 최하단 박스 /////////
   const b_sec1 = document.querySelector(".b_sec1");
   const b_sec2 = document.querySelector(".b_sec2");
+  const b_sec1pos = b_sec1.offsetTop;
 
   // 화면 높이값의 2/3 구하기
   const hv = (window.innerHeight / 3) * 2;
@@ -109,11 +110,15 @@ window.addEventListener("DOMContentLoaded", () => {
       blogo.style.transition = "none";
     } /////// 하단로고 클래스 "on" 빼기 if 문
     console.log(scrl);
-    if(scrl > (5000)){
+    // if(scrl > 5000){
       
+    //   blogo.classList.remove("on");
+    //   blogo.style.transition = "none";
+    // }
+    if (scrl > b_sec1pos){
       blogo.classList.remove("on");
       blogo.style.transition = "none";
-    }
+  }
 
 
     // 하단 슬라이드 박스 사라지기
