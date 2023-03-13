@@ -109,7 +109,7 @@ window.addEventListener("DOMContentLoaded", () => {
       blogo.style.transition = "none";
     } /////// 하단로고 클래스 "on" 빼기 if 문
     console.log(scrl);
-    if(scrl > 5000){
+    if(scrl > (5000)){
       
       blogo.classList.remove("on");
       blogo.style.transition = "none";
