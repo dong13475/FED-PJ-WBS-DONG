@@ -260,7 +260,7 @@
   .b_text ul{
     display: inline-block;
     color: #fff;
-    font-size: 4vw;
+    font-size: min(4vw,15px);
     width: 300px;
 
     text-align: center;
