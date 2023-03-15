@@ -2,53 +2,82 @@
 
 /* 메인페이지 CSS - main.css */
 
-
 /* 외부CSS합치기 */
 @import url(./common.css);
 @import url(./core.css);
 
-
-
-/* 배인배경이미지 */
-.cont{
-  background: url(./images/main01.jpg) no-repeat
-  center/cover;
+/* 메인배경이미지 */
+.cont {
+  background: url(./images/main01.jpg) no-repeat center/cover;
   min-height: 100vh;
 }
-.bx1{
-  height: 150px;
+/* 아이템 섹션 */
+.item_section {
+  margin-top: 60px;
+  width: 100%;
+}
+.sub_tit {
+  text-align: center;
+  margin: 0 0 50px;
+  font-size: 2.7rem;
+  font-weight: lighter;
+}
+.button_bx{
+  padding: 40px 0;
+}
+.more_bt{
+  margin: 0 auto;
+  outline: 1px solid #000;
+  width: 100px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  
+  font-weight: lighter;
+}
+.more_bt>a{
+font-family: "Open Sans", sans-serif;
+}
+
+.bx2 {
   background-color: #e4e4e4;
+}
+/* 메인하단 배송설명박스 */
+.c_info{
+  padding: 100px 0;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  text-align: center;
+}
+.c_info01{
+  font-size: 1.3rem;
+}
+.c_info02{
+  font-size: 1.2rem;
 }
 
 /********** 아이템박스별 이미지 **********/
-.mg1{
+.mg1 {
   background-image: url(./images/pddcoat1.jpg);
 }
-.mg2{
+.mg2 {
   background-image: url(./images/balaclava1.jpg);
 }
-.mg3{
+.mg3 {
   background-image: url(./images/coat1.jpg);
 }
-.mg4{
+.mg4 {
   background-image: url(./images/boots1.jpg);
 }
-.mg5{
+.mg5 {
   background-image: url(./images/lightpufferB1.jpg);
 }
-.mg6{
+.mg6 {
   background-image: url(./images/lightpufferG1.jpg);
 }
-.mg7{
+.mg7 {
   background-image: url(./images/paddedvest1.jpg);
 }
-.mg8{
+.mg8 {
   background-image: url(./images/gloves1.jpg);
 }
 /********** 아이템박스별 이미지 **********/
-.bx2{
-  height: 100px;
-  background-color: #e4e4e4;
-}
-
-

@@ -10,6 +10,10 @@ body * {
 }
 
 /*********************** 1. 상단영역 ***********************/
+/* 상단전체속박스 */
+#top{
+  position: relative;
+}
 .top {
   position: fixed;
   top: 0;
@@ -17,6 +21,7 @@ body * {
   right: 0;
   z-index: 1;
 }
+/* 로고박스 */
 .logo {
   background-color: #fff;
   text-align: center;
@@ -26,6 +31,7 @@ body * {
 .logo img {
   height: 75px;
 }
+/* GNB영역 */
 .gnb>ul {
   display: flex;
   justify-content: center;
@@ -38,15 +44,52 @@ body * {
   font-size: 1.5rem;
   color: #fff;
   text-shadow: 1px 1px 1px #262626;
+  font-family: "Open Sans", sans-serif;
 }
 .gnb:hover ul{
   background-color: #fff;
 } 
-.gnb>ul:hover 
-/* 서브메뉴 */
+.gnb:hover ul>li>a{
+  text-shadow: 1px 1px 1px rgb(182, 182, 182);
+  color: rgb(78, 78, 78);
+  transition: .2s;
+} 
+
+.gnb>ul>li:nth-child(2){
+  position: relative;
+  /* .smenu 부모자격 */
+}
+
+/* GNB밑 서브메뉴 */
 .smenu{
+  position: absolute;
+  width: 80px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #fff;
-  display: none;
+  /* position: relative; */
+
+  /* 숨기기장치 */
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  /* 트랜지션 */
+  transition:all .4s ease-in-out;
+}
+
+.smenu>ol{
+  
+  text-align: center;
+}
+.smenu>ol>li{
+  padding: 3px 0;
+}
+.smenu>ol>li>a{
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  /* width: 100%; */
+  color: rgb(58, 58, 58);
 }
 
 /* 상단 아이콘 메뉴 */
@@ -112,7 +155,8 @@ body * {
 
 /*********************** 3. 하단영역 ***********************/
 .info {
-  min-height: 286px;
+  background-color: rgb(105, 105, 105);
+  height: 200px;
 }
 .addbx {
   position: relative;
