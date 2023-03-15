@@ -183,6 +183,9 @@
     width: 100vw;
     /* overflow-x: hidden; */
   }
+  body{
+    background-position: fixed;
+  }
   .tit{
     font-size: 6vw;
   }
