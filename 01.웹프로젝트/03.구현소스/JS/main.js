@@ -5,31 +5,70 @@ window.addEventListener("DOMContentLoaded",()=>{
   console.log("로딩완료!");
   
 
+  // GNB 마우스 오버시 서브메뉴 등장 변수
+  // .gnb li 리스트
   const gnb_li = document.querySelectorAll(".gnb>ul>li");
-  // console.log(gnb_li);
-  let gg = gnb_li[1];
-  // console.log(gg);
+  // .gnb li 두번째요소
+  let sub = gnb_li[1];
+  // .smenu
   const smenu = document.querySelector(".smenu");
-  // console.log(smenu);
+  // .smenu ol 의 높이변수
   let hv = smenu.querySelector(".smenu ol").clientHeight;
   console.log(hv);
+
+  // 페이드박스 li 변수
+  const fadeBx = document.querySelectorAll(".fade_bx li");
+  console.log(fadeBx);
+
+  // 슬라이드번호 변수
+  let snum = 0;
+
+  let scnt = fadeBx.length;
+  console.log("페이드개수",scnt);
+
+
+  /******************** 
+    GNB 마우스 오버시 
+  ********************/
   // GNB 두번째 li에 마우스엔터시 smenu등장
-  gg.onmouseenter = () => {
+  sub.onmouseenter = () => {
     smenu.style.opacity = 1;
     smenu.style.height = hv + "px";
   }
-  gg.onmouseleave = () => {
+  sub.onmouseleave = () => {
     smenu.style.opacity = 0;
     smenu.style.height = 0;
   }
 
   /************************************** 
-    [ 메인페이지 페이드 배너 넣기 ]
+    [ 메인페이지 페이드 배너 넣기 함수 ]
   **************************************/
 
-  // 이벤트 대상 : .fade_bx li
-  const fadeBx = document.querySelectorAll(".fade_bx li");
-  console.log(fadeBx);
+  
+  const go_fade = (seq) => {
+    console.log("페이드번호",seq);
+    seq++;
+    if(seq){
+      
+    }
+    
+
+    // chgBanner(fadeBx);
+    // chgBanner(bulit);
+
+  } ///////// go_fade 함수 //////////
+
+
+  let autoI;
+  /************************************** 
+    [ 인터발함수 설정하기 ]
+    함수명 : autoFade
+  **************************************/
+  function autoFade(){
+    autoI = setInterval(() => go_fade(),1000);
+  }
+
+  // autoFade();
   
   
 
@@ -38,6 +77,31 @@ window.addEventListener("DOMContentLoaded",()=>{
   *****************************************/
 
   // 이벤트 대상 : .bulit 
+  const bulit = document.querySelectorAll(".bulit");
+  console.log(bulit);
+
+  bulit.forEach((ele,idx)=>{
+    ele.onclick = () => {
+      snum = idx;
+
+      /* 블릿변경 */
+      chgBanner(bulit);
+    }
+    
+  }); ///////// forEach ////////////
+
+
+  /*********************************** 
+    페이드 / 블릿 변경기능 공통함수
+    함수명 : chgBanner
+  ***********************************/
+
+  function chgBanner(obj){
+    // 전체 리스트 초기화
+    obj.forEach(ele => ele.classList.remove("on"));
+    // 해당순번 li에 클래스 "on" 넣기
+    obj[snum].classList.add("on");
+  } ////////// chgBanner 함수 /////////////
 
 
 

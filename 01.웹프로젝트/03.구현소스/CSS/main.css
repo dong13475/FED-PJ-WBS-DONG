@@ -21,7 +21,7 @@
   height: 100%;
 
   /* 처음에 투명 */
-  /* opacity: 0; */
+  opacity: 0;
   
   /* 트랜지션 */
   transition: opacity .6s ease-in-out;
