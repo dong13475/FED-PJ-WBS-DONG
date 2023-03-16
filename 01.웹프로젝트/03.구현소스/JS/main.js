@@ -48,16 +48,15 @@ window.addEventListener("DOMContentLoaded",()=>{
   **************************************/
 
   
-  const go_fade = (seq) => {
-    console.log("페이드번호",seq);
-    if(seq++){
+  const go_fade = (dir,seq) => { // dir-방향,seq-순번
+    console.log("페이드번호",dir,seq);
+    if(dir){
       snum++;
+      if (snum === scnt) snum = 0;
     }
-    else{
-      snum--;
+    else{ // dir이 0일경우(즉, 블릿클릭일때)
+      snum = seq;
     }
-    if (snum === -1) snum = scnt - 1;
-    else if (snum === scnt) snum = 0;
 
     chgBanner(fadeBx);
     chgBanner(bulit); 
@@ -71,11 +70,17 @@ window.addEventListener("DOMContentLoaded",()=>{
     함수명 : autoFade
   **************************************/
   function autoFade(){
-    autoI = setInterval(() => go_fade(),2000);
+    autoI = setInterval(() => go_fade(1,0),2000);
   }
 
   autoFade();
   
+  let autoT;
+  function clearAuto(){
+    clearInterval(autoI);
+    clearTimeout(autoT);
+    autoT = setTimeout(autoFade,5000);
+  }
   
 
   /***************************************** 
@@ -88,7 +93,8 @@ window.addEventListener("DOMContentLoaded",()=>{
 
   bulit.forEach((ele,idx)=>{
     ele.onclick = () => {
-      go_fade(idx);
+      clearAuto();
+      go_fade(0,idx);
       // snum = idx;
       /* 블릿변경 */
       // chgBanner(bulit);
@@ -112,8 +118,8 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 
 
-
-
+chgBanner(fadeBx);
+chgBanner(bulit); 
 
   
   ///////////////////// grid구역 태그넣기 //////////////////////////
