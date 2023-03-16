@@ -91,7 +91,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       go_fade(idx);
       snum = idx;
       /* 블릿변경 */
-      chgBanner(bulit);
+      // chgBanner(bulit);
     }
     
   }); ///////// forEach ////////////
