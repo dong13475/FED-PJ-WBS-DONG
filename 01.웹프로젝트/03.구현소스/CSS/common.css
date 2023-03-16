@@ -223,8 +223,8 @@ js로 마우스 아웃시 */
   position: relative;
   margin: 0 auto;
   background-color: rgb(166, 166, 166);
-  width: 3px;
-  height: 21px;
+  width: 2.3px;
+  height: 18px;
   cursor: pointer;
 }
 .bulit::before{
