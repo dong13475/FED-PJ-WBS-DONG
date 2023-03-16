@@ -50,14 +50,17 @@ window.addEventListener("DOMContentLoaded",()=>{
   
   const go_fade = (seq) => {
     console.log("페이드번호",seq);
-    
     if(seq++){
-      
+      snum++;
     }
-    
+    else{
+      snum--;
+    }
+    if (snum === -1) snum = scnt - 1;
+    else if (snum === scnt) snum = 0;
 
-    // chgBanner(fadeBx);
-    // chgBanner(bulit); 
+    chgBanner(fadeBx);
+    chgBanner(bulit); 
 
   } ///////// go_fade 함수 //////////
 
@@ -71,7 +74,7 @@ window.addEventListener("DOMContentLoaded",()=>{
     autoI = setInterval(() => go_fade(),1000);
   }
 
-  // autoFade();
+  autoFade();
   
   
 
@@ -85,8 +88,8 @@ window.addEventListener("DOMContentLoaded",()=>{
 
   bulit.forEach((ele,idx)=>{
     ele.onclick = () => {
+      go_fade(idx);
       snum = idx;
-
       /* 블릿변경 */
       chgBanner(bulit);
     }
