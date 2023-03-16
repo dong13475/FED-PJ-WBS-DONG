@@ -8,26 +8,40 @@ window.addEventListener("DOMContentLoaded",()=>{
   // GNB 마우스 오버시 서브메뉴 등장 변수
   // .gnb li 리스트
   const gnb_li = document.querySelectorAll(".gnb>ul>li");
-
   // .gnb li 두번째요소
   let sub = gnb_li[1];
-
   // .smenu
   const smenu = document.querySelector(".smenu");
-
   // .smenu ol 의 높이변수
   let hv = smenu.querySelector(".smenu ol").clientHeight;
-  console.log(hv);
+  // console.log(hv);
+
 
   // 페이드박스 li 변수
   const fadeBx = document.querySelectorAll(".fade_bx li");
-  console.log(fadeBx);
-
-  // 슬라이드번호 변수 : 배너 이미지와 블릿을 통일시켜주는 중요한변수
+  // console.log(fadeBx);
+  // 슬라이드번호 변수 : 
+  // 배너 이미지와 블릿을 통일시켜주는 중요한변수
   let snum = 0;
-
+  // 페이드개수 변수
   let scnt = fadeBx.length;
-  console.log("페이드개수",scnt);
+  // console.log("페이드개수",scnt);
+
+  // ////////////////////////////////////////////
+  let li = document.querySelectorAll(".gnb li");
+  console.log(li);
+  
+  li.forEach((ele)=>{
+    ele.onmouseenter = () => {
+      ele.classList.add("on");
+    };
+    ele.onmouseleave = () => {
+      ele.classList.add("on2");
+    };
+  });
+  
+
+
 
 
   /******************** 
@@ -37,32 +51,31 @@ window.addEventListener("DOMContentLoaded",()=>{
   sub.onmouseenter = () => {
     smenu.style.opacity = 1;
     smenu.style.height = hv + "px";
-  }
+  }; /// onmouseenter ///
   sub.onmouseleave = () => {
     smenu.style.opacity = 0;
     smenu.style.height = 0;
-  }
+  }; /// onmouseleave ///
 
   /************************************** 
     [ 메인페이지 페이드 배너 넣기 함수 ]
     함수명 : go_fade
   **************************************/
-  
   const go_fade = (dir,seq) => { // dir-방향,seq-순번
-    console.log("페이드번호",dir,seq);
+    // console.log("페이드번호",dir,seq);
     if(dir){
       snum++;
       if (snum === scnt) snum = 0;
-    }
+    } ///// if /////
     else{ // dir이 0일경우(즉, 블릿클릭일때)
       snum = seq;
-    }
+    } ///// else /////
 
     // 페이드 블릿 변경 함수호출
     chgBanner(fadeBx);
     chgBanner(bulit); 
 
-  } ///////// go_fade 함수 //////////
+  }; ///////// go_fade 함수 //////////
 
 
   let autoI;
@@ -71,7 +84,7 @@ window.addEventListener("DOMContentLoaded",()=>{
     함수명 : autoFade
   **************************************/
   function autoFade(){
-    autoI = setInterval(() => go_fade(1,0),2000);
+    autoI = setInterval(() => go_fade(1,0),4000);
   }; //////// autoFade함수 /////////
 
   autoFade();
@@ -100,7 +113,7 @@ window.addEventListener("DOMContentLoaded",()=>{
     ele.onclick = () => {
       clearAuto();
       go_fade(0,idx);
-    }
+    }; ///// click /////
     
   }); ///////// forEach ////////////
 
