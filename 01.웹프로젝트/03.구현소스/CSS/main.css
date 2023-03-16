@@ -6,11 +6,38 @@
 @import url(./common.css);
 @import url(./core.css);
 
-/* 메인배경이미지 */
+/****** 메인배경이미지 ******/
+/* 배너 겉박스 */
 .cont {
-  background: url(./images/main01.jpg) no-repeat center/cover;
-  min-height: 100vh;
 }
+/* 배너 속박스 */
+.fade_bx{
+  min-height: 100vh;
+  position: relative;
+}
+.fade_bx li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  /* 처음에 투명 */
+  /* opacity: 0; */
+  
+  /* 트랜지션 */
+  transition: opacity .6s ease-in-out;
+}
+/* 배너에 .on시 */
+.fade_bx li.on{
+  opacity: 1;
+  /* z-index: 1; */
+}
+/* 배너 이미지 */
+.fade_bx img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* 아이템 섹션 */
 .item_section {
   margin-top: 60px;
@@ -55,29 +82,3 @@ font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
 }
 
-/********** 아이템박스별 이미지 **********/
-.mg1 {
-  background-image: url(./images/pddcoat1.jpg);
-}
-.mg2 {
-  background-image: url(./images/balaclava1.jpg);
-}
-.mg3 {
-  background-image: url(./images/coat1.jpg);
-}
-.mg4 {
-  background-image: url(./images/boots1.jpg);
-}
-.mg5 {
-  background-image: url(./images/lightpufferB1.jpg);
-}
-.mg6 {
-  background-image: url(./images/lightpufferG1.jpg);
-}
-.mg7 {
-  background-image: url(./images/paddedvest1.jpg);
-}
-.mg8 {
-  background-image: url(./images/gloves1.jpg);
-}
-/********** 아이템박스별 이미지 **********/

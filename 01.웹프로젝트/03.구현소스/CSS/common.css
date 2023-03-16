@@ -13,6 +13,7 @@ body * {
 /* 상단전체속박스 */
 #top{
   position: relative;
+  z-index: 2;
 }
 .top {
   position: fixed;
@@ -70,6 +71,7 @@ body * {
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
+  /* z-index: 999; */
 
   /* 숨기기장치 */
   height: 0;
@@ -169,6 +171,7 @@ body * {
   bottom: 3%;
   left: 50%;
   transform: translateX(-50%);
+  /* z-index: 2; */
 }
 .bulit::before{
   content: '';

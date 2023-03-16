@@ -3,57 +3,6 @@
 //////////// 로드구역 /////////////
 window.addEventListener("DOMContentLoaded",()=>{
   console.log("로딩완료!");
-
-  const gdsObj={
-    "상품코드1":{
-      "상품명":"aaaa breasted coat",
-      "구분":"22 winter",
-      "가격":"58,000원",
-      "이미지":"pddcoat1",
-    },
-    "상품코드2":{
-      "상품명":"rrrr breasted coat",
-      "구분":"22 winter",
-      "가격":"54,000원",
-      "이미지":"balaclava1",
-    },
-    "상품코드3":{
-      "상품명":"double hhh coat",
-      "구분":"22 winter",
-      "가격":"6788,000원",
-      "이미지":"coat1",
-    },
-    "상품코드4":{
-      "상품명":"ggg breasted coat",
-      "구분":"22 winter",
-      "가격":"54,000원",
-      "이미지":"boots1",
-    },
-    "상품코드5":{
-      "상품명":"fggg breasted coat",
-      "구분":"22 winter",
-      "가격":"128,000원",
-      "이미지":"lightpufferB1",
-    },
-    "상품코드6":{
-      "상품명":"kkk dfd coat",
-      "구분":"22 winter",
-      "가격":"568,000원",
-      "이미지":"lightpufferG1",
-    },
-    "상품코드7":{
-      "상품명":"dfd breasted coat",
-      "구분":"22 winter",
-      "가격":"8988,000원",
-      "이미지":"paddedvest1",
-    },
-    "상품코드8":{
-      "상품명":"double breasted fd",
-      "구분":"22 winter",
-      "가격":"568,000원",
-      "이미지":"gloves1",
-    },
-  }; ////////////// gdsObj 객체 /////////
   
 
   const gnb_li = document.querySelectorAll(".gnb>ul>li");
@@ -74,36 +23,59 @@ window.addEventListener("DOMContentLoaded",()=>{
     smenu.style.height = 0;
   }
 
+  /************************************** 
+    [ 메인페이지 페이드 배너 넣기 ]
+  **************************************/
+
+  // 이벤트 대상 : .fade_bx li
+  const fadeBx = document.querySelectorAll(".fade_bx li");
+  console.log(fadeBx);
+  
+  
+
+  /***************************************** 
+    [ 클릭이벤트 함수 설정하기 ]
+  *****************************************/
+
+  // 이벤트 대상 : .bulit 
+
+
+
+
+
+
+  
+  ///////////////////// grid구역 태그넣기 //////////////////////////
   // 상품넣을 박스
   const gridbx = document.querySelector(".gridbx");
 
 
   // 상품객체만큼 화면에 태그 데이터바인딩하기
-  let hcode = "";
+  // let hcode = "";
 
-  for(let x in gdsObj){
-    // x는 속성명
-      hcode += `
-      <div class="item itbx1">
-        <div class="iimg mg1" 
-          style="background-image: 
-          url(./CSS/images/${gdsObj[x]["이미지"]}.jpg)">
-        </div>
-        <div class="itxt">
-          <div class="iname1">
-            <a href="#">${gdsObj[x]["상품명"]}</a>
-          </div>
-          <div class="ssn">
-            <a href="#">${gdsObj[x]["구분"]}</a>
-          </div>
-          <span>${gdsObj[x]["가격"]}</span>
-        </div>
-      </div>
-      `;
-  } ////////// for in /////////
+  // for(let x in gdsObj){
+  //   // x는 속성명
+  //     hcode += `
+  //     <div class="item itbx1">
+  //       <div class="iimg mg1" 
+  //         style="background-image: 
+  //         url(./CSS/images/${gdsObj[x]["이미지"]}.jpg)">
+  //       </div>
+  //       <div class="itxt">
+  //         <div class="iname1">
+  //           <a href="#">${gdsObj[x]["상품명"]}</a>
+  //         </div>
+  //         <div class="ssn">
+  //           <a href="#">${gdsObj[x]["구분"]}</a>
+  //         </div>
+  //         <span>${gdsObj[x]["가격"]}</span>
+  //       </div>
+  //     </div>
+  //     `;
+  // } ////////// for in /////////
 
-  gridbx.innerHTML = hcode;
-
+  // gridbx.innerHTML = hcode;
+  ///////////////////// grid구역 태그넣기 //////////////////////////
 
   
 
