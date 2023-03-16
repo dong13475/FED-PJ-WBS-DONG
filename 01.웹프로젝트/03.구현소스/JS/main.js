@@ -8,10 +8,13 @@ window.addEventListener("DOMContentLoaded",()=>{
   // GNB 마우스 오버시 서브메뉴 등장 변수
   // .gnb li 리스트
   const gnb_li = document.querySelectorAll(".gnb>ul>li");
+
   // .gnb li 두번째요소
   let sub = gnb_li[1];
+
   // .smenu
   const smenu = document.querySelector(".smenu");
+
   // .smenu ol 의 높이변수
   let hv = smenu.querySelector(".smenu ol").clientHeight;
   console.log(hv);
@@ -47,14 +50,14 @@ window.addEventListener("DOMContentLoaded",()=>{
   
   const go_fade = (seq) => {
     console.log("페이드번호",seq);
-    seq++;
-    if(seq){
+    
+    if(seq++){
       
     }
     
 
     // chgBanner(fadeBx);
-    // chgBanner(bulit);
+    // chgBanner(bulit); 
 
   } ///////// go_fade 함수 //////////
 
@@ -78,7 +81,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 
   // 이벤트 대상 : .bulit 
   const bulit = document.querySelectorAll(".bulit");
-  console.log(bulit);
+  // console.log(bulit);
 
   bulit.forEach((ele,idx)=>{
     ele.onclick = () => {
