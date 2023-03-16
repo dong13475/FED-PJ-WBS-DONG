@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   const fadeBx = document.querySelectorAll(".fade_bx li");
   console.log(fadeBx);
 
-  // 슬라이드번호 변수
+  // 슬라이드번호 변수 : 배너 이미지와 블릿을 통일시켜주는 중요한변수
   let snum = 0;
 
   let scnt = fadeBx.length;
@@ -45,8 +45,8 @@ window.addEventListener("DOMContentLoaded",()=>{
 
   /************************************** 
     [ 메인페이지 페이드 배너 넣기 함수 ]
+    함수명 : go_fade
   **************************************/
-
   
   const go_fade = (dir,seq) => { // dir-방향,seq-순번
     console.log("페이드번호",dir,seq);
@@ -58,6 +58,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       snum = seq;
     }
 
+    // 페이드 블릿 변경 함수호출
     chgBanner(fadeBx);
     chgBanner(bulit); 
 
@@ -71,16 +72,20 @@ window.addEventListener("DOMContentLoaded",()=>{
   **************************************/
   function autoFade(){
     autoI = setInterval(() => go_fade(1,0),2000);
-  }
+  }; //////// autoFade함수 /////////
 
   autoFade();
   
   let autoT;
+  /****************************************** 
+    [ 블릿 클릭시 인터발함수 지우고 다시셋팅 ]
+    함수명 : clearAuto
+  ******************************************/
   function clearAuto(){
     clearInterval(autoI);
     clearTimeout(autoT);
     autoT = setTimeout(autoFade,5000);
-  }
+  } /////// clearAuto함수 /////////
   
 
   /***************************************** 
@@ -95,10 +100,6 @@ window.addEventListener("DOMContentLoaded",()=>{
     ele.onclick = () => {
       clearAuto();
       go_fade(0,idx);
-      // snum = idx;
-      /* 블릿변경 */
-      // chgBanner(bulit);
-      // chgBanner(fadeBx);
     }
     
   }); ///////// forEach ////////////
@@ -117,7 +118,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   } ////////// chgBanner 함수 /////////////
 
 
-
+// 페이드 블릿 변경 함수호출
 chgBanner(fadeBx);
 chgBanner(bulit); 
 
