@@ -71,7 +71,7 @@ window.addEventListener("DOMContentLoaded",()=>{
     함수명 : autoFade
   **************************************/
   function autoFade(){
-    autoI = setInterval(() => go_fade(),1000);
+    autoI = setInterval(() => go_fade(),2000);
   }
 
   autoFade();
@@ -89,9 +89,10 @@ window.addEventListener("DOMContentLoaded",()=>{
   bulit.forEach((ele,idx)=>{
     ele.onclick = () => {
       go_fade(idx);
-      snum = idx;
+      // snum = idx;
       /* 블릿변경 */
       // chgBanner(bulit);
+      // chgBanner(fadeBx);
     }
     
   }); ///////// forEach ////////////
@@ -121,31 +122,31 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 
   // 상품객체만큼 화면에 태그 데이터바인딩하기
-  // let hcode = "";
+  let hcode = "";
 
-  // for(let x in gdsObj){
-  //   // x는 속성명
-  //     hcode += `
-  //     <div class="item itbx1">
-  //       <div class="iimg mg1" 
-  //         style="background-image: 
-  //         url(./CSS/images/${gdsObj[x]["이미지"]}.jpg)">
-  //       </div>
-  //       <div class="itxt">
-  //         <div class="iname1">
-  //           <a href="#">${gdsObj[x]["상품명"]}</a>
-  //         </div>
-  //         <div class="ssn">
-  //           <a href="#">${gdsObj[x]["구분"]}</a>
-  //         </div>
-  //         <span>${gdsObj[x]["가격"]}</span>
-  //       </div>
-  //     </div>
-  //     `;
-  // } ////////// for in /////////
+  for(let x in gdsObj){
+    // x는 속성명
+      hcode += `
+      <div class="item itbx1">
+        <div class="iimg mg1" 
+          style="background-image: 
+          url(./CSS/images/${gdsObj[x]["이미지"]}.jpg)">
+        </div>
+        <div class="itxt">
+          <div class="iname1">
+            <a href="#">${gdsObj[x]["상품명"]}</a>
+          </div>
+          <div class="ssn">
+            <a href="#">${gdsObj[x]["구분"]}</a>
+          </div>
+          <span>${gdsObj[x]["가격"]}</span>
+        </div>
+      </div>
+      `;
+  } ////////// for in /////////
 
-  // gridbx.innerHTML = hcode;
-  // /////////////////// grid구역 태그넣기 //////////////////////////
+  gridbx.innerHTML = hcode;
+  /////////////////// grid구역 태그넣기 //////////////////////////
 
   
 
