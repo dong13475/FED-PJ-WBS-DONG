@@ -176,7 +176,7 @@ chgBanner(bulit);
 
 
 
-  
+
   ///////////////////// grid구역 태그넣기 //////////////////////////
   // 상품넣을 박스
   const gridbx = document.querySelector(".gridbx");
