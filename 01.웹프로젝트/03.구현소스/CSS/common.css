@@ -17,10 +17,6 @@ body * {
 #top{
   position: relative;
   z-index: 2;
-  /* max-width: 100%; */
-  /* max-width: 1800px; */
-  /* height: 100%; */
-  /* background-color: red; */
 }
 /* 상단전체속박스 */
 .top {
@@ -106,7 +102,7 @@ js로 마우스 아웃시 */
 } 
 .gnb:hover ul>li>a{
   text-shadow: 1px 1px  rgb(209, 209, 209);
-  color: rgb(2, 2, 2);
+  color: rgb(0, 0, 0);
   transition: .2s;
 } 
 
@@ -159,7 +155,7 @@ js로 마우스 아웃시 */
   gap: 17px;
 }
 .tmenu a{
-  font-size: 18px;
+  font-size: 15px;
 }
 
 /*********************** 2. 메인영역 ***********************/
@@ -231,7 +227,7 @@ js로 마우스 아웃시 */
   position: relative;
   margin: 0 auto;
   background-color: rgb(166, 166, 166);
-  width: 2.3px;
+  width: 2px;
   height: 18px;
   cursor: pointer;
 }

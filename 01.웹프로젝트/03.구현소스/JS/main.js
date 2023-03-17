@@ -155,7 +155,7 @@ chgBanner(bulit);
       <div class="item itbx1">
         <a href="#">
           <div class="iimg">
-            <img src="./images/item_imgs/ALL/${gdsObj[x]["이미지"]}.jpg">
+            <img src="./images/item_imgs/ALL/${gdsObj[x]["이미지1"]}.jpg">
           </div>
         </a>
         <div class="itxt">
@@ -169,18 +169,38 @@ chgBanner(bulit);
         </div>
       </div>
       `;
-      let img = document.querySelectorAll(".iimg img");
-      console.log(img);
-      console.log(gdsObj[x]["이미지"]);
+      
 
-      x.onmouseenter = () => {
-        gdsObj[x]["이미지2"]
-      };
+      // console.log(gdsObj[x]["이미지1"]);
+
+      // if(x[""]==x["이미지1"]){
+      //   x.onmouseenter = () => {
+      //     x = x["이미지2"]
+      //     console.log(x);
+      //   };
+      // }
+
   } ////////// for in /////////
 
   gridbx.innerHTML = hcode;
   /////////////////// grid구역 태그넣기 //////////////////////////
 
+  // 
+  const iimg = document.querySelector(".iimg");
+  console.log(iimg);
+  
+  iimg.addEventListener('mouseenter', () => {
+    for (let i in gdsObj) {
+      
+        const product = gdsObj[i];
+        if (product[i] == product["이미지1"]) {
+          
+          product[i] == product["이미지2"];
+          
+        }
+      }
+    
+  });
   
 
 }); ////////////////// 로드구역 ///////////////////
