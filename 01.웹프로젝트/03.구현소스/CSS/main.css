@@ -55,14 +55,15 @@
 .more_bt{
   margin: 0 auto;
   outline: 1px solid #000;
-  width: 100px;
-  height: 55px;
+  width: 80px;
+  height: 50px;
   text-align: center;
-  line-height: 55px;
+  line-height: 50px;
   
   font-weight: lighter;
 }
 .more_bt>a{
+  font-size: .8rem;
 font-family: "Open Sans", sans-serif;
 }
 

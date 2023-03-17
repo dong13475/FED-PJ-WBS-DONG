@@ -4,6 +4,9 @@
 window.addEventListener("DOMContentLoaded",()=>{
   console.log("로딩완료!");
   
+  document.addEventListener("dragstart", (event) => {
+    event.preventDefault();
+  });
 
   // GNB 마우스 오버시 서브메뉴 등장 변수 //
 
@@ -144,30 +147,38 @@ chgBanner(bulit);
 
 
   // 상품객체만큼 화면에 태그 데이터바인딩하기
-  // let hcode = "";
+  let hcode = "";
 
-  // for(let x in gdsObj){
-  //   // x는 속성명
-  //     hcode += `
-  //     <div class="item itbx1">
-  //       <div class="iimg mg1" 
-  //         style="background-image: 
-  //         url(./CSS/images/${gdsObj[x]["이미지"]}.jpg)">
-  //       </div>
-  //       <div class="itxt">
-  //         <div class="iname1">
-  //           <a href="#">${gdsObj[x]["상품명"]}</a>
-  //         </div>
-  //         <div class="ssn">
-  //           <a href="#">${gdsObj[x]["구분"]}</a>
-  //         </div>
-  //         <span>${gdsObj[x]["가격"]}</span>
-  //       </div>
-  //     </div>
-  //     `;
-  // } ////////// for in /////////
+  for(let x in gdsObj){
+    // x는 속성명
+      hcode += `
+      <div class="item itbx1">
+        <a href="#">
+          <div class="iimg">
+            <img src="./images/item_imgs/ALL/${gdsObj[x]["이미지"]}.jpg">
+          </div>
+        </a>
+        <div class="itxt">
+          <div class="iname1">
+            <a href="#">${gdsObj[x]["상품명"]}</a>
+          </div>
+          <div class="ssn">
+            ${gdsObj[x]["구분"]}
+          </div>
+          <span>${gdsObj[x]["가격"]}</span>
+        </div>
+      </div>
+      `;
+      let img = document.querySelectorAll(".iimg img");
+      console.log(img);
+      console.log(gdsObj[x]["이미지"]);
 
-  // gridbx.innerHTML = hcode;
+      x.onmouseenter = () => {
+        gdsObj[x]["이미지2"]
+      };
+  } ////////// for in /////////
+
+  gridbx.innerHTML = hcode;
   /////////////////// grid구역 태그넣기 //////////////////////////
 
   
