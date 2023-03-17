@@ -28,34 +28,38 @@ window.addEventListener("DOMContentLoaded",()=>{
   // console.log("페이드개수",scnt);
 
   // ////////////////////////////////////////////
-  let li = document.querySelectorAll(".gnb li");
+  let li = document.querySelectorAll(".gnb>ul>li");
   console.log(li);
   
-  li.forEach((ele)=>{
+
+  /*************************************** 
+    GNB 마우스 오버시 li 밑줄효과 (on,on2)
+  ***************************************/
+  li.forEach((ele,idx)=>{
     ele.onmouseenter = () => {
+      // 마우스오버시 클래스 on주고 on2지우기
       ele.classList.add("on");
-    };
+      ele.classList.remove("on2");
+      // 두번째 li에 오버시 smenu보이기
+      if(idx == 1){
+        smenu.style.opacity = 1;
+        smenu.style.height = hv + "px";
+      } //////// if /////////
+    }; /////// mouseenter ////////
     ele.onmouseleave = () => {
+      // 마우스아웃시 클래스 on2주기
       ele.classList.add("on2");
-    };
-  });
+      ele.classList.remove("on");
+      // 두번째 li에 아웃시 smenu 안보이기
+      if(idx == 1){
+        smenu.style.opacity = 0;
+        smenu.style.height = 0;
+      } //////// if ////////
+    }; ////// mouseleave ///////
+
+  }); /////// forEach ////////
   
 
-
-
-
-  /******************** 
-    GNB 마우스 오버시 
-  ********************/
-  // GNB 두번째 li에 마우스엔터시 smenu등장
-  sub.onmouseenter = () => {
-    smenu.style.opacity = 1;
-    smenu.style.height = hv + "px";
-  }; /// onmouseenter ///
-  sub.onmouseleave = () => {
-    smenu.style.opacity = 0;
-    smenu.style.height = 0;
-  }; /// onmouseleave ///
 
   /************************************** 
     [ 메인페이지 페이드 배너 넣기 함수 ]
