@@ -245,6 +245,7 @@ js로 마우스 아웃시 */
 }
 .indic li{
   padding: 5px;
+  cursor: pointer;
 }
 .bulit{
   position: relative;

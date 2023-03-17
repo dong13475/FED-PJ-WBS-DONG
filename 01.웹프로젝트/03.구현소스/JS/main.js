@@ -115,7 +115,9 @@ window.addEventListener("DOMContentLoaded",()=>{
   // console.log(bulit);
 
   bulit.forEach((ele,idx)=>{
-    ele.onclick = () => {
+    // 클릭이벤트는 부모인 li에 걸어줌!
+    // (클릭영역이 너무 작아서...)
+    ele.parentElement.onclick = () => {
       clearAuto();
       go_fade(0,idx);
     }; ///// click /////
