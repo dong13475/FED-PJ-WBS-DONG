@@ -16,8 +16,8 @@ window.addEventListener("DOMContentLoaded",()=>{
   // .smenu
   const smenu = document.querySelector(".smenu");
   // .smenu ol 의 높이변수
-  let hv = smenu.querySelector(".smenu ol").clientHeight;
-  // console.log(hv);
+  let shv = smenu.querySelector(".smenu ol").clientHeight;
+  // console.log(shv);
 
 
   // 페이드박스 li 변수 //
@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       // 두번째 li에 오버시 smenu보이기
       if(idx == 1){
         smenu.style.opacity = 1;
-        smenu.style.height = hv + "px";
+        smenu.style.height = shv + "px";
       } //////// if /////////
     }; /////// mouseenter ////////
     ele.onmouseleave = () => {
@@ -140,11 +140,46 @@ window.addEventListener("DOMContentLoaded",()=>{
 chgBanner(fadeBx);
 chgBanner(bulit); 
 
+  /**************************** 
+    스크롤 등장액션 구현하기
+  ****************************/
+  // 스크롤 등장대상: .item
+  const grid_item = document.querySelectorAll(".item");
+  console.log(grid_item);
+  // 화면높이값의 2/3구하기
+  const whv = (window.innerHeight / 3) * 2;
+  // console.log("2/3높이:",whv);
+  // 등장액션 대상 위치값 리턴함수 
+  const retVal = (ele) => ele.getBoundingClientRect().top;
+
+  ////// 클래스 넣기 함수 //////
+  const classIt = (ele) => {
+    // ele - 등장요소
+    // 대상요소의 현재 스크롤 위치
+    let gi_Val = retVal(ele);
+
+    // 0보다 크고 화면의 2/3보다 작은 구간!
+    if(gi_Val < whv && gi_Val > 0){
+      ele.classList.add("on");
+    } ////// 구간에 들어올시 "on"적용 if문 //////
+  }; ///////// classIt 함수 /////////
+
+
+  // 스크롤 이벤트 셋팅 /////////
+  window.addEventListener("scroll",()=>{
+    for(let x of grid_item) classIt(x);
+  }); ///////// scroll //////////////
+  
+  
+  
+
+
+
+
   
   ///////////////////// grid구역 태그넣기 //////////////////////////
   // 상품넣을 박스
   const gridbx = document.querySelector(".gridbx");
-
 
   // 상품객체만큼 화면에 태그 데이터바인딩하기
   let hcode = "";
@@ -186,21 +221,21 @@ chgBanner(bulit);
   /////////////////// grid구역 태그넣기 //////////////////////////
 
   // 
-  const iimg = document.querySelector(".iimg");
-  console.log(iimg);
+  // const iimg = document.querySelector(".iimg");
+  // console.log(iimg);
   
-  iimg.addEventListener('mouseenter', () => {
-    for (let i in gdsObj) {
+  // iimg.addEventListener('mouseenter', () => {
+  //   for (let i in gdsObj) {
       
-        const product = gdsObj[i];
-        if (product[i] == product["이미지1"]) {
+  //       const product = gdsObj[i];
+  //       if (product[i] == product["이미지1"]) {
           
-          product[i] == product["이미지2"];
+  //         product[i] == product["이미지2"];
           
-        }
-      }
+  //       }
+  //     }
     
-  });
+  // });
   
 
 }); ////////////////// 로드구역 ///////////////////

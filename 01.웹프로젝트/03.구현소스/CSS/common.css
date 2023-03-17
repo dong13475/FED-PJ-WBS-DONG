@@ -173,13 +173,22 @@ js로 마우스 아웃시 */
   display: flex;
   /* margin: 0 auto; */
 }
+/* 스크롤 등장액션 클래스 */
 .item{
+  transform: translateY(20%);
+  opacity: 0;
+  transition: 1.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+/* 등장클래스+.on */
+.item.on{
+  transform: translateY(0);
+  opacity: 1;
 }
 /* 아이템 공통속박스 */
 .iimg {
   aspect-ratio: 280/ 400;
   background: no-repeat center/cover;
-}
+} 
 /* 아이템 공통 이미지 */
 .iimg img {
   width: 100%;
