@@ -13,6 +13,8 @@ font-family: 'IBM Plex Sans KR', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
 
+/* 바디 밑 모든요소에 한글,영문폰트 입히기 
+한글전용,영문전용 폰트로하면 자동으로 인식해서 적용됨! */
 body{
   font-family: 'IBM Plex Sans KR','Open Sans', sans-serif;
 }

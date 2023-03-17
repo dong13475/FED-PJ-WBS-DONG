@@ -91,7 +91,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   function autoFade(){
     autoI = setInterval(() => go_fade(1,0),4000);
   }; //////// autoFade함수 /////////
-
+  // autoFade함수 호출!
   autoFade();
   
   let autoT;
@@ -138,12 +138,14 @@ window.addEventListener("DOMContentLoaded",()=>{
   } ////////// chgBanner 함수 /////////////
 
 
-// 페이드 블릿 변경 함수호출
-chgBanner(fadeBx);
-chgBanner(bulit); 
+  // 페이드 블릿 변경 함수호출
+  chgBanner(fadeBx);
+  chgBanner(bulit); 
 
-// 태그넣기
-insTags();
+  // 그리드 구역 태그넣기
+  // 그리드태그 hcode를 함수로 만들어 위쪽에 호출한다!
+  // * 스크롤이벤트 / 함수 아래쪽에 써서 인식안되었음! *
+  gridbx_Tags();
 
   /**************************** 
     스크롤 등장액션 구현하기
@@ -161,10 +163,10 @@ insTags();
   const classIt = (ele) => {
     // ele - 등장요소
     // 대상요소의 현재 스크롤 위치
-    let gi_Val = retVal(ele);
+    let grid_Val = retVal(ele);
 
     // 0보다 크고 화면의 2/3보다 작은 구간!
-    if(gi_Val < whv && gi_Val > 0){
+    if(grid_Val < whv && grid_Val > 0){
       ele.classList.add("on");
     } ////// 구간에 들어올시 "on"적용 if문 //////
   }; ///////// classIt 함수 /////////
@@ -204,7 +206,7 @@ insTags();
 
 
   ///////////////////// grid구역 태그넣기 //////////////////////////
-  function insTags(){
+  function gridbx_Tags(){
 
   // 상품넣을 박스
   const gridbx = document.querySelector(".gridbx");
@@ -233,42 +235,13 @@ insTags();
         </div>
       </div>
       `;
-      
-
-      // console.log(gdsObj[x]["이미지1"]);
-
-      // if(x[""]==x["이미지1"]){
-      //   x.onmouseenter = () => {
-      //     x = x["이미지2"]
-      //     console.log(x);
-      //   };
-      // }
-
   } ////////// for in /////////
 
+  // grid구역 태그넣기
   gridbx.innerHTML = hcode;
+  
+} /////////////// gridbx_Tags함수 ////////////////////////
 
-  ////////////// grid구역 태그넣기 ///////
-  
-} /////////////// insTags함수 ////////////////////////
-
-  // 
-  // const iimg = document.querySelector(".iimg");
-  // console.log(iimg);
-  
-  // iimg.addEventListener('mouseenter', () => {
-  //   for (let i in gdsObj) {
-      
-  //       const product = gdsObj[i];
-  //       if (product[i] == product["이미지1"]) {
-          
-  //         product[i] == product["이미지2"];
-          
-  //       }
-  //     }
-    
-  // });
-  
 
 }); ////////////////// 로드구역 ///////////////////
 //////////////////////////////////////////////////
