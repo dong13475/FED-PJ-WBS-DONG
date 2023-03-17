@@ -64,7 +64,7 @@
 }
 .more_bt>a{
   font-size: .8rem;
-font-family: "Open Sans", sans-serif;
+/* font-family: "Open Sans", sans-serif; */
 }
 
 .bx2 {
@@ -73,7 +73,7 @@ font-family: "Open Sans", sans-serif;
 /* 메인하단 배송설명박스 */
 .c_info{
   padding: 100px 0;
-  font-family: 'IBM Plex Sans KR', sans-serif;
+  /* font-family: 'IBM Plex Sans KR', sans-serif; */
   text-align: center;
 }
 .c_info01{

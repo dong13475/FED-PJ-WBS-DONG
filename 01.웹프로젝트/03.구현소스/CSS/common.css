@@ -94,7 +94,7 @@ js로 마우스 아웃시 */
   font-size: 1.4rem;
   color: #fff;
   text-shadow: 1px 1px 1px #262626;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
 }
 .gnb:hover ul{
   background-color: #fff;
@@ -138,7 +138,7 @@ js로 마우스 아웃시 */
 .smenu>ol>li>a{
   font-size: 1.3rem;
   color: rgb(58, 58, 58);
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   width: 100%;
   height: 100%;
 }
@@ -148,15 +148,22 @@ js로 마우스 아웃시 */
 
 /* 상단 아이콘 메뉴 */
 .tmenu{
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
+}
+.tmenu ul{
   position: absolute;
-  display: flex;
   top: 3vh;
-  right: 5vw;
+  right: 2vh;
+  display: flex;
   gap: 17px;
 }
 .tmenu a{
   font-size: 15px;
 }
+
 
 /*********************** 2. 메인영역 ***********************/
 /* 메인 그리드영역 */
@@ -194,6 +201,14 @@ js로 마우스 아웃시 */
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: none;
+}
+.iimg img:first-child,
+.iimg:hover img:last-child {
+  display: block;
+}
+.iimg:hover img:first-child {
+  display: none;
 }
 /* 아이템 공통 텍스트겉박스 */
 .itxt {
@@ -203,17 +218,17 @@ js로 마우스 아웃시 */
 /* 아이템 공통 시즌 설명 텍스트 */
 .ssn {
   font-size: min(13px, 3vw);
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
 }
 /* 아이템 공통 이름 텍스트 */
 .iname1 a {
   font-size: min(15px, 3vw);
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
 }
 /* 아이템 공통 가격 텍스트 */
 .itxt span {
   font-size: min(12px, 3vw);
-  font-family: "IBM Plex Sans KR", sans-serif;
+  /* font-family: "IBM Plex Sans KR", sans-serif; */
   color: #919191;
 }
 
@@ -277,7 +292,7 @@ js로 마우스 아웃시 */
   color: #c0c0c0;
   /* address요소 기본 이탤릭해제 */
   font-style: normal;
-  font-family: "IBM Plex Sans KR", sans-serif;
+  /* font-family: "IBM Plex Sans KR", sans-serif; */
 }
 .blink {
   box-sizing: border-box;

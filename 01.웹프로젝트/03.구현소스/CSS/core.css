@@ -13,6 +13,10 @@ font-family: 'IBM Plex Sans KR', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
 
+body{
+  font-family: 'IBM Plex Sans KR','Open Sans', sans-serif;
+}
+
 /* 초기화 */
 html,body,h1,h2,ul,ol{
   margin: 0;

@@ -140,6 +140,9 @@ window.addEventListener("DOMContentLoaded",()=>{
 chgBanner(fadeBx);
 chgBanner(bulit); 
 
+// 태그넣기
+insTags();
+
   /**************************** 
     스크롤 등장액션 구현하기
   ****************************/
@@ -183,11 +186,24 @@ chgBanner(bulit);
       (객체에서 "이미지1"을 "이미지2"로 변경) (main.js - 190)
   */
 
+      // 오버시 상품 뒤면 이미지 변경하기
+      // 대상: .iimg img
+      // const iimg = document.querySelectorAll(".iimg img");
+      // iimg.forEach(ele=>{
+      //   ele.onmouseenter=()=>ele.setAttribute("src",ele.getAttribute("src").replace("1","2"));
+      //   ele.onmouseleave=()=>ele.setAttribute("src",ele.getAttribute("src").replace("2","1"));
+      //   // ele.onmouseleave=()=>ele.setAttribute(속성명,값);
+      //   // ele.getAttribute("src").replace("2","1")
+      //   // ele.getAttribute(속성명).replace(바뀔값,바꿀값)
+      // });
+
 
 
 
 
   ///////////////////// grid구역 태그넣기 //////////////////////////
+  function insTags(){
+
   // 상품넣을 박스
   const gridbx = document.querySelector(".gridbx");
 
@@ -201,6 +217,7 @@ chgBanner(bulit);
         <a href="#">
           <div class="iimg">
             <img src="./images/item_imgs/ALL/${gdsObj[x]["이미지1"]}.jpg">
+            <img src="./images/item_imgs/ALL/${gdsObj[x]["이미지2"]}.jpg">
           </div>
         </a>
         <div class="itxt">
@@ -228,7 +245,10 @@ chgBanner(bulit);
   } ////////// for in /////////
 
   gridbx.innerHTML = hcode;
-  /////////////////// grid구역 태그넣기 //////////////////////////
+
+  ////////////// grid구역 태그넣기 ///////
+  
+} /////////////// insTags함수 ////////////////////////
 
   // 
   // const iimg = document.querySelector(".iimg");
