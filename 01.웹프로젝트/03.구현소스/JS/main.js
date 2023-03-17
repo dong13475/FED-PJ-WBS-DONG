@@ -5,11 +5,11 @@ window.addEventListener("DOMContentLoaded",()=>{
   console.log("로딩완료!");
   
 
-  // GNB 마우스 오버시 서브메뉴 등장 변수
-  // .gnb li 리스트
-  const gnb_li = document.querySelectorAll(".gnb>ul>li");
-  // .gnb li 두번째요소
-  let sub = gnb_li[1];
+  // GNB 마우스 오버시 서브메뉴 등장 변수 //
+
+  // gnb밑의 li
+  let li = document.querySelectorAll(".gnb>ul>li");
+  // console.log(li);
   // .smenu
   const smenu = document.querySelector(".smenu");
   // .smenu ol 의 높이변수
@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   // console.log(hv);
 
 
-  // 페이드박스 li 변수
+  // 페이드박스 li 변수 //
   const fadeBx = document.querySelectorAll(".fade_bx li");
   // console.log(fadeBx);
   // 슬라이드번호 변수 : 
@@ -27,9 +27,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   let scnt = fadeBx.length;
   // console.log("페이드개수",scnt);
 
-  // ////////////////////////////////////////////
-  let li = document.querySelectorAll(".gnb>ul>li");
-  console.log(li);
+  
   
 
   /*************************************** 
