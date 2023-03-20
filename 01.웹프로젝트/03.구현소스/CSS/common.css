@@ -195,40 +195,44 @@ js로 마우스 아웃시 */
   transform: translateY(0);
   opacity: 1;
 }
-/* 이미지 공통겉박스 */
-.iimg_bx{
-  position: relative;
-  aspect-ratio: 280 / 400;
-}
+
 /* 이미지 공통속박스 */
 .iimg {
-  /* aspect-ratio: 280/ 400; */
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  position: relative;
+  aspect-ratio: 280 / 400;
 } 
 /* 아이템 공통 이미지 */
 .iimg img {
+  position: absolute;
   width: 100%;
   height: 100%;
   /* 처음에 display:none 을 줘 안보이게함 */
-  display: none;
+  /* display: none; */
   /* opacity: 0; */
   object-fit: cover;
-  transition: .4s;
+  transition: opacity .3s;
+}
+/* 처음에 두번째이미지 숨기기 */
+.iimg img:last-child{
+  opacity: 0;
 }
 
+/* 이미지박스에 마우스 오버시 
+두번째 이미지 보이기 */
+.iimg:hover img:last-child{
+  opacity: 1;
+}
 
-/* 처음에 첫번째이미지 보이기 / 
+/* 처음에 display로 첫번째이미지 보이기 / 
 이미지박스에 마우스 오버시 두번째 이미지 보이기 */
-.iimg img:first-child,
+/* .iimg img:first-child,
 .iimg:hover img:last-child {
   display: block;
-}
+} */
 /* 이미지박스에 마우스 오버시 첫번째 이미지 숨기기 */
-.iimg:hover img:first-child {
+/* .iimg:hover img:first-child {
   display: none;
-}
+} */
 
 
 
