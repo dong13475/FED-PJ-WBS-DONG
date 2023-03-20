@@ -219,9 +219,11 @@ window.addEventListener("DOMContentLoaded",()=>{
       hcode += `
       <div class="item itbx1">
         <a href="#">
-          <div class="iimg">
-            <img src="./images/item_imgs/ALL/${gdsObj[x]["이미지1"]}.jpg">
-            <img src="./images/item_imgs/ALL/${gdsObj[x]["이미지2"]}.jpg">
+          <div class="iimg_bx">
+            <div class="iimg">
+              <img src="./images/item_imgs/ALL/${gdsObj[x]["이미지1"]}.jpg">
+              <img src="./images/item_imgs/ALL/${gdsObj[x]["이미지2"]}.jpg">
+            </div>
           </div>
         </a>
         <div class="itxt">

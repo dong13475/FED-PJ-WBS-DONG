@@ -39,6 +39,7 @@ a{
 html{
   font-size: 10px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* 이미지 리셋 */

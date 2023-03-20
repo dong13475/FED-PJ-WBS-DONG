@@ -195,19 +195,30 @@ js로 마우스 아웃시 */
   transform: translateY(0);
   opacity: 1;
 }
-/* 아이템 공통속박스 */
+/* 이미지 공통겉박스 */
+.iimg_bx{
+  position: relative;
+  aspect-ratio: 280 / 400;
+}
+/* 이미지 공통속박스 */
 .iimg {
-  aspect-ratio: 280/ 400;
-  background: no-repeat center/cover;
+  /* aspect-ratio: 280/ 400; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
 } 
 /* 아이템 공통 이미지 */
 .iimg img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   /* 처음에 display:none 을 줘 안보이게함 */
   display: none;
+  /* opacity: 0; */
+  object-fit: cover;
+  transition: .4s;
 }
+
+
 /* 처음에 첫번째이미지 보이기 / 
 이미지박스에 마우스 오버시 두번째 이미지 보이기 */
 .iimg img:first-child,
@@ -218,6 +229,10 @@ js로 마우스 아웃시 */
 .iimg:hover img:first-child {
   display: none;
 }
+
+
+
+
 /* 아이템 공통 텍스트겉박스 */
 .itxt {
   margin: 4px 0;
