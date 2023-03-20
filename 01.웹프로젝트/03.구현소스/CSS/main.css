@@ -50,29 +50,37 @@
   font-weight: lighter;
 }
 .button_bx{
-  padding: 40px 0;
+  padding: 50px 0;
 }
 .more_bt{
   margin: 0 auto;
   outline: 1px solid #000;
-  width: 80px;
-  height: 50px;
+  width: 85px;
+  height: 55px;
   text-align: center;
-  line-height: 50px;
+  line-height: 55px;
   
   font-weight: lighter;
 }
 .more_bt>a{
-  font-size: .8rem;
+  font-size: .9rem;
 /* font-family: "Open Sans", sans-serif; */
 }
 
+/* 스타일 박스 타이틀 */
+.style_tit{
+  text-align: center;
+  margin: 40px 0 50px;
+  font-size: 2.7rem;
+  font-weight: lighter;
+}
+
 .bx2 {
-  background-color: #e4e4e4;
+  /* background-color: #e4e4e4; */
 }
 /* 메인하단 배송설명박스 */
 .c_info{
-  padding: 100px 0;
+  padding: 50px 0 90px;
   /* font-family: 'IBM Plex Sans KR', sans-serif; */
   text-align: center;
 }

@@ -91,7 +91,7 @@ js로 마우스 아웃시 */
 } /* li_on2 키프레임 */
 
 .gnb>ul>li>a{
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #fff;
   text-shadow: 1px 1px 1px #262626;
   /* font-family: "Open Sans", sans-serif; */
@@ -165,7 +165,7 @@ js로 마우스 아웃시 */
   gap: 17px;
 }
 .tmenu a{
-  font-size: 15px;
+  font-size: 17px;
 }
 
 
@@ -179,16 +179,12 @@ js로 마우스 아웃시 */
   grid-template-columns: repeat(4, 1fr);
   gap: 30px 40px;
 }
-/* 각 아이템겉박스 */
-.itbx {
-  display: flex;
-  /* margin: 0 auto; */
-}
+
 /* 스크롤 등장액션 클래스 */
 .item{
   transform: translateY(20%);
   opacity: 0;
-  transition: 1.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  transition: 0.4s ease-in-out;
 }
 /* 등장클래스+.on */
 .item.on{
@@ -235,6 +231,37 @@ js로 마우스 아웃시 */
 } */
 
 
+/* 스타일 그리드영역 */
+.grid_style {
+  display: grid;
+  max-width: 1200px;
+  padding: 0 50px;
+  margin: 0 auto;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px 40px;
+}
+/* 스타일 이미지 */
+.simg{
+  position: relative;
+  aspect-ratio: 230 / 350;
+}
+/* 스타일 공통이미지 */
+.simg img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity .3s;
+}
+/* 처음에 두번째이미지 숨기기 */
+.simg img:last-child{
+  opacity: 0;
+}
+/* 이미지박스에 마우스 오버시 
+두번째 이미지 보이기 */
+.simg:hover img:last-child{
+  opacity: 1;
+}
 
 
 /* 아이템 공통 텍스트겉박스 */
@@ -305,7 +332,8 @@ js로 마우스 아웃시 */
 
 /*********************** 3. 하단영역 ***********************/
 .info {
-  background-color: rgb(105, 105, 105);
+  border-top: 1px solid #cacaca;
+  /* background-color: rgb(105, 105, 105); */
   height: 200px;
 }
 .addbx {

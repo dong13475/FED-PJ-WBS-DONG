@@ -147,34 +147,60 @@ window.addEventListener("DOMContentLoaded",()=>{
   // * 스크롤이벤트 / 함수 아래쪽에 써서 인식안되었음! *
   gridbx_Tags();
 
+  // 스타일 그리드 태그넣기
+  gridbx_style();
+  
   /**************************** 
     스크롤 등장액션 구현하기
   ****************************/
   // 스크롤 등장대상: .item
   const grid_item = document.querySelectorAll(".item");
-  console.log(grid_item);
+  // console.log(grid_item);
   // 화면높이값의 2/3구하기
   const whv = (window.innerHeight / 3) * 2;
   // console.log("2/3높이:",whv);
   // 등장액션 대상 위치값 리턴함수 
   const retVal = (ele) => ele.getBoundingClientRect().top;
 
-  ////// 클래스 넣기 함수 //////
-  const classIt = (ele) => {
-    // ele - 등장요소
+  
+  // ////// 클래스 넣기 함수 //////
+  // const classIt = (ele) => {
+  //   // ele - 등장요소
+  //   // 대상요소의 현재 스크롤 위치
+  //   let grid_Val = retVal(ele);
+    
+  //  // 0보다 크고 화면의 2/3보다  작은 구간!
+  //   if(grid_Val < whv && grid_Val > 0){
+  //     ele.classList.add("on");
+  //   } ////// 구간에 들어올시 "on"적용 if문 //////
+  // }; ///////// classIt 함수 /////////
+
+
+  // // 스크롤 이벤트 셋팅 /////////
+  // window.addEventListener("scroll",()=>{
+  //   for(let x of grid_item) classIt(x);
+  // }); ///////// scroll //////////////
+
+  const classIt = (ele, idx) => {
+    // ele - 등장요소, idx - 요소순번
     // 대상요소의 현재 스크롤 위치
     let grid_Val = retVal(ele);
 
-    // 0보다 크고 화면의 2/3보다 작은 구간!
-    if(grid_Val < whv && grid_Val > 0){
+    // 0보다 크고 화면의 2/3보다  작은 구간!
+    if (grid_Val < whv && grid_Val > 0) {
       ele.classList.add("on");
+      ele.style.transitionDelay = `${idx * 0.1}s`; 
     } ////// 구간에 들어올시 "on"적용 if문 //////
   }; ///////// classIt 함수 /////////
-
-
+  
   // 스크롤 이벤트 셋팅 /////////
-  window.addEventListener("scroll",()=>{
-    for(let x of grid_item) classIt(x);
+  window.addEventListener("scroll", () => {
+    // for (let i = 0; i < grid_item.length; i++) {
+    //   classIt(grid_item[i], i);
+    // }
+    grid_item.forEach((ele,idx)=>{
+      classIt(ele,idx);
+    }); //////// 아이템구역 분기 forEach //////////
   }); ///////// scroll //////////////
   
   
@@ -241,6 +267,34 @@ window.addEventListener("DOMContentLoaded",()=>{
   gridbx.innerHTML = hcode;
   
 } /////////////// gridbx_Tags함수 ////////////////////////
+
+
+////////////// 스타일 그리드 구역 태그넣기 //////////////
+function gridbx_style(){
+  // 상품 넣을 박스
+  const grid_style = document.querySelector(".grid_style");
+  console.log(grid_style);
+
+  let scode = "";
+
+  for(let x in gdsStyle){
+    scode += `
+      <div class="item">
+        <a href="#">
+          <div class="simg">
+            <img src="./images/item_imgs/STYLE/${gdsStyle[x]["이미지1"]}.jpg">
+            <img src="./images/item_imgs/STYLE/${gdsStyle[x]["이미지2"]}.jpg">
+          </div>
+        </a>
+      </div>
+    `;
+  } /////////// for in ////////////
+
+  // 스타일 구역 태그넣기
+  grid_style.innerHTML = scode;
+} ///////////// gridbx_style 함수 /////////////
+
+
 
 
 }); ////////////////// 로드구역 ///////////////////
