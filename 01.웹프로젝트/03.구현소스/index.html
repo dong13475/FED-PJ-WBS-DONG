@@ -10,7 +10,7 @@
     <!-- 외부 CSS 넣기 -->
     <link rel="stylesheet" href="./CSS/main.css" />
     <!-- 미디어 쿼리 넣기 -->
-    <link rel="stylesheet" href="./CSS/media.css">
+    <link rel="stylesheet" href="./CSS/media.css" />
     <!-- 데이터 JS -->
     <script src="./JS/data.js"></script>
     <!-- 메인 JS 넣기 -->
@@ -45,8 +45,15 @@
                 <span class="ir">쇼핑카트</span>
               </a>
             </li>
+            <li>
+              <!-- 탑메뉴 햄버거 버튼 -->
+              <div class="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </li>
           </ul>
-          <div class="ham"></div>
         </div>
         <!-- 상단로고 -->
         <h1 class="logo">
@@ -56,29 +63,31 @@
         </h1>
         <!-- 상단네비 -->
         <div id="gnb">
-          <nav class="gnb">
-            <ul>
-              <li><a id="" href="#">HOME</a></li>
-              <li>
-                <a id="" href="#">ITEM</a>
-                <div class="smenu">
-                  <ol>
-                    <li><a href="#">ALL</a></li>
-                    <li><a href="#">OUTER</a></li>
-                    <li><a href="#">TOP</a></li>
-                    <li><a href="#">BOTTOM</a></li>
-                    <li><a href="#">ACC</a></li>
-                  </ol>
-                </div>
-              </li>
-              <li><a id="" href="#">STYLE</a></li>
-              <li><a id="" href="#">Q&A</a></li>
-              <li><a id="" href="#">ABOUT</a></li>
-              <li><a id="" href="#">CONTACT</a></li>
-            </ul>
-          </nav>
+          <!-- gnb 박스 영역 -->
+          <div class="gnb_bx">
+            <nav class="gnb">
+              <ul>
+                <li><a id="" href="#">HOME</a></li>
+                <li>
+                  <a id="" href="#">ITEM</a>
+                  <div class="smenu">
+                    <ol>
+                      <li><a href="#">ALL</a></li>
+                      <li><a href="#">OUTER</a></li>
+                      <li><a href="#">TOP</a></li>
+                      <li><a href="#">BOTTOM</a></li>
+                      <li><a href="#">ACC</a></li>
+                    </ol>
+                  </div>
+                </li>
+                <li><a id="" href="#">STYLE</a></li>
+                <li><a id="" href="#">Q&A</a></li>
+                <li><a id="" href="#">ABOUT</a></li>
+                <li><a id="" href="#">CONTACT</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        
       </header>
     </div>
     <!-- 2. 메인영역 -->
@@ -87,27 +96,27 @@
         <ul class="fade_bx">
           <li class="on">
             <a href="#">
-              <img src="./images/bg_imgs/main01.jpg" alt="">
+              <img src="./images/bg_imgs/main01.jpg" alt="" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/bg_imgs/main02.jpg"  alt="">
+              <img src="./images/bg_imgs/main02.jpg" alt="" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/bg_imgs/main03.jpg" alt="">
+              <img src="./images/bg_imgs/main03.jpg" alt="" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/bg_imgs/main04.jpg" alt="">
+              <img src="./images/bg_imgs/main04.jpg" alt="" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/bg_imgs/main05.jpg" alt="">
+              <img src="./images/bg_imgs/main05.jpg" alt="" />
             </a>
           </li>
         </ul>
@@ -134,7 +143,6 @@
           </li>
         </ul>
       </section>
-
     </div>
     <section class="item_section">
       <div class="bx1">
@@ -142,7 +150,7 @@
       </div>
       <!-- 그리드영역 -->
       <div class="gridbx"></div>
-      
+
       <!-- 버튼 부모박스 -->
       <div class="button_bx">
         <!-- MORE 버튼 -->

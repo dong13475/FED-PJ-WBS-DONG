@@ -153,9 +153,11 @@ window.addEventListener("DOMContentLoaded",()=>{
   /**************************** 
     스크롤 등장액션 구현하기
   ****************************/
-  // 스크롤 등장대상: .item
+  // 스크롤 그리드 등장대상: .item
   const grid_item = document.querySelectorAll(".item");
   // console.log(grid_item);
+  // 스크롤 스타일 등장대상: .sitem
+  const s_item = document.querySelectorAll(".sitem");
   // 화면높이값의 2/3구하기
   const whv = (window.innerHeight / 3) * 2;
   // console.log("2/3높이:",whv);
@@ -200,7 +202,10 @@ window.addEventListener("DOMContentLoaded",()=>{
     // }
     grid_item.forEach((ele,idx)=>{
       classIt(ele,idx);
-    }); //////// 아이템구역 분기 forEach //////////
+    }); //////// 그리드아이템 분기 forEach //////////
+    s_item.forEach((ele,idx)=>{
+      classIt(ele,idx);
+    }); /////////// 스타일 아이템 분기 forEach /////////
   }); ///////// scroll //////////////
   
   
@@ -279,7 +284,7 @@ function gridbx_style(){
 
   for(let x in gdsStyle){
     scode += `
-      <div class="item">
+      <div class="sitem">
         <a href="#">
           <div class="simg">
             <img src="./images/item_imgs/STYLE/${gdsStyle[x]["이미지1"]}.jpg">

@@ -37,6 +37,7 @@ body * {
   height: 75px;
 }
 /* GNB영역 */
+
 .gnb>ul {
   display: flex;
   justify-content: center;
@@ -146,7 +147,7 @@ js로 마우스 아웃시 */
   background-color: #e4e4e492;
 }
 
-/* 상단 아이콘 메뉴 */
+/* 상단 탑메뉴 아이콘 박스 */
 .tmenu{
   /* 원하는 요소에 max-width값을 주려면 
   부모요소에 max-width를 주고 마영오를 해야한다 
@@ -159,14 +160,54 @@ js로 마우스 아웃시 */
 .tmenu ul{
   position: absolute;
   top: 3vh;
-  right: 2vh;
+  right: 5vh;
   /* 플렉스박스 */
   display: flex;
   gap: 17px;
 }
 .tmenu a{
-  font-size: 17px;
+  font-size: 20px;
 }
+/* 햄버거 버튼 미디어쿼리 1200px에서 나옴 */
+.tmenu ul .ham{
+  position: fixed;
+  top: 3.2vh;
+  width: 20px;
+  height: 20px;
+  /* background-color: #000; */
+  visibility: hidden;
+  opacity: 0;
+}
+.ham span{
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: .3s;
+}
+/* 햄버거 span 초기셋팅 */
+.ham span:nth-child(1){
+  top: 0px;
+}
+.ham span:nth-child(2){
+  top: 7px;
+}
+.ham span:nth-child(3){
+  top: 14px;
+}
+/* 햄버거 클래스 on 추가시 */
+.ham.on span:nth-child(1){
+  transform: rotate(45deg);
+  top: 7px;
+}
+.ham.on span:nth-child(2){
+  width: 0;
+}
+.ham.on span:nth-child(3){
+  transform: rotate(-45deg);
+  top: 7px;
+}
+
 
 
 /*********************** 2. 메인영역 ***********************/
@@ -188,6 +229,17 @@ js로 마우스 아웃시 */
 }
 /* 등장클래스+.on */
 .item.on{
+  transform: translateY(0);
+  opacity: 1;
+}
+/* 스크롤 등장액션 클래스 */
+.sitem{
+  transform: translateY(20%);
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+/* 등장클래스+.on */
+.sitem.on{
   transform: translateY(0);
   opacity: 1;
 }
@@ -334,13 +386,13 @@ js로 마우스 아웃시 */
 .info {
   border-top: 1px solid #cacaca;
   /* background-color: rgb(105, 105, 105); */
-  height: 200px;
+  height: 230px;
 }
 .addbx {
   position: relative;
 }
 .addbx address {
-  transform: translateY(58%);
+  transform: translateY(84%);
   width: 100vw;
   height: 100%;
   text-align: center;
@@ -349,6 +401,7 @@ js로 마우스 아웃시 */
   /* address요소 기본 이탤릭해제 */
   font-style: normal;
   /* font-family: "IBM Plex Sans KR", sans-serif; */
+  line-height: 20px;
 }
 .blink {
   box-sizing: border-box;

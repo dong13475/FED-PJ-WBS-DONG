@@ -3,41 +3,55 @@
 /* 메인페이지 미디어쿼리 - media.css */
 
 /* 1200px 사이즈 이하 미디어쿼리 시작 */
-@media screen and (max-width:1200px) {
-  .tmenu ul{
-    display: none;
+@media screen and (max-width: 1200px) {
+  /* 상단탑메뉴 */
+  .tmenu ul {
+    right: 8vw;
   }
-  .ham{
-    position: absolute;
-    top: 2vw;
-    right: 2vh;
-    width: 40px;
-    height: 40px;
-    background-color: #000;
+  /* 탑메뉴 햄버거 버튼 */
+  .tmenu ul .ham {
+    visibility: visible;
+    opacity: 1;
+    z-index: 3;
   }
-} 
+  /***************** GNB영역 *****************/
+  /* gnb박스 영역 */
+.gnb_bx{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40vw;
+  height: 100vh;
+  /* background-color: #000; */
+  outline: 2px dotted red;
+}
+  .gnb > ul {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 0 45px;
+    transition: 0.4s;
+    padding: 300px 5px;
+  }
+}
 /* 1200px 사이즈 이하 미디어쿼리 끝 */
 
 /* 1200px 사이즈 이하 미디어쿼리 시작 */
-@media screen and (max-width:1200px) {
-  
-} 
+@media screen and (max-width: 1200px) {
+}
 /* 1200px 사이즈 이하 미디어쿼리 끝 */
 
 /* 1200px 사이즈 이하 미디어쿼리 시작 */
-@media screen and (max-width:1200px) {
-  
-} 
+@media screen and (max-width: 1200px) {
+}
 /* 1200px 사이즈 이하 미디어쿼리 끝 */
 
 /* 1200px 사이즈 이하 미디어쿼리 시작 */
-@media screen and (max-width:1200px) {
-  
-} 
+@media screen and (max-width: 1200px) {
+}
 /* 1200px 사이즈 이하 미디어쿼리 끝 */
 
 /* 1200px 사이즈 이하 미디어쿼리 시작 */
-@media screen and (max-width:1200px) {
-  
-} 
+@media screen and (max-width: 1200px) {
+}
 /* 1200px 사이즈 이하 미디어쿼리 끝 */
