@@ -176,10 +176,10 @@ window.addEventListener("DOMContentLoaded",()=>{
   // 그리드 구역 태그넣기
   // 그리드태그 hcode를 함수로 만들어 위쪽에 호출한다!
   // * 스크롤이벤트 / 함수 아래쪽에 써서 인식안되었음! *
-  gridbx_Tags();
+  gridbxTags();
 
   // 스타일 그리드 태그넣기
-  gridbx_style();
+  gridbxStyle();
   
   /**************************** 
     스크롤 등장액션 구현하기
@@ -268,7 +268,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 
   ///////////////////// grid구역 태그넣기 //////////////////////////
-  function gridbx_Tags(){
+  function gridbxTags(){
 
   // 상품넣을 박스
   const gridbx = document.querySelector(".gridbx");
@@ -306,7 +306,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 
 ////////////// 스타일 그리드 구역 태그넣기 //////////////
-function gridbx_style(){
+function gridbxStyle(){
   // 상품 넣을 박스
   const grid_style = document.querySelector(".grid_style");
   // console.log(grid_style);
