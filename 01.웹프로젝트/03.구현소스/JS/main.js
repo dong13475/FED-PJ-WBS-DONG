@@ -4,9 +4,15 @@
 window.addEventListener("DOMContentLoaded",()=>{
   console.log("로딩완료!");
   
+  // 드래그 방지 함수 //
   document.addEventListener("dragstart", (event) => {
     event.preventDefault();
   });
+
+  // 새로고침시 스크롤 맨위로 //
+  setTimeout(()=>{
+    window.scrollTo(0,0);
+  },100); // 0.1초정도는 줘야효과있음!
 
   // GNB 마우스 오버시 서브메뉴 등장 변수 //
 
@@ -19,7 +25,6 @@ window.addEventListener("DOMContentLoaded",()=>{
   let shv = smenu.querySelector(".smenu ol").clientHeight;
   // console.log(shv);
 
-
   // 페이드박스 li 변수 //
   const fadeBx = document.querySelectorAll(".fade_bx li");
   // console.log(fadeBx);
@@ -29,36 +34,62 @@ window.addEventListener("DOMContentLoaded",()=>{
   // 페이드개수 변수
   let scnt = fadeBx.length;
   // console.log("페이드개수",scnt);
-
   
   
 
+  
+  /********************************************** 
+    상단 탑메뉴 햄버거 버튼 클릭시 토글기능구현
+  **********************************************/
+  // 1. 대상 : .ham(이벤트/변경), .gnb_bx(변경)
+  const ham = document.querySelector(".ham");
+  const gnb_bx = document.querySelector(".gnb_bx");
+  // console.log(ham,gnb_bx);
+  
+  // 2. 이벤트설정
+  ham.onclick = () => {
+    ham.classList.toggle("on");
+    gnb_bx.classList.toggle("on");
+    document.body.classList.toggle("on");
+    document.querySelector("html").classList.toggle("on");
+    // if(document.querySelector("html").style.overflow = 'hidden'){
+    //   document.querySelector("html").style.overflow = 'auto';
+    // }
+    // if(ham.classList.toggle("on")){
+    //   document.body.style.backgroundColor = "rgba(0, 0, 0, 0.459)"
+    // }
+  }; /////////// 햄버거버튼 클릭 함수 /////////
+  
+  
+  
+  
   /*************************************** 
     GNB 마우스 오버시 li 밑줄효과 (on,on2)
   ***************************************/
-  li.forEach((ele,idx)=>{
-    ele.onmouseenter = () => {
-      // 마우스오버시 클래스 on주고 on2지우기
-      ele.classList.add("on");
-      ele.classList.remove("on2");
-      // 두번째 li에 오버시 smenu보이기
-      if(idx == 1){
-        smenu.style.opacity = 1;
-        smenu.style.height = shv + "px";
-      } //////// if /////////
-    }; /////// mouseenter ////////
-    ele.onmouseleave = () => {
-      // 마우스아웃시 클래스 on2주기
-      ele.classList.add("on2");
-      ele.classList.remove("on");
-      // 두번째 li에 아웃시 smenu 안보이기
-      if(idx == 1){
-        smenu.style.opacity = 0;
-        smenu.style.height = 0;
-      } //////// if ////////
-    }; ////// mouseleave ///////
+    li.forEach((ele,idx)=>{
+      ele.onmouseenter = () => {
+        // 마우스오버시 클래스 on주고 on2지우기
+        ele.classList.add("on");
+        ele.classList.remove("on2");
+        // 두번째 li에 오버시 smenu보이기
+        if(idx == 1){
+          smenu.style.opacity = 1;
+          smenu.style.height = shv + "px";
+        } //////// if /////////
+      }; /////// mouseenter ////////
+      ele.onmouseleave = () => {
+        // 마우스아웃시 클래스 on2주기
+        ele.classList.add("on2");
+        ele.classList.remove("on");
+        // 두번째 li에 아웃시 smenu 안보이기
+        if(idx == 1){
+          smenu.style.opacity = 0;
+          smenu.style.height = 0;
+        } //////// if ////////
+      }; ////// mouseleave ///////
+    }); /////// forEach ////////
 
-  }); /////// forEach ////////
+  
   
 
 
@@ -278,7 +309,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 function gridbx_style(){
   // 상품 넣을 박스
   const grid_style = document.querySelector(".grid_style");
-  console.log(grid_style);
+  // console.log(grid_style);
 
   let scode = "";
 
