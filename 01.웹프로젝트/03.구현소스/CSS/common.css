@@ -26,7 +26,7 @@ html.on{
   z-index: 2;
 }
 /* 상단전체속박스 */
-.top {
+.toP {
   position: fixed;
   top: 0;
   left: 0;

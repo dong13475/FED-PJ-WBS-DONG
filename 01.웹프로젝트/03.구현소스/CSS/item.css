@@ -38,17 +38,7 @@
   transform: translateY(0);
   opacity: 1;
 }
-/* 스크롤 등장액션 클래스 */
-.sitem{
-  transform: translateY(20%);
-  opacity: 0;
-  transition: 0.4s ease-in-out;
-}
-/* 등장클래스+.on */
-.sitem.on{
-  transform: translateY(0);
-  opacity: 1;
-}
+
 
 /* 이미지 공통속박스 */
 .iimg {

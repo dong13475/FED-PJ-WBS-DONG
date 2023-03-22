@@ -1,4 +1,17 @@
-// 웹프로젝트 POLYTERU JS - main.js
+//  POLYTERU item JS - item.js
+
+// 넘어온 url 받기! pm -> 전달값변수
+let pm = location.href;
+// location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
+
+// 문자열 잘라서 값 읽어오기
+// -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
+pm = pm.split("?")[1].split("=")[1];
+
+// pm값 특수문자 복원하기
+pm = decodeURIComponent(pm);
+
+console.log(pm);
 
 //////////// 로드구역 /////////////
 window.addEventListener("DOMContentLoaded",()=>{
@@ -94,7 +107,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   ****************************/
   // 스크롤 그리드 등장대상: .item
   const grid_item = document.querySelectorAll(".item");
-  console.log(grid_item);
+  // console.log(grid_item);
   // 화면높이값의 2/3구하기
   const whv = (window.innerHeight / 3) * 2;
   // console.log("2/3높이:",whv);
@@ -127,9 +140,9 @@ window.addEventListener("DOMContentLoaded",()=>{
 
   }; ///////// classIt 함수 /////////
   const qqq = document.querySelectorAll(".smenu li");
-  console.log(qqq);
+  // console.log(qqq);
   let liName = qqq.textContent;
-  console.log(liName);
+  // console.log(liName);
   
     setTimeout(()=>{
       grid_item.forEach((ele,idx)=>{
