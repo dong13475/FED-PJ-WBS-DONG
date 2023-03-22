@@ -25,17 +25,8 @@ window.addEventListener("DOMContentLoaded",()=>{
   let shv = smenu.querySelector(".smenu ol").clientHeight;
   // console.log(shv);
   const move_top = document.querySelector(".move_top");
-  console.log(move_top);
+  // console.log(move_top);
 
-  // 페이드박스 li 변수 //
-  const fadeBx = document.querySelectorAll(".fade_bx li");
-  // console.log(fadeBx);
-  // 슬라이드번호 변수 : 
-  // 배너 이미지와 블릿을 통일시켜주는 중요한변수
-  let snum = 0;
-  // 페이드개수 변수
-  let scnt = fadeBx.length;
-  console.log("페이드개수",scnt);
   
   
 
@@ -90,99 +81,13 @@ window.addEventListener("DOMContentLoaded",()=>{
         } //////// if ////////
       }; ////// mouseleave ///////
     }); /////// forEach ////////
-
-  
   
 
-
-  /************************************** 
-    [ 메인페이지 페이드 배너 넣기 함수 ]
-    함수명 : go_fade
-  **************************************/
-  const go_fade = (dir,seq) => { // dir-방향,seq-순번
-    // console.log("페이드번호",dir,seq);
-    if(dir){
-      console.log("dir",dir);
-      snum++;
-      if (snum === scnt) snum = 0;
-    } ///// if /////
-    else{ // dir이 0일경우(즉, 블릿클릭일때)
-      snum = seq;
-    } ///// else /////
-
-    // 페이드 블릿 변경 함수호출
-    chgBanner(fadeBx);
-    chgBanner(bulit); 
-
-  }; ///////// go_fade 함수 //////////
-
-
-  let autoI;
-  /************************************** 
-    [ 인터발함수 설정하기 ]
-    함수명 : autoFade
-  **************************************/
-  function autoFade(){
-    autoI = setInterval(() => go_fade(1,0),4000);
-  }; //////// autoFade함수 /////////
-  // autoFade함수 호출!
-  autoFade();
-  
-  let autoT;
-  /****************************************** 
-    [ 블릿 클릭시 인터발함수 지우고 다시셋팅 ]
-    함수명 : clearAuto
-  ******************************************/
-  function clearAuto(){
-    clearInterval(autoI);
-    clearTimeout(autoT);
-    autoT = setTimeout(autoFade,5000);
-  } /////// clearAuto함수 /////////
-  
-
-  /***************************************** 
-    [ 클릭이벤트 함수 설정하기 ]
-  *****************************************/
-
-  // 이벤트 대상 : .bulit 
-  const bulit = document.querySelectorAll(".bulit");
-  // console.log(bulit);
-
-  bulit.forEach((ele,idx)=>{
-    // 클릭이벤트는 부모인 li에 걸어줌!
-    // (클릭영역이 너무 작아서...)
-    ele.parentElement.onclick = () => {
-      clearAuto();
-      go_fade(0,idx);
-    }; ///// click /////
-    
-  }); ///////// forEach ////////////
-
-
-  /*********************************** 
-    페이드 / 블릿 변경기능 공통함수
-    함수명 : chgBanner
-  ***********************************/
-
-  function chgBanner(obj){
-    // 전체 리스트 초기화
-    obj.forEach(ele => ele.classList.remove("on"));
-    // 해당순번 li에 클래스 "on" 넣기
-    obj[snum].classList.add("on");
-  } ////////// chgBanner 함수 /////////////
-
-
-  // 페이드 블릿 변경 함수호출
-  chgBanner(fadeBx);
-  chgBanner(bulit); 
 
   // 그리드 구역 태그넣기
   // 그리드태그 hcode를 함수로 만들어 위쪽에 호출한다!
   // * 스크롤이벤트 / 함수 아래쪽에 써서 인식안되었음! *
   gridbxTags();
-
-  // 스타일 그리드 태그넣기
-  gridbxStyle();
   
   /**************************** 
     스크롤 등장액션 구현하기
@@ -197,21 +102,6 @@ window.addEventListener("DOMContentLoaded",()=>{
   // console.log("2/3높이:",whv);
   // 등장액션 대상 위치값 리턴함수 
   const retVal = (ele) => ele.getBoundingClientRect().top;
-
-  
-  // ////// 클래스 넣기 함수 //////
-  // const classIt = (ele) => {
-  //   // ele - 등장요소
-  //   // 대상요소의 현재 스크롤 위치
-  //   let grid_Val = retVal(ele);
-    
-  //  // 0보다 크고 화면의 2/3보다  작은 구간!
-  //   if(grid_Val < whv && grid_Val > 0){
-  //     ele.classList.add("on");
-  //   } ////// 구간에 들어올시 "on"적용 if문 //////
-  // }; ///////// classIt 함수 /////////
-
-
 
   const classIt = (ele, idx) => {
     // ele - 등장요소, idx - 요소순번
@@ -244,37 +134,8 @@ window.addEventListener("DOMContentLoaded",()=>{
     grid_item.forEach((ele,idx)=>{
       classIt(ele,idx);
     }); //////// 그리드아이템 분기 forEach //////////
-    s_item.forEach((ele,idx)=>{
-      classIt(ele,idx);
-    }); /////////// 스타일 아이템 분기 forEach /////////
   }); ///////// scroll //////////////
   
-  
-  /* 
-    [ 질문할것 ]
-    - 폰트 전체에 줄수있는지 (영문,한글따로)
-    - 블릿요소 크기가 제각각 (따로 영역을 넓히는 방법)
-      (common.css - 220)
-    - 상단영역 max-width : 1300px 로 주고 부모박스에 
-      배경색 흰색으로 해서 구분하는법 (common.css - 17)
-    - 그리드 영역 스크롤액션 적용안됨 (common.css - 177)
-    - 그리드영역 아이템박스 마우스 오버시 다음 이미지 나타내기
-      (객체에서 "이미지1"을 "이미지2"로 변경) (main.js - 190)
-  */
-
-      // 오버시 상품 뒤면 이미지 변경하기
-      // 대상: .iimg img
-      // const iimg = document.querySelectorAll(".iimg img");
-      // iimg.forEach(ele=>{
-      //   ele.onmouseenter=()=>ele.setAttribute("src",ele.getAttribute("src").replace("1","2"));
-      //   ele.onmouseleave=()=>ele.setAttribute("src",ele.getAttribute("src").replace("2","1"));
-      //   // ele.onmouseleave=()=>ele.setAttribute(속성명,값);
-      //   // ele.getAttribute("src").replace("2","1")
-      //   // ele.getAttribute(속성명).replace(바뀔값,바꿀값)
-      // });
-
-
-
 
 
   ///////////////////// grid구역 태그넣기 //////////////////////////
@@ -313,33 +174,6 @@ window.addEventListener("DOMContentLoaded",()=>{
   gridbx.innerHTML = hcode;
   
 } /////////////// gridbx_Tags함수 ////////////////////////
-
-
-////////////// 스타일 그리드 구역 태그넣기 //////////////
-function gridbxStyle(){
-  // 상품 넣을 박스
-  const grid_style = document.querySelector(".grid_style");
-  // console.log(grid_style);
-
-  let scode = "";
-
-  for(let x in gdsStyle){
-    scode += `
-      <div class="sitem">
-        <a href="#">
-          <div class="simg">
-            <img src="./images/item_imgs/STYLE/${gdsStyle[x]["이미지1"]}.jpg">
-            <img src="./images/item_imgs/STYLE/${gdsStyle[x]["이미지2"]}.jpg">
-          </div>
-        </a>
-      </div>
-    `;
-  } /////////// for in ////////////
-
-  // 스타일 구역 태그넣기
-  grid_style.innerHTML = scode;
-} ///////////// gridbx_style 함수 /////////////
-
 
 
 

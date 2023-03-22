@@ -38,7 +38,7 @@ html.on{
   background-color: #fff;
   text-align: center;
   padding: 20px 0 20px;
-  box-shadow: 0 2px 4px #afadad65;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.432);
 }
 .logo img {
   height: 75px;
@@ -102,14 +102,14 @@ js로 마우스 아웃시 */
   font-size: 1.5rem;
   color: #fff;
   text-shadow: 1px 1px 1px #262626;
-  /* font-family: "Open Sans", sans-serif; */
+  font-weight: 500;
 }
 .gnb:hover ul{
   background-color: #fff;
-  box-shadow: 0 2px 4px #afadad65;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.432);
 } 
 .gnb:hover ul>li>a{
-  text-shadow: 1px 1px  rgb(209, 209, 209);
+  text-shadow: none;
   color: rgb(0, 0, 0);
   transition: .2s;
 } 
@@ -135,7 +135,8 @@ js로 마우스 아웃시 */
   overflow: hidden;
   /* 트랜지션 */
   transition:  .4s ease-in-out;
-  box-shadow: -2px 2px 2px  #afadad65,2px 2px 2px  #afadad65;
+  box-shadow: -1px 1px 2px  rgba(0, 0, 0, 0.432),
+  1px 1px 2px  rgba(0, 0, 0, 0.432);
 }
 .smenu ol{
   text-align: center;
@@ -187,6 +188,7 @@ js로 마우스 아웃시 */
   width: 100%;
   height: 2px;
   background-color: #000;
+  border-radius: 1px;
   transition: .3s;
 }
 /* 햄버거 span 초기셋팅 */
@@ -211,183 +213,29 @@ js로 마우스 아웃시 */
   transform: rotate(-45deg);
   top: 7px;
 }
-.gnb_bx{
-  /* visibility: hidden; */
-}
+
 /* 어카운트 박스 */
 .account{
   visibility: hidden;
 }
 
-
-
-/*********************** 2. 메인영역 ***********************/
-/* 메인 그리드영역 */
-.gridbx {
-  display: grid;
-  max-width: 1200px;
-  padding: 0 50px;
-  margin: 0 auto;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px 40px;
-}
-/* 스크롤 등장액션 클래스 */
-.item{
-  transform: translateY(20%);
+/* 상단이동버튼 */
+.move_top{
+  position: fixed;
+  top: 80vh;
+  right: 5vw;
+  width: 40px;
+  font-size: 40px;
+  visibility: hidden;
   opacity: 0;
-  transition: 0.4s ease-in-out;
+  transition: .8s;
 }
-/* 등장클래스+.on */
-.item.on{
-  transform: translateY(0);
+.move_top.on{
   opacity: 1;
-}
-/* 스크롤 등장액션 클래스 */
-.sitem{
-  transform: translateY(20%);
-  opacity: 0;
-  transition: 0.4s ease-in-out;
-}
-/* 등장클래스+.on */
-.sitem.on{
-  transform: translateY(0);
-  opacity: 1;
+  visibility: visible;
+  z-index: 1;
 }
 
-/* 이미지 공통속박스 */
-.iimg {
-  position: relative;
-  aspect-ratio: 280 / 400;
-} 
-/* 아이템 공통 이미지 */
-.iimg img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  /* 처음에 display:none 을 줘 안보이게함 */
-  /* display: none; */
-  /* opacity: 0; */
-  object-fit: cover;
-  transition: opacity .3s;
-}
-/* 처음에 두번째이미지 숨기기 */
-.iimg img:last-child{
-  opacity: 0;
-}
-
-/* 이미지박스에 마우스 오버시 
-두번째 이미지 보이기 */
-.iimg:hover img:last-child{
-  opacity: 1;
-}
-
-/* 처음에 display로 첫번째이미지 보이기 / 
-이미지박스에 마우스 오버시 두번째 이미지 보이기 */
-/* .iimg img:first-child,
-.iimg:hover img:last-child {
-  display: block;
-} */
-/* 이미지박스에 마우스 오버시 첫번째 이미지 숨기기 */
-/* .iimg:hover img:first-child {
-  display: none;
-} */
-
-
-/* 스타일 그리드영역 */
-.grid_style {
-  display: grid;
-  max-width: 1200px;
-  padding: 0 50px;
-  margin: 0 auto;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px 40px;
-}
-/* 스타일 이미지 */
-.simg{
-  position: relative;
-  aspect-ratio: 230 / 350;
-}
-/* 스타일 공통이미지 */
-.simg img{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity .3s;
-}
-/* 처음에 두번째이미지 숨기기 */
-.simg img:last-child{
-  opacity: 0;
-}
-/* 이미지박스에 마우스 오버시 
-두번째 이미지 보이기 */
-.simg:hover img:last-child{
-  opacity: 1;
-}
-
-
-/* 아이템 공통 텍스트겉박스 */
-.itxt {
-  margin: 4px 0;
-  text-align: center;
-}
-/* 아이템 공통 시즌 설명 텍스트 */
-.ssn {
-  font-size: min(13px, 3vw);
-  /* font-family: "Open Sans", sans-serif; */
-}
-/* 아이템 공통 이름 텍스트 */
-.iname1 a {
-  font-size: min(15px, 3vw);
-  /* font-family: "Open Sans", sans-serif; */
-}
-/* 아이템 공통 가격 텍스트 */
-.itxt span {
-  font-size: min(12px, 3vw);
-  /* font-family: "IBM Plex Sans KR", sans-serif; */
-  color: #919191;
-}
-
-/* 메인 배너 블릿박스 */
-.indic{
-  position: absolute;
-  display: flex;
-  /* gap: 12px; */
-  /* outline: 1px solid red; */
-  bottom: 3%;
-  left: 50%;
-  transform: translateX(-50%);
-  /* z-index: 2; */
-}
-.indic li{
-  padding: 5px;
-  cursor: pointer;
-}
-.bulit{
-  position: relative;
-  margin: 0 auto;
-  background-color: rgb(166, 166, 166);
-  width: 2px;
-  height: 18px;
-  cursor: pointer;
-}
-.bulit::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background-color: rgb(255, 255, 255);
-}
-.bulit.on::before{
-  animation: bltAni 4s linear forwards;
-}
-@keyframes bltAni {
-  to{
-    height: 100%;
-  }
-} /* 블릿 키프레임 */
 
 
 
@@ -396,13 +244,14 @@ js로 마우스 아웃시 */
 .info {
   border-top: 1px solid #cacaca;
   /* background-color: rgb(105, 105, 105); */
-  height: 230px;
-}
-.addbx {
+  /* height: 230px; */
   position: relative;
 }
+
 .addbx address {
-  transform: translateY(84%);
+  box-sizing: border-box;
+  /* transform: translateY(84%); */
+  padding: 50px 0;
   width: 100vw;
   height: 100%;
   text-align: center;
@@ -414,7 +263,6 @@ js로 마우스 아웃시 */
   line-height: 20px;
 }
 .blink {
-  box-sizing: border-box;
   margin: 8px 0;
 }
 .blink a {
