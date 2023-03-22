@@ -95,8 +95,6 @@ window.addEventListener("DOMContentLoaded",()=>{
   // 스크롤 그리드 등장대상: .item
   const grid_item = document.querySelectorAll(".item");
   // console.log(grid_item);
-  // 스크롤 스타일 등장대상: .sitem
-  const s_item = document.querySelectorAll(".sitem");
   // 화면높이값의 2/3구하기
   const whv = (window.innerHeight / 3) * 2;
   // console.log("2/3높이:",whv);
@@ -110,10 +108,13 @@ window.addEventListener("DOMContentLoaded",()=>{
 
     // 0보다 크고 화면의 2/3보다  작은 구간!
     if (grid_Val < whv && grid_Val > 0) {
-      ele.classList.add("on");
-      ele.style.transitionDelay = `${idx * 0.1}s`; 
+      
+      // if(grid_item[idx] > 5){
+      //   ele.style.transitionDelay = `${idx * 0.01}s`; 
+      // }
       
     } ////// 구간에 들어올시 "on"적용 if문 //////
+
 
     // 상단 이동버튼 클래스 on 넣기/빼기
     let scrl = window.scrollY;
@@ -127,16 +128,14 @@ window.addEventListener("DOMContentLoaded",()=>{
   }; ///////// classIt 함수 /////////
   
   // 스크롤 이벤트 셋팅 /////////
-  window.addEventListener("scroll", () => {
-    // for (let i = 0; i < grid_item.length; i++) {
-    //   classIt(grid_item[i], i);
-    // }
+  // window.addEventListener("scroll", () => {
     grid_item.forEach((ele,idx)=>{
+      ele.classList.add("on");
+      ele.style.transitionDelay = `${idx * 0.1}s`; 
       classIt(ele,idx);
     }); //////// 그리드아이템 분기 forEach //////////
-  }); ///////// scroll //////////////
+    // }); ///////// scroll //////////////
   
-
 
   ///////////////////// grid구역 태그넣기 //////////////////////////
   function gridbxTags(){
