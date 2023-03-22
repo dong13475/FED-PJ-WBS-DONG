@@ -6,25 +6,30 @@
 
 
 /* 웹폰트 CND */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&family=Open+Sans:wght@300&display=swap');
 
 /* 
 font-family: 'IBM Plex Sans KR', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
 
-/* 바디 밑 모든요소에 한글,영문폰트 입히기 
-한글전용,영문전용 폰트로하면 자동으로 인식해서 적용됨! */
-body{
-  font-family: 'IBM Plex Sans KR','Open Sans', sans-serif;
-}
-
 /* 초기화 */
 html,body,h1,h2,ul,ol{
   margin: 0;
   padding: 0;
 }
-ul,ol{
+/* 글자크기 고정 */
+html{
+  font-size: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* 바디 밑 모든요소에 한글,영문폰트 입히기 
+한글전용,영문전용 폰트로하면 자동으로 인식해서 적용됨! */
+body{
+  font-family: 'IBM Plex Sans KR','Open Sans', sans-serif;
+}
+ul,ol,li{
   list-style: none;
 }
 
@@ -35,12 +40,6 @@ a{
   text-decoration: none;
 }
 
-/* 글자크기 고정 */
-html{
-  font-size: 10px;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
 
 /* 이미지 리셋 */
 img {
