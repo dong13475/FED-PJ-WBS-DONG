@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   let snum = 0;
   // 페이드개수 변수
   let scnt = fadeBx.length;
-  // console.log("페이드개수",scnt);
+  console.log("페이드개수",scnt);
   
   
 
@@ -100,6 +100,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   const go_fade = (dir,seq) => { // dir-방향,seq-순번
     // console.log("페이드번호",dir,seq);
     if(dir){
+      console.log("dir",dir);
       snum++;
       if (snum === scnt) snum = 0;
     } ///// if /////
