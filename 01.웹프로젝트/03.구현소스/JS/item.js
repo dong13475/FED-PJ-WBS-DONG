@@ -94,7 +94,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   ****************************/
   // 스크롤 그리드 등장대상: .item
   const grid_item = document.querySelectorAll(".item");
-  // console.log(grid_item);
+  console.log(grid_item);
   // 화면높이값의 2/3구하기
   const whv = (window.innerHeight / 3) * 2;
   // console.log("2/3높이:",whv);
@@ -126,16 +126,24 @@ window.addEventListener("DOMContentLoaded",()=>{
     } // 상단 이동버튼 클래스 on 넣기/빼기 else
 
   }; ///////// classIt 함수 /////////
+  const qqq = document.querySelectorAll(".smenu li");
+  console.log(qqq);
+  let liName = qqq.textContent;
+  console.log(liName);
   
-  // 스크롤 이벤트 셋팅 /////////
-  // window.addEventListener("scroll", () => {
-    grid_item.forEach((ele,idx)=>{
-      ele.classList.add("on");
-      ele.style.transitionDelay = `${idx * 0.1}s`; 
-      classIt(ele,idx);
-    }); //////// 그리드아이템 분기 forEach //////////
-    // }); ///////// scroll //////////////
+    setTimeout(()=>{
+      grid_item.forEach((ele,idx)=>{
+        ele.classList.add("on");
+        ele.style.transitionDelay = `${idx * 0.1}s`; 
+        classIt(ele,idx);
+        
+        // if(ele.value == ${gdsObj[x]["구분"]}){
+
+        // }
+      }); //////// 그리드아이템 분기 forEach //////////
+    },200)
   
+    
 
   ///////////////////// grid구역 태그넣기 //////////////////////////
   function gridbxTags(){
@@ -149,7 +157,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   for(let x in gdsObj){
     // x는 속성명
       hcode += `
-      <div class="item itbx1">
+      <div class="item ${gdsObj[x]["구분"]}">
         <a href="#">
             <div class="iimg">
               <img src="./images/item_imgs/ALL/${gdsObj[x]["이미지1"]}.jpg">
