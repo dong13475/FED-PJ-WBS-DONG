@@ -36,6 +36,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   // 페이드개수 변수
   let scnt = fadeBx.length;
   // console.log("페이드개수",scnt);
+
   
   
   /********************************************** 

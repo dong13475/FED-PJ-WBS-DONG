@@ -1,22 +1,8 @@
 //  POLYTERU item JS - item.js
 
-// 넘어온 url 받기! pm -> 전달값변수
-// let pm = location.href;
-// location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
 
-// 문자열 잘라서 값 읽어오기
-// -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
-// pm = pm.split("?")[1].split("=")[1];
 
-// pm값 특수문자 복원하기
-// pm = decodeURIComponent(pm);
 
-// console.log(pm);
-
-itemList();
-
-// 함수로 묶기
-function itemList() {
   //////////// 로드구역 /////////////
   window.addEventListener("DOMContentLoaded", () => {
     // console.log("로딩완료!");
@@ -25,6 +11,7 @@ function itemList() {
     document.addEventListener("dragstart", (event) => {
       event.preventDefault();
     });
+
 
     // 새로고침시 스크롤 맨위로 //
     setTimeout(() => {
@@ -117,6 +104,62 @@ function itemList() {
     // 그리드 등장대상: .item
     const grid_item = document.querySelectorAll(".item");
 
+
+    function changeItem(atxt){ // atxt - 선택메뉴
+      if(atxt==="all"){
+        grid_item.forEach((ele,idx)=>{
+          
+          ele.classList.remove("on");
+          ele.style.cssText = "";
+          ele.style.display = "none";
+          ele.style.transition = "none";
+          
+          ele.style.display="block";
+          setTimeout(()=>{
+            ele.style.cssText = "";
+            ele.classList.add("on");
+            ele.style.transitionDelay = `${idx * 0.1}s`;
+          },1);  
+        });
+        
+      } ///////// if //////////////////////
+      else{
+        grid_item.forEach((ele,idx)=>{
+          ele.classList.remove("on");
+          ele.style.cssText = "";
+          ele.style.display = "none";
+          ele.style.transition = "none";
+
+
+          if(ele.classList.contains(atxt)) {
+            const new_item = document.querySelectorAll(".item."+atxt);
+              new_item.forEach((ele,idx)=>{
+                ele.style.display="block";
+              setTimeout(()=>{
+                ele.style.cssText = "";
+                ele.classList.add("on");
+                ele.style.transitionDelay = `${idx * 0.1}s`;
+              },1);            
+
+              });////////// new_item /////
+          }
+        })
+      } ////////////// else ///////////////////
+
+    } ///////// changeItem ///////////////////
+
+    
+
+  const itemA = smenu.querySelectorAll("a");
+  console.log(itemA);
+  itemA.forEach(ele=>{
+    ele.onclick = () => {
+      let atxt = ele.innerText.toLowerCase();
+      console.log(atxt);
+      changeItem(atxt);
+    }
+  })
+
     setTimeout(() => {
       grid_item.forEach((ele, idx) => {
         ele.classList.add("on");
@@ -124,11 +167,11 @@ function itemList() {
 
         // console.log(ele)
         // console.log("asd:",ele.classList[1])
-        if (ele.classList[1] == "outer") {
-          ele.style.display = "block";
-        } else {
-          ele.style.display = "none";
-        }
+        // if (ele.classList[1] == "outer") {
+        //   ele.style.display = "block";
+        // } else {
+        //   ele.style.display = "none";
+        // }
         // console.log("구분:",`${gdsObj[idx]["구분"]}`)
 
         // if(ele.classList[1] == `${gdsObj[ele]["구분"]}`){
@@ -190,6 +233,31 @@ function itemList() {
       // 서브네비 태그넣기
       // subNavi.innerHTML = subcode;
     } /////////////// gridbx_Tags함수 ////////////////////////
+
+
+
+    
+
+// 넘어온 url 받기! pm -> 전달값변수
+let pm = location.href;
+// location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
+
+
+
+if(pm.indexOf("?")!== -1){
+  // 문자열 잘라서 값 읽어오기
+  // -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
+  pm = pm.split("?")[1].split("=")[1];
+  
+  // pm값 특수문자 복원하기
+  pm = decodeURIComponent(pm);
+  
+  console.log(pm);
+
+  changeItem(pm);
+
+} ///////////// 파라미터가 있으면 ///////////
+
+
   }); ////////////////// 로드구역 ///////////////////
   //////////////////////////////////////////////////
-}
