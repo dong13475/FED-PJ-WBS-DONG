@@ -54,6 +54,7 @@ window.addEventListener("DOMContentLoaded",()=>{
     document.querySelector("html").classList.toggle("on");
   }; /////////// 햄버거버튼 클릭 함수 /////////
   
+
   
   /*************************************** 
     GNB 마우스 오버시 li 밑줄효과 (on,on2)
@@ -127,9 +128,8 @@ window.addEventListener("DOMContentLoaded",()=>{
   } /////// clearAuto함수 /////////
   
 
-  /***************************************** 
-    [ 클릭이벤트 함수 설정하기 ]
-  *****************************************/
+
+  
 
   // 이벤트 대상 : .bulit 
   const bulit = document.querySelectorAll(".bulit");
@@ -205,6 +205,13 @@ window.addEventListener("DOMContentLoaded",()=>{
       move_top.classList.remove("on");
     } // 상단 이동버튼 클래스 on 넣기/빼기 else
   }; ///////// classIt 함수 /////////
+
+  // move_top 클릭시 상단이동함수
+  move_top.onclick = () => {
+    window.scrollTo(0,0);
+  }; /////// click //////////
+
+
   
   // 스크롤 이벤트 셋팅 /////////
   window.addEventListener("scroll", () => {
