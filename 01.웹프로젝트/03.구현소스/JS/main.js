@@ -2,7 +2,7 @@
 
 //////////// 로드구역 /////////////
 window.addEventListener("DOMContentLoaded",()=>{
-  console.log("로딩완료!");
+  // console.log("로딩완료!");
   
   // 드래그 방지 함수 //
   document.addEventListener("dragstart", (event) => {
@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   let shv = smenu.querySelector(".smenu ol").clientHeight;
   // console.log(shv);
   const move_top = document.querySelector(".move_top");
-  console.log(move_top);
+  // console.log(move_top);
 
   // 페이드박스 li 변수 //
   const fadeBx = document.querySelectorAll(".fade_bx li");
@@ -35,7 +35,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   let snum = 0;
   // 페이드개수 변수
   let scnt = fadeBx.length;
-  console.log("페이드개수",scnt);
+  // console.log("페이드개수",scnt);
   
   
   /********************************************** 
@@ -90,7 +90,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   const go_fade = (dir,seq) => { // dir-방향,seq-순번
     // console.log("페이드번호",dir,seq);
     if(dir){
-      console.log("dir",dir);
+      // console.log("dir",dir);
       snum++;
       if (snum === scnt) snum = 0;
     } ///// if /////

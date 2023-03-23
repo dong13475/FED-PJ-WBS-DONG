@@ -19,7 +19,7 @@ itemList();
 function itemList() {
   //////////// 로드구역 /////////////
   window.addEventListener("DOMContentLoaded", () => {
-    console.log("로딩완료!");
+    // console.log("로딩완료!");
 
     // 드래그 방지 함수 //
     document.addEventListener("dragstart", (event) => {
@@ -124,11 +124,11 @@ function itemList() {
 
         // console.log(ele)
         // console.log("asd:",ele.classList[1])
-        // if (ele.classList[1] == "outer") {
-        //   ele.style.display = "block";
-        // } else {
-        //   ele.style.display = "none";
-        // }
+        if (ele.classList[1] == "outer") {
+          ele.style.display = "block";
+        } else {
+          ele.style.display = "none";
+        }
         // console.log("구분:",`${gdsObj[idx]["구분"]}`)
 
         // if(ele.classList[1] == `${gdsObj[ele]["구분"]}`){
@@ -146,7 +146,7 @@ function itemList() {
       const gridbx = document.querySelector(".gridbx");
       // 서브네비 넣을 박스
       const subNavi = document.querySelector(".subNavi");
-      console.log(subNavi);
+      // console.log(subNavi);
 
       // 상품객체만큼 화면에 태그 데이터바인딩하기
       let hcode = "";
