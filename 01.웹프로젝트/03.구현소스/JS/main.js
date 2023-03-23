@@ -38,8 +38,6 @@ window.addEventListener("DOMContentLoaded",()=>{
   console.log("페이드개수",scnt);
   
   
-
-  
   /********************************************** 
     상단 탑메뉴 햄버거 버튼 클릭시 토글기능구현
   **********************************************/
@@ -54,15 +52,7 @@ window.addEventListener("DOMContentLoaded",()=>{
     gnb_bx.classList.toggle("on");
     document.body.classList.toggle("on");
     document.querySelector("html").classList.toggle("on");
-    // if(document.querySelector("html").style.overflow = 'hidden'){
-    //   document.querySelector("html").style.overflow = 'auto';
-    // }
-    // if(ham.classList.toggle("on")){
-    //   document.body.style.backgroundColor = "rgba(0, 0, 0, 0.459)"
-    // }
   }; /////////// 햄버거버튼 클릭 함수 /////////
-  
-  
   
   
   /*************************************** 
@@ -92,9 +82,6 @@ window.addEventListener("DOMContentLoaded",()=>{
     }); /////// forEach ////////
 
   
-  
-
-
   /************************************** 
     [ 메인페이지 페이드 배너 넣기 함수 ]
     함수명 : go_fade
@@ -198,21 +185,6 @@ window.addEventListener("DOMContentLoaded",()=>{
   // 등장액션 대상 위치값 리턴함수 
   const retVal = (ele) => ele.getBoundingClientRect().top;
 
-  
-  // ////// 클래스 넣기 함수 //////
-  // const classIt = (ele) => {
-  //   // ele - 등장요소
-  //   // 대상요소의 현재 스크롤 위치
-  //   let grid_Val = retVal(ele);
-    
-  //  // 0보다 크고 화면의 2/3보다  작은 구간!
-  //   if(grid_Val < whv && grid_Val > 0){
-  //     ele.classList.add("on");
-  //   } ////// 구간에 들어올시 "on"적용 if문 //////
-  // }; ///////// classIt 함수 /////////
-
-
-
   const classIt = (ele, idx) => {
     // ele - 등장요소, idx - 요소순번
     // 대상요소의 현재 스크롤 위치
@@ -222,7 +194,6 @@ window.addEventListener("DOMContentLoaded",()=>{
     if (grid_Val < whv && grid_Val > 0) {
       ele.classList.add("on");
       ele.style.transitionDelay = `${idx * 0.1}s`; 
-      
     } ////// 구간에 들어올시 "on"적용 if문 //////
 
     // 상단 이동버튼 클래스 on 넣기/빼기
@@ -233,7 +204,6 @@ window.addEventListener("DOMContentLoaded",()=>{
     else{
       move_top.classList.remove("on");
     } // 상단 이동버튼 클래스 on 넣기/빼기 else
-
   }; ///////// classIt 함수 /////////
   
   // 스크롤 이벤트 셋팅 /////////
@@ -272,10 +242,6 @@ window.addEventListener("DOMContentLoaded",()=>{
       //   // ele.getAttribute("src").replace("2","1")
       //   // ele.getAttribute(속성명).replace(바뀔값,바꿀값)
       // });
-
-
-
-
 
   ///////////////////// grid구역 태그넣기 //////////////////////////
   function gridbxTags(){
