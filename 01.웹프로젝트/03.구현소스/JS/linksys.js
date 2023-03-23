@@ -37,7 +37,7 @@ function linkFn(){
     e.preventDefault();
 
     // 홈으로 이동하기
-    location.href = "index.html";
+    location.href = "./index.html";
   }; ///////// click /////////
   
 } /////////// linkFn 함수 //////////////
