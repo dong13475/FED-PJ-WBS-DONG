@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* 외부CSS합치기 */
+@import url(./common.css);
+@import url(./core.css);
+
+
+
+.main_top{
+  padding-top: 160px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.location{
+  display: flex;
+  padding-left: 50px;
+  font-size: 1.2rem;
+  display: none;
+}
+.item_tit{
+  padding: 50px 0 60px;
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+

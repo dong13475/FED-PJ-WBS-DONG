@@ -16,6 +16,7 @@
   display: flex;
   padding-left: 50px;
   font-size: 1.2rem;
+  display: none;
 }
 .item_tit{
   padding: 50px 0 60px;
