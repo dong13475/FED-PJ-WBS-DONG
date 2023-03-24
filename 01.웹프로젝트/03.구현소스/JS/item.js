@@ -113,11 +113,20 @@ window.addEventListener('DOMContentLoaded', () => {
   *********************************************/
   // 그리드 등장대상: .item
   const grid_item = document.querySelectorAll('.item');
+  // 아이템 페이지 메뉴: .location
+  const loca = document.querySelectorAll(".location");
+  console.log(loca);
 
   //////
   function changeItem(atxt) {
     // atxt - 선택메뉴
     if (atxt === 'all') {
+      loca.forEach((ele)=>{
+        ele.style.display = "block"
+        const new_loca = document.querySelectorAll('.location.' + atxt);
+        console.log("뉴로케가뭐야",new_loca);
+      }); // forEach 
+
       grid_item.forEach((ele, idx) => {
         // 처음에 css지우기
         ele.classList.remove('on');
@@ -189,37 +198,45 @@ window.addEventListener('DOMContentLoaded', () => {
     // console.log(subNavi);
 
     // 상품객체만큼 화면에 태그 데이터바인딩하기
-    let hcode = '';
-
     let subcode = '';
 
-    for (let x in gdsObj) {
+    let hcode = '';
+
+    for(let x in allObj){
       subcode += `
       <ul class="location">
         <a href="">
           <li>HOME&nbsp;/ </li>
         </a>
-        <li>&nbsp;${gdsObj[x]['구분']}</li>
+        <li>&nbsp;${allObj[x]['구분']}</li>
+        <div class="item_tit">${allObj[x]['구분']}</div>
       </ul>
-      <div class="item_tit">${gdsObj[x]['구분']}</div>
       `;
+    }
+
+    // 서브네비 태그넣기
+    subNavi.innerHTML = subcode;
+
+
+    for (let x in allObj) {
+      
       // x는 속성명
       hcode += `
-      <div class="item ${gdsObj[x]['구분']}">
+      <div class="item ${allObj[x]['구분']}">
         <a href="#">
             <div class="iimg">
-              <img src="./images/item_imgs/ALL/${gdsObj[x]['이미지1']}.jpg">
-              <img src="./images/item_imgs/ALL/${gdsObj[x]['이미지2']}.jpg">
+              <img src="./images/item_imgs/ALL/${allObj[x]['이미지1']}.jpg">
+              <img src="./images/item_imgs/ALL/${allObj[x]['이미지2']}.jpg">
             </div>
         </a>
         <div class="itxt">
           <div class="iname1">
-            <a href="#">${gdsObj[x]['상품명']}</a>
+            <a href="#">${allObj[x]['상품명']}</a>
           </div>
           <div class="ssn">
-            ${gdsObj[x]['구분']}
+            ${allObj[x]['구분']}
           </div>
-          <span>${gdsObj[x]['가격']}</span>
+          <span>${allObj[x]['가격']}</span>
         </div>
       </div>
       `;
@@ -227,8 +244,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // grid구역 태그넣기
     gridbx.innerHTML = hcode;
-    // 서브네비 태그넣기
-    // subNavi.innerHTML = subcode;
+    
   } /////////////// gridbx_Tags함수 ////////////////////////
 
   // 넘어온 url 받기! pm -> 전달값변수

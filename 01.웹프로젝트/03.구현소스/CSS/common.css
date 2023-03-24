@@ -292,17 +292,28 @@ js로 마우스 아웃시 */
 /*********************** 3. 하단영역 ***********************/
 .info {
   border-top: 1px solid #cacaca;
-  /* background-color: rgb(105, 105, 105); */
-  /* height: 230px; */
+}
+.addbx{
+  /* max-width: 1200px; */
   position: relative;
+  padding-top: 10px;
+  /* height: 100%; */
+  /* box-sizing: border-box; */
+  /* top: 20px; */
+  /* left: 25px; */
+}
+.blogo {
+  position: absolute;
+  transform: translate(2vw, 2vh);
+}
+.blogo img {
+  height: 54px;
 }
 
-.addbx address {
-  box-sizing: border-box;
+.addbx>address {
+  /* background-color: yellow; */
   /* transform: translateY(84%); */
   padding: 50px 0;
-  width: 100vw;
-  height: 100%;
   text-align: center;
   font-size: 1.3rem;
   color: #c0c0c0;
@@ -317,12 +328,4 @@ js로 마우스 아웃시 */
 .blink a {
   margin: 0 12px;
   color: #c0c0c0;
-}
-.blogo {
-  position: absolute;
-  top: 20px;
-  left: 25px;
-}
-.blogo img {
-  height: 54px;
 }

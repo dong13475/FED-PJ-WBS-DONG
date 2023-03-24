@@ -152,7 +152,7 @@
     transform: translateX(-50%);
   }
   .addbx address {
-    transform: translateY(110%);
+    padding-top: 80px;
     font-size: 1.1rem;
   }
   
@@ -201,17 +201,17 @@
     font-size: 1.1rem;
 }
   /* 푸터영역 */
-  .blogo {
+  /* .blogo {
     left: 50%;
     transform: translateX(-50%);
-  }
+  } */
 
   .addbx address {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     /* transform: translateY(70%); */
     font-size: 1rem;
     line-height: 15px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
 }
 /* 500px 사이즈 이하 미디어쿼리 끝 */
