@@ -130,24 +130,20 @@ window.addEventListener('DOMContentLoaded', () => {
     //     console.log(new_loca)
     //   }
     // })
-
-
-
-
     // atxt - 선택메뉴
     if (atxt === 'all') {
       grid_item.forEach((ele, idx) => {
         // 처음에 css지우기
-        ele.classList.remove('on');
-        ele.style.cssText = '';
-        ele.style.display = 'none';
-        ele.style.transition = 'none';
-        ele.style.display = 'block';
+        // ele.classList.remove('on');
+        // ele.style.cssText = '';
+        // ele.style.display = 'none';
+        // ele.style.transition = 'none';
+        // ele.style.display = 'block';
         // 지운 css 다시넣기
         setTimeout(() => {
-          ele.style.cssText = '';
+          // ele.style.cssText = '';
           ele.classList.add('on');
-          ele.style.transitionDelay = `${idx * 0.1}s`;
+          // ele.style.transitionDelay = `${idx * 0.1}s`;
         },1); ///// Timeout /////////
       }); /////// forEach /////////
     } ///////// if //////////////
@@ -172,6 +168,48 @@ window.addEventListener('DOMContentLoaded', () => {
         } /////// if ///////
       }); /////// forEach //////////
     } ////////////// else ///////////////
+
+
+
+
+    // // atxt - 선택메뉴
+    // if (atxt === 'all') {
+    //   grid_item.forEach((ele, idx) => {
+    //     // 처음에 css지우기
+    //     ele.classList.remove('on');
+    //     ele.style.cssText = '';
+    //     ele.style.display = 'none';
+    //     ele.style.transition = 'none';
+    //     ele.style.display = 'block';
+    //     // 지운 css 다시넣기
+    //     setTimeout(() => {
+    //       ele.style.cssText = '';
+    //       ele.classList.add('on');
+    //       ele.style.transitionDelay = `${idx * 0.1}s`;
+    //     },1); ///// Timeout /////////
+    //   }); /////// forEach /////////
+    // } ///////// if //////////////
+    // else {
+    //   grid_item.forEach((ele) => {
+    //     ele.classList.remove('on');
+    //     ele.style.cssText = '';
+    //     ele.style.display = 'none';
+    //     ele.style.transition = 'none';
+
+    //     if (ele.classList.contains(atxt)) {
+    //       const new_item = document.querySelectorAll('.item.' + atxt);
+    //       console.log("뉴아이템이뭐야",new_item);
+    //       new_item.forEach((ele, idx) => {
+    //         ele.style.display = 'block';
+    //         setTimeout(() => {
+    //           ele.style.cssText = '';
+    //           ele.classList.add('on');
+    //           ele.style.transitionDelay = `${idx * 0.1}s`;
+    //         },1); /////// Timeout ///////
+    //       }); ////// new_item forEach /////
+    //     } /////// if ///////
+    //   }); /////// forEach //////////
+    // } ////////////// else ///////////////
   } ///////// changeItem 함수 ///////////////////
 
   // 서브메뉴 밑의 a변수

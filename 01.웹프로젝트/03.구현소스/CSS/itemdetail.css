@@ -24,4 +24,179 @@
   font-size: 2.7rem;
 }
 
+/* 아이템 페이지 메인 */
+/* 리스트 겉박스 */
+/* 리스트 속박스 */
+.item_list{
 
+}
+/* 전체 플렉스 박스 */
+.item_list>ul{
+  display: flex;
+  /* flex-direction: column; */
+}
+/* 플렉스 섹션 1 */
+.sec1{
+  width: 50vw;
+  /* height: 1000px; */
+  background-color: lightcoral;
+}
+/* 섹션1 페이드 박스 */
+.stk_bx{
+  /* position: relative; */
+  
+}
+.fade{
+  /* position: sticky; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fade li{
+  width: min(35vw,450px);
+  aspect-ratio: 280/400;
+  position: absolute;
+}
+.fade>li>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* 플렉스 섹션 2 */
+.sec2{
+  width: 50vw;
+  /* height: 1000px; */
+  background-color: lightblue;
+}
+/* 섹션 2 속박스 */
+.sec2_detail{
+  padding-left: 20px;
+}
+/* 아이템 제목 */
+.sec2_detail>h2{
+  /* background-color: #f00; */
+  font-size: 2rem;
+}
+/* 아이템 가격 */
+.sec2_detail>h3{
+  /* background-color: #f00; */
+  padding: 10px 0 20px 20px;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+/* 적립금 */
+.point{
+  display: flex;
+  gap: 114px;
+}
+.point li:first-child{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.point li:last-child{
+  font-size: 1.3rem;
+}
+/* 배송비 */
+.shipping{
+  display: flex;
+  gap: 114px;
+}
+.shipping li:first-child{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.shipping li:last-child{
+  font-size: 1.4rem;
+}
+/* 수량 조건 */
+.count{
+  display: flex;
+  gap: 97px;
+}
+.count li:first-child{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.count li:last-child{
+  font-size: 1.4rem;
+}
+/* 사이즈 타이틀 */
+.sizetit{
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding: 20px 0 20px 0;
+}
+/* 사이즈 선택박스 */
+.size_bx{
+  outline: 1px solid #000;
+  width: 150px;
+  height: 55px;
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 55px;
+}
+/* 주문수량 */
+.scount{
+  display: flex;
+  gap: 97px;
+}
+.scount li:first-child{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.scount li:last-child{
+  font-size: 1.4rem;
+}
+/* 총 상품 금액 */
+.total{
+  display: flex;
+  gap: 80px;
+}
+.total li:first-child{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.total li:last-child{
+  font-size: 1.4rem;
+}
+/* 구매 / 장바구니 버튼 */
+.buy{
+  display: flex;
+  gap: 30px;
+  font-size: 1.7rem;
+}
+/* 구매박스 */
+.buying{
+  outline: 1px solid #000;
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+/* 장바구니박스 */
+.cart{
+  outline: 1px solid #000;
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* 상품 설명 텍스트 */
+/* 상품 상세 이미지 */
+.main_dimg{
+  margin-top: 300px;
+}
+.mimg{
+  width: min(35vw,450px);
+  aspect-ratio: 280/400;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.mimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
