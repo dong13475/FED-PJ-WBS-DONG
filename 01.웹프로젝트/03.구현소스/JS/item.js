@@ -189,8 +189,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // 서브메뉴 밑의 a변수
   const itemA = smenu.querySelectorAll('a');
   console.log(itemA);
-  
-  
   /******************************************** 
     서브메뉴 a텍스트 forEach메서드로 돌려
     클릭시 소문자로 바꾼후 changeItem함수에
@@ -202,6 +200,7 @@ window.addEventListener('DOMContentLoaded', () => {
       console.log(atxt);
       changeItem(atxt);
       changeList(atxt);
+      
       
     }; ////// click ///////////
   }); ////// forEach ///////////
@@ -229,6 +228,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     let hcode = '';
 
+    const showtitle = ["all","outer","top","bottom","acc"]
   
     for(let x in allObj){
       subcode += `
@@ -243,6 +243,7 @@ window.addEventListener('DOMContentLoaded', () => {
       </div>
       `;
     }
+
 
     // 서브네비 태그넣기
     subNavi.innerHTML = subcode;
