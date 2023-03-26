@@ -113,37 +113,53 @@ window.addEventListener('DOMContentLoaded', () => {
   *********************************************/
   // 그리드 등장대상: .item
   const grid_item = document.querySelectorAll('.item');
+  // console.log(grid_item)
   // 아이템 페이지 메뉴: .location
-  const loca = document.querySelectorAll(".location");
-  console.log(loca);
+  const loca = document.querySelectorAll(".subNavi");
+  // console.log(loca)
 
+  
+
+  function changeList(atxt){
+    if(atxt === 'all'){
+      loca.forEach((ele)=>{
+        ele.style.display = 'block';
+      }); ///// forEach
+    } //// if
+    else{
+      loca.forEach((ele)=>{
+        ele.style.display = "none";
+        if(ele.classList.contains(atxt)){
+          const newtit = document.querySelectorAll('.subNavi.' + atxt);
+          console.log(newtit)
+            newtit.forEach((ele) => {
+              ele.style.display = 'block';
+            }); ////// new_item forEach /////
+          } ///// if
+      }); ///// forEach
+    } //// else
+  } ////// changeList
+  
+  
   
 
   //////
   function changeItem(atxt) {
 
-    // loca.forEach((ele,idx)=>{
-    //   // console.log("asd",ele)
-    //   if(ele.classList.contains(atxt)){
-    //     const new_loca = document.querySelectorAll('.location.' + atxt);
-    //     ele.style.display = "block";
-    //     console.log(new_loca)
-    //   }
-    // })
     // atxt - 선택메뉴
     if (atxt === 'all') {
       grid_item.forEach((ele, idx) => {
         // 처음에 css지우기
-        // ele.classList.remove('on');
-        // ele.style.cssText = '';
-        // ele.style.display = 'none';
-        // ele.style.transition = 'none';
-        // ele.style.display = 'block';
+        ele.classList.remove('on');
+        ele.style.cssText = '';
+        ele.style.display = 'none';
+        ele.style.transition = 'none';
+        ele.style.display = 'block';
         // 지운 css 다시넣기
         setTimeout(() => {
-          // ele.style.cssText = '';
+          ele.style.cssText = '';
           ele.classList.add('on');
-          // ele.style.transitionDelay = `${idx * 0.1}s`;
+          ele.style.transitionDelay = `${idx * 0.1}s`;
         },1); ///// Timeout /////////
       }); /////// forEach /////////
     } ///////// if //////////////
@@ -168,53 +184,13 @@ window.addEventListener('DOMContentLoaded', () => {
         } /////// if ///////
       }); /////// forEach //////////
     } ////////////// else ///////////////
-
-
-
-
-    // // atxt - 선택메뉴
-    // if (atxt === 'all') {
-    //   grid_item.forEach((ele, idx) => {
-    //     // 처음에 css지우기
-    //     ele.classList.remove('on');
-    //     ele.style.cssText = '';
-    //     ele.style.display = 'none';
-    //     ele.style.transition = 'none';
-    //     ele.style.display = 'block';
-    //     // 지운 css 다시넣기
-    //     setTimeout(() => {
-    //       ele.style.cssText = '';
-    //       ele.classList.add('on');
-    //       ele.style.transitionDelay = `${idx * 0.1}s`;
-    //     },1); ///// Timeout /////////
-    //   }); /////// forEach /////////
-    // } ///////// if //////////////
-    // else {
-    //   grid_item.forEach((ele) => {
-    //     ele.classList.remove('on');
-    //     ele.style.cssText = '';
-    //     ele.style.display = 'none';
-    //     ele.style.transition = 'none';
-
-    //     if (ele.classList.contains(atxt)) {
-    //       const new_item = document.querySelectorAll('.item.' + atxt);
-    //       console.log("뉴아이템이뭐야",new_item);
-    //       new_item.forEach((ele, idx) => {
-    //         ele.style.display = 'block';
-    //         setTimeout(() => {
-    //           ele.style.cssText = '';
-    //           ele.classList.add('on');
-    //           ele.style.transitionDelay = `${idx * 0.1}s`;
-    //         },1); /////// Timeout ///////
-    //       }); ////// new_item forEach /////
-    //     } /////// if ///////
-    //   }); /////// forEach //////////
-    // } ////////////// else ///////////////
   } ///////// changeItem 함수 ///////////////////
 
   // 서브메뉴 밑의 a변수
   const itemA = smenu.querySelectorAll('a');
   console.log(itemA);
+  
+  
   /******************************************** 
     서브메뉴 a텍스트 forEach메서드로 돌려
     클릭시 소문자로 바꾼후 changeItem함수에
@@ -225,6 +201,8 @@ window.addEventListener('DOMContentLoaded', () => {
       let atxt = ele.innerText.toLowerCase();
       console.log(atxt);
       changeItem(atxt);
+      changeList(atxt);
+      
     }; ////// click ///////////
   }); ////// forEach ///////////
 
@@ -243,7 +221,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // 상품넣을 박스
     const gridbx = document.querySelector('.gridbx');
     // 서브네비 넣을 박스
-    const subNavi = document.querySelector('.subNavi');
+    const subNavi = document.querySelector('.sub_title');
     // console.log(subNavi);
 
     // 상품객체만큼 화면에 태그 데이터바인딩하기
@@ -251,20 +229,38 @@ window.addEventListener('DOMContentLoaded', () => {
 
     let hcode = '';
 
+    // const titleList = ["all","outer","top","bottom","acc"];
+    // for(let x of titleList){
+    //   subcode += `
+    // //   <div class="subNavi ${x[1]}">
+    // //       <ul class="location">
+    // //         <a href="">
+    // //           <li>HOME&nbsp;/ </li>
+    // //         </a>
+    // //         <li>&nbsp;${x[1]}</li>
+    // //         <div class="item_tit">${x[1]}</div>
+    // //       </ul>
+    // //   </div>
+    // //   `;
+    // }
+
+
     for(let x in allObj){
       subcode += `
-      <ul class="location">
-        <a href="">
-          <li>HOME&nbsp;/ </li>
-        </a>
-        <li>&nbsp;${allObj[x]['구분']}</li>
-        <div class="item_tit">${allObj[x]['구분']}</div>
-      </ul>
+      <div class="subNavi ${allObj[x]['구분']}">
+          <ul class="location">
+            <a href="">
+              <li>HOME&nbsp;/ </li>
+            </a>
+            <li>&nbsp;${allObj[x]['구분']}</li>
+            <div class="item_tit">${allObj[x]['구분']}</div>
+          </ul>
+      </div>
       `;
     }
 
     // 서브네비 태그넣기
-    subNavi.innerHTML = subcode;
+    // subNavi.innerHTML = subcode;
 
 
     for (let x in allObj) {
@@ -296,21 +292,21 @@ window.addEventListener('DOMContentLoaded', () => {
     
   } /////////////// gridbx_Tags함수 ////////////////////////
 
-  // 넘어온 url 받기! pm -> 전달값변수
-  let pm = location.href;
-  // location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
+  // // 넘어온 url 받기! pm -> 전달값변수
+  // let pm = location.href;
+  // // location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
 
-  if (pm.indexOf('?') !== -1) {
-    // 문자열 잘라서 값 읽어오기
-    // -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
-    pm = pm.split('?')[1].split('=')[1];
+  // if (pm.indexOf('?') !== -1) {
+  //   // 문자열 잘라서 값 읽어오기
+  //   // -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
+  //   pm = pm.split('?')[1].split('=')[1];
 
-    // pm값 특수문자 복원하기
-    pm = decodeURIComponent(pm);
+  //   // pm값 특수문자 복원하기
+  //   pm = decodeURIComponent(pm);
 
-    console.log("pm이뭐야:",pm);
+  //   console.log("pm이뭐야:",pm);
 
-    changeItem(pm);
-  } ///////////// 파라미터가 있으면 ///////////
+  //   changeItem(pm);
+  // } ///////////// 파라미터가 있으면 ///////////
 }); ////////////////// 로드구역 ///////////////////
 //////////////////////////////////////////////////
