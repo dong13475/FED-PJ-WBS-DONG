@@ -172,7 +172,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if (ele.classList.contains(atxt)) {
           const new_item = document.querySelectorAll('.item.' + atxt);
-          console.log("뉴아이템이뭐야",new_item);
+          // console.log("뉴아이템이뭐야",new_item);
           new_item.forEach((ele, idx) => {
             ele.style.display = 'block';
             setTimeout(() => {
@@ -229,22 +229,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     let hcode = '';
 
-    // const titleList = ["all","outer","top","bottom","acc"];
-    // for(let x of titleList){
-    //   subcode += `
-    // //   <div class="subNavi ${x[1]}">
-    // //       <ul class="location">
-    // //         <a href="">
-    // //           <li>HOME&nbsp;/ </li>
-    // //         </a>
-    // //         <li>&nbsp;${x[1]}</li>
-    // //         <div class="item_tit">${x[1]}</div>
-    // //       </ul>
-    // //   </div>
-    // //   `;
-    // }
-
-
+  
     for(let x in allObj){
       subcode += `
       <div class="subNavi ${allObj[x]['구분']}">
@@ -260,7 +245,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // 서브네비 태그넣기
-    // subNavi.innerHTML = subcode;
+    subNavi.innerHTML = subcode;
 
 
     for (let x in allObj) {
