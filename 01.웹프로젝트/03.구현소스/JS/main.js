@@ -222,6 +222,9 @@ window.addEventListener("DOMContentLoaded",()=>{
       classIt(ele,idx);
     }); /////////// 스타일 아이템 분기 forEach /////////
   }); ///////// scroll //////////////
+
+  
+  
   
   
   /* 
@@ -309,8 +312,6 @@ function gridbxStyle(){
   // 스타일 구역 태그넣기
   grid_style.innerHTML = scode;
 } ///////////// gridbx_style 함수 /////////////
-
-
 
 
 }); ////////////////// 로드구역 ///////////////////
