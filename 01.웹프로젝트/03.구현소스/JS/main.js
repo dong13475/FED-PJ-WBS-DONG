@@ -211,8 +211,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   move_top.onclick = () => {
     window.scrollTo(0,0);
   }; /////// click //////////
-
-
+  
   
   // 스크롤 이벤트 셋팅 /////////
   window.addEventListener("scroll", () => {
