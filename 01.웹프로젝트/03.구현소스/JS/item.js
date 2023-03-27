@@ -202,15 +202,12 @@ window.addEventListener("DOMContentLoaded", () => {
         let subcode = '';
         const showtitle = ["all","outer","top","bottom","acc"]
         let tit;
-        let idx = 0;
         for(let x = 0; x < showtitle.length; x++){
-          if(atxt == "all"){
-            tit = showtitle[idx];
-          }
-          else{
-            tit = atxt;
-          }
-        }
+          if(atxt){
+            atxt = ele.innerText.toUpperCase();
+              tit = atxt;
+          } ///// if 문 ////////
+        } ///////// for 문 ///////////
         
         subcode += `
         <div class="subNavi ${tit}">
@@ -224,13 +221,11 @@ window.addEventListener("DOMContentLoaded", () => {
           </div>
           `;
           
-          idx++;
-
     // 서브네비 태그넣기
     subNavi.innerHTML = subcode;
-        
-      };
-    });
+      }; //////// click /////////
+    }); ////////// forEach //////////
+
 
   // 아이템박스 로딩시 "on"주고 트랜지션 따로주기
   setTimeout(() => {
@@ -244,33 +239,8 @@ window.addEventListener("DOMContentLoaded", () => {
   function gridbxTags() {
     // 상품넣을 박스
     const gridbx = document.querySelector(".gridbx");
-    // 서브네비 넣을 박스
-    // const subNavi = document.querySelector('.sub_title');
-    // // console.log(subNavi);
-
-    // // 상품객체만큼 화면에 태그 데이터바인딩하기
-    // let subcode = '';
-
+    
     let hcode = '';
-
-    // const showtitle = ["all","outer","top","bottom","acc"]
-
-    // for(let x in allObj){
-    //   subcode += `
-    //   <div class="subNavi ${allObj[x]['구분']}">
-    //       <ul class="location">
-    //         <a href="">
-    //           <li>HOME&nbsp;/ </li>
-    //         </a>
-    //         <li>&nbsp;${allObj[x]['구분']}</li>
-    //         <div class="item_tit">${allObj[x]['구분']}</div>
-    //       </ul>
-    //   </div>
-    //   `;
-    // }
-
-    // // 서브네비 태그넣기
-    // subNavi.innerHTML = subcode;
 
     for (let x in allObj) {
       // x는 속성명

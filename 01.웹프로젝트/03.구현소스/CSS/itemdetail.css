@@ -37,6 +37,7 @@
 }
 /* 플렉스 섹션 1 */
 .sec1{
+  /* margin: 0 auto; */
   width: 50vw;
   /* height: 1000px; */
   background-color: lightcoral;

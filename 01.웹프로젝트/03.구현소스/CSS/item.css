@@ -13,18 +13,20 @@
 }
 
 /* 메인 타이틀 넣기 */
-.subNavi{
-  /* display: none; */
-}
 .location{
   display: flex;
   padding-left: 50px;
   font-size: 1.2rem;
 }
+/* 첫번째 li (HOME /)에 컬러넣기 */
+.location li:first-child{
+  color: rgb(114, 114, 114);
+}
 .item_tit{
-  padding: 30px 0 60px;
+  padding: 20px 0 50px;
   text-align: center;
-  font-size: 2.7rem;
+  font-size: 2.9rem;
+  font-weight: 500;
 }
 /* 메인 그리드영역 */
 .gridbx {
