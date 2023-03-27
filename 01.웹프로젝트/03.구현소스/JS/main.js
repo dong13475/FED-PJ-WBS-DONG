@@ -129,9 +129,6 @@ window.addEventListener("DOMContentLoaded",()=>{
   } /////// clearAuto함수 /////////
   
 
-
-  
-
   // 이벤트 대상 : .bulit 
   const bulit = document.querySelectorAll(".bulit");
   // console.log(bulit);

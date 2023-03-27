@@ -189,14 +189,13 @@ window.addEventListener("DOMContentLoaded", () => {
     파라미터로 보내기 
   ********************************************/
 
-    // 상품객체만큼 화면에 태그 데이터바인딩하기
-    
     itemA.forEach((ele) => {
       ele.onclick = () => {
         let atxt = ele.innerText.toLowerCase();
         changeItem(atxt);
         // changeList(atxt);
 
+        // 서브메뉴 a 클릭시 태그만들어 atxt에 맞는 글자 배열로 뿌리기
         const subNavi = document.querySelector('.sub_title');
             // console.log(subNavi);
         let subcode = '';
@@ -212,7 +211,7 @@ window.addEventListener("DOMContentLoaded", () => {
         subcode += `
         <div class="subNavi ${tit}">
         <ul class="location">
-            <a href="">
+            <a href="#">
             <li>HOME&nbsp;/ </li>
             </a>
             <li>&nbsp;${tit}</li>

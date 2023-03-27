@@ -38,6 +38,7 @@
   height: 100%;
   object-fit: cover;
 }
+
 /* 서브 타이틀영역  */
 .location{
   display: flex;

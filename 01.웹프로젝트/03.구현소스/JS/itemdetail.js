@@ -1,6 +1,6 @@
 //  POLYTERU item JS - item.js
 
-//////////// 로드구역 /////////////
+/////////////////// 로드구역 ///////////////////////////
 window.addEventListener("DOMContentLoaded", () => {
   // console.log("로딩완료!");
 
@@ -13,6 +13,9 @@ window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     window.scrollTo(0, 0);
   }, 100); // 0.1초정도는 줘야효과있음!
+
+  // 메인영역 태그넣기함수 호출
+  subPageMain();
 
   /****************************************** 
     상단 이동버튼 스크롤시 클래스 on 넣기/빼기
@@ -90,102 +93,144 @@ window.addEventListener("DOMContentLoaded", () => {
     }; ////// mouseleave ///////
   }); /////// forEach ////////
 
-  /********************************************* 
-    [그리드 아이템 순서대로 등장시키기 함수]
-
-    소문자로 전환한 아이템박스 a의 텍스트를 
-    파라미터로 받아 텍스트가 all일경우 
-    forEach로 아이템박스를 돌려 처음에 css를
-    지우고 타임아웃함수로 클래스를 다시 추가한다
-    이때 디스플레이는 트랜지션이 먹히지 않기때문에
-    "none"을 주고 트랜지션을 없앤다음 다시 "block"을
-    줘서 타임아웃함수로 css와 클래스 , 트랜지션을
-    다시준다
-    그리고 텍스트가 all이 아닌경우 아이템박스에
-    똑같이 css효과를 없앤다음 만약에 아이템박스의
-    클래스가 atxt를 포함하고 있으면 .item.atxt를
-    forEach메서드로 돌려 css효과를 준다
-
-  *********************************************/
-  // 그리드 등장대상: .item
-  const grid_item = document.querySelectorAll(".item");
-  // console.log(grid_item)
-  // 아이템 페이지 메뉴: .location
-  const loca = document.querySelectorAll(".subNavi");
-  // console.log(loca)
-
-  function changeList(atxt) {
-    if (atxt === "all") {
-      loca.forEach((ele) => {
-        ele.style.display = "block";
-      }); ///// forEach
-    } //// if
-    else {
-      loca.forEach((ele) => {
-        ele.style.display = "none";
-        if (ele.classList.contains(atxt)) {
-          const newtit = document.querySelectorAll(".subNavi." + atxt);
-          console.log(newtit);
-          newtit.forEach((ele) => {
-            ele.style.display = "block";
-          }); ////// new_item forEach /////
-        } ///// if
-      }); ///// forEach
-    } //// else
-  } ////// changeList
-
-  //////
-  function changeItem(atxt) {
-    // atxt - 선택메뉴
-    if (atxt === "all") {
-      grid_item.forEach((ele, idx) => {
-        // 처음에 css지우기
-        ele.classList.remove("on");
-        ele.style.cssText = "";
-        ele.style.display = "none";
-        ele.style.transition = "none";
-        ele.style.display = "block";
-        // 지운 css 다시넣기
-        setTimeout(() => {
-          ele.style.cssText = "";
-          ele.classList.add("on");
-          ele.style.transitionDelay = `${idx * 0.1}s`;
-        }, 1); ///// Timeout /////////
-      }); /////// forEach /////////
-    } ///////// if //////////////
-    else {
-      grid_item.forEach((ele) => {
-        ele.classList.remove("on");
-        ele.style.cssText = "";
-        ele.style.display = "none";
-        ele.style.transition = "none";
-
-        if (ele.classList.contains(atxt)) {
-          const new_item = document.querySelectorAll(".item." + atxt);
-          // console.log("뉴아이템이뭐야",new_item);
-          new_item.forEach((ele, idx) => {
-            ele.style.display = "block";
-            setTimeout(() => {
-              ele.style.cssText = "";
-              ele.classList.add("on");
-              ele.style.transitionDelay = `${idx * 0.1}s`;
-            }, 1); /////// Timeout ///////
-          }); ////// new_item forEach /////
-        } /////// if ///////
-      }); /////// forEach //////////
-    } ////////////// else ///////////////
-  } ///////// changeItem 함수 ///////////////////
-
-  
 
 
-  // 아이템박스 로딩시 "on"주고 트랜지션 따로주기
-  setTimeout(() => {
-    grid_item.forEach((ele, idx) => {
-      ele.classList.add("on");
-      ele.style.transitionDelay = `${idx * 0.1}s`;
-    }); //////// 그리드아이템 분기 forEach //////////
-  }, 200); //////////// 그리드 아이템 0.2초후에 등장 ///////////
+
+  /***************************** 
+  서브페이지 페이드함수 만들기
+  *****************************/
+  // 페이드 li 변수
+  let fadeList = document.querySelectorAll(".fade li");
+  console.log(fadeList);
+  // 페이드 번호 변수
+  let snum = 0;
+
+    const fade = () => {
+      setInterval(() => {
+        fadeList.forEach((ele) => {
+          // 분기한 li에 on을 지우고
+          ele.classList.remove("on");
+        }); ////// forEach ////////
+
+        // li에 snum숫자대로 on을 넣기 
+        fadeList[snum].classList.add("on");
+        // 이때 snum은 1씩 증가한다
+        snum++;
+        // snum의 수가 li갯수보다 같거나 많이지면 
+        // snum은 다시 0으로 돌아감
+        if(snum >= fadeList.length) snum = 0;
+      }, 1000); // 페이드 타임아웃 함수
+    }; //////////// fade함수 ////////////////
+
+    // fade함수 호출
+    fade();
+    
+
+    ////////////////// 메인영역 태그넣기 ////////////////
+    function subPageMain(){
+      // 태그 넣을 영역
+      const item_list = document.querySelector(".item_list ul");
+
+      // 태그담을 변수
+      let main_code = "";
+      
+      // ${subPage_item[y]["상품명"]}
+      // ${subPage_item[y]["가격"]}
+      // ${subPage_item[y]["구분"]}
+      // ${subPage_item[y]["전체"]}
+      // ${subPage_item[y]["디테일"]}
+      for(let y in subPage_item){
+        main_code += `
+        <!---------- 플렉스 섹션 1 ---------->
+        <li class="sec1">
+          <div class="stk_bx">
+            <ul class="fade">
+              <li class="on">
+                <img src="./images/item_imgs/OUTER/light_puffer_jacket/light_pufferFull/light_pufferF1.jpg" alt="이미지">
+              </li>
+              <li>
+                <img src="./images/item_imgs/OUTER/light_puffer_jacket/light_pufferFull/light_pufferF2.jpg" alt="이미지">
+              </li>
+              <li>
+                <img src="./images/item_imgs/OUTER/light_puffer_jacket/light_pufferFull/light_pufferF3.jpg" alt="이미지">
+              </li>
+              <li>
+                <img src="./images/item_imgs/OUTER/light_puffer_jacket/light_pufferFull/light_pufferF4.jpg" alt="이미지">
+              </li>
+              <li>
+                <img src="./images/item_imgs/OUTER/light_puffer_jacket/light_pufferFull/light_pufferF5.jpg" alt="이미지">
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!---------- 플렉스 섹션 2 ---------->
+        <li class="sec2">
+          <!-- 섹션 속박스 -->
+          <div class="sec2_detail">
+            <h2>${subPage_item[y]["상품명"]}</h2>
+            <h3>${subPage_item[y]["가격"]}</h3>
+            <!-- 적립금 -->
+            <ol class="point">
+              <li>적립금</li>
+              <li>3％ ⓘ</li>
+            </ol>
+            <!-- 배송비 -->
+            <ol class="shipping">
+              <li>배송비</li>
+              <li>
+                무료 <br />
+                제주 3,000원, 제주 외 도서 산간 <br />
+                4,500원 추가
+              </li>
+            </ol>
+            <!-- 수량조건 -->
+            <ol class="count">
+              <li>수량 조건</li>
+              <li>
+                주문당 최대 1개
+                <br />
+                회원당 최대 1개
+              </li>
+            </ol>
+            <div class="sizetit">
+              <h2>SIZE</h2>
+            </div>
+            <div class="size_bx">선택하세요</div>
+            <!-- 주문 수량 -->
+            <ol class="scount">
+              <li>주문 수량</li>
+              <li>0개</li>
+            </ol>
+            <!-- 총상품 금액 -->
+            <ol class="total">
+              <li>총 상품 금액</li>
+              <li>0원</li>
+            </ol>
+            <!-- 구매 / 장바구니 버튼 -->
+            <ol class="buy">
+              <div class="buying">
+                구매하기
+              </div>
+              <div class="cart">
+                장바구니
+              </div>
+            </ol>
+            <!-- 상품 설명 텍스트 -->
+            <!-- 상품 상세 이미지 -->
+          </div>
+            <section class="main_dimg">
+              <div class="mimg">
+                <img src="./images/item_imgs/OUTER/light_puffer_jacket/light_puffer1.jpg" alt="이미지">
+              </div>
+            </section>
+        </li>
+        `;
+      } //////////// for in ///////////
+      // 메인영역 태그넣기
+      // item_list.innerHTML = main_code;
+    } /////////// subPageMain 함수 ////////////////////
+    
+    
 
   
 
