@@ -121,7 +121,6 @@ window.addEventListener("DOMContentLoaded", () => {
         if(snum >= fadeList.length) snum = 0;
       }, 1000); // 페이드 타임아웃 함수
     }; //////////// fade함수 ////////////////
-
     // fade함수 호출
     fade();
     
@@ -134,12 +133,6 @@ window.addEventListener("DOMContentLoaded", () => {
       // 태그담을 변수
       let main_code = "";
       
-      // ${subPage_item[y]["상품명"]}
-      // ${subPage_item[y]["가격"]}
-      // ${subPage_item[y]["구분"]}
-      // ${subPage_item[y]["전체"]}
-      // ${subPage_item[y]["디테일"]}
-      for(let y in subPage_item){
         main_code += `
         <!---------- 플렉스 섹션 1 ---------->
         <li class="sec1">
@@ -167,8 +160,8 @@ window.addEventListener("DOMContentLoaded", () => {
         <li class="sec2">
           <!-- 섹션 속박스 -->
           <div class="sec2_detail">
-            <h2>${subPage_item[y]["상품명"]}</h2>
-            <h3>${subPage_item[y]["가격"]}</h3>
+            <h2>aasdasdsa</h2>
+            <h3>aasdasdsa</h3>
             <!-- 적립금 -->
             <ol class="point">
               <li>적립금</li>
@@ -225,30 +218,29 @@ window.addEventListener("DOMContentLoaded", () => {
             </section>
         </li>
         `;
-      } //////////// for in ///////////
+      // } //////////// for in ///////////
       // 메인영역 태그넣기
-      // item_list.innerHTML = main_code;
+      item_list.innerHTML = main_code;
     } /////////// subPageMain 함수 ////////////////////
     
     
 
   
 
-  // // 넘어온 url 받기! pm -> 전달값변수
-  // let pm = location.href;
-  // // location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
+  // 넘어온 url 받기! pm -> 전달값변수
+  let pm = location.href;
+  // location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
 
-  // if (pm.indexOf('?') !== -1) {
-  //   // 문자열 잘라서 값 읽어오기
-  //   // -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
-  //   pm = pm.split('?')[1].split('=')[1];
+  if (pm.indexOf('?') !== -1) {
+    // 문자열 잘라서 값 읽어오기
+    // -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
+    pm = pm.split('?')[1].split('=')[1];
 
-  //   // pm값 특수문자 복원하기
-  //   pm = decodeURIComponent(pm);
+    // pm값 특수문자 복원하기
+    pm = decodeURIComponent(pm);
 
-  //   console.log("pm이뭐야:",pm);
+    console.log("pm이뭐야:",pm);
 
-  //   changeItem(pm);
-  // } ///////////// 파라미터가 있으면 ///////////
+  } ///////////// 파라미터가 있으면 ///////////
 }); ////////////////// 로드구역 ///////////////////
 //////////////////////////////////////////////////

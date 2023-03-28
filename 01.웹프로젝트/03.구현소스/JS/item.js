@@ -1,22 +1,5 @@
 //  POLYTERU item JS - item.js
 
-
-
-// 넘어온 url 받기! pm -> 전달값변수
-let pm = location.href;
-console.log("pm:",pm);
-// location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
-
-// 문자열 잘라서 값 읽어오기
-// -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
-pm = pm.split("?")[1].split("=")[1];
-
-// pm값 특수문자 복원하기
-pm = decodeURIComponent(pm);
-
-console.log(pm);
-
-
 //////////// 로드구역 /////////////
 window.addEventListener("DOMContentLoaded", () => {
   // console.log("로딩완료!");
@@ -131,29 +114,6 @@ window.addEventListener("DOMContentLoaded", () => {
   // 그리드 등장대상: .item
   const grid_item = document.querySelectorAll(".item");
   // console.log(grid_item)
-  // 아이템 페이지 메뉴: .location
-  const loca = document.querySelectorAll(".subNavi");
-  // console.log(loca)
-
-  function changeList(atxt) {
-    if (atxt === "all") {
-      loca.forEach((ele) => {
-        ele.style.display = "block";
-      }); ///// forEach
-    } //// if
-    else {
-      loca.forEach((ele) => {
-        ele.style.display = "none";
-        if (ele.classList.contains(atxt)) {
-          const newtit = document.querySelectorAll(".subNavi." + atxt);
-          console.log(newtit);
-          newtit.forEach((ele) => {
-            ele.style.display = "block";
-          }); ////// new_item forEach /////
-        } ///// if
-      }); ///// forEach
-    } //// else
-  } ////// changeList
 
   //////
   function changeItem(atxt) {
@@ -206,26 +166,26 @@ window.addEventListener("DOMContentLoaded", () => {
     파라미터로 보내기 
   ********************************************/
 
-    itemA.forEach((ele) => {
-      ele.onclick = () => {
-        let atxt = ele.innerText.toLowerCase();
-        changeItem(atxt);
-        // changeList(atxt);
+  itemA.forEach((ele) => {
+    ele.onclick = () => {
+      let atxt = ele.innerText.toLowerCase();
+      changeItem(atxt);
+      // changeList(atxt);
 
-        // 서브메뉴 a 클릭시 태그만들어 atxt에 맞는 글자 배열로 뿌리기
-        const subNavi = document.querySelector('.sub_title');
-            // console.log(subNavi);
-        let subcode = '';
-        const showtitle = ["all","outer","top","bottom","acc"]
-        let tit;
-        for(let x = 0; x < showtitle.length; x++){
-          if(atxt){
-            atxt = ele.innerText.toUpperCase();
-              tit = atxt;
-          } ///// if 문 ////////
-        } ///////// for 문 ///////////
-        
-        subcode += `
+      // 서브메뉴 a 클릭시 태그만들어 atxt에 맞는 글자 배열로 뿌리기
+      const subNavi = document.querySelector(".sub_title");
+      // console.log(subNavi);
+      let subcode = "";
+      const showtitle = ["all", "outer", "top", "bottom", "acc"];
+      let tit;
+      for (let x = 0; x < showtitle.length; x++) {
+        if (atxt) {
+          atxt = ele.innerText.toUpperCase();
+          tit = atxt;
+        } ///// if 문 ////////
+      } ///////// for 문 ///////////
+
+      subcode += `
         <div class="subNavi ${tit}">
         <ul class="location">
             <a href="#">
@@ -236,12 +196,11 @@ window.addEventListener("DOMContentLoaded", () => {
             <div class="item_tit">${tit}</div>
           </div>
           `;
-          
-    // 서브네비 태그넣기
-    subNavi.innerHTML = subcode;
-      }; //////// click /////////
-    }); ////////// forEach //////////
 
+      // 서브네비 태그넣기
+      subNavi.innerHTML = subcode;
+    }; //////// click /////////
+  }); ////////// forEach //////////
 
   // 아이템박스 로딩시 "on"주고 트랜지션 따로주기
   setTimeout(() => {
@@ -255,8 +214,8 @@ window.addEventListener("DOMContentLoaded", () => {
   function gridbxTags() {
     // 상품넣을 박스
     const gridbx = document.querySelector(".gridbx");
-    
-    let hcode = '';
+
+    let hcode = "";
 
     for (let x in allObj) {
       // x는 속성명
@@ -286,9 +245,27 @@ window.addEventListener("DOMContentLoaded", () => {
     gridbx.innerHTML = hcode;
   } /////////////// gridbx_Tags함수 ////////////////////////
 
-  
 
-  
-  
+
+// 넘어온 url 받기! pm -> 전달값변수
+let pm = location.href;
+console.log("pm:", pm);
+// location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
+
+// 문자열 잘라서 값 읽어오기
+// -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
+pm = pm.split("?")[1].split("=")[1];
+
+// pm값 특수문자 복원하기
+pm = decodeURIComponent(pm);
+
+
+console.log(pm);
+
+
+
+
 }); ////////////////// 로드구역 ///////////////////
 //////////////////////////////////////////////////
+
+

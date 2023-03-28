@@ -15,7 +15,7 @@ function linkFn(){
   const logo = document.querySelector(".logo a");
   // console.log(logo);
   // (3) more버튼 : more_bt
-  const moreBt = document.querySelector(".more_bt a");
+  const moreBt = document.querySelector(".more_bt>a");
   console.log(moreBt);
 
   // 클릭이벤트 설정하기
@@ -32,7 +32,7 @@ function linkFn(){
 
       // 서브페이지 이동하기
       if(atxt !== ""){
-        location.href = "item.html?cat="
+        location.href = "item.html?item="
         +encodeURIComponent(atxt);
       }
     }; ////////// click ///////////
@@ -50,7 +50,7 @@ function linkFn(){
   // moreBt.onclick = (e) => {
   //   e.preventDefault();
   //   // .item으로 이동하기
-  //   location.href = "item.html";
+  //   location.href = "./item.html?item=";
   // }; //////// click /////////
   
 } /////////// linkFn 함수 //////////////
