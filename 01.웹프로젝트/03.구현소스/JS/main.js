@@ -1,5 +1,7 @@
 // 웹프로젝트 POLYTERU JS - main.js
 
+
+
 //////////// 로드구역 /////////////
 window.addEventListener("DOMContentLoaded",()=>{
   // console.log("로딩완료!");
@@ -265,8 +267,8 @@ window.addEventListener("DOMContentLoaded",()=>{
       <div class="item itbx1">
         <a href="#">
             <div class="iimg">
-              <img src="./images/item_imgs/ALL/${gdsObj[x]["이미지1"]}.jpg">
-              <img src="./images/item_imgs/ALL/${gdsObj[x]["이미지2"]}.jpg">
+              <img src="./images/item_imgs/all/${gdsObj[x]["이미지1"]}.jpg">
+              <img src="./images/item_imgs/all/${gdsObj[x]["이미지2"]}.jpg">
             </div>
         </a>
         <div class="itxt">
@@ -301,8 +303,8 @@ function gridbxStyle(){
       <div class="sitem">
         <a href="#">
           <div class="simg">
-            <img src="./images/item_imgs/STYLE/${gdsStyle[x]["이미지1"]}.jpg">
-            <img src="./images/item_imgs/STYLE/${gdsStyle[x]["이미지2"]}.jpg">
+            <img src="./images/item_imgs/style/${gdsStyle[x]["이미지1"]}.jpg">
+            <img src="./images/item_imgs/style/${gdsStyle[x]["이미지2"]}.jpg">
           </div>
         </a>
       </div>
@@ -313,6 +315,8 @@ function gridbxStyle(){
   grid_style.innerHTML = scode;
 } ///////////// gridbx_style 함수 /////////////
 
+// 링크 Fn함수 불러오기 - linksys.js
+linkFn();
 
 }); ////////////////// 로드구역 ///////////////////
 //////////////////////////////////////////////////

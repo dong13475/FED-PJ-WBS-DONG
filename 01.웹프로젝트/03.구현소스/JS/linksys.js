@@ -46,6 +46,22 @@ function linkFn(){
     location.href = "./index.html";
   }; ///////// click /////////
 
+
+  /********************************************** 
+    각각 아이템 클릭시 itemdetail 페이지로 이동
+  **********************************************/
+    const allItem = document.querySelectorAll(".item a[href='#']");
+    console.log(allItem);
+
+    allItem.forEach((ele)=>{
+      ele.onclick = () => {
+        location.href = "itemdetail.html";
+      } ///// click //////
+    }); //////// forEach //////////
+
+
+
+
   // // (3) more버튼 클릭설정
   // moreBt.onclick = (e) => {
   //   e.preventDefault();
@@ -54,3 +70,24 @@ function linkFn(){
   // }; //////// click /////////
   
 } /////////// linkFn 함수 //////////////
+
+
+/*********************************************************** 
+  현재 수정해야하는 기능
+
+  1. get방식 이동 문제
+  index.html 에서 .smenu a를 클릭시 item.html 페이지로 
+  이동하는데 item.html 싱글페이지여서 첫로딩은 어떤 a요소를 
+  클릭해도 처음페이지로 이동하고 그후에 각각요소 클릭시
+  display:none/block 이 적용된다.
+  따라서 index.html 에서 네비li 클릭시 바로 이동이되게해야함  
+
+  
+  현재 구현하고싶은 기능
+
+  2. 두번째 서브페이지 코드 뿌리기
+  아이템요소 클릭시 itemdetail.html로 이동하는데 현재 
+  html태그를 자바스크립트로 뿌려 이미지 경로나 아이템 이름같이
+  요소에 맞게 바뀌어야 할부분에 객체 subPage_item 에서 
+  ${}로 아이템에 맞게 구분해서 뿌려주게하기
+***********************************************************/

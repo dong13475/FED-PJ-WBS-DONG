@@ -17,6 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // 메인영역 태그넣기함수 호출
   subPageMain();
 
+
   /****************************************** 
     상단 이동버튼 스크롤시 클래스 on 넣기/빼기
   ******************************************/
@@ -101,7 +102,7 @@ window.addEventListener("DOMContentLoaded", () => {
   *****************************/
   // 페이드 li 변수
   let fadeList = document.querySelectorAll(".fade li");
-  console.log(fadeList);
+  // console.log(fadeList);
   // 페이드 번호 변수
   let snum = 0;
 
@@ -125,8 +126,16 @@ window.addEventListener("DOMContentLoaded", () => {
     fade();
     
 
+    const allItem = document.querySelectorAll(".item a[href='#']");
+    console.log(allItem);
+    
+
     ////////////////// 메인영역 태그넣기 ////////////////
     function subPageMain(){
+
+      for(let x in subPage_item){
+        
+      }
       // 태그 넣을 영역
       const item_list = document.querySelector(".item_list ul");
 
@@ -139,19 +148,19 @@ window.addEventListener("DOMContentLoaded", () => {
           <div class="stk_bx">
             <ul class="fade">
               <li class="on">
-                <img src="./images/item_imgs/OUTER/light_puffer_jacket/light_pufferFull/light_pufferF1.jpg" alt="이미지">
+                <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF1.jpg" alt="이미지">
               </li>
               <li>
-                <img src="./images/item_imgs/OUTER/light_puffer_jacket/light_pufferFull/light_pufferF2.jpg" alt="이미지">
+                <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF2.jpg" alt="이미지">
               </li>
               <li>
-                <img src="./images/item_imgs/OUTER/light_puffer_jacket/light_pufferFull/light_pufferF3.jpg" alt="이미지">
+                <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF3.jpg" alt="이미지">
               </li>
               <li>
-                <img src="./images/item_imgs/OUTER/light_puffer_jacket/light_pufferFull/light_pufferF4.jpg" alt="이미지">
+                <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF4.jpg" alt="이미지">
               </li>
               <li>
-                <img src="./images/item_imgs/OUTER/light_puffer_jacket/light_pufferFull/light_pufferF5.jpg" alt="이미지">
+                <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF5.jpg" alt="이미지">
               </li>
             </ul>
           </div>
@@ -213,7 +222,7 @@ window.addEventListener("DOMContentLoaded", () => {
           </div>
             <section class="main_dimg">
               <div class="mimg">
-                <img src="./images/item_imgs/OUTER/light_puffer_jacket/light_puffer1.jpg" alt="이미지">
+                <img src="./images/item_imgs/outer/light_puffer/light_puffer1.jpg" alt="이미지">
               </div>
             </section>
         </li>

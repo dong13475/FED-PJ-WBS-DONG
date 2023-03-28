@@ -9,6 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
   });
 
+
   // 새로고침시 스크롤 맨위로 //
   setTimeout(() => {
     window.scrollTo(0, 0);
@@ -210,6 +211,10 @@ window.addEventListener("DOMContentLoaded", () => {
     }); //////// 그리드아이템 분기 forEach //////////
   }, 200); //////////// 그리드 아이템 0.2초후에 등장 ///////////
 
+
+  
+  
+
   ///////////////////// grid구역 태그넣기 //////////////////////////
   function gridbxTags() {
     // 상품넣을 박스
@@ -217,15 +222,20 @@ window.addEventListener("DOMContentLoaded", () => {
 
     let hcode = "";
 
+
     for (let x in allObj) {
+
+      // let lotn = allObj[x]["구분"];
+      // console.log(lotn);
       // x는 속성명
       hcode += `
+      
       
       <div class="item ${allObj[x]["구분"]}">
         <a href="#">
             <div class="iimg">
-              <img src="./images/item_imgs/ALL/${allObj[x]["이미지1"]}.jpg">
-              <img src="./images/item_imgs/ALL/${allObj[x]["이미지2"]}.jpg">
+              <img src="./images/item_imgs/all/${allObj[x]["이미지1"]}.jpg">
+              <img src="./images/item_imgs/all/${allObj[x]["이미지2"]}.jpg">
             </div>
         </a>
         <div class="itxt">
@@ -247,25 +257,27 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-// 넘어온 url 받기! pm -> 전달값변수
-let pm = location.href;
-console.log("pm:", pm);
-// location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
+// // 넘어온 url 받기! pm -> 전달값변수
+// let pm = location.href;
+// console.log("pm:", pm);
+// // location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
 
-// 문자열 잘라서 값 읽어오기
-// -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
-pm = pm.split("?")[1].split("=")[1];
+// // 문자열 잘라서 값 읽어오기
+// // -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
+// pm = pm.split("?")[1].split("=")[1];
 
-// pm값 특수문자 복원하기
-pm = decodeURIComponent(pm);
-
-
-console.log(pm);
+// // pm값 특수문자 복원하기
+// pm = decodeURIComponent(pm);
 
 
+// console.log(pm);
 
+
+// 링크 Fn함수 불러오기 - linksys.js
+linkFn();
 
 }); ////////////////// 로드구역 ///////////////////
 //////////////////////////////////////////////////
+
 
 
