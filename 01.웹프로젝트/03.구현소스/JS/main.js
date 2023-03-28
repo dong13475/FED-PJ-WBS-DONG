@@ -250,17 +250,6 @@ window.addEventListener("DOMContentLoaded",()=>{
       // });
 
 
-    //   const allItem = document.querySelectorAll(".item a[href='#']");
-    //   console.log(allItem);
-    //   const itemName = document.querySelector(".item");
-    //   console.log(itemName);
-
-    //   itemName.onclick = (function(){
-    //     for(let y in gdsObj){
-    //     this.classList.add(gdsObj[y]["경로"]);
-    //   }
-    // })
-
   ///////////////////// grid구역 태그넣기 //////////////////////////
   function gridbxTags(){
 
@@ -323,6 +312,7 @@ function gridbxStyle(){
   // 스타일 구역 태그넣기
   grid_style.innerHTML = scode;
 } ///////////// gridbx_style 함수 /////////////
+
 
 // 링크 Fn함수 불러오기 - linksys.js
 linkFn();

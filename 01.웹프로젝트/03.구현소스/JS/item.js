@@ -156,6 +156,7 @@ window.addEventListener("DOMContentLoaded", () => {
         } /////// if ///////
       }); /////// forEach //////////
     } ////////////// else ///////////////
+
   } ///////// changeItem 함수 ///////////////////
 
   // 서브메뉴 밑의 a변수
@@ -203,6 +204,9 @@ window.addEventListener("DOMContentLoaded", () => {
     }; //////// click /////////
   }); ////////// forEach //////////
 
+
+
+
   // 아이템박스 로딩시 "on"주고 트랜지션 따로주기
   setTimeout(() => {
     grid_item.forEach((ele, idx) => {
@@ -210,7 +214,6 @@ window.addEventListener("DOMContentLoaded", () => {
       ele.style.transitionDelay = `${idx * 0.1}s`;
     }); //////// 그리드아이템 분기 forEach //////////
   }, 200); //////////// 그리드 아이템 0.2초후에 등장 ///////////
-
 
   
   
@@ -257,24 +260,24 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-// // 넘어온 url 받기! pm -> 전달값변수
-// let pm = location.href;
-// console.log("pm:", pm);
-// // location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
+// 넘어온 url 받기! pm -> 전달값변수
+let pm = location.href;
+console.log("pm:", pm);
+// location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
 
-// // 문자열 잘라서 값 읽어오기
-// // -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
-// pm = pm.split("?")[1].split("=")[1];
+// 문자열 잘라서 값 읽어오기
+// -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
+pm = pm.split("?")[1].split("=")[1];
 
-// // pm값 특수문자 복원하기
-// pm = decodeURIComponent(pm);
+// pm값 특수문자 복원하기
+pm = decodeURIComponent(pm);
 
 
-// console.log(pm);
+console.log(pm);
 
 
 // 링크 Fn함수 불러오기 - linksys.js
-// linkFn();
+changeItem(pm);
 
 }); ////////////////// 로드구역 ///////////////////
 //////////////////////////////////////////////////

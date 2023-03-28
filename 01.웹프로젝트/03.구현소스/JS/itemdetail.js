@@ -131,7 +131,6 @@ window.addEventListener("DOMContentLoaded", () => {
     function subPageMain(){
 
       
-      // }
       // 태그 넣을 영역
       const item_list = document.querySelector(".item_list ul");
       
