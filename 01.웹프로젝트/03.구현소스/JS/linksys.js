@@ -50,14 +50,23 @@ function linkFn(){
   /********************************************** 
     각각 아이템 클릭시 itemdetail 페이지로 이동
   **********************************************/
-    const allItem = document.querySelectorAll(".item a[href='#']");
-    console.log(allItem);
+    // const allItem = document.querySelectorAll(".item a[href='#']");
+    // console.log(allItem);
+    // const itemName = document.querySelector(".item")
+    // console.log(itemName);
 
-    allItem.forEach((ele)=>{
-      ele.onclick = () => {
-        location.href = "itemdetail.html";
-      } ///// click //////
-    }); //////// forEach //////////
+
+    // allItem.forEach((ele)=>{
+    //   ele.onclick = () => {
+    //     location.href = "itemdetail.html";
+    //   } ///// click //////
+    // }); //////// forEach //////////
+
+  //   itemName.onclick = (function(){
+  //     for(let y in gdsObj){
+  //     this.classList.add(gdsObj[y]["경로"]);
+  //   }
+  // })
 
 
 
@@ -82,7 +91,7 @@ function linkFn(){
   display:none/block 이 적용된다.
   따라서 index.html 에서 네비li 클릭시 바로 이동이되게해야함  
 
-  
+
   현재 구현하고싶은 기능
 
   2. 두번째 서브페이지 코드 뿌리기
@@ -90,4 +99,6 @@ function linkFn(){
   html태그를 자바스크립트로 뿌려 이미지 경로나 아이템 이름같이
   요소에 맞게 바뀌어야 할부분에 객체 subPage_item 에서 
   ${}로 아이템에 맞게 구분해서 뿌려주게하기
+
+  * item.html에서도 linkFn()함수를 호출했는데 왜 적용이 안되는지
 ***********************************************************/

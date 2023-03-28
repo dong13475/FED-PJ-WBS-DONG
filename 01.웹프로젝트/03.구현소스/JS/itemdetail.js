@@ -125,9 +125,6 @@ window.addEventListener("DOMContentLoaded", () => {
     // fade함수 호출
     fade();
     
-
-    const allItem = document.querySelectorAll(".item a[href='#']");
-    console.log(allItem);
     
 
     ////////////////// 메인영역 태그넣기 ////////////////
@@ -169,8 +166,8 @@ window.addEventListener("DOMContentLoaded", () => {
         <li class="sec2">
           <!-- 섹션 속박스 -->
           <div class="sec2_detail">
-            <h2>aasdasdsa</h2>
-            <h3>aasdasdsa</h3>
+            <h2>객체 넣을곳</h2>
+            <h3>객체 넣을곳</h3>
             <!-- 적립금 -->
             <ol class="point">
               <li>적립금</li>

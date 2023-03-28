@@ -225,6 +225,10 @@ window.addEventListener("DOMContentLoaded",()=>{
     }); /////////// 스타일 아이템 분기 forEach /////////
   }); ///////// scroll //////////////
 
+  /****************************************************** 
+    각각의 .item 클릭시 itemdetail 페이지로 이동
+
+  ******************************************************/
   
   
   
@@ -251,7 +255,16 @@ window.addEventListener("DOMContentLoaded",()=>{
       //   // ele.getAttribute("src").replace("2","1")
       //   // ele.getAttribute(속성명).replace(바뀔값,바꿀값)
       // });
+      const allItem = document.querySelectorAll(".item a[href='#']");
+      console.log(allItem);
+      const itemName = document.querySelector(".item");
+      console.log(itemName);
 
+      itemName.onclick = (function(){
+        for(let y in gdsObj){
+        this.classList.add(gdsObj[y]["경로"]);
+      }
+    })
   ///////////////////// grid구역 태그넣기 //////////////////////////
   function gridbxTags(){
 
@@ -264,7 +277,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   for(let x in gdsObj){
     // x는 속성명
       hcode += `
-      <div class="item itbx1">
+      <div class="item">
         <a href="#">
             <div class="iimg">
               <img src="./images/item_imgs/all/${gdsObj[x]["이미지1"]}.jpg">
