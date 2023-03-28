@@ -50,17 +50,17 @@ function linkFn(){
   /********************************************** 
     각각 아이템 클릭시 itemdetail 페이지로 이동
   **********************************************/
-    // const allItem = document.querySelectorAll(".item a[href='#']");
-    // console.log(allItem);
-    // const itemName = document.querySelector(".item")
-    // console.log(itemName);
+    const allItem = document.querySelectorAll(".item a[href='#']");
+    console.log(allItem);
+    const itemName = document.querySelector(".item")
+    console.log(itemName);
 
 
-    // allItem.forEach((ele)=>{
-    //   ele.onclick = () => {
-    //     location.href = "itemdetail.html";
-    //   } ///// click //////
-    // }); //////// forEach //////////
+    allItem.forEach((ele)=>{
+      ele.onclick = () => {
+        location.href = "itemdetail.html";
+      } ///// click //////
+    }); //////// forEach //////////
 
   //   itemName.onclick = (function(){
   //     for(let y in gdsObj){
@@ -101,4 +101,5 @@ function linkFn(){
   ${}로 아이템에 맞게 구분해서 뿌려주게하기
 
   * item.html에서도 linkFn()함수를 호출했는데 왜 적용이 안되는지
+
 ***********************************************************/

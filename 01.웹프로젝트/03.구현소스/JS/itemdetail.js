@@ -130,15 +130,20 @@ window.addEventListener("DOMContentLoaded", () => {
     ////////////////// 메인영역 태그넣기 ////////////////
     function subPageMain(){
 
-      for(let x in subPage_item){
-        
-      }
+      
+      // }
       // 태그 넣을 영역
       const item_list = document.querySelector(".item_list ul");
-
+      
       // 태그담을 변수
       let main_code = "";
+      let cnt = 0;
+
+      /* 
+      <img src="./images/item_imgs/${subPage_item[x]["구분"]}/${subPage_item[x]["경로"]}/${subPage_item[x]["경로"]}Full/${subPage_item[x]["전체"]}${cnt}.jpg" alt="이미지">
+      */
       
+      // for(let x in subPage_item){
         main_code += `
         <!---------- 플렉스 섹션 1 ---------->
         <li class="sec1">
