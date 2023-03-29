@@ -91,47 +91,20 @@ window.addEventListener("DOMContentLoaded", () => {
     }; ////// mouseleave ///////
   }); /////// forEach ////////
 
-  
-  /*************************************** 
-    서브메뉴 a텍스트 forEach메서드로 돌려
-    클릭시 소문자로 바꾼후 함수에
-    파라미터로 보내기 
-  ***************************************/
-  // 서브메뉴 밑의 a변수
-  const itemA = smenu.querySelectorAll("a");
-  console.log(itemA);
 
-  // .smenu a 분기후 텍스트 소문자로 변경하여 함수에 보내기
-  itemA.forEach((ele) => {
-    ele.onclick = () => {
-      let atxt = ele.innerText.toLowerCase();
-      // 그리드 등장 함수에 파라미터 넣기
-      // changeItem(atxt);
-      // 타이틀 등장 함수에 파라미터 넣기
-      // changeTit(atxt);
-    }; //////// click /////////
-  }); ////////// forEach //////////
+  /****************************************** 
+    li 리스트에 .on으로 트랜지션 효과주기
+    대상: .kor li
+  ******************************************/
+  const korLi = document.querySelectorAll(".kor li");
+  console.log(korLi);
+  korLi.forEach((ele,idx)=>{
+    ele.classList.add("on");
+    ele.style.transitionDelay = `${idx * 0.1}s`; 
+  }); /////// forEach ////////
 
 
-  /*********************************************** 
-    linksys.js에서 넘어온 url 받기
-  ***********************************************/
-  // 넘어온 url 받기! pm -> 전달값변수
-  let pm = location.href;
-  console.log("pm:", pm);
-  // location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
-
-  // 문자열 잘라서 값 읽어오기
-  // -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
-  // pm = pm.split("?")[1].split("=")[1];
-
-  // pm값 특수문자 복원하기
-  pm = decodeURIComponent(pm);
-
-  console.log("그래서 pm은?", pm);
-
-  // 그리드 / 타이틀 등장 함수에 파리미터로 pm값 보내기
-  // changeItem(pm);
-  // changeTit(pm);
+  // // 링크 Fn함수 불러오기 - linksys.js
+  linkFn();
 }); ////////////////// 로드구역 ///////////////////
 //////////////////////////////////////////////////

@@ -8,6 +8,29 @@
 
 /*********************** 2. 메인영역 ***********************/
 
+.dir{
+  top: 90vh;
+  right: 3vw;
+  position: absolute;
+  transform: rotate(90deg);
+  font-size: 2rem;
+  color: #cacaca;
+}
+.arrow{
+  /* width: 100%; */
+  margin-top: 3px;
+  width: 100%;
+  height: 1px;
+  background-color: #cacaca;
+}
+.tip{
+  position: absolute;
+  right: 0;
+  transform: translate(1px,-4px) rotate(45deg);
+  width: 10px;
+  height: 1px;
+  background-color: #cacaca;
+}
 /* 배너 겉박스 */
 /* .cont {
 } */
