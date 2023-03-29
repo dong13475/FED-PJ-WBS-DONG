@@ -34,7 +34,7 @@ function linkFn(){
       if(atxt !== ""){
         location.href = "item.html?item="
         +encodeURIComponent(atxt);
-      }
+      } ////// if ////////
     }; ////////// click ///////////
   } ////////// for of ////////////
 

@@ -9,7 +9,6 @@ window.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
   });
 
-
   // 새로고침시 스크롤 맨위로 //
   setTimeout(() => {
     window.scrollTo(0, 0);
@@ -110,7 +109,6 @@ window.addEventListener("DOMContentLoaded", () => {
     똑같이 css효과를 없앤다음 만약에 아이템박스의
     클래스가 atxt를 포함하고 있으면 .item.atxt를
     forEach메서드로 돌려 css효과를 준다
-
   *********************************************/
   // 그리드 등장대상: .item
   const grid_item = document.querySelectorAll(".item");
@@ -156,67 +154,78 @@ window.addEventListener("DOMContentLoaded", () => {
         } /////// if ///////
       }); /////// forEach //////////
     } ////////////// else ///////////////
-
   } ///////// changeItem 함수 ///////////////////
 
+
+  /************************************************* 
+    [ 타이틀 변경 함수 ]
+    changeTit함수는 텍스트를 배열로 만들어 atxt와 
+    일치 시킨후 html태그를 뿌려준다
+    - .smenu a 클릭시 changeTit함수 호출
+  *************************************************/
+  function changeTit(atxt) {
+    // 서브메뉴 a 클릭시 태그만들어 atxt에 맞는 글자 배열로 뿌리기
+    const subNavi = document.querySelector(".sub_title");
+    // console.log(subNavi);
+    let subcode = "";
+    const showtitle = ["all", "outer", "top", "bottom", "acc"];
+    let tit;
+    for (let x = 0; x < showtitle.length; x++) {
+      if (atxt) {
+        // atxt = ele.innerText.toUpperCase();
+        tit = atxt.toUpperCase();
+      } ///// if 문 ////////
+    } ///////// for 문 ///////////
+
+    subcode += `
+      <div class="subNavi ${tit}">
+      <ul class="location">
+          <a href="#">
+          <li>HOME&nbsp;/ </li>
+          </a>
+          <li>&nbsp;${tit}</li>
+          </ul>
+          <div class="item_tit">${tit}</div>
+        </div>
+        `;
+    // 서브네비 태그넣기
+    subNavi.innerHTML = subcode;
+  } //////////// changeTit 함수 //////////
+
+  
+  /*************************************** 
+    서브메뉴 a텍스트 forEach메서드로 돌려
+    클릭시 소문자로 바꾼후 함수에
+    파라미터로 보내기 
+  ***************************************/
   // 서브메뉴 밑의 a변수
   const itemA = smenu.querySelectorAll("a");
   console.log(itemA);
-  /******************************************** 
-    서브메뉴 a텍스트 forEach메서드로 돌려
-    클릭시 소문자로 바꾼후 changeItem함수에
-    파라미터로 보내기 
-  ********************************************/
 
+  // .smenu a 분기후 텍스트 소문자로 변경하여 함수에 보내기
   itemA.forEach((ele) => {
     ele.onclick = () => {
       let atxt = ele.innerText.toLowerCase();
+      // 그리드 등장 함수에 파라미터 넣기
       changeItem(atxt);
-      // changeList(atxt);
-
-      // 서브메뉴 a 클릭시 태그만들어 atxt에 맞는 글자 배열로 뿌리기
-      const subNavi = document.querySelector(".sub_title");
-      // console.log(subNavi);
-      let subcode = "";
-      const showtitle = ["all", "outer", "top", "bottom", "acc"];
-      let tit;
-      for (let x = 0; x < showtitle.length; x++) {
-        if (atxt) {
-          atxt = ele.innerText.toUpperCase();
-          tit = atxt;
-        } ///// if 문 ////////
-      } ///////// for 문 ///////////
-
-      subcode += `
-        <div class="subNavi ${tit}">
-        <ul class="location">
-            <a href="#">
-            <li>HOME&nbsp;/ </li>
-            </a>
-            <li>&nbsp;${tit}</li>
-            </ul>
-            <div class="item_tit">${tit}</div>
-          </div>
-          `;
-
-      // 서브네비 태그넣기
-      subNavi.innerHTML = subcode;
+      // 타이틀 등장 함수에 파라미터 넣기
+      changeTit(atxt);
     }; //////// click /////////
   }); ////////// forEach //////////
 
 
-
-
-  // 아이템박스 로딩시 "on"주고 트랜지션 따로주기
-  setTimeout(() => {
-    grid_item.forEach((ele, idx) => {
-      ele.classList.add("on");
-      ele.style.transitionDelay = `${idx * 0.1}s`;
-    }); //////// 그리드아이템 분기 forEach //////////
-  }, 200); //////////// 그리드 아이템 0.2초후에 등장 ///////////
-
-  
-  
+  /***************************************** 
+    item.html 만 로딩시 효과주기
+    현재는 get으로 연결해 바로 넘어가기때문에
+    사용하지 않음
+  *****************************************/
+  // // 아이템박스 로딩시 "on"주고 트랜지션 따로주기
+  // setTimeout(() => {
+  //   grid_item.forEach((ele, idx) => {
+  //     ele.classList.add("on");
+  //     ele.style.transitionDelay = `${idx * 0.1}s`;
+  //   }); //////// 그리드아이템 분기 forEach //////////
+  // }, 200); //////////// 그리드 아이템 0.2초후에 등장 ///////////
 
   ///////////////////// grid구역 태그넣기 //////////////////////////
   function gridbxTags() {
@@ -225,14 +234,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
     let hcode = "";
 
-
     for (let x in allObj) {
-
-      // let lotn = allObj[x]["구분"];
-      // console.log(lotn);
       // x는 속성명
       hcode += `
-      
       
       <div class="item ${allObj[x]["구분"]}">
         <a href="#">
@@ -259,28 +263,25 @@ window.addEventListener("DOMContentLoaded", () => {
   } /////////////// gridbx_Tags함수 ////////////////////////
 
 
+  /*********************************************** 
+    linksys.js에서 넘어온 url 받기
+  ***********************************************/
+  // 넘어온 url 받기! pm -> 전달값변수
+  let pm = location.href;
+  console.log("pm:", pm);
+  // location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
 
-// 넘어온 url 받기! pm -> 전달값변수
-let pm = location.href;
-console.log("pm:", pm);
-// location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
+  // 문자열 잘라서 값 읽어오기
+  // -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
+  pm = pm.split("?")[1].split("=")[1];
 
-// 문자열 잘라서 값 읽어오기
-// -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
-pm = pm.split("?")[1].split("=")[1];
+  // pm값 특수문자 복원하기
+  pm = decodeURIComponent(pm);
 
-// pm값 특수문자 복원하기
-pm = decodeURIComponent(pm);
+  console.log("그래서 pm은?", pm);
 
-
-console.log(pm);
-
-
-// 링크 Fn함수 불러오기 - linksys.js
-changeItem(pm);
-
+  // 그리드 / 타이틀 등장 함수에 파리미터로 pm값 보내기
+  changeItem(pm);
+  changeTit(pm);
 }); ////////////////// 로드구역 ///////////////////
 //////////////////////////////////////////////////
-
-
-

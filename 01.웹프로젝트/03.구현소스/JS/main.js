@@ -210,6 +210,13 @@ window.addEventListener("DOMContentLoaded",()=>{
   move_top.onclick = () => {
     window.scrollTo(0,0);
   }; /////// click //////////
+
+  // more버튼 클릭시 item페이지 all로 이동
+  const mvtn = document.querySelector(".more_bt");
+  console.log(mvtn);
+  mvtn.onclick = (()=>{
+    location.href = "item.html?item=all";
+  });
   
   
   // 스크롤 이벤트 셋팅 /////////
