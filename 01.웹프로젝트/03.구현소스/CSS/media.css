@@ -166,6 +166,7 @@
   .style_box {
     grid-template-columns: repeat(3, 1fr);
     padding: 0 20px 100px;
+    gap: 30px 25px;
   } 
 }
 /* 800px 사이즈 이하 미디어쿼리 끝 */

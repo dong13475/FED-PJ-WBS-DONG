@@ -55,6 +55,7 @@
   opacity: 0;
   transition: 0.4s ease-in-out;
   overflow: hidden;
+  border-radius: 5%;
 }
 /* 등장클래스+.on */
 .sitem.on{
