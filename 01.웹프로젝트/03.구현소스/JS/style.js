@@ -14,6 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
     window.scrollTo(0, 0);
   }, 100); // 0.1초정도는 줘야효과있음!
 
+  styleBx();
 
   /****************************************** 
     상단 이동버튼 스크롤시 클래스 on 넣기/빼기
@@ -90,23 +91,95 @@ window.addEventListener("DOMContentLoaded", () => {
       } //////// if ////////
     }; ////// mouseleave ///////
   }); /////// forEach ////////
-  
+
   ///////////////// 여기까지 공통영역 //////////////////
+  const stit = document.querySelector(".style_tit");
+
+
+    let hcode = "";
+  
+    hcode += `
+      <div class="subNavi">
+      <ul class="location">
+          <a href="#">
+          <li>HOME&nbsp;/ </li>
+          </a>
+          <li>&nbsp; STYLE</li>
+          </ul>
+          <div class="item_tit"> STYLE</div>
+        </div>
+        `;
+    // 서브네비 태그넣기
+    stit.innerHTML = hcode;
+
+  
+  const s_item = document.querySelectorAll(".sitem");
+  // 아이템박스 로딩시 "on"주고 트랜지션 따로주기
+  setTimeout(() => {
+    s_item.forEach((ele, idx) => {
+      ele.classList.add("on");
+      ele.style.transitionDelay = `${idx * 0.1}s`;
+    }); //////// 그리드아이템 분기 forEach //////////
+  }, 200); //////////// 그리드 아이템 0.2초후에 등장 ///////////
+
+  /****************************
+    스타일 페이지 태그 넣기
+  ****************************/
+  function styleBx() {
+    // 상품 넣을 박스
+    const style_box = document.querySelector(".style_box");
+    console.log(style_box);
+
+    let scode = "";
+
+    for (let x in gdsStyleAll) {
+      scode += `
+      <div class="sitem">
+          <div class="simg">
+            <img src="./images/item_imgs/styleall/${gdsStyleAll[x]["이미지1"]}.jpg">
+          </div>
+      </div>
+    `;
+    } /////////// for in ////////////
+
+    // 스타일 구역 태그넣기
+    style_box.innerHTML = scode;
+  } ///////////// styleBx 함수 /////////////
+
+  /*************************************** 
+    .simg에 마우스 오버시 클래스 .on추가
+  ***************************************/
+  const simg = document.querySelectorAll(".simg");
+  simg.forEach((ele)=>{
+    ele.onmouseenter = () => {
+      ele.classList.add("on");
+    };
+    ele.onmouseleave = () => {
+      ele.classList.remove("on");
+    };
+  });
   
 
-  /****************************************** 
-    li 리스트에 .on으로 트랜지션 효과주기
-    대상: .kor li
-  ******************************************/
-  const korLi = document.querySelectorAll(".kor li");
-  console.log(korLi);
-  korLi.forEach((ele,idx)=>{
-    ele.classList.add("on");
-    ele.style.transitionDelay = `${idx * 0.1}s`; 
-  }); /////// forEach ////////
+  // /***********************************************
+  //   linksys.js에서 넘어온 url 받기
+  // ***********************************************/
+  // // 넘어온 url 받기! pm -> 전달값변수
+  // let pm = location.href;
+  // console.log("pm:", pm);
+  // // location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
 
+  // // 문자열 잘라서 값 읽어오기
+  // // -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
+  // pm = pm.split("?")[1].split("=")[1];
 
-  // // 링크 Fn함수 불러오기 - linksys.js
+  // // pm값 특수문자 복원하기
+  // pm = decodeURIComponent(pm);
+
+  // console.log("그래서 pm은?", pm);
+
+  // // 그리드 / 타이틀 등장 함수에 파리미터로 pm값 보내기
+  // changeItem(pm);
+  // changeTit(pm);
   linkFn();
 }); ////////////////// 로드구역 ///////////////////
 //////////////////////////////////////////////////

@@ -129,6 +129,9 @@
   .gridbx {
     grid-template-columns: repeat(3, 1fr);
   }
+  .style_box {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 /* 1200px 사이즈 이하 미디어쿼리 끝 */
 
@@ -139,6 +142,7 @@
   /* 메인 그리드 박스 */
   .gridbx{
     padding: 0 30px;
+    padding-bottom: 100px;
     gap: 30px 25px;
   }
   /* 메인 스타일 박스 */
@@ -147,7 +151,8 @@
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
     gap: 45px 40px;
-}
+  }
+  
   /* 푸터영역 */
   .blogo {
     left: 50%;
@@ -157,7 +162,11 @@
     padding-top: 80px;
     font-size: 1.1rem;
   }
-  
+  /* 서브 스타일페이지  */
+  .style_box {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 20px 100px;
+  } 
 }
 /* 800px 사이즈 이하 미디어쿼리 끝 */
 
@@ -180,6 +189,7 @@
     grid-template-columns: repeat(2, 1fr);
     padding: 0 20px;
     gap: 20px 25px;
+    padding-bottom: 100px;
   }
   
   .item_section {
@@ -215,6 +225,11 @@
     line-height: 15px;
     /* padding: 0 20px; */
   }
+  /* 서브 스타일페이지  */
+  .style_box {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px 100px;
+  } 
 
   /******** itemdetail 페이지 미디어쿼리 ********/
 

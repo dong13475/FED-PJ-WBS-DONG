@@ -76,6 +76,9 @@ function linkFn(){
   about[4].onclick = () => {
     location.href = "introduce.html";
   };
+  about[2].onclick = () => {
+    location.href = "style.html";
+  };
 
 
 
@@ -108,6 +111,5 @@ function linkFn(){
   요소에 맞게 바뀌어야 할부분에 객체 subPage_item 에서 
   ${}로 아이템에 맞게 구분해서 뿌려주게하기
 
-  * item.html에서도 linkFn()함수를 호출했는데 왜 적용이 안되는지
 
 ***********************************************************/
