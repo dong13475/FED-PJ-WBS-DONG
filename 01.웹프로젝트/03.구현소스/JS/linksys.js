@@ -15,8 +15,8 @@ function linkFn(){
   const logo = document.querySelector(".logo a");
   // console.log(logo);
   // (3) more버튼 : more_bt
-  const moreBt = document.querySelector(".more_bt>a");
-  console.log(moreBt);
+  // const moreBt = document.querySelector(".more_bt>a");
+  // console.log(moreBt);
 
   // 클릭이벤트 설정하기
   // (1) sli 클릭설정 ///////
@@ -68,6 +68,14 @@ function linkFn(){
   //   }
   // })
 
+  /* 
+    ABOUT 클릭
+  */
+  const about = document.querySelectorAll(".gnb>ul>li");
+  console.log(about[4]);
+  about[4].onclick = () => {
+    location.href = "introduce.html";
+  };
 
 
 
