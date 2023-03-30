@@ -17,7 +17,6 @@ window.addEventListener("DOMContentLoaded", () => {
   // 메인영역 태그넣기함수 호출
   subPageMain();
 
-
   /****************************************** 
     상단 이동버튼 스크롤시 클래스 on 넣기/빼기
   ******************************************/
@@ -94,10 +93,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }; ////// mouseleave ///////
   }); /////// forEach ////////
 
-
   ///////////////// 여기까지 공통영역 //////////////////
-
-
 
   /***************************** 
   서브페이지 페이드함수 만들기
@@ -108,80 +104,93 @@ window.addEventListener("DOMContentLoaded", () => {
   // 페이드 번호 변수
   let snum = 0;
 
-    const fade = () => {
-      setInterval(() => {
-        fadeList.forEach((ele) => {
-          // 분기한 li에 on을 지우고
-          ele.classList.remove("on");
-        }); ////// forEach ////////
+  const fade = () => {
+    setInterval(() => {
+      fadeList.forEach((ele) => {
+        // 분기한 li에 on을 지우고
+        ele.classList.remove("on");
+      }); ////// forEach ////////
 
-        // li에 snum숫자대로 on을 넣기 
-        fadeList[snum].classList.add("on");
-        // 이때 snum은 1씩 증가한다
-        snum++;
-        // snum의 수가 li갯수보다 같거나 많이지면 
-        // snum은 다시 0으로 돌아감
-        if(snum >= fadeList.length) snum = 0;
-      }, 1000); // 페이드 타임아웃 함수
-    }; //////////// fade함수 ////////////////
-    // fade함수 호출
-    fade();
-    
-    
+      // li에 snum숫자대로 on을 넣기
+      fadeList[snum].classList.add("on");
+      // 이때 snum은 1씩 증가한다
+      snum++;
+      // snum의 수가 li갯수보다 같거나 많이지면
+      // snum은 다시 0으로 돌아감
+      if (snum >= fadeList.length) snum = 0;
+    }, 1000); // 페이드 타임아웃 함수
+  }; //////////// fade함수 ////////////////
+  // fade함수 호출
+  fade();
 
-    ////////////////// 메인영역 태그넣기 ////////////////
-    function subPageMain(){
+  ////////////////// 메인영역 태그넣기 ////////////////
+  function subPageMain() {
+    // 태그 넣을 영역
+    const item_list = document.querySelector(".item_list ul");
 
-      
-      // 태그 넣을 영역
-      const item_list = document.querySelector(".item_list ul");
-      
-      // 태그담을 변수
-      let main_code = "";
-      let cnt = 0;
+    // 태그담을 변수
+    let main_code = "";
 
-      /* 
+    /* 
       <img src="./images/item_imgs/${subPage_item[x]["구분"]}/${subPage_item[x]["경로"]}/${subPage_item[x]["경로"]}Full/${subPage_item[x]["전체"]}${cnt}.jpg" alt="이미지">
       */
-        // <li class="on">
-        //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF1.jpg" alt="이미지">
-        // </li>
-        // <li>
-        //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF2.jpg" alt="이미지">
-        // </li>
-        // <li>
-        //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF3.jpg" alt="이미지">
-        // </li>
-        // <li>
-        //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF4.jpg" alt="이미지">
-        // </li>
-        // <li>
-        //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF5.jpg" alt="이미지">
-        // </li>
+    // <li class="on">
+    //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF1.jpg" alt="이미지">
+    // </li>
+    // <li>
+    //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF2.jpg" alt="이미지">
+    // </li>
+    // <li>
+    //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF3.jpg" alt="이미지">
+    // </li>
+    // <li>
+    //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF4.jpg" alt="이미지">
+    // </li>
+    // <li>
+    //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF5.jpg" alt="이미지">
+    // </li>
+    //////////////////// 수정된곳 /////////////////////
+    let pm = decodeURIComponent(location.href.split("?")[1].split("=")[1]);
+    // console.log("ㅎㅎ", pm);
 
-        let pm = decodeURIComponent(location.href.split("?")[1].split("=")[1]);
-        console.log("ㅎㅎ",pm);
 
-        let makeList = (num) => {
-          return `
-            <li><img src="./images/item_imgs/${subPage_item[pm]["구분"]}/${subPage_item[pm]["경로"]}/${subPage_item[pm]["경로"]}Full/${subPage_item[pm]["전체"]+num}.jpg" alt="이미지">
-          </li>
-          `;
-        }
+    // 배너 Full 이미지 함수
+    let makeListF = (num) => {
+      return `
+        <li>
+          <img src="./images/item_imgs/${subPage_item[pm]["구분"]}/${subPage_item[pm]["경로"]}/${subPage_item[pm]["경로"]}Full/${subPage_item[pm]["전체"] + num}.jpg" alt="이미지">
+        </li>
+      `;
+    }; ////////// makeListF //////////
+    // 태그변수
+    let fCode = "";
+    // 전체수 코드더하기
+    for(let x = 1; x <= subPage_item[pm]["전체수"]; x++){
+      fCode += makeListF(x);
+    } ////////// for ///////////////
 
-        let listCode = "";
+    // 아이템 Detail 이미지 함수
+    let makeListD = (num) => {
+      return `
+        <li>
+          <img src="./images/item_imgs/${subPage_item[pm]["구분"]}/${subPage_item[pm]["경로"]}/${subPage_item[pm]["경로"]}Detail/${subPage_item[pm]["디테일"] + num}.jpg" alt="이미지">
+        </li>
+      `;
+    }; ////////// makeListD //////////
+    // 태그변수
+    let dCode = "";
+    // 디테일수 코드더하기
+    for(let y = 1; y <= subPage_item[pm]["디테일수"]; y++){
+      dCode += makeListD(y);
+    } ////////// for ///////////////
 
-        for(let x = 1; x <= subPage_item[pm]["아이템"];x++){
-            listCode += makeList(x);
-        }
-      
-      // for(let x in subPage_item){
-        main_code += `
+    
+    main_code += `
         <!---------- 플렉스 섹션 1 ---------->
         <li class="sec1">
-        <div class="stk_bx">
-        <ul class="fade">
-          ${listCode}
+          <div class="stk_bx">
+            <ul class="fade">
+              ${fCode}
             </ul>
           </div>
         </li>
@@ -189,8 +198,8 @@ window.addEventListener("DOMContentLoaded", () => {
         <li class="sec2">
           <!-- 섹션 속박스 -->
           <div class="sec2_detail">
-            <h2>객체 넣을곳</h2>
-            <h3>객체 넣을곳</h3>
+            <h2>${subPage_item[pm]["상품명"]}</h2>
+            <h3>${subPage_item[pm]["가격"]}</h3>
             <!-- 적립금 -->
             <ol class="point">
               <li>적립금</li>
@@ -242,34 +251,14 @@ window.addEventListener("DOMContentLoaded", () => {
           </div>
             <section class="main_dimg">
               <div class="mimg">
-                <img src="./images/item_imgs/outer/light_puffer/light_puffer1.jpg" alt="이미지">
+                ${dCode}
               </div>
             </section>
         </li>
         `;
-      // } //////////// for in ///////////
-      // 메인영역 태그넣기
-      item_list.innerHTML = main_code;
-    } /////////// subPageMain 함수 ////////////////////
-    
-    
-
-  
-
-  // // 넘어온 url 받기! pm -> 전달값변수
-  // let pm = location.href;
-  // // location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
-
-  // if (pm.indexOf('?') !== -1) {
-  //   // 문자열 잘라서 값 읽어오기
-  //   // -> 물음표로 잘라서 두번째값, 이퀄로 잘라서 두번째값
-  //   pm = pm.split('?')[1].split('=')[1];
-
-  //   // pm값 특수문자 복원하기
-  //   pm = decodeURIComponent(pm);
-
-  //   console.log("pm이뭐야:",pm);
-
-  // } ///////////// 파라미터가 있으면 ///////////
+    // } //////////// for in ///////////
+    // 메인영역 태그넣기
+    item_list.innerHTML = main_code;
+  } /////////// subPageMain 함수 ////////////////////
 }); ////////////////// 로드구역 ///////////////////
 //////////////////////////////////////////////////

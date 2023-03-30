@@ -219,13 +219,13 @@ window.addEventListener("DOMContentLoaded", () => {
   }; /////// click //////////
   // 2. more버튼 클릭시 item페이지 all로 이동
   const mvtn = document.querySelector(".more_bt");
-  console.log(mvtn);
+  // console.log(mvtn);
   mvtn.onclick = () => {
     location.href = "item.html?item=all";
   }; /////// 버튼 click ////////////
   // 3. 스타일 more버튼 클릭시 style페이지로 이동
   const smvtn = document.querySelector(".btn2");
-  console.log(smvtn);
+  // console.log(smvtn);
   smvtn.onclick = () => {
     location.href = "style.html";
   }; /////// 버튼 click ////////////
@@ -261,6 +261,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // 상품객체만큼 화면에 태그 데이터바인딩하기
     let hcode = "";
 
+    // //////////////////////// 수정된곳
     for (let x in gdsObj) {
       // x는 속성명
       hcode += `

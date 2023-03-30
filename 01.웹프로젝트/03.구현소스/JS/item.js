@@ -204,7 +204,7 @@ window.addEventListener("DOMContentLoaded", () => {
   ***************************************/
   // 서브메뉴 밑의 a변수
   const itemA = smenu.querySelectorAll("a");
-  console.log(itemA);
+  // console.log(itemA);
 
   // .smenu a 분기후 텍스트 소문자로 변경하여 함수에 보내기
   itemA.forEach((ele) => {
@@ -231,6 +231,16 @@ window.addEventListener("DOMContentLoaded", () => {
   //   }); //////// 그리드아이템 분기 forEach //////////
   // }, 200); //////////// 그리드 아이템 0.2초후에 등장 ///////////
 
+
+  const allItem = document.querySelectorAll(".item a[href='#']");
+    // console.log("아이템페이지는?",allItem);
+// 수정한곳
+    allItem.forEach((ele)=>{
+      ele.onclick = () => {
+        location.href = "itemdetail.html?item="+ele.getAttribute("data-id");
+      } ///// click //////
+    }); //////// forEach //////////
+
   ///////////////////// grid구역 태그넣기 //////////////////////////
   function gridbxTags() {
     // 상품넣을 박스
@@ -238,25 +248,25 @@ window.addEventListener("DOMContentLoaded", () => {
 
     let hcode = "";
 
-    for (let x in allObj) {
+    for (let x in subPage_item) {
       // x는 속성명
       hcode += `
       
-      <div class="item ${allObj[x]["구분"]}">
-        <a href="#">
+      <div class="item ${subPage_item[x]["구분"]}">
+        <a href="#" data-id="${x.replace("상품코드","리스트")}">
             <div class="iimg">
-              <img src="./images/item_imgs/all/${allObj[x]["이미지1"]}.jpg">
-              <img src="./images/item_imgs/all/${allObj[x]["이미지2"]}.jpg">
+              <img src="./images/item_imgs/all/${subPage_item[x]["이미지1"]}.jpg">
+              <img src="./images/item_imgs/all/${subPage_item[x]["이미지2"]}.jpg">
             </div>
         </a>
         <div class="itxt">
           <div class="iname1">
-            <a href="#">${allObj[x]["상품명"]}</a>
+            <a href="#">${subPage_item[x]["상품명"]}</a>
           </div>
           <div class="ssn">
-            ${allObj[x]["구분"]}
+            ${subPage_item[x]["구분"]}
           </div>
-          <span>${allObj[x]["가격"]}</span>
+          <span>${subPage_item[x]["가격"]}</span>
         </div>
       </div>
       `;
@@ -272,7 +282,7 @@ window.addEventListener("DOMContentLoaded", () => {
   ***********************************************/
   // 넘어온 url 받기! pm -> 전달값변수
   let pm = location.href;
-  console.log("pm:", pm);
+  // console.log("pm:", pm);
   // location.href 가 이퀄 오른쪽에 있으면 url주소 읽어옴!
 
   // 문자열 잘라서 값 읽어오기
@@ -282,7 +292,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // pm값 특수문자 복원하기
   pm = decodeURIComponent(pm);
 
-  console.log("그래서 pm은?", pm);
+  // console.log("그래서 pm은?", pm);
 
   // 그리드 / 타이틀 등장 함수에 파리미터로 pm값 보내기
   changeItem(pm);
