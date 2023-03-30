@@ -425,5 +425,8 @@
   height: 100%;
   object-fit: cover;
 }
+.move_top{
+  display: none;
+}
 }
 /* 500px 사이즈 이하 미디어쿼리 끝 */
