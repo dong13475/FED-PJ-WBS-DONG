@@ -143,28 +143,45 @@ window.addEventListener("DOMContentLoaded", () => {
       /* 
       <img src="./images/item_imgs/${subPage_item[x]["구분"]}/${subPage_item[x]["경로"]}/${subPage_item[x]["경로"]}Full/${subPage_item[x]["전체"]}${cnt}.jpg" alt="이미지">
       */
+        // <li class="on">
+        //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF1.jpg" alt="이미지">
+        // </li>
+        // <li>
+        //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF2.jpg" alt="이미지">
+        // </li>
+        // <li>
+        //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF3.jpg" alt="이미지">
+        // </li>
+        // <li>
+        //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF4.jpg" alt="이미지">
+        // </li>
+        // <li>
+        //   <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF5.jpg" alt="이미지">
+        // </li>
+
+        let pm = decodeURIComponent(location.href.split("?")[1].split("=")[1]);
+        console.log("ㅎㅎ",pm);
+
+        let makeList = (num) => {
+          return `
+            <li><img src="./images/item_imgs/${subPage_item[pm]["구분"]}/${subPage_item[pm]["경로"]}/${subPage_item[pm]["경로"]}Full/${subPage_item[pm]["전체"]+num}.jpg" alt="이미지">
+          </li>
+          `;
+        }
+
+        let listCode = "";
+
+        for(let x = 1; x <= subPage_item[pm]["아이템"];x++){
+            listCode += makeList(x);
+        }
       
       // for(let x in subPage_item){
         main_code += `
         <!---------- 플렉스 섹션 1 ---------->
         <li class="sec1">
-          <div class="stk_bx">
-            <ul class="fade">
-              <li class="on">
-                <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF1.jpg" alt="이미지">
-              </li>
-              <li>
-                <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF2.jpg" alt="이미지">
-              </li>
-              <li>
-                <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF3.jpg" alt="이미지">
-              </li>
-              <li>
-                <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF4.jpg" alt="이미지">
-              </li>
-              <li>
-                <img src="./images/item_imgs/outer/light_puffer/light_pufferFull/light_pufferF5.jpg" alt="이미지">
-              </li>
+        <div class="stk_bx">
+        <ul class="fade">
+          ${listCode}
             </ul>
           </div>
         </li>

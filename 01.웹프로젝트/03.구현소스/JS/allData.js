@@ -301,8 +301,9 @@ const subPage_item = {
     "경로":"balloon",
     "가격":"324,000원",
     "구분":"outer",
-    "전체":"balloonD",
-    "디테일":"balloonF",
+    "전체":"balloonF",
+    "디테일":"balloonD",
+    "아이템":5,
   },
   "리스트2":{
     "상품명":"hooded parka",
@@ -310,7 +311,8 @@ const subPage_item = {
     "가격":"274,000원",
     "구분":"outer",
     "전체":"parkaF",
-    "디테일":"parkaF",
+    "디테일":"parkaD",
+    "아이템":4,
   },
   "리스트3":{
     "상품명":"light puffer jacket",
@@ -319,6 +321,7 @@ const subPage_item = {
     "구분":"outer",
     "전체":"light_pufferF",
     "디테일":"light_pufferD",
+    "아이템":5,
   },
   "리스트4":{
     "상품명":"padded vest 2.0",
@@ -327,6 +330,7 @@ const subPage_item = {
     "구분":"outer",
     "전체":"vestF",
     "디테일":"vestD",
+    "아이템":5,
   },
   "리스트5":{
     "상품명":"side line polo knit",
@@ -335,6 +339,7 @@ const subPage_item = {
     "구분":"top",
     "전체":"poloF",
     "디테일":"poloD",
+    "아이템":5,
   },
   "리스트6":{
     "상품명":"round neck sleeve",
@@ -343,6 +348,7 @@ const subPage_item = {
     "구분":"top",
     "전체":"roundF",
     "디테일":"roundD",
+    "아이템":5,
   },
   "리스트7":{
     "상품명":"rugby knit",
@@ -351,6 +357,7 @@ const subPage_item = {
     "구분":"top",
     "전체":"rugbyF",
     "디테일":"rugbyD",
+    "아이템":5,
   },
   "리스트8":{
     "상품명":"tenco loosed shirt 2.0",
@@ -359,6 +366,7 @@ const subPage_item = {
     "구분":"top",
     "전체":"tencoF",
     "디테일":"tencoD",
+    "아이템":5,
   },
   "리스트9":{
     "상품명":"big cargo pants",
@@ -367,6 +375,7 @@ const subPage_item = {
     "구분":"bottom",
     "전체":"cargoF",
     "디테일":"cargoD",
+    "아이템":5,
   },
   "리스트10":{
     "상품명":"hanabi (fireworks) pants",
@@ -375,6 +384,7 @@ const subPage_item = {
     "구분":"bottom",
     "전체":"hanabiF",
     "디테일":"hanabiD",
+    "아이템":5,
   },
   "리스트11":{
     "상품명":"liso denim",
@@ -383,6 +393,7 @@ const subPage_item = {
     "구분":"bottom",
     "전체":"lisoF",
     "디테일":"lisoD",
+    "아이템":5,
   },
   "리스트12":{
     "상품명":"sweat pants 2.0",
@@ -391,6 +402,7 @@ const subPage_item = {
     "구분":"bottom",
     "전체":"sweatF",
     "디테일":"sweatD",
+    "아이템":5,
   },
   "리스트13":{
     "상품명":"leather boots - black vegetable(반무광)",
@@ -399,6 +411,7 @@ const subPage_item = {
     "구분":"acc",
     "전체":"bootsF",
     "디테일":"bootsD",
+    "아이템":5,
   },
   "리스트14":{
     "상품명":"ring sandals 2.0 - black",
@@ -407,6 +420,7 @@ const subPage_item = {
     "구분":"acc",
     "전체":"ringF",
     "디테일":"ringD",
+    "아이템":5,
   },
   "리스트15":{
     "상품명":"round mule 2.0",
@@ -415,5 +429,6 @@ const subPage_item = {
     "구분":"acc",
     "전체":"muleF",
     "디테일":"muleD",
+    "아이템":5,
   },
 }; //////////// subPage_item 객체 ////////////

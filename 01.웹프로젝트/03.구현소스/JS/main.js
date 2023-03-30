@@ -265,7 +265,7 @@ window.addEventListener("DOMContentLoaded", () => {
       // x는 속성명
       hcode += `
       <div class="item">
-        <a href="#">
+        <a href="#" data-id="${x.replace("상품코드","리스트")}">
             <div class="iimg">
               <img src="./images/item_imgs/all/${gdsObj[x]["이미지1"]}.jpg">
               <img src="./images/item_imgs/all/${gdsObj[x]["이미지2"]}.jpg">

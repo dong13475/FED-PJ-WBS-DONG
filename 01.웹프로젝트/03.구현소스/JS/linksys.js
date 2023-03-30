@@ -58,7 +58,7 @@ function linkFn(){
 
     allItem.forEach((ele)=>{
       ele.onclick = () => {
-        location.href = "itemdetail.html";
+        location.href = "itemdetail.html?item="+ele.getAttribute("data-id");
       } ///// click //////
     }); //////// forEach //////////
 
