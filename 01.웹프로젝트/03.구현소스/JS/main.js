@@ -1,20 +1,18 @@
 // 웹프로젝트 POLYTERU JS - main.js
 
-
-
 //////////// 로드구역 /////////////
-window.addEventListener("DOMContentLoaded",()=>{
+window.addEventListener("DOMContentLoaded", () => {
   // console.log("로딩완료!");
-  
+
   // 드래그 방지 함수 //
   document.addEventListener("dragstart", (event) => {
     event.preventDefault();
   });
 
   // 새로고침시 스크롤 맨위로 //
-  setTimeout(()=>{
-    window.scrollTo(0,0);
-  },100); // 0.1초정도는 줘야효과있음!
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+  }, 100); // 0.1초정도는 줘야효과있음!
 
   // GNB 마우스 오버시 서브메뉴 등장 변수 //
 
@@ -32,15 +30,13 @@ window.addEventListener("DOMContentLoaded",()=>{
   // 페이드박스 li 변수 //
   const fadeBx = document.querySelectorAll(".fade_bx li");
   // console.log(fadeBx);
-  // 슬라이드번호 변수 : 
+  // 슬라이드번호 변수 :
   // 배너 이미지와 블릿을 통일시켜주는 중요한변수
   let snum = 0;
   // 페이드개수 변수
   let scnt = fadeBx.length;
   // console.log("페이드개수",scnt);
 
-  
-  
   /********************************************** 
     상단 탑메뉴 햄버거 버튼 클릭시 토글기능구현
   **********************************************/
@@ -48,7 +44,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   const ham = document.querySelector(".ham");
   const gnb_bx = document.querySelector(".gnb_bx");
   // console.log(ham,gnb_bx);
-  
+
   // 2. 이벤트설정
   ham.onclick = () => {
     ham.classList.toggle("on");
@@ -56,93 +52,66 @@ window.addEventListener("DOMContentLoaded",()=>{
     document.body.classList.toggle("on");
     document.querySelector("html").classList.toggle("on");
   }; /////////// 햄버거버튼 클릭 함수 /////////
-  
 
-  
   /*************************************** 
     GNB 마우스 오버시 li 밑줄효과 (on,on2)
   ***************************************/
-    li.forEach((ele,idx)=>{
-      ele.onmouseenter = () => {
-        // 마우스오버시 클래스 on주고 on2지우기
-        ele.classList.add("on");
-        ele.classList.remove("on2");
-        // 두번째 li에 오버시 smenu보이기
-        if(idx == 1){
-          smenu.style.opacity = 1;
-          smenu.style.height = shv + "px";
-        } //////// if /////////
-      }; /////// mouseenter ////////
-      ele.onmouseleave = () => {
-        // 마우스아웃시 클래스 on2주기
-        ele.classList.add("on2");
-        ele.classList.remove("on");
-        // 두번째 li에 아웃시 smenu 안보이기
-        if(idx == 1){
-          smenu.style.opacity = 0;
-          smenu.style.height = 0;
-        } //////// if ////////
-      }; ////// mouseleave ///////
-    }); /////// forEach ////////
+  li.forEach((ele, idx) => {
+    ele.onmouseenter = () => {
+      // 마우스오버시 클래스 on주고 on2지우기
+      ele.classList.add("on");
+      ele.classList.remove("on2");
+      // 두번째 li에 오버시 smenu보이기
+      if (idx == 1) {
+        smenu.style.opacity = 1;
+        smenu.style.height = shv + "px";
+      } //////// if /////////
+    }; /////// mouseenter ////////
+    ele.onmouseleave = () => {
+      // 마우스아웃시 클래스 on2주기
+      ele.classList.add("on2");
+      ele.classList.remove("on");
+      // 두번째 li에 아웃시 smenu 안보이기
+      if (idx == 1) {
+        smenu.style.opacity = 0;
+        smenu.style.height = 0;
+      } //////// if ////////
+    }; ////// mouseleave ///////
+  }); /////// forEach ////////
 
-  
   /************************************** 
     [ 메인페이지 페이드 배너 넣기 함수 ]
     함수명 : go_fade
   **************************************/
-  const go_fade = (dir,seq) => { // dir-방향,seq-순번
+  const go_fade = (dir, seq) => {
+    // dir-방향,seq-순번
     // console.log("페이드번호",dir,seq);
-    if(dir){
+    if (dir) {
       // console.log("dir",dir);
       snum++;
       if (snum === scnt) snum = 0;
     } ///// if /////
-    else{ // dir이 0일경우(즉, 블릿클릭일때)
+    else {
+      // dir이 0일경우(즉, 블릿클릭일때)
       snum = seq;
     } ///// else /////
 
     // 페이드 블릿 변경 함수호출
     chgBanner(fadeBx);
-    chgBanner(bulit); 
-
+    chgBanner(bulit);
   }; ///////// go_fade 함수 //////////
 
-
-  let autoI;
-  /************************************** 
-    [ 인터발함수 설정하기 ]
-    함수명 : autoFade
-  **************************************/
-  function autoFade(){
-    autoI = setInterval(() => go_fade(1,0),4000);
-  }; //////// autoFade함수 /////////
-  // autoFade함수 호출!
-  autoFade();
-  
-  let autoT;
-  /****************************************** 
-    [ 블릿 클릭시 인터발함수 지우고 다시셋팅 ]
-    함수명 : clearAuto
-  ******************************************/
-  function clearAuto(){
-    clearInterval(autoI);
-    clearTimeout(autoT);
-    autoT = setTimeout(autoFade,5000);
-  } /////// clearAuto함수 /////////
-  
-
-  // 이벤트 대상 : .bulit 
+  // 이벤트 대상 : .bulit
   const bulit = document.querySelectorAll(".bulit");
   // console.log(bulit);
 
-  bulit.forEach((ele,idx)=>{
+  bulit.forEach((ele, idx) => {
     // 클릭이벤트는 부모인 li에 걸어줌!
     // (클릭영역이 너무 작아서...)
     ele.parentElement.onclick = () => {
       clearAuto();
-      go_fade(0,idx);
+      go_fade(0, idx);
     }; ///// click /////
-    
   }); ///////// forEach ////////////
 
 
@@ -150,30 +119,51 @@ window.addEventListener("DOMContentLoaded",()=>{
     페이드 / 블릿 변경기능 공통함수
     함수명 : chgBanner
   ***********************************/
-
-  function chgBanner(obj){
+  function chgBanner(obj) {
     // 전체 리스트 초기화
-    obj.forEach(ele => ele.classList.remove("on"));
+    obj.forEach((ele) => ele.classList.remove("on"));
     // 해당순번 li에 클래스 "on" 넣기
     obj[snum].classList.add("on");
   } ////////// chgBanner 함수 /////////////
 
-
   // 페이드 블릿 변경 함수호출
   chgBanner(fadeBx);
-  chgBanner(bulit); 
+  chgBanner(bulit);
 
-  // 그리드 구역 태그넣기
+  /************************************** 
+    [ 인터발함수 설정하기 ]
+    함수명 : autoFade
+  **************************************/
+  let autoI;
+  function autoFade() {
+    autoI = setInterval(() => go_fade(1, 0), 4000);
+  } //////// autoFade함수 /////////
+
+  // autoFade함수 호출!
+  autoFade();
+
+  /****************************************** 
+    [ 블릿 클릭시 인터발함수 지우고 다시셋팅 ]
+    함수명 : clearAuto
+  ******************************************/
+  let autoT;
+  function clearAuto() {
+    clearInterval(autoI);
+    clearTimeout(autoT);
+    autoT = setTimeout(autoFade, 3000);
+  } /////// clearAuto함수 /////////
+
+
+  // *** 태그넣기 ***
   // 그리드태그 hcode를 함수로 만들어 위쪽에 호출한다!
   // * 스크롤이벤트 / 함수 아래쪽에 써서 인식안되었음! *
   gridbxTags();
-
   // 스타일 그리드 태그넣기
   gridbxStyle();
-  
-  /**************************** 
-    스크롤 등장액션 구현하기
-  ****************************/
+
+  /********************************************************** 
+    스크롤 등장액션 구현하기 (그리드영역,스타일영역,상단이동버튼)
+  **********************************************************/
   // 스크롤 그리드 등장대상: .item
   const grid_item = document.querySelectorAll(".item");
   // console.log(grid_item);
@@ -182,7 +172,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   // 화면높이값의 2/3구하기
   const whv = (window.innerHeight / 3) * 2;
   // console.log("2/3높이:",whv);
-  // 등장액션 대상 위치값 리턴함수 
+  // 등장액션 대상 위치값 리턴함수
   const retVal = (ele) => ele.getBoundingClientRect().top;
 
   const classIt = (ele, idx) => {
@@ -193,53 +183,52 @@ window.addEventListener("DOMContentLoaded",()=>{
     // 0보다 크고 화면의 2/3보다  작은 구간!
     if (grid_Val < whv && grid_Val > 0) {
       ele.classList.add("on");
-      ele.style.transitionDelay = `${idx * 0.1}s`; 
+      ele.style.transitionDelay = `${idx * 0.1}s`;
     } ////// 구간에 들어올시 "on"적용 if문 //////
 
     // 상단 이동버튼 클래스 on 넣기/빼기
     let scrl = window.scrollY;
-    if(scrl > 600){
+    if (scrl > 600) {
       move_top.classList.add("on");
     } // 상단 이동버튼 클래스 on 넣기/빼기 if
-    else{
+    else {
       move_top.classList.remove("on");
     } // 상단 이동버튼 클래스 on 넣기/빼기 else
   }; ///////// classIt 함수 /////////
 
-  // move_top 클릭시 상단이동함수
-  move_top.onclick = () => {
-    window.scrollTo(0,0);
-  }; /////// click //////////
-
-  
-  // more버튼 클릭시 item페이지 all로 이동
-  const mvtn = document.querySelector(".more_bt");
-  console.log(mvtn);
-  mvtn.onclick = (()=>{
-    location.href = "item.html?item=all";
-  }); /////// 버튼 click ////////////
-  // 스타일 more버튼 클릭시 style페이지로 이동
-  const smvtn = document.querySelector(".btn2");
-  console.log(smvtn);
-  smvtn.onclick = (()=>{
-    location.href = "style.html";
-  }); /////// 버튼 click ////////////
-  
-  
+  /************************* 
+    스크롤 등장 이벤트 셋팅
+  *************************/
   // 스크롤 이벤트 셋팅 /////////
   window.addEventListener("scroll", () => {
-    // for (let i = 0; i < grid_item.length; i++) {
-    //   classIt(grid_item[i], i);
-    // }
-    grid_item.forEach((ele,idx)=>{
-      classIt(ele,idx);
+    grid_item.forEach((ele, idx) => {
+      classIt(ele, idx);
     }); //////// 그리드아이템 분기 forEach //////////
-    s_item.forEach((ele,idx)=>{
-      classIt(ele,idx);
+    s_item.forEach((ele, idx) => {
+      classIt(ele, idx);
     }); /////////// 스타일 아이템 분기 forEach /////////
   }); ///////// scroll //////////////
 
-  
+  /********************************************** 
+    버튼클릭 이벤트들 (상단이동버튼, more버튼 2개)
+  **********************************************/
+  // 1. move_top 클릭시 상단이동함수
+  move_top.onclick = () => {
+    window.scrollTo(0, 0);
+  }; /////// click //////////
+  // 2. more버튼 클릭시 item페이지 all로 이동
+  const mvtn = document.querySelector(".more_bt");
+  console.log(mvtn);
+  mvtn.onclick = () => {
+    location.href = "item.html?item=all";
+  }; /////// 버튼 click ////////////
+  // 3. 스타일 more버튼 클릭시 style페이지로 이동
+  const smvtn = document.querySelector(".btn2");
+  console.log(smvtn);
+  smvtn.onclick = () => {
+    location.href = "style.html";
+  }; /////// 버튼 click ////////////
+
   /* 
     [ 질문할것 ]
     - 폰트 전체에 줄수있는지 (영문,한글따로)
@@ -252,29 +241,27 @@ window.addEventListener("DOMContentLoaded",()=>{
       (객체에서 "이미지1"을 "이미지2"로 변경) (main.js - 190)
   */
 
-      // 오버시 상품 뒤면 이미지 변경하기
-      // 대상: .iimg img
-      // const iimg = document.querySelectorAll(".iimg img");
-      // iimg.forEach(ele=>{
-      //   ele.onmouseenter=()=>ele.setAttribute("src",ele.getAttribute("src").replace("1","2"));
-      //   ele.onmouseleave=()=>ele.setAttribute("src",ele.getAttribute("src").replace("2","1"));
-      //   // ele.onmouseleave=()=>ele.setAttribute(속성명,값);
-      //   // ele.getAttribute("src").replace("2","1")
-      //   // ele.getAttribute(속성명).replace(바뀔값,바꿀값)
-      // });
-
+  // 오버시 상품 뒤면 이미지 변경하기
+  // 대상: .iimg img
+  // const iimg = document.querySelectorAll(".iimg img");
+  // iimg.forEach(ele=>{
+  //   ele.onmouseenter=()=>ele.setAttribute("src",ele.getAttribute("src").replace("1","2"));
+  //   ele.onmouseleave=()=>ele.setAttribute("src",ele.getAttribute("src").replace("2","1"));
+  //   // ele.onmouseleave=()=>ele.setAttribute(속성명,값);
+  //   // ele.getAttribute("src").replace("2","1")
+  //   // ele.getAttribute(속성명).replace(바뀔값,바꿀값)
+  // });
 
   ///////////////////// grid구역 태그넣기 //////////////////////////
-  function gridbxTags(){
+  function gridbxTags() {
+    // 상품넣을 박스
+    const gridbx = document.querySelector(".gridbx");
 
-  // 상품넣을 박스
-  const gridbx = document.querySelector(".gridbx");
+    // 상품객체만큼 화면에 태그 데이터바인딩하기
+    let hcode = "";
 
-  // 상품객체만큼 화면에 태그 데이터바인딩하기
-  let hcode = "";
-
-  for(let x in gdsObj){
-    // x는 속성명
+    for (let x in gdsObj) {
+      // x는 속성명
       hcode += `
       <div class="item">
         <a href="#">
@@ -294,24 +281,22 @@ window.addEventListener("DOMContentLoaded",()=>{
         </div>
       </div>
       `;
-  } ////////// for in /////////
+    } ////////// for in /////////
 
-  // grid구역 태그넣기
-  gridbx.innerHTML = hcode;
-  
-} /////////////// gridbx_Tags함수 ////////////////////////
+    // grid구역 태그넣기
+    gridbx.innerHTML = hcode;
+  } /////////////// gridbx_Tags함수 ////////////////////////
 
+  ////////////// 스타일 그리드 구역 태그넣기 //////////////
+  function gridbxStyle() {
+    // 상품 넣을 박스
+    const grid_style = document.querySelector(".grid_style");
+    // console.log(grid_style);
 
-////////////// 스타일 그리드 구역 태그넣기 //////////////
-function gridbxStyle(){
-  // 상품 넣을 박스
-  const grid_style = document.querySelector(".grid_style");
-  // console.log(grid_style);
+    let scode = "";
 
-  let scode = "";
-
-  for(let x in gdsStyle){
-    scode += `
+    for (let x in gdsStyle) {
+      scode += `
       <div class="sitem">
         <a href="#">
           <div class="simg">
@@ -321,15 +306,13 @@ function gridbxStyle(){
         </a>
       </div>
     `;
-  } /////////// for in ////////////
+    } /////////// for in ////////////
 
-  // 스타일 구역 태그넣기
-  grid_style.innerHTML = scode;
-} ///////////// gridbx_style 함수 /////////////
+    // 스타일 구역 태그넣기
+    grid_style.innerHTML = scode;
+  } ///////////// gridbx_style 함수 /////////////
 
-
-// 링크 Fn함수 불러오기 - linksys.js
-linkFn();
-
+  // 링크 Fn함수 불러오기 - linksys.js
+  linkFn();
 }); ////////////////// 로드구역 ///////////////////
 //////////////////////////////////////////////////
