@@ -226,7 +226,14 @@ window.addEventListener("DOMContentLoaded", () => {
             <div class="sizetit">
               <h2>SIZE</h2>
             </div>
-            <div class="size_bx">선택하세요</div>
+            <div class="size-select">
+      <select>
+        <option value="">선택해주세요</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+      </select>
+    </div>
             <!-- 주문 수량 -->
             <ol class="scount">
               <li>주문 수량</li>

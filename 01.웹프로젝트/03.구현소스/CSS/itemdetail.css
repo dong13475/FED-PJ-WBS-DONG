@@ -4,7 +4,25 @@
 @import url(./common.css);
 @import url(./core.css);
 
+/* 셀렉터박스 */
+.size-select select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
 
+.size-select select:focus {
+  outline: none;
+  border-color: #6bcbff;
+  box-shadow: 0px 1px 3px rgba(107, 203, 255, 0.5);
+}
+
+.size-select select option:first-child {
+  color: #ccc;
+}
 
 .main_top{
   padding-top: 160px;

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .size-select select {
+        padding: 8px;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      }
+
+      .size-select select:focus {
+        outline: none;
+        border-color: #6bcbff;
+        box-shadow: 0px 1px 3px rgba(107, 203, 255, 0.5);
+      }
+
+      .size-select select option:first-child {
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="size-select">
+      <select>
+        <option value="">선택해주세요</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+      </select>
+    </div>
+  </body>
+</html>
