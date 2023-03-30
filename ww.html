@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>사이즈 선택박스</title>
+  </head>
+  <style>
+    .size-select {
+      position: relative;
+    }
+
+    .select-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    .select-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .select-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 8px;
+    }
+    .select-menu ul li {
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .select-menu ul li:hover {
+      background-color: #f5f5f5;
+    }
+
+    .arrow-down {
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid #333;
+      margin-left: 8px;
+    }
+  </style>
+  <body>
+    <div class="size-select">
+      <div class="select-header" onclick="toggleSizeSelect()">
+        <span>Please select</span>
+        <i class="arrow-down"></i>
+      </div>
+      <div class="select-menu">
+        <ul>
+          <li value="s">Small</li>
+          <li value="m">Medium</li>
+          <li value="l">Large</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function toggleSizeSelect() {
+        var selectMenu = document.querySelector('.select-menu');
+        selectMenu.style.display =
+          selectMenu.style.display === 'none' ? 'block' : 'none';
+      }
+
+      var selectOptions = document.querySelectorAll('.select-menu li');
+      selectOptions.forEach(function (option) {
+        option.addEventListener('click', function () {
+          var selectHeader = document.querySelector('.select-header');
+          selectHeader.querySelector('span').textContent = option.textContent;
+          toggleSizeSelect();
+        });
+      });
+    </script>
+  </body>
+</html>
