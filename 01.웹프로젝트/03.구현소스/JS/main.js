@@ -164,6 +164,17 @@ window.addEventListener("DOMContentLoaded", () => {
   /********************************************************** 
     스크롤 등장액션 구현하기 (그리드영역,스타일영역,상단이동버튼)
   **********************************************************/
+  
+  // 스크롤 이벤트 셋팅 /////////
+  window.addEventListener("scroll", () => {
+    grid_item.forEach((ele, idx) => {
+      classIt(ele, idx);
+    }); //////// 그리드아이템 분기 forEach //////////
+    s_item.forEach((ele, idx) => {
+      classIt(ele, idx);
+    }); /////////// 스타일 아이템 분기 forEach /////////
+  }); ///////// scroll //////////////
+  
   // 스크롤 그리드 등장대상: .item
   const grid_item = document.querySelectorAll(".item");
   // console.log(grid_item);
@@ -175,6 +186,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // 등장액션 대상 위치값 리턴함수
   const retVal = (ele) => ele.getBoundingClientRect().top;
 
+  // 대상의 위치값을 리턴해서 등장액션 클래스"on"주기 함수 //
   const classIt = (ele, idx) => {
     // ele - 등장요소, idx - 요소순번
     // 대상요소의 현재 스크롤 위치
@@ -196,18 +208,7 @@ window.addEventListener("DOMContentLoaded", () => {
     } // 상단 이동버튼 클래스 on 넣기/빼기 else
   }; ///////// classIt 함수 /////////
 
-  /************************* 
-    스크롤 등장 이벤트 셋팅
-  *************************/
-  // 스크롤 이벤트 셋팅 /////////
-  window.addEventListener("scroll", () => {
-    grid_item.forEach((ele, idx) => {
-      classIt(ele, idx);
-    }); //////// 그리드아이템 분기 forEach //////////
-    s_item.forEach((ele, idx) => {
-      classIt(ele, idx);
-    }); /////////// 스타일 아이템 분기 forEach /////////
-  }); ///////// scroll //////////////
+
 
   /********************************************** 
     버튼클릭 이벤트들 (상단이동버튼, more버튼 2개)
