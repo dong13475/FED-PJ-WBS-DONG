@@ -211,12 +211,19 @@ window.addEventListener("DOMContentLoaded",()=>{
     window.scrollTo(0,0);
   }; /////// click //////////
 
+  
   // more버튼 클릭시 item페이지 all로 이동
   const mvtn = document.querySelector(".more_bt");
   console.log(mvtn);
   mvtn.onclick = (()=>{
     location.href = "item.html?item=all";
-  });
+  }); /////// 버튼 click ////////////
+  // 스타일 more버튼 클릭시 style페이지로 이동
+  const smvtn = document.querySelector(".btn2");
+  console.log(smvtn);
+  smvtn.onclick = (()=>{
+    location.href = "style.html";
+  }); /////// 버튼 click ////////////
   
   
   // 스크롤 이벤트 셋팅 /////////
