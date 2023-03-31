@@ -196,7 +196,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // 0보다 크고 화면의 2/3보다  작은 구간!
     if (grid_Val < whv && grid_Val > 0) {
       ele.classList.add("on");
-      ele.style.transitionDelay = `${idx * 0.1}s`;
+      ele.style.transitionDelay = `${idx * 0.07}s`;
     } ////// 구간에 들어올시 "on"적용 if문 //////
 
     // 상단 이동버튼 클래스 on 넣기/빼기
