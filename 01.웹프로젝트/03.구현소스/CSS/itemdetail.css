@@ -6,41 +6,37 @@
 
 /* 셀렉터박스 */
 .size-select select {
-  padding: 8px;
-  font-size: 16px;
-  border-radius: 4px;
+  padding: 10px;
+  font-size: 1.6rem;
+  /* border-radius: 4px; */
   border: 1px solid #ccc;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
-
 .size-select select:focus {
   outline: none;
-  border-color: #6bcbff;
-  box-shadow: 0px 1px 3px rgba(107, 203, 255, 0.5);
+  border-color: #000000;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
 }
-
 .size-select select option:first-child {
-  color: #ccc;
+  color: rgb(151, 151, 151);
 }
 
+/* 빈공간박스 */
+/* .blank{
+  margin-top: 100px;
+  position: relative;
+  height: 50px;
+  width: 100%;
+} */
+
+/* 전체박스 */
 .main_top{
   padding-top: 160px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.location{
-  display: flex;
-  padding-left: 50px;
-  font-size: 1.2rem;
-  display: none;
-}
-.item_tit{
-  padding: 50px 0 60px;
-  text-align: center;
-  font-size: 2.7rem;
-}
 
 /* 아이템 페이지 메인 */
 /* 리스트 겉박스 */
@@ -57,32 +53,30 @@
 /* 플렉스 섹션 1 */
 .sec1{
   width: 50%;
+  position: relative;
   /* background-color: lightcoral; */
 }
 /* 섹션1 페이드 박스 */
 .stk_bx{
   position: relative;
-  /* margin: 0 auto; */
-  /* left: 17%; */
-  top: 6vh;
-  height: 80%;
-  /* transform: translateX(-25%); */
+  /* top: 6vh; */
+  height: 100%;
+  bottom: 700px;
 }
 /* 페이드 속박스 */
 .fade{
   position: sticky;
-  top: 20%;
-  /* margin: 0 auto;  */
-  /* position: relative; */
-  /* height: 100%; */
+  top: 200px;
+  bottom: 200px;
+  /* padding-bottom: 20vh; */
 }
 .fade li{
+  width: min(35vw,400px);
   position: absolute;
   /* 처음에 투명 */
   opacity: 0;
-  width: min(35vw,400px);
   /* 트랜지션 */
-  transition: opacity .6s ease-in-out;
+  transition: opacity .8s ease-in-out;
   aspect-ratio: 280/400;
   left: 50%;
   transform: translateX(-50%);
@@ -237,7 +231,7 @@
   width: min(35vw,400px);
   aspect-ratio: 280/400;
   margin: 0 auto;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 .mimg img {
   width: 100%;

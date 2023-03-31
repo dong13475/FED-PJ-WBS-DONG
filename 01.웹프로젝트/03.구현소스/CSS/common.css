@@ -112,7 +112,8 @@ js로 마우스 아웃시 */
   text-shadow: none;
   color: rgb(0, 0, 0);
   transition: .2s;
-} 
+}
+
 
 .gnb>ul>li:nth-child(2){
   position: relative;

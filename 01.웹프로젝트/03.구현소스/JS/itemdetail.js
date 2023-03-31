@@ -104,7 +104,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // 페이드 번호 변수
   let snum = 0;
 
-  const fade = () => {
+  // const fade = () => {
     setInterval(() => {
       fadeList.forEach((ele) => {
         // 분기한 li에 on을 지우고
@@ -118,10 +118,10 @@ window.addEventListener("DOMContentLoaded", () => {
       // snum의 수가 li갯수보다 같거나 많이지면
       // snum은 다시 0으로 돌아감
       if (snum >= fadeList.length) snum = 0;
-    }, 1000); // 페이드 타임아웃 함수
-  }; //////////// fade함수 ////////////////
+    }, 1500); // 페이드 타임아웃 함수
+  // }; //////////// fade함수 ////////////////
   // fade함수 호출
-  fade();
+  // fade();
 
   ////////////////// 메인영역 태그넣기 ////////////////
   function subPageMain() {
@@ -172,7 +172,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // 아이템 Detail 이미지 함수
     let makeListD = (num) => {
       return `
-        <li>
+        <li class>
           <img src="./images/item_imgs/${subPage_item[pm]["구분"]}/${subPage_item[pm]["경로"]}/${subPage_item[pm]["경로"]}Detail/${subPage_item[pm]["디테일"] + num}.jpg" alt="이미지">
         </li>
       `;
@@ -193,7 +193,8 @@ window.addEventListener("DOMContentLoaded", () => {
               ${fCode}
             </ul>
           </div>
-        </li>
+          </li>
+          
         <!---------- 플렉스 섹션 2 ---------->
         <li class="sec2">
           <!-- 섹션 속박스 -->
@@ -227,13 +228,13 @@ window.addEventListener("DOMContentLoaded", () => {
               <h2>SIZE</h2>
             </div>
             <div class="size-select">
-      <select>
-        <option value="">선택해주세요</option>
-        <option value="s">S</option>
-        <option value="m">M</option>
-        <option value="l">L</option>
-      </select>
-    </div>
+              <select>
+                <option value="">선택해주세요</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+              </select>
+            </div>
             <!-- 주문 수량 -->
             <ol class="scount">
               <li>주문 수량</li>

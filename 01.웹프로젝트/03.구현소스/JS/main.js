@@ -53,6 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector("html").classList.toggle("on");
   }; /////////// 햄버거버튼 클릭 함수 /////////
 
+
   /*************************************** 
     GNB 마우스 오버시 li 밑줄효과 (on,on2)
   ***************************************/
