@@ -30,12 +30,6 @@ window.addEventListener("DOMContentLoaded", () => {
   // 페이드박스 li 변수 //
   const fadeBx = document.querySelectorAll(".fade_bx li");
   // console.log(fadeBx);
-  // 슬라이드번호 변수 :
-  // 배너 이미지와 블릿을 통일시켜주는 중요한변수
-  let snum = 0;
-  // 페이드개수 변수
-  let scnt = fadeBx.length;
-  // console.log("페이드개수",scnt);
 
   /********************************************** 
     상단 탑메뉴 햄버거 버튼 클릭시 토글기능구현
@@ -52,7 +46,6 @@ window.addEventListener("DOMContentLoaded", () => {
     document.body.classList.toggle("on");
     document.querySelector("html").classList.toggle("on");
   }; /////////// 햄버거버튼 클릭 함수 /////////
-
 
   /***************************************** 
     GNB 마우스 오버시 li 밑줄효과 (on,on2),
@@ -85,6 +78,13 @@ window.addEventListener("DOMContentLoaded", () => {
     [ 메인페이지 페이드 배너 넣기 함수 ]
     함수명 : go_fade
   **************************************/
+  // 슬라이드번호 변수 :
+  // 배너 이미지와 블릿을 통일시켜주는 중요한변수
+  let snum = 0;
+  // 페이드개수 변수
+  let scnt = fadeBx.length;
+  // console.log("페이드개수",scnt);
+  
   const go_fade = (dir, seq) => {
     // dir-방향,seq-순번
     // console.log("페이드번호",dir,seq);
@@ -115,7 +115,6 @@ window.addEventListener("DOMContentLoaded", () => {
       go_fade(0, idx);
     }; ///// click /////
   }); ///////// forEach ////////////
-
 
   /*********************************** 
     페이드 / 블릿 변경기능 공통함수
@@ -155,7 +154,6 @@ window.addEventListener("DOMContentLoaded", () => {
     autoT = setTimeout(autoFade, 3000);
   } /////// clearAuto함수 /////////
 
-
   // *** 태그넣기 ***
   // 그리드태그 hcode를 함수로 만들어 위쪽에 호출한다!
   // * 스크롤이벤트 / 함수 아래쪽에 써서 인식안되었음! *
@@ -166,7 +164,7 @@ window.addEventListener("DOMContentLoaded", () => {
   /********************************************************** 
     스크롤 등장액션 구현하기 (그리드영역,스타일영역,상단이동버튼)
   **********************************************************/
-  
+
   // 스크롤 이벤트 셋팅 /////////
   window.addEventListener("scroll", () => {
     grid_item.forEach((ele, idx) => {
@@ -176,7 +174,7 @@ window.addEventListener("DOMContentLoaded", () => {
       classIt(ele, idx);
     }); /////////// 스타일 아이템 분기 forEach /////////
   }); ///////// scroll //////////////
-  
+
   // 스크롤 그리드 등장대상: .item
   const grid_item = document.querySelectorAll(".item");
   // console.log(grid_item);
@@ -210,8 +208,6 @@ window.addEventListener("DOMContentLoaded", () => {
     } // 상단 이동버튼 클래스 on 넣기/빼기 else
   }; ///////// classIt 함수 /////////
 
-
-
   /********************************************** 
     버튼클릭 이벤트들 (상단이동버튼, more버튼 2개)
     부드러운 스크롤 pos 스크롤 위치값 업데이트필요!
@@ -228,7 +224,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // 위치이동하기
     window.scrollTo(0, 0);
   }; /////// click //////////
-  
+
   // 2. more버튼 클릭시 item페이지 all로 이동
   const mvtn = document.querySelector(".more_bt");
   // console.log(mvtn);
@@ -278,7 +274,7 @@ window.addEventListener("DOMContentLoaded", () => {
       // x는 속성명
       hcode += `
       <div class="item">
-        <a href="#" data-id="${x.replace("상품코드","리스트")}">
+        <a href="#" data-id="${x.replace("상품코드", "리스트")}">
             <div class="iimg">
               <img src="./images/item_imgs/all/${gdsObj[x]["이미지1"]}.jpg">
               <img src="./images/item_imgs/all/${gdsObj[x]["이미지2"]}.jpg">
