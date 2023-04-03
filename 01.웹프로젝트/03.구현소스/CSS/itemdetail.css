@@ -38,16 +38,9 @@
 }
 
 
-/* 아이템 페이지 메인 */
-/* 리스트 겉박스 */
-/* 리스트 속박스 */
-.item_list{
-
-}
 /* 전체 플렉스 박스 */
 .item_list>ul{
   display: flex;
-  /* flex-direction: column; */
   flex: 1;
 }
 /* 플렉스 섹션 1 */
@@ -59,7 +52,6 @@
 /* 섹션1 페이드 박스 */
 .stk_bx{
   position: relative;
-  /* top: 6vh; */
   height: 100%;
   bottom: 700px;
 }
@@ -68,7 +60,6 @@
   position: sticky;
   top: 200px;
   bottom: 200px;
-  /* padding-bottom: 20vh; */
 }
 .fade li{
   width: min(35vw,400px);

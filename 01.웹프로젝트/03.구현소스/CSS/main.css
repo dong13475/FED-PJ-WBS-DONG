@@ -8,6 +8,7 @@
 
 /*********************** 2. 메인영역 ***********************/
 
+/* 메인 배너 스크롤 다운 텍스트 */
 .dir{
   top: 90vh;
   right: 3vw;
@@ -31,6 +32,7 @@
   height: 1px;
   background-color: #cacaca;
 }
+
 /* 배너 겉박스 */
 /* .cont {
 } */
@@ -115,9 +117,6 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  /* 처음에 display:none 을 줘 안보이게함 */
-  /* display: none; */
-  /* opacity: 0; */
   object-fit: cover;
   transition: opacity .3s;
 }
@@ -125,23 +124,11 @@
 .iimg img:last-child{
   opacity: 0;
 }
-
 /* 이미지박스에 마우스 오버시 
 두번째 이미지 보이기 */
 .iimg:hover img:last-child{
   opacity: 1;
 }
-
-/* 처음에 display로 첫번째이미지 보이기 / 
-이미지박스에 마우스 오버시 두번째 이미지 보이기 */
-/* .iimg img:first-child,
-.iimg:hover img:last-child {
-  display: block;
-} */
-/* 이미지박스에 마우스 오버시 첫번째 이미지 숨기기 */
-/* .iimg:hover img:first-child {
-  display: none;
-} */
 
 
 /* 스타일 그리드영역 */
@@ -185,17 +172,14 @@
 /* 아이템 공통 시즌 설명 텍스트 */
 .ssn {
   font-size: min(13px, 3vw);
-  /* font-family: "Open Sans", sans-serif; */
 }
 /* 아이템 공통 이름 텍스트 */
 .iname1 a {
   font-size: min(15px, 3vw);
-  /* font-family: "Open Sans", sans-serif; */
 }
 /* 아이템 공통 가격 텍스트 */
 .itxt span {
   font-size: min(12px, 3vw);
-  /* font-family: "IBM Plex Sans KR", sans-serif; */
   color: #919191;
 }
 
@@ -203,12 +187,9 @@
 .indic{
   position: absolute;
   display: flex;
-  /* gap: 12px; */
-  /* outline: 1px solid red; */
   bottom: 3%;
   left: 50%;
   transform: translateX(-50%);
-  /* z-index: 2; */
 }
 .indic li{
   padding: 5px;
@@ -266,7 +247,6 @@
 }
 .more_bt>a{
   font-size: .9rem;
-/* font-family: "Open Sans", sans-serif; */
 }
 
 /* 스타일 박스 타이틀 */
@@ -280,7 +260,6 @@
 /* 메인하단 배송설명박스 */
 .c_info{
   padding: 50px 0 90px;
-  /* font-family: 'IBM Plex Sans KR', sans-serif; */
   text-align: center;
 }
 .c_info01{
