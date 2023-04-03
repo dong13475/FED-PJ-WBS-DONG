@@ -130,7 +130,7 @@ window.addEventListener("DOMContentLoaded", () => {
       // snum의 수가 li갯수보다 같거나 많이지면
       // snum은 다시 0으로 돌아감
       if (snum >= fadeList.length) snum = 0;
-    }, 1500); // 페이드 타임아웃 함수
+    }, 1800); // 페이드 타임아웃 함수
   // }; //////////// fade함수 ////////////////
   // fade함수 호출
   // fade();

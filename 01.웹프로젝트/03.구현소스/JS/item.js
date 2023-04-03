@@ -246,7 +246,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const allItem = document.querySelectorAll(".item a[href='#']");
     // console.log("아이템페이지는?",allItem);
-// 수정한곳
+  // 수정한곳
     allItem.forEach((ele)=>{
       ele.onclick = () => {
         location.href = "itemdetail.html?item="+ele.getAttribute("data-id");
