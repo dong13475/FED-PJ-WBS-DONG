@@ -234,9 +234,6 @@
 
   /******** itemdetail 페이지 미디어쿼리 ********/
 
-  body{
-    overflow-x: hidden;
-  }
   /* 전체 플렉스 박스 */
   .item_list ul{
     flex-direction: column;

@@ -54,16 +54,17 @@ window.addEventListener("DOMContentLoaded", () => {
   }; /////////// 햄버거버튼 클릭 함수 /////////
 
 
-  /*************************************** 
-    GNB 마우스 오버시 li 밑줄효과 (on,on2)
-  ***************************************/
+  /***************************************** 
+    GNB 마우스 오버시 li 밑줄효과 (on,on2),
+    두번째 li에 마우스 오버시 smenu보이기
+  *****************************************/
   li.forEach((ele, idx) => {
     ele.onmouseenter = () => {
       // 마우스오버시 클래스 on주고 on2지우기
       ele.classList.add("on");
       ele.classList.remove("on2");
       // 두번째 li에 오버시 smenu보이기
-      if (idx == 1) {
+      if (idx === 1) {
         smenu.style.opacity = 1;
         smenu.style.height = shv + "px";
       } //////// if /////////
@@ -213,11 +214,21 @@ window.addEventListener("DOMContentLoaded", () => {
 
   /********************************************** 
     버튼클릭 이벤트들 (상단이동버튼, more버튼 2개)
+    부드러운 스크롤 pos 스크롤 위치값 업데이트필요!
   **********************************************/
   // 1. move_top 클릭시 상단이동함수
-  move_top.onclick = () => {
+  move_top.onclick = (e) => {
+    // 기본이동막기
+    // 전달변수 e대신 바로 event.preventDefault를 쓰면
+    // 문서 전역에 클릭이벤트가 적용된다!
+    e.preventDefault();
+    // 부드러운 스크롤 전역 스크롤 값을
+    // 0으로 변경하여 위치값 일치시킴!
+    pos = 0;
+    // 위치이동하기
     window.scrollTo(0, 0);
   }; /////// click //////////
+  
   // 2. more버튼 클릭시 item페이지 all로 이동
   const mvtn = document.querySelector(".more_bt");
   // console.log(mvtn);
@@ -301,12 +312,10 @@ window.addEventListener("DOMContentLoaded", () => {
     for (let x in gdsStyle) {
       scode += `
       <div class="sitem">
-        <a href="#">
           <div class="simg">
             <img src="./images/item_imgs/style/${gdsStyle[x]["이미지1"]}.jpg">
             <img src="./images/item_imgs/style/${gdsStyle[x]["이미지2"]}.jpg">
           </div>
-        </a>
       </div>
     `;
     } /////////// for in ////////////

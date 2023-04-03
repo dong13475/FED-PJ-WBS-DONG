@@ -22,7 +22,6 @@ html,body,h1,h2,ul,ol{
 html{
   font-size: 10px;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 /* 바디 밑 모든요소에 한글,영문폰트 입히기 
 한글전용,영문전용 폰트로하면 자동으로 인식해서 적용됨! */

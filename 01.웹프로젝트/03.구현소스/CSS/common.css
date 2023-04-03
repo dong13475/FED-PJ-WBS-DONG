@@ -5,9 +5,9 @@
 
 
 /* 공사중 표시 */
-body * {
-  /* outline: 1px dashed red; */
-}
+/* body * {
+  outline: 1px dashed red;
+} */
 /* 햄버거버튼 토글시 스크롤 방지 */
 html{
   overflow: auto;
@@ -143,7 +143,7 @@ js로 마우스 아웃시 */
   text-align: center;
 }
 
-.smenu>ol>a{
+.smenu>ol>li{
   line-height: 26px;
   font-size: 1.3rem;
   color: rgb(58, 58, 58);
@@ -295,13 +295,8 @@ js로 마우스 아웃시 */
   border-top: 1px solid #cacaca;
 }
 .addbx{
-  /* max-width: 1200px; */
   position: relative;
   padding-top: 10px;
-  /* height: 100%; */
-  /* box-sizing: border-box; */
-  /* top: 20px; */
-  /* left: 25px; */
 }
 .blogo {
   position: absolute;
@@ -320,7 +315,6 @@ js로 마우스 아웃시 */
   color: #c0c0c0;
   /* address요소 기본 이탤릭해제 */
   font-style: normal;
-  /* font-family: "IBM Plex Sans KR", sans-serif; */
   line-height: 20px;
 }
 .blink {

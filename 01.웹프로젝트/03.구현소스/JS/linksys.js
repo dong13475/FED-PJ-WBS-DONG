@@ -60,13 +60,15 @@ function linkFn(){
     }); //////// forEach //////////
 
   /************* 
-    ABOUT 클릭
+    STYLE,ABOUT 클릭
   *************/
   const about = document.querySelectorAll(".gnb>ul>li");
   console.log(about[4]);
+  // ABOUT클릭시 이동
   about[4].onclick = () => {
     location.href = "introduce.html";
   };
+  // STYLE클릭시 이동
   about[2].onclick = () => {
     location.href = "style.html";
   };
