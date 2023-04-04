@@ -273,7 +273,9 @@ window.addEventListener("DOMContentLoaded", () => {
         </a>
         <div class="itxt">
           <div class="iname1">
-            <a href="#">${subPage_item[x]["상품명"]}</a>
+            <a href="#" data-id="${x.replace("상품코드", "리스트")}">
+              ${subPage_item[x]["상품명"]}
+            </a>
           </div>
           <div class="ssn">
             ${subPage_item[x]["구분"]}

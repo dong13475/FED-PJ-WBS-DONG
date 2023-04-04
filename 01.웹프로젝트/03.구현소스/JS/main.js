@@ -287,7 +287,9 @@ window.addEventListener("DOMContentLoaded", () => {
         </a>
         <div class="itxt">
           <div class="iname1">
-            <a href="#">${gdsObj[x]["상품명"]}</a>
+            <a href="#" data-id="${x.replace("상품코드", "리스트")}">
+              ${gdsObj[x]["상품명"]}
+            </a>
           </div>
           <div class="ssn">
             ${gdsObj[x]["구분"]}
