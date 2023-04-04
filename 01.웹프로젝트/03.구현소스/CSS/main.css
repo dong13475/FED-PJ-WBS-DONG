@@ -262,10 +262,10 @@
   padding: 50px 0 90px;
   text-align: center;
 }
-.c_info01{
+.c_info01>h2{
   font-size: 1.4rem;
 }
-.c_info02{
+.c_info02>h2{
   font-size: 1.4rem;
 }
 
