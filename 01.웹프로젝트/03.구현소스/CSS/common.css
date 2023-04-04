@@ -133,6 +133,7 @@ js로 마우스 아웃시 */
   /* 숨기기장치 */
   height: 0;
   opacity: 0;
+  /* hidden을 주지않으면 글자먼저 등장함 */
   overflow: hidden;
   /* 트랜지션 */
   transition:  .4s ease-in-out;
@@ -151,6 +152,7 @@ js로 마우스 아웃시 */
 .smenu li:hover {
   background-color: #e4e4e492;
 }
+
 
 /* 상단 탑메뉴 아이콘 박스 */
 .tmenu{

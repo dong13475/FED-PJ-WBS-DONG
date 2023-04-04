@@ -19,17 +19,11 @@ window.addEventListener("DOMContentLoaded", () => {
   // gnb밑의 li
   let li = document.querySelectorAll(".gnb>ul>li");
   // console.log(li);
-  // .smenu
-  const smenu = document.querySelector(".smenu");
-  // .smenu ol 의 높이변수
-  let shv = smenu.querySelector(".smenu ol").clientHeight;
-  // console.log(shv);
+  
   const move_top = document.querySelector(".move_top");
   // console.log(move_top);
 
-  // 페이드박스 li 변수 //
-  const fadeBx = document.querySelectorAll(".fade_bx li");
-  // console.log(fadeBx);
+  
 
   /********************************************** 
     상단 탑메뉴 햄버거 버튼 클릭시 토글기능구현
@@ -51,6 +45,12 @@ window.addEventListener("DOMContentLoaded", () => {
     GNB 마우스 오버시 li 밑줄효과 (on,on2),
     두번째 li에 마우스 오버시 smenu보이기
   *****************************************/
+  // .smenu
+  const smenu = document.querySelector(".smenu");
+  // .smenu ol 의 높이변수
+  let shv = smenu.querySelector(".smenu ol").clientHeight;
+  // console.log(shv);
+  
   li.forEach((ele, idx) => {
     ele.onmouseenter = () => {
       // 마우스오버시 클래스 on주고 on2지우기
@@ -78,6 +78,11 @@ window.addEventListener("DOMContentLoaded", () => {
     [ 메인페이지 페이드 배너 넣기 함수 ]
     함수명 : go_fade
   **************************************/
+
+  // 페이드박스 li 변수 //
+  const fadeBx = document.querySelectorAll(".fade_bx li");
+  // console.log(fadeBx);
+
   // 슬라이드번호 변수 :
   // 배너 이미지와 블릿을 통일시켜주는 중요한변수
   let snum = 0;
