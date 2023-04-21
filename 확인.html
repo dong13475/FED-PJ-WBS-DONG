@@ -1,28 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    body{
-      background-color: #ccc;
-    }
-    img{
-      width: 500px;
-      height: 500px;
-    }
-    .rr{
-      width: 900px;
-      height: 900px;
-    }
-  </style>
-</head>
-<body>
-  <img src="./02.모바일웹&앱프로젝트/03.구현소스/images/bags/shopper&tote_bags/f52_miami_vice/w.png" alt="">
-  <img src="./02.모바일웹&앱프로젝트/03.구현소스/images/qwe.png" alt="">
-  <img src="./02.모바일웹&앱프로젝트/03.구현소스/images/freitag_loader.png" alt="">
-  <img class="rr" src="./02.모바일웹&앱프로젝트/03.구현소스/images/4561108.png" alt="">
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        let rr = document.querySelector(".rr");
+        console.log(rr);
+        let qw = document.querySelectorAll(".qw");
+        console.log(qw);
+        rr.addEventListener("mouseenter", () => {
+          qw.forEach((element) => {
+            element.classList.add("on");
+          });
+        });
+        rr.addEventListener("mouseleave", () => {
+          qw.forEach((element) => {
+            element.classList.remove("on");
+          });
+        });
+      });
+    </script>
+    <style>
+      body {
+        /* background-color: #ccc; */
+      }
+      
+
+      .rr {
+        position: absolute;
+        top: 15vh;
+        margin: 0 auto;
+        width: 600px;
+        height: 600px;
+        background: url(./02.모바일웹&앱프로젝트/03.구현소스/images/ele.png) no-repeat center/cover;
+        position: relative;
+      }
+      .qw {
+        position: absolute;
+        /* border: 1px solid red; */
+        width: 0;
+        height: 448px;
+        bottom: 5px;
+        border-top: 10px solid #000;
+        transition: 1s;
+      }
+      .qw.on {
+        width: 115px;
+        /* transition: 1s; */
+      }
+      .q1 {
+        left: 130px;
+        border-right: 10px solid #000;
+        /* transition: left 1s; */
+      }
+      /* .q1.on{
+      width: 220px;
+    } */
+      .q2 {
+        right: 225px;
+        border-left: 10px solid #000;
+        /* transition: right 1s; */
+      }
+      /* .q2.on{
+      width: 220px;
+    } */
+    </style>
+  </head>
+  <body>
+    <div class="ww">
+      <div class="rr">
+        <div class="qw q1"></div>
+        <div class="qw q2"></div>
+      </div>
+    </div>
+    <div class="imgg">
+      <img src="./02.모바일웹&앱프로젝트/03.구현소스/images/bags/shopper&tote_bags/f52_miami_vice/w.png" alt="" />
+    </div>
+    <!-- <img src="./02.모바일웹&앱프로젝트/03.구현소스/images/4561108.png" alt=""> -->
+    <div class="rrr">
+      <img src="./02.모바일웹&앱프로젝트/03.구현소스/images/bags/messenger_bags/f11_lassie/wb1.png" alt="" />
+    </div>
+  </body>
 </html>
