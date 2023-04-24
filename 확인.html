@@ -5,22 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    
+<!-- 제이쿼리 라이브러리 CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<!-- 제이쿼리 UI CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script>
       window.addEventListener("DOMContentLoaded", () => {
+
+        $(".bags").draggable();
+
+        $(".ww").droppable({
+          drop:function(evt,ui){
+            ui.draggable.fadeOut(200);
+            console.log(33);
+            $(".qw").addClass("on")
+
+            let isrc = ui.draggable.find("img").attr("src");
+            $(this).css({background:"url("+isrc+") no-repeat center bottom/30%"})
+            setTimeout(() => {
+              $(this).css({background:"none"})
+              $(".qw").addClass("on2")
+            }, 1000);
+          }
+        });
+
         let rr = document.querySelector(".rr");
         console.log(rr);
         let qw = document.querySelectorAll(".qw");
         console.log(qw);
-        rr.addEventListener("mouseenter", () => {
-          qw.forEach((element) => {
-            element.classList.add("on");
-          });
-        });
-        rr.addEventListener("mouseleave", () => {
-          qw.forEach((element) => {
-            element.classList.add("on2");
-          });
-        });
+        // rr.addEventListener("mouseenter", () => {
+        //   qw.forEach((element) => {
+        //     element.classList.add("on");
+        //   });
+        // });
+        // rr.addEventListener("mouseleave", () => {
+        //   qw.forEach((element) => {
+        //     element.classList.add("on2");
+        //   });
+        // });
       });
     </script>
     <style>
@@ -31,8 +55,8 @@
       .rr {
         top: 20vh;
         margin: 0 auto;
-        width: 510px;
-        height: 510px;
+        max-width: 510px;
+        aspect-ratio: 1/1;
         background: url(./02.모바일웹&앱프로젝트/03.구현소스/images/elettt.png) no-repeat center/cover;
         position: relative;
       }
@@ -50,14 +74,21 @@
         height: 20px;
         background-color: red;
       }
+      .ww{
+        position: relative;
+        height: 750px;
+      }
       .qw {
         position: absolute;
         /* border: 1px solid red; */
-        top: 115px;
-        width: 15px;
-        height: 372px;
+        top: 23%;
+        width: 5%;
+        height: 73%;
+        /* height: 372px; */
         border-top: 10px solid #000;
         border-bottom: 6px solid #000;
+        background-color: #fff;
+        z-index: 10;
       }
       .qw.on {
         width: 107px;
@@ -69,11 +100,11 @@
       }
         
       .q1 {
-        left: 99px;
+        left: 20%;
         border-right: 10px solid #000;
       }
       .q2 {
-        right: 178px;
+        right: 35%;
         border-left: 10px solid #000;
       }
     </style>
@@ -86,11 +117,11 @@
         <!-- <div class="ff"></div> -->
       </div>
     </div>
-    <div class="imgg">
+    <div class="imgg bags">
       <img src="./02.모바일웹&앱프로젝트/03.구현소스/images/bags/shopper&tote_bags/f52_miami_vice/w.png" alt="" />
     </div>
     <!-- <img src="./02.모바일웹&앱프로젝트/03.구현소스/images/4561108.png" alt=""> -->
-    <div class="rrr">
+    <div class="rrr bags">
       <img src="./02.모바일웹&앱프로젝트/03.구현소스/images/bags/messenger_bags/f11_lassie/wb1.png" alt="" />
     </div>
   </body>
