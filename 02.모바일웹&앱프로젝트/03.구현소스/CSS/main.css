@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* 프라이탁 PJ 메인 CSS - main.css  */
+
+/* 외부 CSS 합치기 */
+@import url(./common.css);
+@import url(./core.css);

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* 공통 핵심 CSS - core.css */
+
+/* 초기화 */
+html,body,h1,h2,h3,ul,ol,p{
+  margin: 0;
+  padding: 0;
+}
+/* 글자크기 고정 및 가로스크롤 방지 */
+html{
+  font-size: 10px;
+  overflow-x: hidden;
+}
+ul,ol,li{
+  list-style: none;
+}
+/* a요소 리셋 */
+a{
+  text-decoration: none;
+}
+/* 이미지 리셋 */
+img{
+  border: none;
+  /* 이미지 링크시 서버에서 볼때 파란색 자동보더 없애기 */
+  vertical-align: bottom;
+  /* 박스 이미지 하단간극 없애기(약4px) */
+}
+/* 배경이미지 설명넣기 숨기기 클래스
+IR(Image Replacement) */
+.ir{
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
