@@ -13,7 +13,10 @@ $(()=>{ /////////// JQB /////////////
   
   // GNB li 클릭시 서브메뉴 등장
   $(".gnb>ul>li").click(function(){
+    // 서브메뉴 등장
     $(this).find(".smenu").stop().slideToggle(400);
+    // 화살표 방향
+    $(this).find(".arrow").stop().toggleClass("on");
   }); ////////// click /////////
 
   

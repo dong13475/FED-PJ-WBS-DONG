@@ -4,3 +4,11 @@
 /* 외부 CSS 합치기 */
 @import url(./core.css);
 @import url(./common.css);
+
+/************************** 메인영역 **************************/
+/* 메인배경 */
+.mainBg>img{
+  width: 100vw;
+  height: 85vh;
+  object-fit: cover;
+}

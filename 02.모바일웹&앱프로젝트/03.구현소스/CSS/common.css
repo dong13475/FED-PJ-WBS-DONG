@@ -17,13 +17,13 @@
 .myInfo {
   width: 50px;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.13);
+  background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 .myInfo > a {
   transform: translateY(70%);
   font-size: 22px;
-  color: #000;
+  color: #e4e4e4;
 }
 /* 햄버거버튼 */
 .ham {
@@ -32,7 +32,7 @@
   /* left: 300px; */
   width: 50px;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.13);
+  background-color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 .ham span {
@@ -42,7 +42,7 @@
   transform: translate(-50%, -50%);
   width: 45%;
   height: 3px;
-  background-color: #000;
+  background-color: #e4e4e4;
   transition: 0.3s;
 }
 /* 햄버거 span 초기셋팅 */
@@ -80,7 +80,7 @@
   outline: 1px solid #000;
   background-color: #fff;
   /* box-shadow: 0 2px 3px rgb(0, 0, 0); */
-  transition: 0.5s;
+  transition: 0.7s ease-in-out;
 }
 .gnbbx.on {
   left:0;
@@ -97,6 +97,7 @@
   flex-direction: column;
 }
 .gnb > ul > li {
+  position: relative;
   border-bottom: 1px solid #000;
   padding: 10px;
 }
@@ -108,12 +109,42 @@
 }
 /* 클릭방향박스 */
 .arrow{
-
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  /* background-color: #f00; */
+  top: 10px;
+  right: 5%;
+  cursor: pointer;
 }
+/* 왼쪽 */
 .ar1{
-
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  transform: rotate(-135deg);
+  top: 50%;
+  left: 2.7px;
+  transition: .2s ease-in-out;
 }
+/* 오른쪽 */
 .ar2{
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  transform: rotate(135deg);
+  top: 50%;
+  right: 2.7px;
+  transition: .2s ease-in-out;
+}
+/* 클릭시 클래스 "on"추가 */
+.arrow.on .ar1{
+  transform: rotate(-45deg);
+}
+.arrow.on .ar2{
+  transform: rotate(45deg);
   
 }
 
