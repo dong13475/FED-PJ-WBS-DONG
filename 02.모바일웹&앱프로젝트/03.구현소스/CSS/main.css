@@ -12,3 +12,11 @@
   height: 85vh;
   object-fit: cover;
 }
+/* 메인 흘러가는 이미지 */
+.floating{
+  display: flex;
+}
+.floating img{
+  width: 300px;
+  height: 100px;
+}
