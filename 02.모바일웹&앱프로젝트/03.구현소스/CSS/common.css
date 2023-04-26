@@ -2,16 +2,6 @@
 
 /* 공용 모듈 CSS - common.css */
 
-/* 공사중표시 */
-body {
-  outline: 1px dashed #000;
-}
-
-/* 전체영역 최대 크기지정 */
-.ibx {
-  max-width: 1600px;
-}
-
 /********************* 1. 상단영역 *********************/
 
 /*** 로고 / 햄버거버튼 박스 ***/
@@ -84,19 +74,19 @@ body {
 .gnbbx {
   position: fixed;
   top: 50px;
-  left: 0;
-  width: 0;
+  left: -100%;
+  width: 330px;
   height: 100vh;
+  outline: 1px solid #000;
   background-color: #fff;
-  box-shadow: 0 2px 3px rgb(0, 0, 0);
-  transition: width 0.5s ease-in-out;
-  /* display: none; */
+  /* box-shadow: 0 2px 3px rgb(0, 0, 0); */
+  transition: 0.5s;
 }
 .gnbbx.on {
-  width: 350px;
+  left:0;
 }
 /* 검색버튼 박스 */
-.sech a{
+.sech > div {
   font-size: 25px;
   color: #000;
   padding: 10px;
@@ -107,6 +97,38 @@ body {
   flex-direction: column;
 }
 .gnb > ul > li {
-  font-size: 25px;
+  border-bottom: 1px solid #000;
+  padding: 10px;
+}
+.gnb>ul>li>a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 23px;
+}
+/* 클릭방향박스 */
+.arrow{
+
+}
+.ar1{
+
+}
+.ar2{
+  
+}
+
+/* GNB 및 서브메뉴 */
+.smenu > ol {
+  margin-top: 5px;
+  overflow: hidden;
+}
+.smenu > ol > li {
+  font-size: 17px;
+}
+.smenu > ol > li > a {
+  padding: 7px;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 /********************* 2. 하단영역 *********************/

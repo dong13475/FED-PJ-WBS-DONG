@@ -2,8 +2,13 @@
 
 /* 공통 핵심 CSS - core.css */
 
+/* 공사중표시 */
+body * {
+  /* outline: 1px dashed #000; */
+}
+
 /* 초기화 */
-html,body,h1,h2,h3,ul,ol,p{
+html,body,h1,h2,h3,ul,ol{
   margin: 0;
   padding: 0;
 }
@@ -12,12 +17,20 @@ html{
   font-size: 10px;
   overflow-x: hidden;
 }
+
+/* 전체영역 최대 크기지정 */
+.ibx {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
 ul,ol,li{
   list-style: none;
 }
 /* a요소 리셋 */
 a{
   text-decoration: none;
+  color: #000;
 }
 /* 이미지 리셋 */
 img{
