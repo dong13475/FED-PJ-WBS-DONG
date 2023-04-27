@@ -13,10 +13,43 @@
   object-fit: cover;
 }
 /* 메인 흘러가는 이미지 */
-.floating{
+/* .floating{
   display: flex;
 }
 .floating img{
   width: 300px;
   height: 100px;
+} */
+.floating{
+  position: absolute;
+  /* 가로크기 스크린만큼 */
+  width: 100%;
+  /* 넘치는 자식요소 숨기기 */
+  overflow: hidden;
 }
+/* 이동애니메이션 */
+.floating ol{
+  position: relative;
+  left: 0;
+  display: flex;
+  /* width: 300%; */
+  /* margin: 0; */
+  /* padding: 0; */
+  
+  /* 애니메이션 */
+  /* animation: floatimg 6s linear infinite; */
+}
+
+.floating ol li{
+  /* flex: 1; */
+}
+.floating img{
+  width: 300px;
+  height: 100px;
+}
+/* 흘러가는 이미지 키프레임 */
+@keyframes floatimg {
+  to{
+    left: -100%;
+  }
+} /* 키프레임 */
