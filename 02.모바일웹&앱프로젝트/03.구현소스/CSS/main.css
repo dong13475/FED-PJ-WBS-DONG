@@ -26,6 +26,7 @@
   width: 100%;
   /* 넘치는 자식요소 숨기기 */
   overflow: hidden;
+  display: flex;
 }
 /* 이동애니메이션 */
 .floating ol{

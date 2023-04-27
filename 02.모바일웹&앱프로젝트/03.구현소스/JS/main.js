@@ -19,4 +19,23 @@ $(()=>{ /////////// JQB /////////////
     $(this).find(".arrow").stop().toggleClass("on");
   }); ////////// click /////////
   
+
+    var width = 0;
+    $('.floating ol li').each(function() {
+      width += $(this).outerWidth(true);
+    });
+    $('.floating').width(width * 2);
+    $('.floating').append($('.floating').html());
+    function loop() {
+      $('.floating').animate({left: '-=1'}, 10, 'linear', function() {
+        if($('.floating').offset().left < -width) {
+          $('.floating').css('left', 0);
+        }
+        loop();
+      });
+    }
+    loop();
+  
+  
+  
 }); //////////// JQB ///////////////
