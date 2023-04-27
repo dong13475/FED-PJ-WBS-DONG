@@ -19,8 +19,12 @@ html{
 }
 
 /* 전체영역 최대 크기지정 */
+#cont{
+  width: 100%;
+  height: 100%;
+}
 .ibx {
-  max-width: 1960px;
+  max-width: 1900px;
   margin: 0 auto;
 }
 

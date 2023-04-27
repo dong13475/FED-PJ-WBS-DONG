@@ -6,10 +6,19 @@
 @import url(./common.css);
 
 /************************** 메인영역 **************************/
+
 /* 메인배경 */
-.mainBg>img{
-  width: 100vw;
+
+.cont{
+  position: relative;
+  overflow: hidden;
+}
+.mainBg{
   height: 85vh;
+}
+.mainBg>img{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 /* 메인 흘러가는 이미지 */
@@ -20,12 +29,16 @@
   width: 300px;
   height: 100px;
 } */
+.fparent{
+  position: relative;
+  height: 100px;
+  /* background-color: red; */
+}
 .floating{
   position: absolute;
   /* 가로크기 스크린만큼 */
-  width: 100%;
+  /* width: 100%; */
   /* 넘치는 자식요소 숨기기 */
-  overflow: hidden;
   display: flex;
 }
 /* 이동애니메이션 */
@@ -33,20 +46,13 @@
   position: relative;
   left: 0;
   display: flex;
-  /* width: 300%; */
-  /* margin: 0; */
-  /* padding: 0; */
-  
-  /* 애니메이션 */
-  /* animation: floatimg 6s linear infinite; */
+
 }
 
-.floating ol li{
-  /* flex: 1; */
-}
+
 .floating img{
   width: 300px;
-  height: 100px;
+  height: 90px;
 }
 /* 흘러가는 이미지 키프레임 */
 @keyframes floatimg {

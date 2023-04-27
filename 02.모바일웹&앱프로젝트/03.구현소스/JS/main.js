@@ -19,7 +19,7 @@ $(()=>{ /////////// JQB /////////////
     $(this).find(".arrow").stop().toggleClass("on");
   }); ////////// click /////////
   
-
+    // 흘러가는 이미지 
     var width = 0;
     $('.floating ol li').each(function() {
       width += $(this).outerWidth(true);
@@ -35,6 +35,15 @@ $(()=>{ /////////// JQB /////////////
       });
     }
     loop();
+
+
+    // 서브메뉴 밑줄 효과
+    // $(".smenu li").hover(
+    //   function(){
+    //     $(this).
+    // },function(){
+
+    // })
   
   
   
