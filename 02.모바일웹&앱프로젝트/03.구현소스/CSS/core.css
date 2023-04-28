@@ -24,11 +24,15 @@ html{
   height: 100%;
 }
 .ibx {
-  max-width: 1900px;
+  max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
 ul,ol,li{
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 /* a요소 리셋 */

@@ -9,10 +9,10 @@
 
 /* 메인배경 */
 
-.cont{
+/* .cont{
   position: relative;
   overflow: hidden;
-}
+} */
 .mainBg{
   height: 85vh;
 }
@@ -31,7 +31,7 @@
 } */
 .fparent{
   position: relative;
-  height: 100px;
+  height: 90px;
   /* background-color: red; */
 }
 .floating{
@@ -60,3 +60,37 @@
     left: -100%;
   }
 } /* 키프레임 */
+
+
+/* 드래그박스 */
+#dragBx{
+  position: relative;
+  width: 100%;
+  /* height: 300px; */
+  /* overflow: hidden; */
+  margin-top: 100px;
+  padding-bottom: 1000px;
+}
+
+/* 드래그박스 드래그 선택안되게 하기 */
+.dragBag{
+  user-select: none;
+  /* 선택안되게 */
+  -webkit-user-drag: none;
+  /* 드래그안되게 */
+  position: absolute;
+  /* height: 100%; */
+}
+.dragBag img{
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+.dragBag > ul{
+  display: flex;
+}
+.dragBag > ul li{
+  position: relative;
+  width: 350px;
+}
+
