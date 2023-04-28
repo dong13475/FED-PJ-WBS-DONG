@@ -18,7 +18,27 @@ $(()=>{ /////////// JQB /////////////
     // 화살표 방향
     $(this).find(".arrow").stop().toggleClass("on");
   }); ////////// click /////////
+
+  // GNB li에 마우스 오버시 밑줄 애니
+  // $(".gnb>ul>li").hover(
+  //   function(){
+  //     $(".gnb>ul>li>a").removeClass("on2").addClass("on");
+  //   },function(){
+  //     $(".gnb>ul>li>a").removeClass("on").addClass("on2");
+      
+  // }); /////////// hover ///////////
+  $(".gnb>ul>li").each((idx,ele)=>{
+    $(ele).hover(
+      function(){
+        $(ele).find("a").removeClass("on2").addClass("on");
+      },function(){
+        $(ele).find("a").removeClass("on").addClass("on2");
+    });
+
+  }); ////////// each /////////////
   
+
+
     // 흘러가는 이미지 
     var width = 0;
     $('.floating ol li').each(function() {
@@ -37,13 +57,7 @@ $(()=>{ /////////// JQB /////////////
     loop();
 
 
-    // 서브메뉴 밑줄 효과
-    // $(".smenu li").hover(
-    //   function(){
-    //     $(this).
-    // },function(){
 
-    // })
   
   
   
