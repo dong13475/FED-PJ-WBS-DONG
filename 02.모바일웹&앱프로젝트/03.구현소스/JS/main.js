@@ -84,7 +84,7 @@ $(()=>{ /////////// JQB /////////////
     let lpt = dragBag.width() - (fpt*4);
 
     // (3) 마우스 이벤트로 left값 체크하여 제한
-    $("#dragBx").on("mousedown mouseup mousemove",()=>{
+    $("html,body").on("mousedown mouseup mousemove",()=>{
       // 1. 움직이는 요소 left 위치값
       let mpos = dragBag.offset().left;
 

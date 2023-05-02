@@ -62,16 +62,23 @@
 } /* 키프레임 */
 
 
+/* 드래그 제목 */
+.ftxt{
+  margin: 50px;
+}
+.ftxt span{
+  padding-left: 70px;
+  font-size: 40px;
+  font-weight: bold;
+}
 /* 드래그박스 */
 #dragBx{
   position: relative;
+  height: 300px;
   width: 100%;
-  /* height: 300px; */
-  /* overflow: hidden; */
-  margin-top: 100px;
-  padding-bottom: 1000px;
+  overflow: hidden;
+  padding-bottom: 1500px;
 }
-
 /* 드래그박스 드래그 선택안되게 하기 */
 .dragBag{
   user-select: none;
@@ -79,7 +86,7 @@
   -webkit-user-drag: none;
   /* 드래그안되게 */
   position: absolute;
-  /* height: 100%; */
+  height: 100%;
 }
 .dragBag img{
   position: relative;
@@ -92,5 +99,12 @@
 .dragBag > ul li{
   position: relative;
   width: 300px;
+  padding-right: 50px;
+}
+.dragBag ul li{
+  text-align: center;
+}
+.dragBag li span{
+  font-size: 21px;
 }
 
