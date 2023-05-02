@@ -83,14 +83,14 @@
 }
 .dragBag img{
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
 }
 .dragBag > ul{
   display: flex;
 }
 .dragBag > ul li{
   position: relative;
-  width: 350px;
+  width: 300px;
 }
 
