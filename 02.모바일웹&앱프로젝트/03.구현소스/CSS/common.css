@@ -27,13 +27,20 @@
   color: #e4e4e4;
 }
 /* 햄버거버튼 */
+.btbt {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 50px;
+  /* width: 130px; */
+}
 .ham {
   position: absolute;
-  left: 200px;
-  /* left: 300px; */
+  /* left: 200px; */
+  left: 0;
+  /* left: 80px; */
   width: 50px;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.3); */
   cursor: pointer;
 }
 .ham span {
@@ -76,16 +83,17 @@
   position: fixed;
   top: 50px;
   /* left: 0; */
-  width: 0;
+  width: 0px;
   height: 100%;
   outline: 1px solid #000;
   background-color: #fff;
   /* box-shadow: 0 2px 3px rgb(0, 0, 0); */
-  transition: 0.7s ease-out;
+  transition: width 0.6s ease-out;
   z-index: 1;
+  overflow: hidden;
 }
 .gnbbx.on {
-  width:330px;
+  width: 330px;
 }
 /* 검색버튼 박스 */
 .sech > div {
@@ -101,48 +109,50 @@
 .gnb > ul > li {
   position: relative;
   border-bottom: 1px solid #000;
-  padding: 10px;
+  padding: 15px;
+  /* overflow: hidden; */
 }
-.gnb>ul>li>a{
+.gnb > ul > li > a {
   position: relative;
   font-size: 21px;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 /* GNB메뉴 li에 클래스 "on"주기 */
-.gnb>ul>li>a.on::before{
-  content: '';
+.gnb > ul > li > a.on::before {
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
   bottom: 0;
   background-color: #000;
-  animation: line .3s linear forwards;
+  animation: line 0.3s linear forwards;
 }
 @keyframes line {
-  to{
+  to {
     width: 100%;
   }
 }
 /* GNB메뉴 li에 클래스 "on2"주기 */
-.gnb>ul>li>a.on2::before{
-  content: '';
+.gnb > ul > li > a.on2::before {
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
   right: 0;
   bottom: 0;
   background-color: #000;
-  animation: line2 .3s linear forwards;
+  animation: line2 0.3s linear forwards;
 }
 @keyframes line2 {
-  to{
+  to {
     width: 0;
   }
 }
 
 /* 클릭방향박스 */
-.arrow{
+.arrow {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -152,7 +162,7 @@
   cursor: pointer;
 }
 /* 왼쪽 */
-.ar1{
+.ar1 {
   position: absolute;
   width: 15px;
   height: 2px;
@@ -160,10 +170,10 @@
   transform: rotate(-135deg);
   top: 50%;
   left: 2.7px;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 /* 오른쪽 */
-.ar2{
+.ar2 {
   position: absolute;
   width: 15px;
   height: 2px;
@@ -171,15 +181,14 @@
   transform: rotate(135deg);
   top: 50%;
   right: 2.7px;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 /* 클릭시 클래스 "on"추가 */
-.arrow.on .ar1{
+.arrow.on .ar1 {
   transform: rotate(-45deg);
 }
-.arrow.on .ar2{
+.arrow.on .ar2 {
   transform: rotate(45deg);
-  
 }
 
 /* GNB 및 서브메뉴 */
@@ -194,9 +203,8 @@
 
 .smenu > ol > li > a {
   display: block;
-  /* width: 100%; */
-  /* height: 100%; */
-  /* z-index: 9999; */
-  transition: .3s ease-out;
+  transition: 0.3s ease-out;
+  white-space: nowrap;
+  /* font-weight: bold; */
 }
 /********************* 2. 하단영역 *********************/
