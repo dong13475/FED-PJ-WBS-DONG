@@ -2,9 +2,16 @@
 
 /* 공통 핵심 CSS - core.css */
 
+/* 구글웹폰트 CDN */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
+
+/* font-family: 'Open Sans', sans-serif; */
+
+
 /* 공사중표시 */
 body * {
   /* outline: 1px dashed #000; */
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* 초기화 */

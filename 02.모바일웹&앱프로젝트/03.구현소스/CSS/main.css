@@ -8,11 +8,6 @@
 /************************** 메인영역 **************************/
 
 /* 메인배경 */
-
-/* .cont{
-  position: relative;
-  overflow: hidden;
-} */
 .mainBg{
   height: 85vh;
 }
@@ -21,14 +16,10 @@
   height: 100%;
   object-fit: cover;
 }
-/* 메인 흘러가는 이미지 */
-/* .floating{
-  display: flex;
+/* 메인탑 이미지 */
+.mainTop{
+  text-align: center;
 }
-.floating img{
-  width: 300px;
-  height: 100px;
-} */
 .fparent{
   position: relative;
   height: 90px;
@@ -46,10 +37,7 @@
   position: relative;
   left: 0;
   display: flex;
-
 }
-
-
 .floating img{
   width: 300px;
   height: 90px;
@@ -67,8 +55,8 @@
   margin: 50px;
 }
 .ftxt span{
-  padding-left: 70px;
-  font-size: 40px;
+  padding-left: 5vw;
+  font-size: 50px;
   font-weight: bold;
 }
 /* 드래그박스 */
@@ -105,7 +93,7 @@
   text-align: center;
 }
 .dragBag li span{
-  font-size: 21px;
+  font-size: 23px;
   font-weight: bold;
 }
 
