@@ -12,6 +12,7 @@
 body * {
   /* outline: 1px dashed #000; */
   font-family: 'Open Sans', sans-serif;
+  position: relative;
 }
 
 /* 초기화 */

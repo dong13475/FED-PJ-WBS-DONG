@@ -144,11 +144,11 @@ $(() => {
 
   // 3. 한계값 설정
   // (1) 화면크기의 1/3로 설정
-  let fpt = $(window).width() / 5;
+  let fpt = $(window).width() / 3;
 
   // (2) 마지막 한계값 설정 :
   // 드래그박스가로크기 - 화면크기 2/3
-  let lpt = dragBag.width() - fpt * 4;
+  let lpt = dragBag.width() - fpt * 2;
 
   // (3) 마우스 이벤트로 left값 체크하여 제한
   $("html,body").on("mousedown mouseup mousemove", () => {
@@ -169,4 +169,19 @@ $(() => {
       }); /////// css /////////
     } /////// else if /////////
   }); ///////// 마우스 이벤트 함수 ////////////
+
+
+  /* 메인 공정박스 이미지 클릭시 효과 */
+  // 리스트 처음에 숨김
+  $(".mList").hide();
+  // 영역 클릭시 크기 줄어들고 리스트 내려옴
+  $(".mbox").click(function(){
+    $(this).animate({
+    width:"800px",
+    cursor:"default"
+    },400,function(){
+      $(".mList").stop().slideDown(900);
+    }); ////// animate //////
+  }); ///////// click //////////
+  
 }); //////////// JQB ///////////////
