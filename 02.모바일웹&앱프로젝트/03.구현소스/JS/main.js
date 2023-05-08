@@ -184,4 +184,37 @@ $(() => {
     }); ////// animate //////
   }); ///////// click //////////
   
-}); //////////// JQB ///////////////
+
+
+
+
+
+
+
+$(".bags").draggable();
+
+        $(".ww").droppable({
+          drop:function(evt,ui){
+            ui.draggable.fadeOut(200);
+            console.log(33);
+            $(".qw").addClass("on")
+
+            let isrc = ui.draggable.find("img").attr("src");
+            $(this).css({background:"url("+isrc+") no-repeat center bottom/30%"})
+            setTimeout(() => {
+              $(this).css({background:"none"})
+              $(".qw").addClass("on2")
+            }, 1000);
+          }
+        });
+
+        let rr = document.querySelector(".rr");
+        console.log(rr);
+        let qw = document.querySelectorAll(".qw");
+        console.log(qw);
+
+
+
+
+
+      }); //////////// JQB ///////////////
