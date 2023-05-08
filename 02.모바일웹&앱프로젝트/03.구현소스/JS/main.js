@@ -10,18 +10,24 @@ $(() => {
     $(".gnbbx").toggleClass("on");
     // .gnbbx에 클래스 on일때 css 효과
     if ($(".gnbbx").hasClass("on")) {
-      $(".gnb>ul>li").css({
+      $(".gnb>ul>li, .sns, .sName").css({
         opacity: "1",
         transition: ".4s",
       }); ///// css /////
     } else {
-      $(".gnb>ul>li").css({
+      $(".gnb>ul>li, .sns, .sName").css({
         opacity: "0",
         transition: ".4s",
       }); ///// css /////
       // $(".smenu").hide();
     }
   }); ///////// click //////////
+
+  // 검색버튼 클릭시 input 보이기
+  $(".sech>div").on("click",function(){
+    $(".sech").toggleClass("on");
+  })
+  
 
   // 서브메뉴 숨기기 -> display:none 처리
   $(".smenu").hide();

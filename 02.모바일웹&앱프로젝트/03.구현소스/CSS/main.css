@@ -130,7 +130,7 @@
 /* 메인탑 이미지 */
 .mainTop{
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1100px;
   padding: 100px 90px 100px;
 }
 .mainTop img{
@@ -151,5 +151,25 @@
 }
 .mainTxt li:last-child{
   font-size: 19px;
+  white-space: nowrap;
+}
+
+/* 메인공정박스 */
+.mbox{
+  /* display: flex; */
+  position: relative;
+}
+.mimg{
+  width: 800px;
+}
+.mList{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-left: 10px;
+}
+.mList li{
+  font-size: 18px;
+  padding-bottom: 5px;
   white-space: nowrap;
 }
