@@ -3,6 +3,7 @@
 $(() => {
   /////////// JQB /////////////
 
+  /********************** 상단 네비 영역 **********************/
   // 햄버거버튼 클릭시 메뉴 활성화
   $(".ham").on("click", function () {
     // $(this).toggleClass("on").css({left:"80px"}).parents(".btbt").css({width:"130px"});
@@ -69,6 +70,7 @@ $(() => {
       }
     );
   }); /////// each //////////
+  /************************** 상단네비 영역 끝 **************************/
 
   // 흘러가는 이미지
   var width = 0;
@@ -191,27 +193,7 @@ $(() => {
 
 
 
-$(".bags").draggable();
 
-        $(".ww").droppable({
-          drop:function(evt,ui){
-            ui.draggable.fadeOut(200);
-            console.log(33);
-            $(".qw").addClass("on")
-
-            let isrc = ui.draggable.find("img").attr("src");
-            $(this).css({background:"url("+isrc+") no-repeat center bottom/30%"})
-            setTimeout(() => {
-              $(this).css({background:"none"})
-              $(".qw").addClass("on2")
-            }, 1000);
-          }
-        });
-
-        let rr = document.querySelector(".rr");
-        console.log(rr);
-        let qw = document.querySelectorAll(".qw");
-        console.log(qw);
 
 
 
