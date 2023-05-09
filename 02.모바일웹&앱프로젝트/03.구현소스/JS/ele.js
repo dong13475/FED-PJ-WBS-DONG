@@ -74,12 +74,13 @@ $(() => {
 
   $(".ww").droppable({
     drop: function (evt, ui) {
-      ui.draggable.fadeOut(200);
+      ui.draggable.fadeOut(300);
       console.log(33);
       $(".qw").addClass("on");
 
       let isrc = ui.draggable.find("img").attr("src");
-      $(this).css({ background: "url(" + isrc + ") no-repeat center bottom/30%" });
+      console.log("누구냐",isrc);
+      $(this).css({ background: "url(" + isrc + ") no-repeat center bottom 10%/40%" });
       setTimeout(() => {
         $(this).css({ background: "none" });
         $(".qw").addClass("on2");
@@ -87,11 +88,5 @@ $(() => {
     },
   });
 
-  let rr = document.querySelector(".rr");
-  console.log(rr);
-  let qw = document.querySelectorAll(".qw");
-  console.log(qw);
 
-
-  
 }); ///////////// JQB /////////////////

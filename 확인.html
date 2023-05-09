@@ -23,6 +23,7 @@
             $(".qw").addClass("on")
 
             let isrc = ui.draggable.find("img").attr("src");
+            console.log(isrc);
             $(this).css({background:"url("+isrc+") no-repeat center bottom/30%"})
             setTimeout(() => {
               $(this).css({background:"none"})
