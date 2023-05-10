@@ -3,16 +3,17 @@
 $(() => {
 
 /************ 엘레베이터 영역 ************/
-$(".light").hide();
 $(".bags").draggable();
+// 불켜짐표시 처음에 숨기기
+$(".light").hide();
 
 $(".door").droppable({
   drop: function (evt, ui) {
     ui.draggable.fadeOut(300);
     console.log(33);
     $(".alldoor").addClass("close");
-
-    $(".light").show();
+    // 불켜짐표시 보이기
+    $(".light").delay(600).show(100);
 
     let isrc = ui.draggable.find("img").attr("src");
     console.log("누구냐",isrc);
