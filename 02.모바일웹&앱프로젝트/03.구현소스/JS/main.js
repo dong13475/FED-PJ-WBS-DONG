@@ -3,6 +3,17 @@
 $(() => {
   /////////// JQB /////////////
 
+  /************* 상단이동 영역 *************/
+  // 새로고침시 페이지 맨위로 이동!
+  setTimeout(()=>{
+    window.scrollTo(0,0);
+  },100); //// timeout ////
+  // 상단이동버튼 클릭시 맨위로 이동!
+  $(".moveTop").click(function(){
+    window.scrollTo(0,0);
+  }); //// click ////
+  /************* 상단이동 영역 끝 *************/
+
   /********************** 상단 네비 영역 **********************/
   // 햄버거버튼 클릭시 메뉴 활성화
   $(".ham").on("click", function () {
@@ -24,12 +35,20 @@ $(() => {
     }
   }); ///////// click //////////
 
+
+  // 전체메뉴클릭시 전체메뉴창 닫기
+  $(".smenu a").click(
+    ()=>$(".ham").trigger("click"));
+    // 선택요소.trigger(이벤트명)
+    // -> 선택요소의 이벤트 강제발생함!
+    // 참고) JS 클릭이벤트 강제발생
+    // document.querySelector(요소).click();
+  
   // 검색버튼 클릭시 input 보이기
   $(".sech>div").on("click",function(){
     $(".sech").toggleClass("on");
-  })
+  });
   
-
   // 서브메뉴 숨기기 -> display:none 처리
   $(".smenu").hide();
 
@@ -155,7 +174,7 @@ $(() => {
   // (3) 마우스 이벤트로 left값 체크하여 제한
   $("html,body").on("mousedown mouseup mousemove", () => {
     // 1. 움직이는 요소 left 위치값
-    let mpos = dragBag.offset().left;
+    let mpos = dragBag.position().left;
 
     // 2. 처음한계값에 고정!
     if (mpos > fpt) {
@@ -186,17 +205,4 @@ $(() => {
     }); ////// animate //////
   }); ///////// click //////////
   
-
-
-
-
-
-
-
-
-
-
-
-
-
       }); //////////// JQB ///////////////
