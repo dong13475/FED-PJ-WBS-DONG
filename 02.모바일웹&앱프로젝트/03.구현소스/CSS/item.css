@@ -7,7 +7,7 @@
 
 /*** 메인 아이템네비 ***/
 .cont{
-  max-width: 1200px;
+  max-width: 1300px;
 }
 .itemNav{
   font-size: 15px;
@@ -35,7 +35,7 @@
   display: grid;
   max-width: 1200px;
   grid-template-columns: repeat(5, 1fr);
-  gap:25px 15px;
+  gap:25px 0;
   margin: 0 auto;
   padding-top: 50px;
 }
