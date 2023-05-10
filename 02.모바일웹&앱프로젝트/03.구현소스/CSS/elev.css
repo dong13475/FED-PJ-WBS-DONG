@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/* 프라이탁 PJ elevator CSS - elev.css  */
+
+/* 외부 CSS 합치기 */
+@import url(./core.css);
+@import url(./common.css);
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+/***** 전체 드래그영역 *****/
+#ele {
+  width: 100vw;
+  height: 100vh;
+}
+/*** 뼈대 ***/
+/* 뼈대 속박스 */
+.ele {
+  position: absolute;
+  width: 550px;
+  height: 560px;
+  aspect-ratio: 1/1;
+  top: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+  /* outline: 1px dashed #000; */
+}
+/* 뼈대선 공통 */
+.line {
+  background-color: #000;
+  position: absolute;
+}
+/* 맨위뼈대 */
+.tl {
+  width: 100%;
+  height: 10px;
+}
+/* 왼쪽뼈대 */
+.ll {
+  height: 100%;
+  width: 10px;
+}
+/* 오른쪽뼈대 */
+.rl {
+  height: 100%;
+  width: 10px;
+  right: 0;
+}
+/* 아래뼈대 */
+.bl {
+  width: 100%;
+  height: 10px;
+  bottom: 0;
+}
+/* 안쪽위뼈대 */
+.itl {
+  width: 65%;
+  height: 10px;
+  top: 20%;
+  left: 10%;
+}
+/* 안쪽왼뼈대 */
+.ill {
+  height: 80%;
+  width: 10px;
+  left: 10%;
+  bottom: 0;
+}
+/* 안쪽오른뼈대 */
+.irl {
+  height: 80%;
+  width: 10px;
+  right: 25%;
+  bottom: 0;
+}
+/*** 엘레베이터 이미지 ***/
+.eleimg{
+  position: absolute;
+  top: 6%;
+  right: 8%;
+  width: 60px;
+  height: 60px;
+}
+.eleimg img{
+  width: 100%;
+  height: 100%;
+}
+/*** 방향표시 ***/
+/* 공통라인 */
+.dirL {
+  position: absolute;
+  background-color: #000;
+}
+/* 위쪽 */
+.dirT {
+  position: absolute;
+  top: 10%;
+  left: 27%;
+
+  width: 42px;
+  height: 42px;
+  /* background-color: red; */
+  transform: rotate(45deg);
+}
+.dtl {
+  width: 10px;
+  height: 100%;
+}
+.dtr {
+  width: 100%;
+  height: 10px;
+}
+/* 아래쪽 */
+.dirD {
+  position: absolute;
+  top: 6%;
+  left: 48%;
+
+  width: 42px;
+  height: 42px;
+  /* background-color: red; */
+  transform: rotate(-135deg);
+}
+.ddl {
+  width: 10px;
+  height: 100%;
+}
+.ddr {
+  width: 100%;
+  height: 10px;
+}
+/*** 불켜짐표시 ***/
+/* 공통 */
+.light {
+  position: absolute;
+  /* display: none; */
+  width: 15px;
+  height: 6px;
+  background-color: #000;
+}
+.t1 {
+  top: 8%;
+  left: 25%;
+  transform: rotate(42deg);
+}
+.t2 {
+  top: 5.5%;
+  left: 29.5%;
+  transform: rotate(90deg);
+}
+.t3 {
+  top: 8%;
+  left: 34%;
+  transform: rotate(138deg);
+}
+/*** 버튼박스 ***/
+/* 공통 */
+.btx {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  outline: 10px solid #000;
+  right: 12%;
+}
+.btbtb {
+  top: 45%;
+  /* background-color: red; */
+}
+.btbbb {
+  top: 52%;
+}
+/*** 문 ***/
+.door {
+  position: absolute;
+  /* background-color: lightcoral; */
+  /* outline: 1px dotted red; */
+  width: 63.1%;
+  height: 76%;
+  bottom: 2%;
+  left: 10%;
+}
+/* 공통문 */
+.alldoor {
+  position: absolute;
+  width: 5%;
+  height: 100%;
+  transition: 0.4s;
+  outline: 10px solid #000;
+  background-color: #fff;
+}
+/* 클래스 "close"추가시 문닫힘 */
+.alldoor.close {
+  width: 47%;
+  transition: 1.5s 1s;
+}
+/* 클래스 "on"추가시 문올라감 */
+.alldoor.on {
+  height: 0%;
+  transition: 1.5s 1s;
+}
+/* 왼쪽문 */
+.ldoor {
+  left: 3%;
+  /* background-color: lightblue; */
+}
+/* 오른쪽문 */
+.rdoor {
+  right: 0;
+  /* background-color: lightcoral; */
+}
+/*** 바닥구분선 ***/
+.floor1{
+  position: absolute;
+  width: 35%;
+  height: 10px;
+  background-color: #000;
+  top: 102%;
+  right: 0;
+}
+.floor2{
+  position: absolute;
+  width: 20%;
+  height: 10px;
+  background-color: #000;
+  top: 105%;
+  right: 0;
+}
+/*** 드래그 가방 ***/
+.bags {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  z-index: 2;
+  bottom: 23%;
+}
+.bags img {
+  width: 100%;
+  height: 100%;
+}
+.bc1 {
+  left: 22%;
+}
+.bc2 {
+  right: 23%;
+}
+.bc3 {
+  right: 13%;
+}

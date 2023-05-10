@@ -9,234 +9,139 @@
     <!-- 폰트어썸 CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <!-- 외부 CSS 넣기 -->
-    <!-- <link rel="stylesheet" href="./CSS/ele.css" /> -->
+    <link rel="stylesheet" href="./CSS/elev.css" />
     <!-- 제이쿼리 라이브러리 -->
     <script src="./jQuery/jquery-3.6.3.min.js"></script>
     <script src="./jQuery/jquery-ui.min.js"></script>
     <script src="./jQuery/jquery-touch-punch.min.js"></script>
     <!-- 외부 JS 넣기 -->
     <script src="./JS/elev.js"></script>
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        position: relative;
-        overflow-x: hidden;
-      }
-      /***** 전체 드래그영역 *****/
-      #ele {
-        width: 100vw;
-        height: 100vh;
-      }
-      /*** 뼈대 ***/
-      /* 뼈대 속박스 */
-      .ele {
-        position: absolute;
-        width: 550px;
-        height: 560px;
-        aspect-ratio: 1/1;
-        top: 15vh;
-        left: 50%;
-        transform: translateX(-50%);
-        outline: 1px dashed #000;
-      }
-      /* 뼈대선 공통 */
-      .line {
-        background-color: #000;
-        position: absolute;
-      }
-      /* 맨위뼈대 */
-      .tl {
-        width: 100%;
-        height: 10px;
-      }
-      /* 왼쪽뼈대 */
-      .ll {
-        height: 100%;
-        width: 10px;
-      }
-      /* 오른쪽뼈대 */
-      .rl {
-        height: 100%;
-        width: 10px;
-        right: 0;
-      }
-      /* 아래뼈대 */
-      .bl {
-        width: 100%;
-        height: 10px;
-        bottom: 0;
-      }
-      /* 안쪽위뼈대 */
-      .itl {
-        width: 65%;
-        height: 10px;
-        top: 20%;
-        left: 10%;
-      }
-      /* 안쪽왼뼈대 */
-      .ill {
-        height: 80%;
-        width: 10px;
-        left: 10%;
-        bottom: 0;
-      }
-      /* 안쪽오른뼈대 */
-      .irl {
-        height: 80%;
-        width: 10px;
-        right: 25%;
-        bottom: 0;
-      }
-      /*** 방향표시 ***/
-      /* 공통라인 */
-      .dirL {
-        position: absolute;
-        background-color: #000;
-      }
-      /* 위쪽 */
-      .dirT {
-        position: absolute;
-        top: 10%;
-        left: 27%;
-
-        width: 42px;
-        height: 42px;
-        /* background-color: red; */
-        transform: rotate(45deg);
-      }
-      .dtl {
-        width: 10px;
-        height: 100%;
-      }
-      .dtr {
-        width: 100%;
-        height: 10px;
-      }
-      /* 아래쪽 */
-      .dirD {
-        position: absolute;
-        top: 6%;
-        left: 48%;
-
-        width: 42px;
-        height: 42px;
-        /* background-color: red; */
-        transform: rotate(-135deg);
-      }
-      .ddl {
-        width: 10px;
-        height: 100%;
-      }
-      .ddr {
-        width: 100%;
-        height: 10px;
-      }
-      /*** 불켜짐표시 ***/
-      /* 공통 */
-      .light {
-        position: absolute;
-        /* display: none; */
-        width: 15px;
-        height: 6px;
-        background-color: #000;
-      }
-      .t1 {
-        top: 8%;
-        left: 25%;
-        transform: rotate(42deg);
-      }
-      .t2 {
-        top: 5.5%;
-        left: 29.5%;
-        transform: rotate(90deg);
-      }
-      .t3 {
-        top: 8%;
-        left: 34%;
-        transform: rotate(138deg);
-      }
-      /*** 버튼박스 ***/
-      /* 공통 */
-      .btx {
-        position: absolute;
-        width: 20px;
-        height: 30px;
-        outline: 10px solid #000;
-        right: 12%;
-      }
-      .btbt {
-        top: 45%;
-        /* background-color: red; */
-      }
-      .btbb {
-        top: 52%;
-      }
-      /*** 문 ***/
-      .door {
-        position: absolute;
-        /* background-color: lightcoral; */
-        outline: 1px dotted red;
-        width: 63.1%;
-        height: 76%;
-        bottom: 2%;
-        left: 10%;
-      }
-      /* 공통문 */
-      .alldoor {
-        position: absolute;
-        width: 5%;
-        height: 100%;
-        transition: 0.4s;
-        outline: 10px solid #000;
-        background-color: #fff;
-      }
-      /* 클래스 "close"추가시 문닫힘 */
-      .alldoor.close {
-        width: 47%;
-        transition: 1.5s 1s;
-      }
-      /* 클래스 "on"추가시 문올라감 */
-      .alldoor.on {
-        height: 0%;
-        transition: 2s 1s;
-      }
-      /* 왼쪽문 */
-      .ldoor {
-        left: 3%;
-        /* background-color: lightblue; */
-      }
-      /* 오른쪽문 */
-      .rdoor {
-        right: 0;
-        /* background-color: lightcoral; */
-      }
-      /*** 드래그 가방 ***/
-      .bags {
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        z-index: 2;
-      }
-      .bags img {
-        width: 100%;
-        height: 100%;
-      }
-      .bc1 {
-        left: 22vw;
-      }
-      .bc2 {
-        right: 22vw;
-      }
-      .bc3 {
-        right: 10vw;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
+    <!-- 1. 상단영역 -->
+    <div id="top">
+      <header class="top ibx">
+        <!-- 로고 / 햄버거버튼 박스 -->
+        <div class="topNav">
+          <!-- 1-1. 로고 -->
+          <h1 class="logo">
+            <a href="./index.html"><img src="./images/logo/logo.svg" alt="로고" /></a>
+          </h1>
+          <!-- 1-2. 회원가입버튼 -->
+          <div class="myInfo">
+            <a href="#" class="fa-solid fa-user">
+              <span class="ir">마이페이지</span>
+            </a>
+          </div>
+          <!-- 1-3. 햄버거버튼 -->
+          <div class="btbt">
+            <div class="ham">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <!-- 전체 네비영역 박스 -->
+        <div class="gnbbx">
+          <!-- GNB네비 -->
+          <nav class="gnb">
+            <ul>
+              <!-- 검색버튼 -->
+              <li class="sech">
+                <div class="fa-solid fa-magnifying-glass">
+                  <span class="ir">search</span>
+                  <input type="text" />
+                </div>
+              </li>
+              <li>
+                <a href="#">BAGS</a>
+                <!-- 클릭방향박스 -->
+                <div class="arrow">
+                  <div class="ar1"></div>
+                  <div class="ar2"></div>
+                </div>
+                <div class="smenu">
+                  <ol>
+                    <li>
+                      <a href="#">BACKPACKS</a>
+                    </li>
+                    <li>
+                      <a href="#">LAPTOP BAGS</a>
+                    </li>
+                    <li>
+                      <a href="#">MESSENGER</a>
+                    </li>
+                    <li>
+                      <a href="#">SHOPPER & TOTE BAGS</a>
+                    </li>
+                    <li>
+                      <a href="#">SHOULDER BAGS</a>
+                    </li>
+                    <li>
+                      <a href="#">SPORTS & TRAVEL BAGS</a>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li>
+                <a href="#">ACCESSORIES</a>
+                <!-- 클릭방향박스 -->
+                <div class="arrow">
+                  <div class="ar1"></div>
+                  <div class="ar2"></div>
+                </div>
+                <div class="smenu">
+                  <ol>
+                    <li>
+                      <a href="#">KEYHOLDERS</a>
+                    </li>
+                    <li>
+                      <a href="#">LAPTOP SLEEVES</a>
+                    </li>
+                    <li>
+                      <a href="#">PHONE CASES</a>
+                    </li>
+                    <li>
+                      <a href="#">POUCHES</a>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li><a href="#">ABOUT FREITAG</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <!-- SNS -->
+              <div class="sName">
+                <p>FREITAG NEWS</p>
+              </div>
+              <div class="sns">
+                <li>
+                  <a href="#" class="fa-brands fa-instagram">
+                    <span class="ir">인스타그램</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/FREITAG/" target="_blank" class="fa-brands fa-square-facebook">
+                    <span class="ir">페이스북</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCHyhAHfoZOUw0zRCn1JSAMg"
+                    target="_blank"
+                    class="fa-brands fa-youtube"
+                  >
+                    <span class="ir">유튜브</span>
+                  </a>
+                </li>
+                <li><a href="https://www.freitag.ch/en" target="_blank">@ FREITAG 2023</a></li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
     <!-- 엘레베이터 전체박스 -->
     <div id="ele">
       <div class="ele">
@@ -248,6 +153,13 @@
         <div class="line itl"></div>
         <div class="line ill"></div>
         <div class="line irl"></div>
+        <!-- 바닥구분선 -->
+        <!-- <div class="floor1"></div>
+        <div class="floor2"></div> -->
+        <!-- 로고 -->
+        <div class="eleimg">
+          <img src="./images/logo/logo-small.svg" alt="작은로고">
+        </div>
         <!-- 방향표시 -->
         <!-- 위쪽 -->
         <div class="dirT">
@@ -264,14 +176,15 @@
           <div class="ddr dirL"></div>
         </div>
         <!-- 버튼 -->
-        <div class="btbt btx"></div>
-        <div class="btbb btx"></div>
+        <div class="btbtb btx"></div>
+        <div class="btbbb btx"></div>
         <!-- 문 -->
         <div class="door">
           <div class="ldoor alldoor"></div>
           <div class="rdoor alldoor"></div>
         </div>
       </div>
+      
       <!-- 가방 -->
       <div class="bags bc1">
         <img src="./images/bags/backpacks/f155_clapton/ws.png" alt="" />
