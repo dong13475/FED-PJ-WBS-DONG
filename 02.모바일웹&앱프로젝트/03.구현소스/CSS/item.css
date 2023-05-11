@@ -75,10 +75,14 @@
   font-size: 17px;
   padding: 0 40px;
   line-height: 2;
+  margin: 0 auto;
 }
-
+.iInfo video{
+  width: 100%;
+  height: 100%;
+}
 
 /* 하단여유공간 임시 */
 .info{
-  padding: 300px;
+  padding: 100px;
 }

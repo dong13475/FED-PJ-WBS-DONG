@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      .pageMove {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+      }
+      .wrap {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        top: 10%;
+        left: 20%;
+      }
+      .bgI {
+        position: absolute;
+        left: 20%;
+        top: 0;
+        z-index: 1;
+        transform: rotate(12deg);
+      }
+      .w {
+        display: flex;
+        position: absolute;
+        transform: rotate(45deg);
+        bottom: -5%;
+        left: 15%;
+      }
+      .q {
+        /* position: absolute; */
+        border-radius: 20% 20% 0 0;
+        width: 30px;
+        height: 250px;
+        bottom: 0;
+      }
+      .q1 {
+        background-color: red;
+        /* transform: rotate(55deg); */
+        /* left: 15%; */
+        /* bottom: 5%; */
+      }
+      .q2 {
+        background-color: rgb(255, 189, 6);
+        /* transform: rotate(55deg); */
+        /* left: 19%; */
+      }
+      .q3 {
+        background-color: yellow;
+        /* transform: rotate(55deg); */
+        /* left: 29%; */
+      }
+      .q4 {
+        background-color: green;
+      }
+      .q5 {
+        background-color: blue;
+      }
+      .q6 {
+        background-color: navy;
+      }
+      .q7 {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pageMove">
+      <div class="wrap">
+        <div class="bgI">
+          <img src="./02.모바일웹&앱프로젝트/03.구현소스/images/bags/sports&travel_bags/f45_lois/ws.png" alt="" />
+        </div>
+        <div class="w">
+          <div class="q q1"></div>
+          <div class="q q2"></div>
+          <div class="q q3"></div>
+          <div class="q q4"></div>
+          <div class="q q5"></div>
+          <div class="q q6"></div>
+          <div class="q q7"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
