@@ -1,64 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Page Transition Effect with jQuery and CSS</title>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<style>
-		/* Style for the pages */
-		.page {
-			display: none;
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			transition: opacity 2.5s ease-in-out;
-		}
-		/* Style for the active page */
-		.active {
-			display: block;
-			opacity: 1;
-		}
-	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 </head>
+<style>
+	html,body,ol,ul,li{
+		margin: 0;
+		padding: 0;
+	}
+	ul{
+		list-style: none;
+	}
+	body *{
+		outline: 1px dotted red;
+	}
+	
+</style>
 <body>
-
-	<!-- Page 1 -->
-	<div class="page active" id="page1">
-		<h1>Welcome to Page 1!</h1>
-		<p>This is the first page of our site.</p>
-		<a href="#" class="page-link" data-target="page2">Go to Page 2</a>
-	</div>
-
-	<!-- Page 2 -->
-	<div class="page" id="page2">
-		<h1>Welcome to Page 2!</h1>
-		<p>This is the second page of our site.</p>
-		<a href="#" class="page-link" data-target="page3">Go to Page 3</a>
-	</div>
-
-	<!-- Page 3 -->
-	<div class="page" id="page3">
-		<h1>Welcome to Page 3!</h1>
-		<p>This is the third page of our site.</p>
-	</div>
-
-	<script>
-		$(document).ready(function(){
-			// Show the first page
-			$("#page1").addClass("active");
-
-			// When a page link is clicked, fade out the current page and fade in the next one
-			$(".page-link").click(function(e){
-				e.preventDefault();
-				var target = $(this).data("target");
-				var currentPage = $(".page.active");
-				var nextPage = $("#" + target);
-				currentPage.removeClass("active").css("opacity", "0");
-				nextPage.addClass("active").css("opacity", "1");
-			});
-		});
-	</script>
-
+	
 </body>
 </html>
