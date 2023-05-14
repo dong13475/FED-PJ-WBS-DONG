@@ -9,27 +9,27 @@ const subData = {
       <ol>
         <li><a href="./index.html">HOME>></a></li>
         <li><a href="#">BAGS>></a></li>
-        <li>BACKPACKS>></li>
-        <li>F306 HAZZARD</li>
+        <li>{{$store.state.items[0].sort}} >></li>
+        <li>{{$store.state.items[0].name}}</li>
       </ol>
     </div>
     <!-- 아이템제목 -->
     <div class="itemName">
-      <div class="iName">F306 HAZZARD</div>
+      <div class="iName">{{$store.state.items[0].name}}</div>
       <ol>
-        <li>BACKPACKS</li>
-        <li>￦510,000</li>
+        <li>{{$store.state.items[0].sort}}</li>
+        <li>{{$store.state.items[0].price}}</li>
       </ol>
     </div>
     <!-- 상품 그리드영역 -->
     <div class="grid">
-      <div class="item" v-for="(v) in $store.state.items[0].idx">
+      <div class="item" v-for="v in $store.state.items[0].idx" v-bind:key="v">
         <a href="">
           <img 
           v-bind:src="
           './images/bags/' +
-          $store.state.items[1].sort.toLowerCase() + '/' +
-          $store.state.items[1].name.toLowerCase() + '/' +
+          $store.state.items[3].sort + '/' +
+          $store.state.items[3].name + '/' +
           v + '.jpg'" alt="아이템" />
         </a>
       </div>

@@ -53,7 +53,7 @@ const comData = {
                 <a href="#">LAPTOP BAGS</a>
               </li>
               <li>
-                <a href="#">MESSENGER</a>
+                <a href="#">MESSENGER BAGS</a>
               </li>
               <li>
                 <a href="#">SHOPPER & TOTE BAGS</a>
