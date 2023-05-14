@@ -1,4 +1,4 @@
-
+// 상단 네비 기능 JS - topNav.js
 
 function topNav(){
 
@@ -89,6 +89,7 @@ function topNav(){
   }); /////// each //////////
   /************************** 상단네비 영역 끝 **************************/
 
-}
+} /////// topNav 함수 ///////////
 
-export default topNav();
+// 상단네비함수 내보내기
+export default topNav;

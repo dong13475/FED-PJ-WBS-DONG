@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAGS | FREITAG</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/logo/favicon-32x32.png" type="image/x-icon" />
+    <!-- 폰트어썸 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- 외부 CSS 넣기 -->
+    <link rel="stylesheet" href="./CSS/item.css" />
+    <!-- 뷰JS 스탠드얼론 버전 가져오기! -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <!-- 뷰JS vuex CDN -->
+    <script src="https://unpkg.com/vuex@3.0.0"></script>
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="./jQuery/jquery-3.6.3.min.js"></script>
+    <script src="./jQuery/jquery-ui.min.js"></script>
+    <script src="./jQuery/jquery-touch-punch.min.js"></script>
+    <!-- 외부 JS 넣기 -->
+    <script src="./JS/item.js" type="module"></script>
+  </head>
+  <body>
+    <!-- 1. 상단영역 -->
+    <div id="top">
+      <header class="top ibx">
+        <!-- 로고 / 햄버거버튼 박스 -->
+        <div class="topNav">
+          <!-- 1-1. 로고 -->
+          <h1 class="logo">
+            <a href="#"><img src="./images/logo/logo.svg" alt="로고" /></a>
+          </h1>
+          <!-- 1-2. 회원가입버튼 -->
+          <div class="myInfo">
+            <a href="#" class="fa-solid fa-user">
+              <span class="ir">마이페이지</span>
+            </a>
+          </div>
+          <!-- 1-3. 햄버거버튼 -->
+          <div class="btbt">
+            <div class="ham">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <!-- 전체 네비영역 박스 -->
+        <div class="gnbbx">
+          <!-- GNB네비 -->
+          <nav class="gnb">
+            <ul>
+              <!-- 검색버튼 -->
+              <li class="sech">
+                <div class="fa-solid fa-magnifying-glass">
+                  <span class="ir">search</span>
+                  <input type="text" />
+                </div>
+              </li>
+              <li>
+                <a href="#">BAGS</a>
+                <!-- 클릭방향박스 -->
+                <div class="arrow">
+                  <div class="ar1"></div>
+                  <div class="ar2"></div>
+                </div>
+                <div class="smenu">
+                  <ol>
+                    <li>
+                      <a href="#">BACKPACKS</a>
+                    </li>
+                    <li>
+                      <a href="#">LAPTOP BAGS</a>
+                    </li>
+                    <li>
+                      <a href="#">MESSENGER</a>
+                    </li>
+                    <li>
+                      <a href="#">SHOPPER & TOTE BAGS</a>
+                    </li>
+                    <li>
+                      <a href="#">SHOULDER BAGS</a>
+                    </li>
+                    <li>
+                      <a href="#">SPORTS & TRAVEL BAGS</a>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li>
+                <a href="#">ACCESSORIES</a>
+                <!-- 클릭방향박스 -->
+                <div class="arrow">
+                  <div class="ar1"></div>
+                  <div class="ar2"></div>
+                </div>
+                <div class="smenu">
+                  <ol>
+                    <li>
+                      <a href="#">KEYHOLDERS</a>
+                    </li>
+                    <li>
+                      <a href="#">LAPTOP SLEEVES</a>
+                    </li>
+                    <li>
+                      <a href="#">PHONE CASES</a>
+                    </li>
+                    <li>
+                      <a href="#">POUCHES</a>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li><a href="#">ABOUT FREITAG</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <!-- SNS -->
+              <div class="sName">
+                <p>FREITAG NEWS</p>
+              </div>
+              <div class="sns">
+                <li>
+                  <a href="#" class="fa-brands fa-instagram">
+                    <span class="ir">인스타그램</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/FREITAG/" target="_blank" class="fa-brands fa-square-facebook">
+                    <span class="ir">페이스북</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCHyhAHfoZOUw0zRCn1JSAMg"
+                    target="_blank"
+                    class="fa-brands fa-youtube"
+                  >
+                    <span class="ir">유튜브</span>
+                  </a>
+                </li>
+                <li><a href="https://www.freitag.ch/en" target="_blank">@ FREITAG 2023</a></li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <!-- 2. 메인영역 -->
+    <div id="cont">
+      <main class="cont ibx">
+        <!-- 메인네비 -->
+        <div class="itemNav">
+          <ol>
+            <li><a href="">HOME>></a></li>
+            <li><a href="">BAGS>></a></li>
+            <li>BACKPACKS>></li>
+            <li>F306 HAZZARD</li>
+          </ol>
+        </div>
+        <!-- 아이템제목 -->
+        <div class="itemName">
+          <div class="iName">F306 HAZZARD</div>
+          <ol>
+            <li>BACKPACKS</li>
+            <li>￦510,000</li>
+          </ol>
+        </div>
+        <!-- 상품 그리드영역 -->
+        <div class="grid">
+          <div class="item">
+            <a href="">
+              <img src="./images/bags/backpacks/f306_hazzard/1.jpg" alt="아이템" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <img src="./images/bags/backpacks/f306_hazzard/2.jpg" alt="아이템" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <img src="./images/bags/backpacks/f306_hazzard/3.jpg" alt="아이템" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <img src="./images/bags/backpacks/f306_hazzard/4.jpg" alt="아이템" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <img src="./images/bags/backpacks/f306_hazzard/5.jpg" alt="아이템" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <img src="./images/bags/backpacks/f306_hazzard/6.jpg" alt="아이템" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <img src="./images/bags/backpacks/f306_hazzard/7.jpg" alt="아이템" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <img src="./images/bags/backpacks/f306_hazzard/8.jpg" alt="아이템" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <img src="./images/bags/backpacks/f306_hazzard/9.jpg" alt="아이템" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <img src="./images/bags/backpacks/f306_hazzard/10.jpg" alt="아이템" />
+            </a>
+          </div>
+        </div>
+        <!-- 아이템 설명 -->
+        <div class="iteminfo">
+          <!-- 네비영역 -->
+          <ul class="infoList">
+            <li class="dimention">
+              <h3>DIMENTION</h3>
+            </li>
+            <li class="materials">
+              <h3>MATERIALS</h3>
+            </li>
+            <li class="itemVideo">
+              <h3>FEATURES</h3>
+            </li>
+          </ul>
+          <!-- 설명영역 -->
+          <div class="infoText">
+            <div class="iInfo">
+              <!-- <video autoplay loop muted>
+                <source src="./video/FREITAG - F306 HAZZARD.mp4" />
+              </video> -->
+              This unique article is made of approx. 76%* recycled materials: 
+              <br>- car seat belt (polyester), 100% B-stock
+              <br>- distance fabric (polyester) - piping (polyester) 
+              <br>- lining (post-consumer PET bottles), 100% recycled 
+              <br>- used truck tarpaulin (polyester/PVC), 100% recycled 
+              <br>- webbing (polyester) - Velcro fastener (polyamide) 
+              <br>- label (PVC), 25% recycled 
+              <br>- sewing thread (polyamide) 
+              <br>- zipper (polyester/zinc) 
+              <br>- laminated foam 
+              <br>- tension buckle (polyamide) 
+              <br>- woven label (polyester)
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- 3. 하단영역 -->
+    <div id="info">
+      <footer class="info ibx"></footer>
+    </div>
+  </body>
+</html>
+
+
+<!-- This unique article is made of approx. 76%* recycled materials: 
+<br>- car seat belt (polyester), 100% B-stock
+<br>- distance fabric (polyester) - piping (polyester) 
+<br>- lining (post-consumer PET bottles), 100% recycled 
+<br>- used truck tarpaulin (polyester/PVC), 100% recycled 
+<br>- webbing (polyester) - Velcro fastener (polyamide) 
+<br>- label (PVC), 25% recycled 
+<br>- sewing thread (polyamide) 
+<br>- zipper (polyester/zinc) 
+<br>- laminated foam 
+<br>- tension buckle (polyamide) 
+<br>- woven label (polyester) -->
