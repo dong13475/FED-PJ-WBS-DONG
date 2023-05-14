@@ -23,14 +23,54 @@ const subData = {
     </div>
     <!-- 상품 그리드영역 -->
     <div class="grid">
-      <div class="item" v-for="(v) in $store.state.items[0].idx">
+      <div class="item">
         <a href="">
-          <img 
-          v-bind:src="
-          './images/bags/' +
-          $store.state.items[1].sort.toLowerCase() + '/' +
-          $store.state.items[1].name.toLowerCase() + '/' +
-          v + '.jpg'" alt="아이템" />
+          <img src="./images/bags/backpacks/f306_hazzard/1.jpg" alt="아이템" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./images/bags/backpacks/f306_hazzard/2.jpg" alt="아이템" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./images/bags/backpacks/f306_hazzard/3.jpg" alt="아이템" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./images/bags/backpacks/f306_hazzard/4.jpg" alt="아이템" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./images/bags/backpacks/f306_hazzard/5.jpg" alt="아이템" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./images/bags/backpacks/f306_hazzard/6.jpg" alt="아이템" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./images/bags/backpacks/f306_hazzard/7.jpg" alt="아이템" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./images/bags/backpacks/f306_hazzard/8.jpg" alt="아이템" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./images/bags/backpacks/f306_hazzard/9.jpg" alt="아이템" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./images/bags/backpacks/f306_hazzard/10.jpg" alt="아이템" />
         </a>
       </div>
     </div>

@@ -7,6 +7,9 @@ import comData from '../tempData/data-common.js';
 // 서브데이터(메인영역) 가져오기
 import subData from '../tempData/data-sub.js';
 
+// 뷰엑스 스토어 JS 가져오기
+import store from "./store.js";
+
 
 //##### 상단영역 메뉴 뷰 템플릿 셋팅하기 #####//
 // Vue.component(내가지은요소명,{옵션})
@@ -49,4 +52,13 @@ Vue.component("intro-comp",{
 //##### 서브메인 뷰 인스턴스 셋팅하기 #####//
 new Vue({
   el:"#cont",
+  store, // 뷰엑스 스토어 등록필수!!!
+  data:{
+    items:{}, // json데이터 담을 변수
+  },
+  // 뷰 인스턴스 생성직후(가상돔/ 돔 생성전)
+  created(){
+    // Vuex.Store actions구역 메서드 initData호출하기! 
+    store.dispatch('initData');
+  }
 }); //////// 서브영역 뷰 인스턴스 ////////////

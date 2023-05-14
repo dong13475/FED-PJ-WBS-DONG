@@ -3,7 +3,7 @@
 import topNav from "./topNav.js";
 
 $(() => {
-  
+  topNav();
 
   /************ 엘레베이터 영역 ************/
   $(".bags").draggable();
