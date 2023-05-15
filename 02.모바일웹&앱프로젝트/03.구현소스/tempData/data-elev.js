@@ -1,6 +1,5 @@
 // 엘레베이터 data 객체 셋팅 JS - data-elev.js
 
-import elev from "../JS/elev"
 
 const elevData = {
   elev:`
@@ -49,13 +48,13 @@ const elevData = {
     
     <!-- 가방 -->
     <div class="bags bc1">
-      <img src="./images/bags/backpacks/f155_clapton/1.png" alt="" />
+      <img src="./images/bags/backpacks/1.png" alt="" />
     </div>
     <div class="bags bc2">
-      <img src="./images/bags/backpacks/f253_kowalski/1.png" alt="" />
+      <img src="./images/bags/backpacks/2.png" alt="" />
     </div>
     <div class="bags bc3">
-      <img src="./images/bags/backpacks/f306_hazzard/1.png" alt="" />
+      <img src="./images/bags/backpacks/3.png" alt="" />
     </div>
   </div>
   `

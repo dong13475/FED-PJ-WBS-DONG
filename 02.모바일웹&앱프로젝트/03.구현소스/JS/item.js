@@ -7,7 +7,7 @@ import elev from "./elev.js";
 // 공통네비 데이터 가져오기
 import comData from '../tempData/data-common.js';
 // 엘레베이터 데이터 가져오기
-// import elevData from "../tempData/data-elev.js";
+import elevData from "../tempData/data-elev.js";
 // 서브데이터(메인영역) 가져오기
 import subData from '../tempData/data-sub.js';
 
@@ -15,19 +15,30 @@ import subData from '../tempData/data-sub.js';
 import store from "./store.js";
 
 
-elev();
+
 
 //##### 엘리베이터 뷰 템플릿 셋팅하기 #####//
 // Vue.component(내가지은요소명,{옵션})
-// Vue.component("elev-comp",{
-//   template: elevData.elev,
-// }); ///// 상단영역 Vue component //////
+Vue.component("elev-comp",{
+  template: elevData.elev,
+}); ///// 상단영역 Vue component //////
 
 //##### 상단영역 메뉴 뷰 템플릿 셋팅하기 #####//
 // Vue.component(내가지은요소명,{옵션})
 Vue.component("top-comp",{
   template: comData.tarea,
 }); ///// 상단영역 Vue component //////
+
+
+//##### 상단영역 뷰 인스턴스 생성하기 #####//
+new Vue({
+  el:"#eleV",
+  // store,
+  data:{},
+  mounted: function(){
+    elev();
+  }
+}); ////////// 엘리베이터 영역 뷰 인스턴스 //////////
 
 
 //##### 상단영역 뷰 인스턴스 생성하기 #####//
@@ -68,6 +79,17 @@ new Vue({
   store, // 뷰엑스 스토어 등록필수!!!
   data:{
     items:{}, // json데이터 담을 변수
+  },
+  mounted(){
+    // 임시숨기기
+    $("#ele").hide();
+    $(".infoList li").each((idx,ele)=>{
+      console.log("클릭!",ele);
+      $(ele).click(()=>{
+        $(ele).addClass("on");
+      })
+    })
+      
   },
   // 뷰 인스턴스 생성직후(가상돔/ 돔 생성전)
   created(){
