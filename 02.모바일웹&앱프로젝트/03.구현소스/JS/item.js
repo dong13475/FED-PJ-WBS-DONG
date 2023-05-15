@@ -2,14 +2,26 @@
 
 // 탑네비함수 가져오기
 import topNav from "./topNav.js";
+// 엘레베이터함수 가져오기
+import elev from "./elev.js";
 // 공통네비 데이터 가져오기
 import comData from '../tempData/data-common.js';
+// 엘레베이터 데이터 가져오기
+// import elevData from "../tempData/data-elev.js";
 // 서브데이터(메인영역) 가져오기
 import subData from '../tempData/data-sub.js';
 
 // 뷰엑스 스토어 JS 가져오기
 import store from "./store.js";
 
+
+elev();
+
+//##### 엘리베이터 뷰 템플릿 셋팅하기 #####//
+// Vue.component(내가지은요소명,{옵션})
+// Vue.component("elev-comp",{
+//   template: elevData.elev,
+// }); ///// 상단영역 Vue component //////
 
 //##### 상단영역 메뉴 뷰 템플릿 셋팅하기 #####//
 // Vue.component(내가지은요소명,{옵션})
@@ -42,6 +54,7 @@ new Vue({
 // Vue.component(내가지은요소명,{옵션})
 Vue.component("contents-comp",{
   template: subData.contents,
+  // template: subData.contentsSub,
 }); ///// 메인영역 Vue component /////
 
 // 2. 설명영역 컴포넌트

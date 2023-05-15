@@ -8,7 +8,7 @@ const comData = {
   <div class="topNav">
     <!-- 1-1. 로고 -->
     <h1 class="logo">
-      <a href="#"><img src="./images/logo/logo.svg" alt="로고" /></a>
+      <a href="./index.html"><img src="./images/logo/logo.svg" alt="로고" /></a>
     </h1>
     <!-- 1-2. 회원가입버튼 -->
     <div class="myInfo">

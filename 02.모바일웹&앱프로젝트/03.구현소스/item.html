@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <!-- 외부 CSS 넣기 -->
     <link rel="stylesheet" href="./CSS/item.css" />
+    <link rel="stylesheet" href="./CSS/elev.css" />
     <!-- 뷰JS 스탠드얼론 버전 가져오기! -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <!-- 뷰JS vuex CDN -->
@@ -20,8 +21,63 @@
     <script src="./jQuery/jquery-touch-punch.min.js"></script>
     <!-- 외부 JS 넣기 -->
     <script src="./JS/item.js" type="module"></script>
+    <!-- <script src="./JS/elev.js"></script> -->
   </head>
   <body>
+    <!-- 엘레베이터 전체박스 -->
+    <div id="ele">
+      <div class="ele">
+        <!-- 뼈대 -->
+        <div class="line tl"></div>
+        <div class="line ll"></div>
+        <div class="line rl"></div>
+        <div class="line bl"></div>
+        <div class="line itl"></div>
+        <div class="line ill"></div>
+        <div class="line irl"></div>
+        <!-- 바닥구분선 -->
+        <!-- <div class="floor1"></div>
+        <div class="floor2"></div> -->
+        <!-- 로고 -->
+        <div class="eleimg">
+          <img src="./images/logo/logo-small.svg" alt="작은로고">
+        </div>
+        <!-- 방향표시 -->
+        <!-- 위쪽 -->
+        <div class="dirT">
+          <div class="dtl dirL"></div>
+          <div class="dtr dirL"></div>
+        </div>
+        <!-- 불켜짐표시 -->
+        <div class="light t1"></div>
+        <div class="light t2"></div>
+        <div class="light t3"></div>
+        <!-- 아래쪽 -->
+        <div class="dirD">
+          <div class="ddl dirL"></div>
+          <div class="ddr dirL"></div>
+        </div>
+        <!-- 버튼 -->
+        <div class="btbtb btx"></div>
+        <div class="btbbb btx"></div>
+        <!-- 문 -->
+        <div class="door">
+          <div class="ldoor alldoor"></div>
+          <div class="rdoor alldoor"></div>
+        </div>
+      </div>
+      
+      <!-- 가방 -->
+      <div class="bags bc1">
+        <img src="./images/bags/backpacks/1.png" alt="" />
+      </div>
+      <div class="bags bc2">
+        <img src="./images/bags/backpacks/2.png" alt="" />
+      </div>
+      <div class="bags bc3">
+        <img src="./images/bags/backpacks/3.png" alt="" />
+      </div>
+    </div>
     <!-- 1. 상단영역 -->
     <div id="top">
       <!-- 부모 컴포넌트 요소 -->

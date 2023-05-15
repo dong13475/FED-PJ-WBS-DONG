@@ -11,8 +11,15 @@ body {
 }
 /***** 전체 드래그영역 *****/
 #ele {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: #fff;
 }
 /*** 뼈대 ***/
 /* 뼈대 속박스 */
