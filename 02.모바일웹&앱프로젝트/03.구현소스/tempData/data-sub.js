@@ -9,16 +9,16 @@ const subData = {
       <ol>
         <li><a href="./index.html">HOME>></a></li>
         <li><a href="#">BAGS>></a></li>
-        <li>{{$store.state.items[0].sort}} >></li>
-        <li>{{$store.state.items[0].name}}</li>
+        <li>{{$store.state.items[$store.state.inum].sort}} >></li>
+        <li>{{$store.state.items[$store.state.inum].name}}</li>
       </ol>
     </div>
     <!-- 아이템제목 -->
     <div class="itemName">
-      <div class="iName">{{$store.state.items[0].name}}</div>
+      <div class="iName">{{$store.state.items[$store.state.inum].name}}</div>
       <ol>
-        <li>{{$store.state.items[0].sort}}</li>
-        <li>{{$store.state.items[0].price}}</li>
+        <li>{{$store.state.items[$store.state.inum].sort}}</li>
+        <li>{{$store.state.items[$store.state.inum].price}}</li>
       </ol>
     </div>
     <!-- 상품 그리드영역 -->
@@ -28,8 +28,8 @@ const subData = {
           <img 
           v-bind:src="
           './images/bags/' +
-          $store.state.items[0].sort + '/' +
-          $store.state.items[0].name + '/' +
+          $store.state.items[$store.state.inum].sort + '/' +
+          $store.state.items[$store.state.inum].name + '/' +
           v + '.jpg'" alt="아이템" />
         </a>
       </div>
@@ -76,54 +76,10 @@ const subData = {
       <!-- 슬라이드 -->
       <div class="vSlide">
         <div class="islide">
-          <div class="sitem">
+          <div class="sitem" v-for="v in 10">
             <a href="">
-              <img src="./images/bags/backpacks/f306_hazzard/1.jpg" alt="아이템" />
-            </a>
-          </div>
-          <div class="sitem">
-            <a href="">
-              <img src="./images/bags/backpacks/f306_hazzard/2.jpg" alt="아이템" />
-            </a>
-          </div>
-          <div class="sitem">
-            <a href="">
-              <img src="./images/bags/backpacks/f306_hazzard/3.jpg" alt="아이템" />
-            </a>
-          </div>
-          <div class="sitem">
-            <a href="">
-              <img src="./images/bags/backpacks/f306_hazzard/4.jpg" alt="아이템" />
-            </a>
-          </div>
-          <div class="sitem">
-            <a href="">
-              <img src="./images/bags/backpacks/f306_hazzard/5.jpg" alt="아이템" />
-            </a>
-          </div>
-          <div class="sitem">
-            <a href="">
-              <img src="./images/bags/backpacks/f306_hazzard/6.jpg" alt="아이템" />
-            </a>
-          </div>
-          <div class="sitem">
-            <a href="">
-              <img src="./images/bags/backpacks/f306_hazzard/7.jpg" alt="아이템" />
-            </a>
-          </div>
-          <div class="sitem">
-            <a href="">
-              <img src="./images/bags/backpacks/f306_hazzard/8.jpg" alt="아이템" />
-            </a>
-          </div>
-          <div class="sitem">
-            <a href="">
-              <img src="./images/bags/backpacks/f306_hazzard/9.jpg" alt="아이템" />
-            </a>
-          </div>
-          <div class="sitem">
-            <a href="">
-              <img src="./images/bags/backpacks/f306_hazzard/10.jpg" alt="아이템" />
+              <img :src="
+              './images/bags/backpacks/f306_hazzard/'+v+'.jpg'" @click.prevent="goData(v)" alt="아이템" />
             </a>
           </div>
         </div>
@@ -131,10 +87,9 @@ const subData = {
       <!-- 플렉스 -->
       <div class="vFlex">
         <ul class="igrid">
-          <li><img src="./images/bags/backpacks/f306_hazzard/1/1.jpg" alt=""></li>
-          <li><img src="./images/bags/backpacks/f306_hazzard/1/2.jpg" alt=""></li>
-          <li><img src="./images/bags/backpacks/f306_hazzard/1/3.jpg" alt=""></li>
-          <li><img src="./images/bags/backpacks/f306_hazzard/1/4.jpg" alt=""></li>
+          <li v-for="v in 4"><img :src="
+          './images/bags/backpacks/f306_hazzard/'+$store.state.bnum+'/'+v+'.jpg'
+          " alt=""></li>
         </ul>
         <div class="tflex">
           <!-- 제목 -->

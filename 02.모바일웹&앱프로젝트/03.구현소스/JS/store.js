@@ -7,6 +7,9 @@ const store = new Vuex.Store({
   // (1) 데이터 셋팅구역 :
   state:{
     items:{}, // 제이슨 데이터 담을 변수
+    optview:1,
+    inum:2,
+    bnum:1,
   }, ////// state 구역 //////
 
   // (2) 데이터 변경 메서드 구역 :
@@ -17,6 +20,9 @@ const store = new Vuex.Store({
       // state구역 items변수에 제이슨 데이터 담기!
       st.items = pm;
       console.log("뮤테이션",pm);
+    },
+    updateBig(st,pm){
+      st.bnum = pm;
     }
   }, /////// mutations 구역 /////////
 

@@ -63,10 +63,18 @@ new Vue({
 //##### 서브메인 컨텐츠 뷰 템플릿 셋팅하기 #####//
 // 1. 컨텐츠영역 컴포넌트
 // Vue.component(내가지은요소명,{옵션})
-Vue.component("contents-comp",{
+Vue.component("contents1-comp",{
   template: subData.contents,
-  // template: subData.contentsSub,
 }); ///// 메인영역 Vue component /////
+Vue.component("contents2-comp",{
+  template: subData.contentsSub,
+  methods:{
+    goData(pm){
+      store.commit('updateBig',pm)
+    }
+  }
+}); ///// 메인영역 Vue component /////
+
 
 // 2. 설명영역 컴포넌트
 Vue.component("intro-comp",{
@@ -89,6 +97,45 @@ new Vue({
         $(ele).addClass("on");
       });
     });
+    $(".door").droppable({
+      drop: function (evt, ui) {
+        ui.draggable.fadeOut(300);
+  
+        // 드롭된 정보
+        let getInfo = ui.draggable.find("img").attr("src");
+        getInfo = getInfo.split("/");
+        getInfo = getInfo[getInfo.length-1].split(".")[0];
+        console.log("숫자:",getInfo);
+
+        store.state.inum = getInfo-1;
+  
+        $(".alldoor").addClass("close");
+        // 불켜짐표시 보이기
+        $(".light").delay(600).show(100);
+  
+        let isrc = ui.draggable.find("img").attr("src");
+        $(this).css({ background: "url(" + isrc + ") no-repeat center bottom 10%/70%" });
+        setTimeout(() => {
+          $(this).css({ background: "none" });
+          $(".alldoor").addClass("on");
+        }, 2200); ///// timeout /////////
+        setTimeout(() => {
+          $("#ele").css({
+              transition:"3s",
+              transform: "translateY(-100%)",
+            });
+        }, 4000); ///// timeout /////////
+  
+  
+      },
+    }); //////// drop /////////
+
+    $(".item a").click(function(e){
+      e.preventDefault();
+      store.state.optview = 2;
+    })
+
+
   },
   // 뷰 인스턴스 생성직후(가상돔/ 돔 생성전)
   created(){
