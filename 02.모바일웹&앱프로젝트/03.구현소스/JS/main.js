@@ -91,18 +91,18 @@ $(() => {
   // 3. 한계값 설정
   // (1) 화면크기의 1/3로 설정
   let fpt = $(window).width() / 3;
-  console.log("한계값:",fpt);
+  // console.log("한계값:",fpt);
   
   // (2) 마지막 한계값 설정 :
   // 드래그박스가로크기 - 화면크기 2/3
   let lpt = dragBag.width() - fpt * 2;
-  console.log("마지막한계값:",lpt);
+  // console.log("마지막한계값:",lpt);
 
   // (3) 마우스 이벤트로 left값 체크하여 제한
   $("html,body").on("mousedown mouseup mousemove", () => {
     // 1. 움직이는 요소 left 위치값
     let mpos = dragBag.position().left;
-    console.log("left위치값:",mpos);
+    // console.log("left위치값:",mpos);
 
     // 2. 처음한계값에 고정!
     if (mpos > fpt) {
