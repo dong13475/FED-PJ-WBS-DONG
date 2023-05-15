@@ -23,13 +23,22 @@ const subData = {
     </div>
     <!-- 상품 그리드영역 -->
     <div class="grid">
+<<<<<<< Updated upstream
       <div class="item" v-for="v in 10" v-bind:key="v">
+=======
+      <div class="item" v-for="(v,i) in $store.state.items[0].idx" v-bind:key="i">
+>>>>>>> Stashed changes
         <a href="">
           <img 
           v-bind:src="
           './images/bags/' +
+<<<<<<< Updated upstream
           $store.state.items[$store.state.inum].sort + '/' +
           $store.state.items[$store.state.inum].name + '/' +
+=======
+          $store.state.items[2].sort + '/' +
+          $store.state.items[2].name + '/' +
+>>>>>>> Stashed changes
           v + '.jpg'" alt="아이템" />
         </a>
       </div>
