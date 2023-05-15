@@ -56,13 +56,13 @@ const comData = {
                 <a href="#">MESSENGER BAGS</a>
               </li>
               <li>
-                <a href="#">SHOPPER & TOTE BAGS</a>
+                <a href="#">SHOPPER BAGS</a>
               </li>
               <li>
                 <a href="#">SHOULDER BAGS</a>
               </li>
               <li>
-                <a href="#">SPORTS & TRAVEL BAGS</a>
+                <a href="#">SPORTS BAGS</a>
               </li>
             </ol>
           </div>
