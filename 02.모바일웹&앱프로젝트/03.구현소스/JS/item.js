@@ -108,6 +108,7 @@ new Vue({
         console.log("숫자:",getInfo);
 
         store.state.inum = getInfo-1;
+        console.log(store.state.inum)
   
         $(".alldoor").addClass("close");
         // 불켜짐표시 보이기
@@ -121,7 +122,7 @@ new Vue({
         }, 2200); ///// timeout /////////
         setTimeout(() => {
           $("#ele").css({
-              transition:"3s",
+              transition:"2s",
               transform: "translateY(-100%)",
             });
         }, 4000); ///// timeout /////////
