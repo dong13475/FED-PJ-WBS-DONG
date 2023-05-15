@@ -28,8 +28,8 @@ const subData = {
           <img 
           v-bind:src="
           './images/bags/' +
-          $store.state.items[1].sort + '/' +
-          $store.state.items[1].name + '/' +
+          $store.state.items[0].sort + '/' +
+          $store.state.items[0].name + '/' +
           v + '.jpg'" alt="아이템" />
         </a>
       </div>
@@ -38,7 +38,7 @@ const subData = {
     <div class="iteminfo">
       <!-- 네비영역 -->
       <ul class="infoList">
-        <li class="dimention">
+        <li class="dimention on">
           <h3>DIMENTION</h3>
         </li>
         <li class="materials">

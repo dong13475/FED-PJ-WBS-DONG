@@ -82,14 +82,13 @@ new Vue({
   },
   mounted(){
     // 임시숨기기
-    $("#ele").hide();
-    $(".infoList li").each((idx,ele)=>{
-      console.log("클릭!",ele);
-      $(ele).click(()=>{
+    // $("#ele").hide();
+    $(".infoList li").each((idx, ele) => {
+      $(ele).click(() => {
+        $(".infoList li").removeClass("on");
         $(ele).addClass("on");
-      })
-    })
-      
+      });
+    });
   },
   // 뷰 인스턴스 생성직후(가상돔/ 돔 생성전)
   created(){
