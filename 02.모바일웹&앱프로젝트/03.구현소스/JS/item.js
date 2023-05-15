@@ -48,14 +48,14 @@ new Vue({
   data:{},
   // mounted 실행구역 : DOM연결후
   mounted: function(){
-    console.log("mounted구역");
+    // console.log("mounted구역");
     // 상단네비기능 호출
     topNav();
   },
   // created 실행구역 : DOM연결전
   created: function(){
     // DOM연결전 데이터 가공작업
-    console.log("created구역")
+    // console.log("created구역")
   },
 }); //////// 상단영역 뷰 인스턴스 //////////
 
