@@ -95,9 +95,10 @@ Vue.component("contents1-comp",{
 Vue.component("contents2-comp",{
   template: subData.contentsSub,
   methods:{
-    // goData(pm){
-    //   store.commit('updateBig',pm)
-    // }
+    goData(pm){
+      store.commit('updateBig',pm)
+      console.log("qwe",pm)
+    }
   }
 }); ///// 메인영역 Vue component /////
 
@@ -135,16 +136,16 @@ new Vue({
         console.log("숫자:",getInfo);
         
         store.state.inum = getInfo-1;
-        // console.log(store.state.inum)
+        console.log("inum:",store.state.inum);
 
         // 드롭정보
-        let TgetInfo = ui.draggable.find("img").attr("src");
-        console.log(TgetInfo);
-        TgetInfo = TgetInfo.split("/");
-        TgetInfo = TgetInfo[TgetInfo.length-2].split(".")
-        console.log("tname:",TgetInfo);
+        let tgName = ui.draggable.find("img").attr("src");
+        console.log(tgName);
+        tgName = tgName.split("/");
+        tgName = tgName[tgName.length-2].split(".")
+        console.log("tname:",tgName);
         
-        store.state.tname = TgetInfo;
+        store.state.tname = tgName;
         
         
   
@@ -169,10 +170,10 @@ new Vue({
       },
     }); //////// drop /////////
 
-    // $(".item a").click(function(e){
-    //   e.preventDefault();
-    //   store.state.optview = 2;
-    // })
+    $(".item a").click(function(e){
+      e.preventDefault();
+      store.state.optview = 2;
+    })
 
 
   }, /////// mounted //////////

@@ -25,7 +25,13 @@ const subData = {
     <div class="grid">
       <div class="item" v-for="v in 10">
         <a href="">
-          <img src="./images/bags/backpacks/f155_clapton/1/1.jpg" alt="아이템" />
+          <img :src="
+          './images/bags/'+
+          $store.state.sort+
+          '/'+
+          $store.state.name[$store.state.inum]+
+          '/'+v+'.jpg'
+          " alt="아이템" />
         </a>
       </div>
     </div>
@@ -54,16 +60,16 @@ const subData = {
       <ol>
         <li><a href="">HOME>></a></li>
         <li><a href="">BAGS>></a></li>
-        <li>BACKPACKS>></li>
-        <li>F306_HAZZARD</li>
+        <li>{{$store.state.sort}}>></li>
+        <li>{{$store.state.name[$store.state.inum]}}</li>
       </ol>
     </div>
     <!-- 아이템제목 -->
     <div class="itemName">
-      <div class="iName">F306_HAZZARD</div>
+      <div class="iName">{{$store.state.name[$store.state.inum]}}</div>
       <ol>
-        <li>BACKPACKS</li>
-        <li>￦510,000</li>
+        <li>{{$store.state.sort}}</li>
+        <li> 가격 </li>
       </ol>
     </div>
     <!-- 상품 뷰영역 -->
@@ -71,9 +77,12 @@ const subData = {
       <!-- 슬라이드 -->
       <div class="vSlide">
         <div class="islide">
-          <div class="sitem">
+          <div class="sitem" v-for="v in 10">
             <a href="">
-              <img src="./images/bags/backpacks/f306_hazzard/1.jpg" alt="아이템" />
+              <img :src="
+              './images/bags/'+
+              $store.state.sort+'/'+$store.state.name[$store.state.inum]+'/'+v+'.jpg'" @click.prevent="goData(v)"
+              alt="아이템" />
             </a>
           </div>
         </div>
@@ -81,7 +90,11 @@ const subData = {
       <!-- 플렉스 -->
       <div class="vFlex">
         <ul class="igrid">
-          <li><img src="./images/bags/backpacks/f306_hazzard/1/1.jpg" alt=""></li>
+          <li v-for="v in 4">
+            <img :src="
+            './images/bags/'+$store.state.sort+'/'+$store.state.name[$store.state.inum]+'/'+$store.state.bnum+'/'+v+'.jpg'
+            " alt="">
+          </li>
         </ul>
         <div class="tflex">
           <!-- 제목 -->
@@ -98,6 +111,21 @@ const subData = {
           </div>
         </div>
       </div>
+    </div>
+    <!-- 아이템 설명 -->
+    <div class="iteminfo">
+      <!-- 네비영역 -->
+      <ul class="infoList">
+        <li class="dimention on">
+          <h3>DIMENTION</h3>
+        </li>
+        <li class="materials">
+          <h3>MATERIALS</h3>
+        </li>
+        <li class="itemVideo">
+          <h3>FEATURES</h3>
+        </li>
+      </ul>
     </div>
   </main>
   `,

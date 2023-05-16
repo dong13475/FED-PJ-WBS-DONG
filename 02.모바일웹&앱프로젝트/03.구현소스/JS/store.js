@@ -250,7 +250,7 @@ const store = new Vuex.Store({
     sort: "",
     // 공통처리 이름
     name: "",
-    // cnt:0,
+    cnt:0,
     optview:1,
     inum:2,
     bnum:1,
@@ -284,9 +284,9 @@ const store = new Vuex.Store({
       dt.cnt = Object.keys(dt[pm]).length;
 
       // 3. 해당 이름 업데이트
-      console.log(Object.keys(dt[pm]));
+      // console.log(Object.keys(dt[pm]));
       dt.name = Object.keys(dt[pm]);
-      console.log("이름:",dt.name[1]);
+      // console.log("이름:",dt.name[1]);
 
       // 4. 해당 가격 업데이트
       let pp = dt.cnt;
@@ -303,6 +303,9 @@ const store = new Vuex.Store({
       // console.log(dt[pm]["F512_VOYAGER"]["idx"])
 
     }, ///////// chgData 메서드 /////////
+    updateBig(st,pm){
+      st.bnum = pm;
+    },
   }, /////// mutations 구역 /////////
 }); ////////// 뷰엑스 인스턴스 ///////////
 
