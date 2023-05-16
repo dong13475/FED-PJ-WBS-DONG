@@ -274,19 +274,27 @@ const store = new Vuex.Store({
       dt.sort = pm;
       console.log(dt.sort);
       // console.log(dt[pm]);
+
       // 2. 해당 갯수 업데이트
       console.log(Object.keys(dt[pm]).length);
       dt.cnt = Object.keys(dt[pm]).length;
+
       // 3. 해당 이름 업데이트
       console.log(Object.keys(dt[pm]));
       dt.name = Object.keys(dt[pm]);
       console.log("이름:",dt.name[1]);
-      // 4. 해당 가격 업데이트
 
-      console.log(Object.keys(dt[pm])[2])
-      console.log(dt[pm]["F155_CLAPTON"]["price"]);
-      console.log(dt[pm]["F155_CLAPTON"]["idx"]);
-      console.log(dt[pm]["F155_CLAPTON"]["code"]);
+      // 4. 해당 가격 업데이트
+      let pp = dt.cnt;
+      console.log("금액은얼마?",Object.values(dt[pm])[1]["price"]);
+      dt.price = Object.values(dt[pm])[pp-1].price;
+      console.log(dt.price);
+      
+
+      // console.log(Object.keys(dt[pm])[2])
+      console.log("가격:",dt[pm]["F155_CLAPTON"]["price"]);
+      console.log("아이템수:",dt[pm]["F155_CLAPTON"]["idx"]);
+      console.log("코드:",dt[pm]["F155_CLAPTON"]["code"]);
       
       // console.log(dt[pm]["F512_VOYAGER"]["idx"])
 
