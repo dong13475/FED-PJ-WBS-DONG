@@ -251,6 +251,10 @@ const store = new Vuex.Store({
     // 공통처리 이름
     name: "",
     // cnt:0,
+    optview:1,
+    inum:2,
+    bnum:1,
+    tname:"",
   }, ////// state 구역 //////
 
   // (2) 데이터 변경 메서드 구역 :
@@ -286,15 +290,15 @@ const store = new Vuex.Store({
 
       // 4. 해당 가격 업데이트
       let pp = dt.cnt;
-      console.log("금액은얼마?",Object.values(dt[pm])[1]["price"]);
+      // console.log("금액은얼마?",Object.values(dt[pm])[1]["price"]);
       dt.price = Object.values(dt[pm])[pp-1].price;
-      console.log(dt.price);
+      // console.log(dt.price);
       
 
       // console.log(Object.keys(dt[pm])[2])
-      console.log("가격:",dt[pm]["F155_CLAPTON"]["price"]);
-      console.log("아이템수:",dt[pm]["F155_CLAPTON"]["idx"]);
-      console.log("코드:",dt[pm]["F155_CLAPTON"]["code"]);
+      // console.log("가격:",dt[pm]["F155_CLAPTON"]["price"]);
+      // console.log("아이템수:",dt[pm]["F155_CLAPTON"]["idx"]);
+      // console.log("코드:",dt[pm]["F155_CLAPTON"]["code"]);
       
       // console.log(dt[pm]["F512_VOYAGER"]["idx"])
 

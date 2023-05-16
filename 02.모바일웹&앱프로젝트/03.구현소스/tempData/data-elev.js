@@ -49,9 +49,10 @@ const elevData = {
     <!-- 가방 -->
     <div class="bags" v-for="v in $store.state.cnt">
       <img :src="
-      './images/bags/'+$store.state.sort+'/'+v+'.png'
+      './images/bags/'+$store.state.sort+'/'+$store.state.tname+'/'+v+'.png'
       " alt="가방" />
     </div>
+
     
   </div>
   `

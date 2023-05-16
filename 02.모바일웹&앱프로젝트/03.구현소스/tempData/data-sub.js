@@ -9,21 +9,21 @@ const subData = {
       <ol>
         <li><a href="./index.html">HOME>></a></li>
         <li><a href="#">BAGS>></a></li>
-        <li> >></li>
-        <li> </li>
+        <li> {{$store.state.sort}}>></li>
+        <li> {{$store.state.name[$store.state.inum]}} </li>
       </ol>
     </div>
     <!-- 아이템제목 -->
     <div class="itemName">
-      <div class="iName"></div>
+      <div class="iName">{{$store.state.name[$store.state.inum]}}</div>
       <ol>
-        <li></li>
-        <li></li>
+        <li>{{$store.state.sort}}</li>
+        <li> 가격 </li>
       </ol>
     </div>
     <!-- 상품 그리드영역 -->
     <div class="grid">
-      <div class="item">
+      <div class="item" v-for="v in 10">
         <a href="">
           <img src="./images/bags/backpacks/f155_clapton/1/1.jpg" alt="아이템" />
         </a>

@@ -129,12 +129,24 @@ new Vue({
   
         // 드롭된 정보
         let getInfo = ui.draggable.find("img").attr("src");
+        console.log(getInfo);
         getInfo = getInfo.split("/");
         getInfo = getInfo[getInfo.length-1].split(".")[0];
-        // console.log("숫자:",getInfo);
-
+        console.log("숫자:",getInfo);
+        
         store.state.inum = getInfo-1;
         // console.log(store.state.inum)
+
+        // 드롭정보
+        let TgetInfo = ui.draggable.find("img").attr("src");
+        console.log(TgetInfo);
+        TgetInfo = TgetInfo.split("/");
+        TgetInfo = TgetInfo[TgetInfo.length-2].split(".")
+        console.log("tname:",TgetInfo);
+        
+        store.state.tname = TgetInfo;
+        
+        
   
         $(".alldoor").addClass("close");
         // 불켜짐표시 보이기
