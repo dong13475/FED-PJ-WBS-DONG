@@ -63,7 +63,6 @@ new Vue({
   data:{},
   mounted: function(){
     elev();
-    
   }
 }); ////////// 엘리베이터 영역 뷰 인스턴스 //////////
 
