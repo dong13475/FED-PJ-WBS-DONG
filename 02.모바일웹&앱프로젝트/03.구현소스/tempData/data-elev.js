@@ -47,15 +47,12 @@ const elevData = {
     </div>
     
     <!-- 가방 -->
-    <div class="bags bc1">
-      <img src="./images/bags/backpacks/1.png" alt="" />
+    <div class="bags" v-for="v in 3">
+      <img :src="
+      './images/bags/'+$store.state.name+'/'+v+'.png'
+      " alt="" />
     </div>
-    <div class="bags bc2">
-      <img src="./images/bags/backpacks/2.png" alt="" />
-    </div>
-    <div class="bags bc3">
-      <img src="./images/bags/backpacks/3.png" alt="" />
-    </div>
+    
   </div>
   `
 }

@@ -11,36 +11,10 @@ import elevData from "../tempData/data-elev.js";
 // 서브데이터(메인영역) 가져오기
 import subData from '../tempData/data-sub.js';
 
-
 // 뷰엑스 스토어 JS 가져오기
 import store from "./store.js";
 
-// 바로실행구역 함수구역 ///
-// 바로실행구역을 쓰는이유:
-// 변수나 명령어를 다른 영역과 구분하여
-// 코딩할때 주로 사용됨!
-// GET방식 데이터를 store에서 초기값으로 셋팅하는 것을
-// 인스턴스 생성전에 해야 아래쪽에 빈값으로 셋팅된값이
-// 들어가서 에러나는 것을 막을 수 있다!
-(() => {
-  // 파라미터 변수
-  let pm;
 
-  // GET 방식으로 넘어온 데이터 처리하여
-  // 분류별 서브 페이지 구성하기!
-  // location.href -> 상단 url읽어옴!
-  // indexOf("?")!==-1 -> 물음표가 있으면!
-  if (location.href.indexOf("?") !== -1) pm = location.href.split("?")[1].split("=")[1];
-  // 물음표(?)로 잘라서 뒤엣것,이퀄(=)로 잘라서 뒤엣것
-  // 파라미터 값만 추출함!
-  // pm에 할당이 되었다면 undefined가 아니므로 true
-  if (pm) store.commit("chgData", decodeURI(pm));
-  // 메뉴를 선택해서 파라미터로 들어오지 않으면 "남성"
-  // else store.commit("chgData", "남성");
-
-  // decodeURI() - 변경할 문자열만 있어야 변환됨
-  // decodeURIComponent() - url전체에 섞여 있어도 모두 변환
-})(); ////////////// 바로실행함수구역 ///////////////////
 
 
 //##### 엘리베이터 뷰 템플릿 셋팅하기 #####//
@@ -59,11 +33,10 @@ Vue.component("top-comp",{
 //##### 상단영역 뷰 인스턴스 생성하기 #####//
 new Vue({
   el:"#eleV",
-  store,
+  // store,
   data:{},
   mounted: function(){
     elev();
-    
   }
 }); ////////// 엘리베이터 영역 뷰 인스턴스 //////////
 
@@ -96,9 +69,9 @@ Vue.component("contents1-comp",{
 Vue.component("contents2-comp",{
   template: subData.contentsSub,
   methods:{
-    // goData(pm){
-    //   store.commit('updateBig',pm)
-    // }
+    goData(pm){
+      store.commit('updateBig',pm)
+    }
   }
 }); ///// 메인영역 Vue component /////
 
@@ -113,7 +86,7 @@ new Vue({
   el:"#cont",
   store, // 뷰엑스 스토어 등록필수!!!
   data:{
-    // items:{}, // json데이터 담을 변수
+    items:{}, // json데이터 담을 변수
   },
   mounted(){
     // 임시숨기기
@@ -132,10 +105,10 @@ new Vue({
         let getInfo = ui.draggable.find("img").attr("src");
         getInfo = getInfo.split("/");
         getInfo = getInfo[getInfo.length-1].split(".")[0];
-        // console.log("숫자:",getInfo);
+        console.log("숫자:",getInfo);
 
         store.state.inum = getInfo-1;
-        // console.log(store.state.inum)
+        console.log(store.state.inum)
   
         $(".alldoor").addClass("close");
         // 불켜짐표시 보이기
@@ -158,16 +131,16 @@ new Vue({
       },
     }); //////// drop /////////
 
-    // $(".item a").click(function(e){
-    //   e.preventDefault();
-    //   store.state.optview = 2;
-    // })
+    $(".item a").click(function(e){
+      e.preventDefault();
+      store.state.optview = 2;
+    })
 
 
-  }, /////// mounted //////////
+  },
   // 뷰 인스턴스 생성직후(가상돔/ 돔 생성전)
   created(){
     // Vuex.Store actions구역 메서드 initData호출하기! 
-    // store.dispatch('initData');
+    store.dispatch('initData');
   }
 }); //////// 서브영역 뷰 인스턴스 ////////////

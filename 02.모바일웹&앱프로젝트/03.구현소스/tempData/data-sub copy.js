@@ -9,68 +9,28 @@ const subData = {
       <ol>
         <li><a href="./index.html">HOME>></a></li>
         <li><a href="#">BAGS>></a></li>
-        <li>BACKPACKS>></li>
-        <li>F306 HAZZARD</li>
+        <li>{{$store.state.items[$store.state.inum].sort}} >></li>
+        <li>{{$store.state.items[$store.state.inum].name}}</li>
       </ol>
     </div>
     <!-- 아이템제목 -->
     <div class="itemName">
-      <div class="iName">F306 HAZZARD</div>
+      <div class="iName">{{$store.state.items[$store.state.inum].name}}</div>
       <ol>
-        <li>BACKPACKS</li>
-        <li>￦510,000</li>
+        <li>{{$store.state.items[$store.state.inum].sort}}</li>
+        <li>{{$store.state.items[$store.state.inum].price}}</li>
       </ol>
     </div>
     <!-- 상품 그리드영역 -->
     <div class="grid">
-      <div class="item">
+      <div class="item" v-for="v in 10" v-bind:key="v">
         <a href="">
-          <img src="./images/bags/backpacks/f306_hazzard/1.jpg" alt="아이템" />
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <img src="./images/bags/backpacks/f306_hazzard/2.jpg" alt="아이템" />
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <img src="./images/bags/backpacks/f306_hazzard/3.jpg" alt="아이템" />
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <img src="./images/bags/backpacks/f306_hazzard/4.jpg" alt="아이템" />
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <img src="./images/bags/backpacks/f306_hazzard/5.jpg" alt="아이템" />
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <img src="./images/bags/backpacks/f306_hazzard/6.jpg" alt="아이템" />
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <img src="./images/bags/backpacks/f306_hazzard/7.jpg" alt="아이템" />
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <img src="./images/bags/backpacks/f306_hazzard/8.jpg" alt="아이템" />
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <img src="./images/bags/backpacks/f306_hazzard/9.jpg" alt="아이템" />
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <img src="./images/bags/backpacks/f306_hazzard/10.jpg" alt="아이템" />
+          <img 
+          v-bind:src="
+          './images/bags/' +
+          $store.state.items[$store.state.inum].sort + '/' +
+          $store.state.items[$store.state.inum].name + '/' +
+          v + '.jpg'" alt="아이템" />
         </a>
       </div>
     </div>
@@ -78,7 +38,7 @@ const subData = {
     <div class="iteminfo">
       <!-- 네비영역 -->
       <ul class="infoList">
-        <li class="dimention">
+        <li class="dimention on">
           <h3>DIMENTION</h3>
         </li>
         <li class="materials">
@@ -88,6 +48,64 @@ const subData = {
           <h3>FEATURES</h3>
         </li>
       </ul>
+    </div>
+  </main>
+  `,
+  // 컨텐츠영역2
+  contentsSub:`
+  <main class="cont ibx">
+    <!-- 메인네비 -->
+    <div class="itemNav">
+      <ol>
+        <li><a href="">HOME>></a></li>
+        <li><a href="">BAGS>></a></li>
+        <li>BACKPACKS>></li>
+        <li>F306_HAZZARD</li>
+      </ol>
+    </div>
+    <!-- 아이템제목 -->
+    <div class="itemName">
+      <div class="iName">F306_HAZZARD</div>
+      <ol>
+        <li>BACKPACKS</li>
+        <li>￦510,000</li>
+      </ol>
+    </div>
+    <!-- 상품 뷰영역 -->
+    <div id="vItem">
+      <!-- 슬라이드 -->
+      <div class="vSlide">
+        <div class="islide">
+          <div class="sitem" v-for="v in 10">
+            <a href="">
+              <img :src="
+              './images/bags/backpacks/f306_hazzard/'+v+'.jpg'" @click.prevent="goData(v)" alt="아이템" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 플렉스 -->
+      <div class="vFlex">
+        <ul class="igrid">
+          <li v-for="v in 4"><img :src="
+          './images/bags/backpacks/f306_hazzard/'+$store.state.bnum+'/'+v+'.jpg'
+          " alt=""></li>
+        </ul>
+        <div class="tflex">
+          <!-- 제목 -->
+          <h2>F306_07431</h2>
+          <!-- 종류 -->
+          <div class="sort">BACKPACKS</div>
+          <!-- 가격 -->
+          <div class="cost">￦510,000</div>
+          <!-- 장바구니버튼 -->
+          <div class="shopp">
+            <span>
+              ADD TO CART
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   `,

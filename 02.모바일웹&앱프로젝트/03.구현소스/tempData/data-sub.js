@@ -9,28 +9,23 @@ const subData = {
       <ol>
         <li><a href="./index.html">HOME>></a></li>
         <li><a href="#">BAGS>></a></li>
-        <li>{{$store.state.items[$store.state.inum].sort}} >></li>
-        <li>{{$store.state.items[$store.state.inum].name}}</li>
+        <li> >></li>
+        <li> </li>
       </ol>
     </div>
     <!-- 아이템제목 -->
     <div class="itemName">
-      <div class="iName">{{$store.state.items[$store.state.inum].name}}</div>
+      <div class="iName"></div>
       <ol>
-        <li>{{$store.state.items[$store.state.inum].sort}}</li>
-        <li>{{$store.state.items[$store.state.inum].price}}</li>
+        <li></li>
+        <li></li>
       </ol>
     </div>
     <!-- 상품 그리드영역 -->
     <div class="grid">
-      <div class="item" v-for="v in 10" v-bind:key="v">
+      <div class="item">
         <a href="">
-          <img 
-          v-bind:src="
-          './images/bags/' +
-          $store.state.items[$store.state.inum].sort + '/' +
-          $store.state.items[$store.state.inum].name + '/' +
-          v + '.jpg'" alt="아이템" />
+          <img src="./images/bags/backpacks/f155_clapton/1/1.jpg" alt="아이템" />
         </a>
       </div>
     </div>
@@ -76,10 +71,9 @@ const subData = {
       <!-- 슬라이드 -->
       <div class="vSlide">
         <div class="islide">
-          <div class="sitem" v-for="v in 10">
+          <div class="sitem">
             <a href="">
-              <img :src="
-              './images/bags/backpacks/f306_hazzard/'+v+'.jpg'" @click.prevent="goData(v)" alt="아이템" />
+              <img src="./images/bags/backpacks/f306_hazzard/1.jpg" alt="아이템" />
             </a>
           </div>
         </div>
@@ -87,9 +81,7 @@ const subData = {
       <!-- 플렉스 -->
       <div class="vFlex">
         <ul class="igrid">
-          <li v-for="v in 4"><img :src="
-          './images/bags/backpacks/f306_hazzard/'+$store.state.bnum+'/'+v+'.jpg'
-          " alt=""></li>
+          <li><img src="./images/bags/backpacks/f306_hazzard/1/1.jpg" alt=""></li>
         </ul>
         <div class="tflex">
           <!-- 제목 -->

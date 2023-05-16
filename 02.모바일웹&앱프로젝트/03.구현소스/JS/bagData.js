@@ -1,6 +1,6 @@
 // 가방데이터 JS
 
-const bagD = {
+let bagD = {
   BACKPACKS: {
     F155_CLAPTON: {
       idx: 10,
@@ -238,3 +238,6 @@ const bagD = {
     },
   },
 };
+
+// 내보내기 //////
+export default bagD;
