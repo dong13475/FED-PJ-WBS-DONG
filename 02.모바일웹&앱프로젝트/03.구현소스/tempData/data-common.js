@@ -47,22 +47,22 @@ const comData = {
           <div class="smenu">
             <ol>
               <li>
-                <a href="#">BACKPACKS</a>
+                <a href="item.html?cat=BACKPACKS">BACKPACKS</a>
               </li>
               <li>
-                <a href="#">LAPTOP BAGS</a>
+                <a href="item.html?cat=LAPTOP_BAGS">LAPTOP BAGS</a>
               </li>
               <li>
-                <a href="#">MESSENGER BAGS</a>
+                <a href="item.html?cat=MESSENGER_BAGS">MESSENGER BAGS</a>
               </li>
               <li>
-                <a href="#">SHOPPER BAGS</a>
+                <a href="item.html?cat=SHOPPER_BAGS">SHOPPER BAGS</a>
               </li>
               <li>
-                <a href="#">SHOULDER BAGS</a>
+                <a href="item.html?cat=SHOULDER_BAGS">SHOULDER BAGS</a>
               </li>
               <li>
-                <a href="#">SPORTS BAGS</a>
+                <a href="item.html?cat=SPORTS_BAGS">SPORTS BAGS</a>
               </li>
             </ol>
           </div>

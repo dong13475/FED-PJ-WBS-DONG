@@ -96,8 +96,7 @@ Vue.component("contents2-comp",{
   template: subData.contentsSub,
   methods:{
     goData(pm){
-      store.commit('updateBig',pm)
-      console.log("qwe",pm)
+      store.commit('updateBig',pm);
     }
   }
 }); ///// 메인영역 Vue component /////
@@ -136,6 +135,7 @@ new Vue({
         console.log("숫자:",getInfo);
         
         store.state.inum = getInfo-1;
+        
         console.log("inum:",store.state.inum);
 
         // 드롭정보

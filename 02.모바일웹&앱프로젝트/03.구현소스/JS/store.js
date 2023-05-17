@@ -89,22 +89,6 @@ const store = new Vuex.Store({
       },
     },
     MESSENGER_BAGS: {
-      F40_JAMIE: {
-        idx: 10,
-        price: "₩218,000",
-        code: [
-          "F40_06457",
-          "F40_06966",
-          "F40_06886",
-          "F40_07072",
-          "F40_07035",
-          "F40_06861",
-          "F40_06980",
-          "F40_06990",
-          "F40_06803",
-          "F40_07071",
-        ],
-      },
       F11_LASSIE: {
         idx: 10,
         price: "₩336,000",
@@ -119,6 +103,22 @@ const store = new Vuex.Store({
           "F11_24108",
           "F11_24615",
           "F11_24458",
+        ],
+      },
+      F40_JAMIE: {
+        idx: 10,
+        price: "₩218,000",
+        code: [
+          "F40_06457",
+          "F40_06966",
+          "F40_06886",
+          "F40_07072",
+          "F40_07035",
+          "F40_06861",
+          "F40_06980",
+          "F40_06990",
+          "F40_06803",
+          "F40_07071",
         ],
       },
       F41_HAWAII_FIVE_O: {
@@ -272,7 +272,6 @@ const store = new Vuex.Store({
       // dt.idx = dt.bagD[pm].idx;
       // 3. 해당 카테고리 상품코드 업데이트
       // dt.code = dt.bagD[pm].code;
-
       
       // 1. 해당 분류명 업데이트
       dt.sort = pm;
@@ -282,6 +281,7 @@ const store = new Vuex.Store({
       // 2. 해당 갯수 업데이트
       console.log(Object.keys(dt[pm]).length);
       dt.cnt = Object.keys(dt[pm]).length;
+      console.log("cnt??",dt.cnt)
 
       // 3. 해당 이름 업데이트
       // console.log(Object.keys(dt[pm]));
@@ -289,10 +289,12 @@ const store = new Vuex.Store({
       // console.log("이름:",dt.name[1]);
 
       // 4. 해당 가격 업데이트
-      let pp = dt.cnt;
-      // console.log("금액은얼마?",Object.values(dt[pm])[1]["price"]);
-      dt.price = Object.values(dt[pm])[pp-1].price;
+      // console.log("금액은얼마?",Object.values(dt[pm])[store.state.inum]["price"]);
+      dt.price = Object.values(dt[pm]);
       // console.log(dt.price);
+      // console.log("아이넘:",store.state.inum);
+      // dt.price = Object.keys(dt[pm]);
+      // console.log(Object.values(dt[pm][]))
       
 
       // console.log(Object.keys(dt[pm])[2])
@@ -305,6 +307,7 @@ const store = new Vuex.Store({
     }, ///////// chgData 메서드 /////////
     updateBig(st,pm){
       st.bnum = pm;
+      console.log("st.bnum",st.bnum)
     },
   }, /////// mutations 구역 /////////
 }); ////////// 뷰엑스 인스턴스 ///////////

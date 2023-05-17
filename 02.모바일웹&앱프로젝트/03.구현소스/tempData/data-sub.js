@@ -18,7 +18,7 @@ const subData = {
       <div class="iName">{{$store.state.name[$store.state.inum]}}</div>
       <ol>
         <li>{{$store.state.sort}}</li>
-        <li> 가격 </li>
+        <li> {{$store.state.price[$store.state.inum]["price"]}} </li>
       </ol>
     </div>
     <!-- 상품 그리드영역 -->
