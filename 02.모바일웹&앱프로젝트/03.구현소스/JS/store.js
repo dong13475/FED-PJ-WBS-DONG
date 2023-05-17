@@ -295,6 +295,9 @@ const store = new Vuex.Store({
       // console.log("아이넘:",store.state.inum);
       // dt.price = Object.keys(dt[pm]);
       // console.log(Object.values(dt[pm][]))
+
+      // 5. 해당 코드 업데이트
+
       
 
       // console.log(Object.keys(dt[pm])[2])

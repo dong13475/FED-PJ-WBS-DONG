@@ -91,6 +91,11 @@ new Vue({
 // Vue.component(내가지은요소명,{옵션})
 Vue.component("contents1-comp",{
   template: subData.contents,
+  methods:{
+    goData(pm){
+      store.commit('updateBig',pm);
+    }
+  }
 }); ///// 메인영역 Vue component /////
 Vue.component("contents2-comp",{
   template: subData.contentsSub,
@@ -165,21 +170,16 @@ new Vue({
               transform: "translateY(-100%)",
             });
         }, 4000); ///// timeout /////////
-  
-  
-      },
-    }); //////// drop /////////
+      }, ////// drop ////////
+    }); //////// droppable /////////
 
     $(".item a").click(function(e){
       e.preventDefault();
       store.state.optview = 2;
-    })
+    });
 
 
   }, /////// mounted //////////
   // 뷰 인스턴스 생성직후(가상돔/ 돔 생성전)
-  created(){
-    // Vuex.Store actions구역 메서드 initData호출하기! 
-    // store.dispatch('initData');
-  }
+  created(){}
 }); //////// 서브영역 뷰 인스턴스 ////////////

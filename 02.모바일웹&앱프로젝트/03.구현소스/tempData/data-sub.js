@@ -30,26 +30,12 @@ const subData = {
           $store.state.sort+
           '/'+
           $store.state.name[$store.state.inum]+
-          '/'+v+'.jpg'
-          " alt="아이템" />
+          '/'+v+'.jpg' 
+          " alt="아이템" @click.prevent="goData(v)" />
         </a>
       </div>
     </div>
-    <!-- 아이템 설명 -->
-    <div class="iteminfo">
-      <!-- 네비영역 -->
-      <ul class="infoList">
-        <li class="dimention on">
-          <h3>DIMENTION</h3>
-        </li>
-        <li class="materials">
-          <h3>MATERIALS</h3>
-        </li>
-        <li class="itemVideo">
-          <h3>FEATURES</h3>
-        </li>
-      </ul>
-    </div>
+    
   </main>
   `,
   // 컨텐츠영역2
@@ -69,7 +55,7 @@ const subData = {
       <div class="iName">{{$store.state.name[$store.state.inum]}}</div>
       <ol>
         <li>{{$store.state.sort}}</li>
-        <li> 가격 </li>
+        <li> {{$store.state.price[$store.state.inum]["price"]}} </li>
       </ol>
     </div>
     <!-- 상품 뷰영역 -->
@@ -98,11 +84,11 @@ const subData = {
         </ul>
         <div class="tflex">
           <!-- 제목 -->
-          <h2>F306_07431</h2>
+          <h2> {{$store.state.price[$store.state.inum]["code"][$store.state.bnum]}} </h2>
           <!-- 종류 -->
-          <div class="sort">BACKPACKS</div>
+          <div class="sort">{{$store.state.sort}}</div>
           <!-- 가격 -->
-          <div class="cost">￦510,000</div>
+          <div class="cost">{{$store.state.price[$store.state.inum]["price"]}}</div>
           <!-- 장바구니버튼 -->
           <div class="shopp">
             <span>
@@ -112,7 +98,12 @@ const subData = {
         </div>
       </div>
     </div>
-    <!-- 아이템 설명 -->
+    
+  </main>
+  `,
+  // 설명영역
+  intro:`
+  <!-- 아이템 설명 -->
     <div class="iteminfo">
       <!-- 네비영역 -->
       <ul class="infoList">
@@ -126,30 +117,26 @@ const subData = {
           <h3>FEATURES</h3>
         </li>
       </ul>
+      <div class="infoText">
+        <div class="iInfo">
+          <!-- <video autoplay loop muted>
+            <source src="./video/FREITAG - F306 HAZZARD.mp4" />
+          </video> -->
+          This unique article is made of approx. 76%* recycled materials: 
+          <br>- car seat belt (polyester), 100% B-stock
+          <br>- distance fabric (polyester) - piping (polyester) 
+          <br>- lining (post-consumer PET bottles), 100% recycled 
+          <br>- used truck tarpaulin (polyester/PVC), 100% recycled 
+          <br>- webbing (polyester) - Velcro fastener (polyamide) 
+          <br>- label (PVC), 25% recycled 
+          <br>- sewing thread (polyamide) 
+          <br>- zipper (polyester/zinc) 
+          <br>- laminated foam 
+          <br>- tension buckle (polyamide) 
+          <br>- woven label (polyester)
+        </div>
+      </div>
     </div>
-  </main>
-  `,
-  // 설명영역
-  intro:`
-  <div class="infoText">
-    <div class="iInfo">
-      <!-- <video autoplay loop muted>
-        <source src="./video/FREITAG - F306 HAZZARD.mp4" />
-      </video> -->
-      This unique article is made of approx. 76%* recycled materials: 
-      <br>- car seat belt (polyester), 100% B-stock
-      <br>- distance fabric (polyester) - piping (polyester) 
-      <br>- lining (post-consumer PET bottles), 100% recycled 
-      <br>- used truck tarpaulin (polyester/PVC), 100% recycled 
-      <br>- webbing (polyester) - Velcro fastener (polyamide) 
-      <br>- label (PVC), 25% recycled 
-      <br>- sewing thread (polyamide) 
-      <br>- zipper (polyester/zinc) 
-      <br>- laminated foam 
-      <br>- tension buckle (polyamide) 
-      <br>- woven label (polyester)
-    </div>
-  </div>
   `,
 } //////// subData /////////
 
