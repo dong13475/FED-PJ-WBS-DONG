@@ -84,6 +84,11 @@ const subData = {
             " alt="">
           </li>
         </ul>
+        <!-- 닫기버튼 -->
+        <div class="closebtn">
+          <li></li>
+          <li></li>
+        </div>
         <div class="tflex">
           <!-- 제목 -->
           <h2> {{$store.state.price[$store.state.inum]["code"][$store.state.bnum-1]}} </h2>
@@ -121,21 +126,30 @@ const subData = {
       </ul>
       <div class="infoText">
         <div class="iInfo">
-          <!-- <video autoplay loop muted>
+          <div class="dimen">
+              300 × 120 × 450 mm (l × w × h) 
+            <br> 11.8 × 4.7 × 17.7 inch (l × w × h)
+            <br> Weight: 1300 g
+            <br> Volume: 19 l
+          </div>
+          <div class="materi">
+            This unique article is made of approx. 76%* recycled materials:
+            <br>- car seat belt (polyester), 100% B-stock
+            <br>- distance fabric (polyester) - piping (polyester)
+            <br>- lining (post-consumer PET bottles), 100% recycled
+            <br>- used truck tarpaulin (polyester/PVC), 100% recycled
+            <br>- webbing (polyester) - Velcro fastener (polyamide)
+            <br>- label (PVC), 25% recycled
+            <br>- sewing thread (polyamide)
+            <br>- zipper (polyester/zinc)
+            <br>- laminated foam
+            <br>- tension buckle (polyamide)
+            <br>- woven label (polyester)
+          </div>
+          <video class="vid" autoplay loop muted>
             <source src="./video/FREITAG - F306 HAZZARD.mp4" />
-          </video> -->
-          This unique article is made of approx. 76%* recycled materials: 
-          <br>- car seat belt (polyester), 100% B-stock
-          <br>- distance fabric (polyester) - piping (polyester) 
-          <br>- lining (post-consumer PET bottles), 100% recycled 
-          <br>- used truck tarpaulin (polyester/PVC), 100% recycled 
-          <br>- webbing (polyester) - Velcro fastener (polyamide) 
-          <br>- label (PVC), 25% recycled 
-          <br>- sewing thread (polyamide) 
-          <br>- zipper (polyester/zinc) 
-          <br>- laminated foam 
-          <br>- tension buckle (polyamide) 
-          <br>- woven label (polyester)
+          </video>
+          
         </div>
       </div>
     </div>

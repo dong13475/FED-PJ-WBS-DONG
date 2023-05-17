@@ -310,7 +310,7 @@ const store = new Vuex.Store({
     }, ///////// chgData 메서드 /////////
     updateBig(st,pm){
       st.bnum = pm;
-      console.log("st.bnum",st.bnum)
+      console.log("st.bnum",st.bnum);
     },
   }, /////// mutations 구역 /////////
 }); ////////// 뷰엑스 인스턴스 ///////////

@@ -123,14 +123,36 @@ new Vue({
     // items:{}, // json데이터 담을 변수
   },
   mounted(){
-    // 임시숨기기
-    // $("#ele").hide();
+    // 엘리베이터 임시숨기기
+    $("#ele").hide();
+
+    // 설명박스 클릭시 해당 내용 뜨게 하기
     $(".infoList li").each((idx, ele) => {
       $(ele).click(() => {
         $(".infoList li").removeClass("on");
         $(ele).addClass("on");
-      });
-    });
+        if (idx === 0) {
+          $(".dimen").css("display", "block");
+        } else {
+          $(".dimen").css("display", "");
+        }; //////// 첫번째 내용 /////////
+        if (idx === 1) {
+          $(".dimen").css("display", "none");
+          $(".materi").css("display", "block");
+        } else {
+          $(".materi").css("display", "");
+        }; //////// 두번째 내용 /////////
+        if (idx === 2) {
+          $(".dimen").css("display", "none");
+          $(".vid").css("display", "block");
+        } else {
+          $(".vid").css("display", "");
+        }; //////// 세번째 내용 /////////
+      }); ////////// click //////////
+    }); ///////// each /////////
+
+
+    //#### 엘리베이터함수 ####// 
     $(".door").droppable({
       drop: function (evt, ui) {
         ui.draggable.fadeOut(300);
@@ -178,6 +200,11 @@ new Vue({
     $(".item a").click(function(e){
       e.preventDefault();
       store.state.optview = 2;
+    });
+
+    $(".closebtn").click(()=>{
+      // e.preventDefault();
+      store.state.optview = 1;
     });
     
   }, /////// mounted //////////
