@@ -21,14 +21,19 @@ body {
   z-index: 1;
   background-color: #fff;
 }
+.barea{
+  margin: 0 auto;
+  width: 80%;
+  height: 85%;
+}
 /*** 뼈대 ***/
 /* 뼈대 속박스 */
 .ele {
   position: absolute;
   width: 550px;
   height: 560px;
-  aspect-ratio: 1/1;
-  top: 15vh;
+  /* aspect-ratio: 1/1; */
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   /* outline: 1px dashed #000; */
@@ -239,18 +244,34 @@ body {
   width: 250px;
   height: 250px;
   z-index: 2;
-  bottom: 23%;
+  bottom: -15px;
 }
 .bags img {
   width: 100%;
   height: 100%;
 }
 .bags:nth-child(2){
-  left: 12%;
+  right: 67%;
 }
 .bags:nth-child(3){
-  right: 13%;
+  left: 67%;
 }
 .bags:nth-child(4){
-  right: 3%;
+  left: 77%;
+}
+
+
+.eleele{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.eleele>span{
+  width: 100%;
+  height: 100%;
+  color: #000;
+  font-size: 70px;
+  font-weight: bold;
 }

@@ -61,15 +61,17 @@ const subData = {
     <!-- 상품 뷰영역 -->
     <div id="vItem">
       <!-- 슬라이드 -->
-      <div class="vSlide">
-        <div class="islide">
-          <div class="sitem" v-for="v in 10">
-            <a href="">
-              <img :src="
-              './images/bags/'+
-              $store.state.sort+'/'+$store.state.name[$store.state.inum]+'/'+v+'.jpg'" @click.prevent="goData(v)"
-              alt="아이템" />
-            </a>
+      <div class="vSlidebx">
+        <div class="vSlide">
+          <div class="islide">
+            <div class="sitem" v-for="v in 10">
+              <a href="">
+                <img :src="
+                './images/bags/'+
+                $store.state.sort+'/'+$store.state.name[$store.state.inum]+'/'+v+'.jpg'" @click.prevent="goData(v)"
+                alt="아이템" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -84,7 +86,7 @@ const subData = {
         </ul>
         <div class="tflex">
           <!-- 제목 -->
-          <h2> {{$store.state.price[$store.state.inum]["code"][$store.state.bnum]}} </h2>
+          <h2> {{$store.state.price[$store.state.inum]["code"][$store.state.bnum-1]}} </h2>
           <!-- 종류 -->
           <div class="sort">{{$store.state.sort}}</div>
           <!-- 가격 -->

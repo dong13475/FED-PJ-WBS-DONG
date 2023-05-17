@@ -90,13 +90,13 @@ $(() => {
 
   // 3. 한계값 설정
   // (1) 화면크기의 1/3로 설정
-  let fpt = $(window).width() / 3;
-  // console.log("한계값:",fpt);
+  let fpt = $("#dragBx").width() / 3;
+  console.log("한계값:",fpt,$(window).width());
   
   // (2) 마지막 한계값 설정 :
   // 드래그박스가로크기 - 화면크기 2/3
   let lpt = dragBag.width() - fpt * 2;
-  // console.log("마지막한계값:",lpt);
+  console.log("마지막한계값:",lpt);
 
   // (3) 마우스 이벤트로 left값 체크하여 제한
   $("html,body").on("mousedown mouseup mousemove", () => {
@@ -115,6 +115,51 @@ $(() => {
       // 마지막한계값에 고정!
       dragBag.css({
         left: -lpt + "px",
+      }); /////// css /////////
+    } /////// else if /////////
+  }); ///////// 마우스 이벤트 함수 ////////////
+
+
+  /*** 메인 페이지 악세서리 드래그 ***/
+  // 1. 드래그 대상 : .dragBag
+  const dragAcc = $(".dragAcc");
+
+  // 2. 가방박스 드래그설정
+  dragAcc
+    .draggable({
+      axis: "x", // x축 고정
+    })
+    .css({
+      transition: ".8s ease-out",
+    }); ////// css ////////
+
+  // 3. 한계값 설정
+  // (1) 화면크기의 1/3로 설정
+  let fptA = $("#dragAcc").width() / 6;
+  console.log("한계값:",fptA,$(window).width());
+  
+  // (2) 마지막 한계값 설정 :
+  // 드래그박스가로크기 - 화면크기 2/3
+  let lptA = dragAcc.width() - fptA * 6;
+  console.log("마지막한계값:",lptA);
+
+  // (3) 마우스 이벤트로 left값 체크하여 제한
+  $("html,body").on("mousedown mouseup mousemove", () => {
+    // 1. 움직이는 요소 left 위치값
+    let mposA = dragAcc.position().left;
+    // console.log("left위치값:",mposA);
+
+    // 2. 처음한계값에 고정!
+    if (mposA > fptA) {
+      dragAcc.css({
+        left: fptA + "px",
+      }); //////// css //////////
+    } ///////// if /////////
+    // 3. 마지막한계값 체크하여 제한하기
+    else if (mposA < -lptA) {
+      // 마지막한계값에 고정!
+      dragAcc.css({
+        left: -lptA + "px",
       }); /////// css /////////
     } /////// else if /////////
   }); ///////// 마우스 이벤트 함수 ////////////

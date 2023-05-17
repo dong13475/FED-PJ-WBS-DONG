@@ -12,6 +12,8 @@
 .itemNav{
   font-size: 15px;
   font-weight: bold;
+  max-width: 1400px;
+  margin: 0 auto; 
 }
 .itemNav>ol{
   display: flex;
@@ -22,6 +24,8 @@
   font-size: 60px;
   padding: 50px 0 0 50px;
   font-weight: bold;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .itemName>ol{
   display: flex;
@@ -33,15 +37,15 @@
 /*** 그리드영역 ***/
 .grid{
   display: grid;
-  max-width: 1200px;
+  max-width: 1400px;
   grid-template-columns: repeat(5, 1fr);
   gap:25px 0;
   margin: 0 auto;
   padding-top: 50px;
 }
 .item{
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   transition: .4s;
 }
 .item:hover{
@@ -54,6 +58,11 @@
 
 /************* 뷰 영역 *************/
 /*** 슬라이드 ***/
+.vSlidebx{
+  width: 70%;
+  overflow: hidden;
+  margin: 0 auto;
+}
 .vSlide{
   padding: 10px 50px;
   /* overflow: hidden; */
@@ -73,9 +82,11 @@
 }
 /*** 플렉스 ***/
 .vFlex{
+  max-width: 1400px;
   display: flex;
-  flex: 1;
-  padding: 50px 0;
+  /* flex: 1; */
+  padding: 50px 50px;
+  margin: 0 auto;
 }
 /* 그리드 */
 .igrid{
@@ -92,7 +103,7 @@
 }
 /* 텍스트 */
 .tflex{
-  padding: 50px 30px;
+  padding: 100px 0 0 30px;
 }
 .tflex>h2{
   font-size: 50px;

@@ -179,6 +179,46 @@
   transform: scale(1.1);
 }
 
+/************** 악세서리 드래그 구역 **************/
+/* 드래그박스 */
+#dragAc{
+  position: relative;
+  margin: 0 auto;
+  height: 300px;
+  width: 80%;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+/* 드래그박스 드래그 선택안되게 하기 */
+.dragAcc{
+  user-select: none;
+  /* 선택안되게 */
+  -webkit-user-drag: none;
+  /* 드래그안되게 */
+  position: absolute;
+  height: 100%;
+}
+.dragAcc img{
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.dragAcc > ul{
+  display: flex;
+}
+.dragAcc > ul li{
+  position: relative;
+  width: 300px;
+  padding-right: 50px;
+}
+.dragAcc ul li{
+  text-align: center;
+}
+.dragAcc li span{
+  font-size: 23px;
+  font-weight: bold;
+}
+
 /* 상단이동버튼 이미지 */
 .moveTop{
   position: fixed;

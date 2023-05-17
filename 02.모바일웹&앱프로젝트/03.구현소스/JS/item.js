@@ -4,6 +4,8 @@
 import topNav from "./topNav.js";
 // 엘레베이터함수 가져오기
 import elev from "./elev.js";
+// 아이템2함수 가져오기
+// import item2 from "./item2.js";
 // 공통네비 데이터 가져오기
 import comData from '../tempData/data-common.js';
 // 엘레베이터 데이터 가져오기
@@ -102,8 +104,9 @@ Vue.component("contents2-comp",{
   methods:{
     goData(pm){
       store.commit('updateBig',pm);
-    }
-  }
+    },
+    
+  },
 }); ///// 메인영역 Vue component /////
 
 
@@ -152,8 +155,7 @@ new Vue({
         
         store.state.tname = tgName;
         
-        
-  
+      
         $(".alldoor").addClass("close");
         // 불켜짐표시 보이기
         $(".light").delay(600).show(100);
@@ -177,9 +179,10 @@ new Vue({
       e.preventDefault();
       store.state.optview = 2;
     });
-
-
+    
   }, /////// mounted //////////
   // 뷰 인스턴스 생성직후(가상돔/ 돔 생성전)
-  created(){}
+  created(){
+    
+  }
 }); //////// 서브영역 뷰 인스턴스 ////////////
