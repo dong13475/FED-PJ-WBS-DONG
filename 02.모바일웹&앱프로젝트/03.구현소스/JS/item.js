@@ -127,7 +127,7 @@ new Vue({
   mounted(){
     // 엘리베이터 임시숨기기
     // $("#ele").hide();
-    item2();
+    // item2();
 
     // 설명박스 클릭시 해당 내용 뜨게 하기
     $(".infoList li").each((idx, ele) => {
@@ -206,10 +206,9 @@ new Vue({
       store.state.optview = 2;
     });
 
-    $(".igrid li").click(function(e){
-      e.preventDefault();
+    $(".closebtn").click(function(){
       store.state.optview = 1;
-      console.log("optview",store.state.optview)
+      console.log("눌림")
     });
     
   }, /////// mounted //////////

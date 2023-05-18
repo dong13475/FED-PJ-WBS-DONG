@@ -616,7 +616,7 @@ const store = new Vuex.Store({
     // 공통처리 이름
     name: "",
     cnt: 0,
-    optview: 1,
+    optview:1,
     inum: 0,
     bnum: 1,
     tname: "",

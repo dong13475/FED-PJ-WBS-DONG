@@ -11,10 +11,10 @@ function item2() {
     .css({
       transition: ".8s ease-out",
     }); ///////// css //////////
-  let fpt2 = $(window).width() / 3;
+  let fpt2 = $(".vSlidebx").width() / 3;
   let lpt2 = dragSlide.width() - fpt2 * 2;
 
-  $(".vSlide").on("mousedown mouseup mousemove", () => {
+  $("html,body").on("mousedown mouseup mousemove", () => {
     // 1. 움직이는 요소 left 위치값
     let mpos2 = dragSlide.position().left;
 
