@@ -113,6 +113,11 @@ Vue.component("contents2-comp",{
 // 2. 설명영역 컴포넌트
 Vue.component("intro-comp",{
   template: subData.intro,
+  methods:{
+    goData(pm){
+      store.commit('updateBig',pm);
+    },
+  }
 }); ///// 메인영역 Vue component /////
 
 //##### 서브메인 뷰 인스턴스 셋팅하기 #####//
@@ -124,7 +129,7 @@ new Vue({
   },
   mounted(){
     // 엘리베이터 임시숨기기
-    $("#ele").hide();
+    // $("#ele").hide();
 
     // 설명박스 클릭시 해당 내용 뜨게 하기
     $(".infoList li").each((idx, ele) => {
@@ -202,9 +207,10 @@ new Vue({
       store.state.optview = 2;
     });
 
-    $(".closebtn").click(()=>{
+    $(".closebtn").click(function(){
       // e.preventDefault();
       store.state.optview = 1;
+      console.log("optview",store.state.optview)
     });
     
   }, /////// mounted //////////

@@ -5,8 +5,6 @@ const store = new Vuex.Store({
   state: {
     BACKPACKS: {
       F155_CLAPTON: {
-        name:"F155_CLAPTON",
-        idx: 10,
         price: "₩452,000",
         code: [
           "F155_08406",
@@ -20,9 +18,45 @@ const store = new Vuex.Store({
           "F155_08403",
           "F155_08332",
         ],
+        dimen: `300 × 130 × 420 mm (l × w × h)
+        11.8 × 5.1 × 16.5 inch (l × w × h)
+        Weight: 835 g
+        Volume: 18 - 22 l`,
+        material: `This unique article is made of approx. 77%* recycled materials:
+  
+        -car seat belt (polyester), 100% B-stock
+        
+        -distance fabric (polyester)
+        
+        -piping (polyester)
+        
+        -lining (post-consumer PET bottles), 100% recycled
+        
+        -used truck tarpaulin (polyester/PVC), 100% recycled
+        
+        -webbing (polyester)
+        
+        -reflective piping (polyester)
+        
+        -label (PVC), 25% recycled
+        
+        -triglide buckle (polyamide)
+        
+        -magnet (nickel-plated)
+        
+        -sewing thread (polyamide)
+        
+        -O-ring (nitrile rubber)
+        
+        -zipper (polyester/zinc)
+        
+        -tension buckle (aluminum)
+        
+        -reinforcement (polypropylene)
+        
+        -woven label (polyester)`,
       },
       F253_KOWALSKI: {
-        idx: 10,
         price: "₩336,000",
         code: [
           "F253_04612",
@@ -36,9 +70,27 @@ const store = new Vuex.Store({
           "F253_04602",
           "F253_04592",
         ],
+        dimen: `335 × 110 × 380 mm (l × w × h)
+        13.2 × 4.3 × 15.0 inch (l × w × h)
+        Weight: 735 g
+        Volume: 18 - 22 l`,
+        material: `This unique article is made of approx. 92%* recycled materials:
+  
+        -lining (post-consumer PET bottles), 100% recycled
+        
+        -used truck tarpaulin (polyester/PVC), 100% recycled
+        
+        -webbing (polyester)
+        
+        -sewing thread (polyamide)
+        
+        -zipper (polyester/zinc)
+        
+        -tension buckle (polyamide)
+        
+        -woven label (polyester)`,
       },
       F306_HAZZARD: {
-        idx: 10,
         price: "₩510,000",
         code: [
           "F306_07670",
@@ -52,11 +104,41 @@ const store = new Vuex.Store({
           "F306_07762",
           "F306_07857",
         ],
+        dimen: `300 × 120 × 450 mm (l × w × h)
+        11.8 × 4.7 × 17.7 inch (l × w × h)
+        Weight: 1300 g
+        Volume: 19 l`,
+        material: `This unique article is made of approx. 76%* recycled materials:
+  
+        -car seat belt (polyester), 100% B-stock
+        
+        -distance fabric (polyester)
+        
+        -piping (polyester)
+        
+        -lining (post-consumer PET bottles), 100% recycled
+        
+        -used truck tarpaulin (polyester/PVC), 100% recycled
+        
+        -webbing (polyester)
+        
+        -Velcro fastener  (polyamide)
+        
+        -label (PVC), 25% recycled
+        
+        -sewing thread (polyamide)
+        
+        -zipper (polyester/zinc)
+        
+        -laminated foam
+        
+        -tension buckle (polyamide)
+        
+        -woven label (polyester)`,
       },
     },
     LAPTOP_BAGS: {
       F304_MOSS: {
-        idx: 10,
         price: "₩364,000",
         code: [
           "F304_02456",
@@ -70,9 +152,35 @@ const store = new Vuex.Store({
           "F304_02075",
           "F304_02474",
         ],
+        dimen: `370 × 75 × 260 mm (l × w × h)
+        14.6 × 3.0 × 10.2 inch (l × w × h)
+        Weight: 850 g
+        Volume: 10 l`,
+        material: `This unique article is made of approx. 77%* recycled materials:
+  
+        -car seat belt (polyester), 100% B-stock
+        
+        -lining (post-consumer PET bottles), 100% recycled
+        
+        -used truck tarpaulin (polyester/PVC), 100% recycled
+        
+        -label (PVC), 25% recycled
+        
+        -triglide buckle (polyamide)
+        
+        -sewing thread (polyamide)
+        
+        -oval ring (polyamide)
+        
+        -zipper (polyester/zinc)
+        
+        -laminated foam
+        
+        -reinforcement (polypropylene)
+        
+        -woven label (polyester)`,
       },
       F305_ROY: {
-        idx: 10,
         price: "₩424,000",
         code: [
           "F305_02701",
@@ -86,27 +194,39 @@ const store = new Vuex.Store({
           "F305_02830",
           "F305_02651",
         ],
+        dimen: `390 × 110 × 275 mm (l × w × h)
+        15.4 × 4.3 × 10.8 inch (l × w × h)
+        Weight: 950 g
+        Volume: 12 l`,
+        material: `This unique article is made of approx. 81%* recycled materials:
+  
+        -car seat belt (polyester), 100% B-stock
+        
+        -lining (post-consumer PET bottles), 100% recycled
+        
+        -used truck tarpaulin (polyester/PVC), 100% recycled
+        
+        -Velcro fastener  (polyamide)
+        
+        -label (PVC), 25% recycled
+        
+        -triglide buckle (polyamide)
+        
+        -sewing thread (polyamide)
+        
+        -oval ring (polyamide)
+        
+        -water-repellent zipper (polyester/zinc/polyurethane)
+        
+        -laminated foam
+        
+        -reinforcement (polypropylene)
+        
+        -woven label (polyester)`,
       },
     },
     MESSENGER_BAGS: {
-      F11_LASSIE: {
-        idx: 10,
-        price: "₩336,000",
-        code: [
-          "F11_24159",
-          "F11_24596",
-          "F11_24585",
-          "F11_23962",
-          "F11_24754",
-          "F11_24679",
-          "F11_24493",
-          "F11_24108",
-          "F11_24615",
-          "F11_24458",
-        ],
-      },
       F40_JAMIE: {
-        idx: 10,
         price: "₩218,000",
         code: [
           "F40_06457",
@@ -120,9 +240,71 @@ const store = new Vuex.Store({
           "F40_06803",
           "F40_07071",
         ],
+        dimen: `185 × 55 × 125 mm (l × w × h)
+        7.2 × 2.1 × 4.9 inch (l × w × h)
+        Weight: 290 g
+        Volume: 1 l `,
+        material: `This unique article is made of approx. 67%* recycled materials:
+  
+        -elasticated ribbon (polyester)
+        
+        -bicycle inner tube (rubber), 5% B-stock
+        
+        -used truck tarpaulin (polyester/PVC), 100% recycled
+        
+        -webbing (polyester)
+        
+        -Velcro fastener  (polyamide)
+        
+        -label (PVC), 25% recycled
+        
+        -triglide buckle (polyamide)
+        
+        -sewing thread (polyamide)
+        
+        -zipper (polyester/zinc)
+        
+        -click buckle (polyamide)
+        
+        -woven label (polyester)`,
+      },
+      F11_LASSIE: {
+        price: "₩336,000",
+        code: [
+          "F11_24159",
+          "F11_24596",
+          "F11_24585",
+          "F11_23962",
+          "F11_24754",
+          "F11_24679",
+          "F11_24493",
+          "F11_24108",
+          "F11_24615",
+          "F11_24458",
+        ],
+        dimen: `270 × 90 × 240 mm (l × w × h)
+        10.6 × 3.5 × 9.4 inch (l × w × h)
+        Weight: 540 g
+        Volume: 5 - 8 l`,
+        material: `This unique article is made of approx. 86%* recycled materials:
+  
+        -car seat belt (polyester), 100% B-stock
+        
+        -bicycle inner tube (rubber), 5% B-stock
+        
+        -used truck tarpaulin (polyester/PVC), 100% recycled
+        
+        -Cam buckle
+        
+        -Velcro fastener  (polyamide)
+        
+        -label (PVC), 25% recycled
+        
+        -sewing thread (polyamide)
+        
+        -woven label (polyester)`,
       },
       F41_HAWAII_FIVE_O: {
-        idx: 10,
         price: "₩248,000",
         code: [
           "F41_47863",
@@ -136,11 +318,33 @@ const store = new Vuex.Store({
           "F41_47821",
           "F41_47678",
         ],
+        dimen: `300 × 90 × 170 mm (l × w × h)
+        11.8 × 3.5 × 6.7 inch (l × w × h)
+        Weight: 460 g
+        Volume: 2 l`,
+        material: `This unique article is made of approx. 85%* recycled materials:
+  
+        -car seat belt (polyester), 100% B-stock
+        
+        -bicycle inner tube (rubber), 5% B-stock
+        
+        -used truck tarpaulin (polyester/PVC), 100% recycled
+        
+        -Cam buckle
+        
+        -Velcro fastener  (polyamide)
+        
+        -label (PVC), 25% recycled
+        
+        -sewing thread (polyamide)
+        
+        -zipper (polyester/zinc)
+        
+        -woven label (polyester)`,
       },
     },
     SHOPPER_BAGS: {
       F52_MIAMI_VICE: {
-        idx: 10,
         price: "₩190,000",
         code: [
           "F52_18145",
@@ -154,9 +358,21 @@ const store = new Vuex.Store({
           "F52_18468",
           "F52_18520",
         ],
+        dimen: `330 × 160 × 400 mm (l × w × h)
+        13.0 × 6.3 × 15.7 inch (l × w × h)
+        Weight: 550 g
+        Volume: 20 l`,
+        material: `This unique article is made of approx. 96%* recycled materials:
+  
+        -used truck tarpaulin (polyester/PVC), 100% recycled
+        
+        -label (PVC), 25% recycled
+        
+        -sewing thread (polyamide)
+        
+        -woven label (polyester)`,
       },
       F203_BOB: {
-        idx: 10,
         price: "₩364,000",
         code: [
           "F203_08959",
@@ -170,9 +386,33 @@ const store = new Vuex.Store({
           "F203_08915",
           "F203_08976",
         ],
+        dimen: `310 × 120 × 370 mm (l × w × h)
+        12.2 ×4.7 × 14.6 inch (l × w × h)
+        Weight: 750 g
+        Volume: 17 l`,
+        material: `This unique article is made of approx. 91%* recycled materials:
+  
+        -car seat belt (polyester), 100% B-stock
+        
+        -lining (post-consumer PET bottles), 100% recycled
+        
+        -used truck tarpaulin (polyester/PVC), 100% recycled
+        
+        -label (PVC), 25% recycled
+        
+        -triglide buckle (polyamide)
+        
+        -sewing thread (polyamide)
+        
+        -oval ring (polyamide)
+        
+        -zipper (polyester/zinc)
+        
+        -laminated foam
+        
+        -woven label (polyester)`,
       },
       F560_STERLING: {
-        idx: 10,
         price: "₩364,000",
         code: [
           "F560_04868",
@@ -186,11 +426,39 @@ const store = new Vuex.Store({
           "F560_04668",
           "F560_04864",
         ],
+        dimen: `400 × 100 × 260 mm (l × w × h)
+        15.7 × 3.9 × 10.2 inch (l × w × h)
+        Weight: 765 g
+        Volume: 12 l`,
+        material: `This unique article is made of approx. 91%* recycled materials:
+  
+        -car seat belt (polyester), 100% B-stock
+        
+        -lining (post-consumer PET bottles), 100% recycled
+        
+        -used truck tarpaulin (polyester/PVC), 100% recycled
+        
+        -webbing (polyester)
+        
+        -carabiner (Zamak)
+        
+        -label (PVC), 25% recycled
+        
+        -triglide buckle (polyamide)
+        
+        -sewing thread (polyamide)
+        
+        -rivet (iron)
+        
+        -oval ring (polyamide)
+        
+        -zipper (polyester/zinc)
+        
+        -woven label (polyester)`,
       },
     },
     SHOULDER_BAGS: {
       F553_LOU: {
-        idx: 10,
         price: "₩248,000",
         code: [
           "F553_11720",
@@ -204,11 +472,35 @@ const store = new Vuex.Store({
           "F553_11636",
           "F553_11543",
         ],
+        dimen: `310 × 80 × 200 mm (l × w × h)
+        12.2 × 3.1 × 7.8 inch (l × w × h)
+        Weight: 350 g
+        Volume: 3 l`,
+        material: `This unique article is made of approx. 85%* recycled materials:
+  
+        -piping (polyester)
+        
+        -lining (post-consumer PET bottles), 100% recycled
+        
+        -used truck tarpaulin (polyester/PVC), 100% recycled
+        
+        -webbing (polyester)
+        
+        -label (PVC), 25% recycled
+        
+        -triglide buckle (polyamide)
+        
+        -sewing thread (polyamide)
+        
+        -oval ring (aluminum)
+        
+        -zipper (polyester/zinc)
+        
+        -woven label (polyester)`,
       },
     },
     SPORTS_BAGS: {
       F45_LOIS: {
-        idx: 10,
         price: "₩364,000",
         code: [
           "F45_08110",
@@ -222,9 +514,33 @@ const store = new Vuex.Store({
           "F45_08537",
           "F45_08657",
         ],
+        dimen: `395 × 195 × 220 mm (l × w × h)
+        15.5 × 7.6 × 8.6 inch (l × w × h)
+        Weight: 895 g
+        Volume: 19 l`,
+        material: `This unique article is made of approx. 86%* recycled materials:
+  
+        -car seat belt (polyester), 100% B-stock
+        
+        -lining (post-consumer PET bottles), 100% recycled
+        
+        -used truck tarpaulin (polyester/PVC), 100% recycled
+        
+        -Velcro fastener  (polyamide)
+        
+        -label (PVC), 25% recycled
+        
+        -triglide buckle (polyamide)
+        
+        -sewing thread (polyamide)
+        
+        -zipper (polyester/zinc)
+        
+        -reinforcement (polypropylene)
+        
+        -woven label (polyester)`,
       },
       F512_VOYAGER: {
-        idx: 10,
         price: "₩540,000",
         code: [
           "F512_04994",
@@ -238,8 +554,40 @@ const store = new Vuex.Store({
           "F512_05435",
           "F512_05387",
         ],
+        dimen: `330 × 200 × 500 mm (l × w × h)
+        13.0 × 7.9 × 19.7 inch (l × w × h)
+        Weight: 1360 g
+        Volume: 43 l`,
+        material: `This unique article is made of approx. 90%* recycled materials:
+  
+        -car seat belt (polyester), 100% B-stock
+        
+        -lining (post-consumer PET bottles), 100% recycled
+        
+        -used truck tarpaulin (polyester/PVC), 100% recycled
+        
+        -webbing (polyester)
+        
+        -label (PVC), 25% recycled
+        
+        -sewing thread (polyamide)
+        
+        -oval ring (aluminum)
+        
+        -zipper (polyester/zinc)
+        
+        -water-repellent zipper (polyester/zinc/polyurethane)
+        
+        -laminated foam
+        
+        -tension buckle (polyamide)
+        
+        -click buckle (polyamide)
+        
+        -woven label (polyester)`,
       },
     },
+
     // 공통처리 코드 변수
     code: [],
     // 공통처리 가격 변수
@@ -250,11 +598,12 @@ const store = new Vuex.Store({
     sort: "",
     // 공통처리 이름
     name: "",
-    cnt:0,
-    optview:1,
-    inum:2,
-    bnum:1,
-    tname:"",
+    cnt: 0,
+    optview: 1,
+    inum: 2,
+    bnum: 1,
+    tname: "",
+    dimen:"",
   }, ////// state 구역 //////
 
   // (2) 데이터 변경 메서드 구역 :
@@ -272,7 +621,7 @@ const store = new Vuex.Store({
       // dt.idx = dt.bagD[pm].idx;
       // 3. 해당 카테고리 상품코드 업데이트
       // dt.code = dt.bagD[pm].code;
-      
+
       // 1. 해당 분류명 업데이트
       dt.sort = pm;
       console.log(dt.sort);
@@ -281,7 +630,7 @@ const store = new Vuex.Store({
       // 2. 해당 갯수 업데이트
       console.log(Object.keys(dt[pm]).length);
       dt.cnt = Object.keys(dt[pm]).length;
-      console.log("cnt??",dt.cnt)
+      console.log("cnt??", dt.cnt);
 
       // 3. 해당 이름 업데이트
       // console.log(Object.keys(dt[pm]));
@@ -291,26 +640,23 @@ const store = new Vuex.Store({
       // 4. 해당 가격 업데이트
       // console.log("금액은얼마?",Object.values(dt[pm])[store.state.inum]["price"]);
       dt.price = Object.values(dt[pm]);
-      // console.log(dt.price);
+      console.log(dt.price);
       // console.log("아이넘:",store.state.inum);
       // dt.price = Object.keys(dt[pm]);
       // console.log(Object.values(dt[pm][]))
 
       // 5. 해당 코드 업데이트
 
-      
-
       // console.log(Object.keys(dt[pm])[2])
       // console.log("가격:",dt[pm]["F155_CLAPTON"]["price"]);
       // console.log("아이템수:",dt[pm]["F155_CLAPTON"]["idx"]);
       // console.log("코드:",dt[pm]["F155_CLAPTON"]["code"]);
-      
-      // console.log(dt[pm]["F512_VOYAGER"]["idx"])
 
+      // console.log(dt[pm]["F512_VOYAGER"]["idx"])
     }, ///////// chgData 메서드 /////////
-    updateBig(st,pm){
+    updateBig(st, pm) {
       st.bnum = pm;
-      console.log("st.bnum",st.bnum);
+      console.log("st.bnum", st.bnum);
     },
   }, /////// mutations 구역 /////////
 }); ////////// 뷰엑스 인스턴스 ///////////

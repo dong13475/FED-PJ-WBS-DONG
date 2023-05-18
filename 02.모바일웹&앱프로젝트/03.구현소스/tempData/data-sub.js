@@ -127,10 +127,7 @@ const subData = {
       <div class="infoText">
         <div class="iInfo">
           <div class="dimen">
-              300 × 120 × 450 mm (l × w × h) 
-            <br> 11.8 × 4.7 × 17.7 inch (l × w × h)
-            <br> Weight: 1300 g
-            <br> Volume: 19 l
+            {{@store.state.price[$store.state.inum]}}
           </div>
           <div class="materi">
             This unique article is made of approx. 76%* recycled materials:
@@ -147,7 +144,7 @@ const subData = {
             <br>- woven label (polyester)
           </div>
           <video class="vid" autoplay loop muted>
-            <source src="./video/FREITAG - F306 HAZZARD.mp4" />
+            <source src="./video/F306_HAZZARD.mp4" />
           </video>
           
         </div>
