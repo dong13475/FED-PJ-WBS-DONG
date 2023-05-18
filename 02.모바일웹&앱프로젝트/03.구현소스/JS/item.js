@@ -5,7 +5,7 @@ import topNav from "./topNav.js";
 // 엘레베이터함수 가져오기
 import elev from "./elev.js";
 // 아이템2함수 가져오기
-// import item2 from "./item2.js";
+import item2 from "./item2.js";
 // 공통네비 데이터 가져오기
 import comData from '../tempData/data-common.js';
 // 엘레베이터 데이터 가져오기
@@ -179,8 +179,8 @@ new Vue({
         console.log("tname:",tgName);
         
         store.state.tname = tgName;
-        
       
+        
         $(".alldoor").addClass("close");
         // 불켜짐표시 보이기
         $(".light").delay(600).show(100);
@@ -203,6 +203,7 @@ new Vue({
     $(".item a").click(function(e){
       e.preventDefault();
       store.state.optview = 2;
+      // item2();
     });
 
     $(".closebtn").click(function(){

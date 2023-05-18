@@ -229,8 +229,8 @@ const store = new Vuex.Store({
       <br>  -reinforcement (polypropylene)
         
       <br>  -woven label (polyester)`,
-      },
       video:"F305_ROY",
+      },
     },
     MESSENGER_BAGS: {
       F40_JAMIE: {
@@ -619,6 +619,7 @@ const store = new Vuex.Store({
     inum: 2,
     bnum: 1,
     tname: "",
+    dimen:"",
   }, ////// state 구역 //////
 
   // (2) 데이터 변경 메서드 구역 :
@@ -637,6 +638,7 @@ const store = new Vuex.Store({
       // 3. 해당 카테고리 상품코드 업데이트
       // dt.code = dt.bagD[pm].code;
 
+      
       // 1. 해당 분류명 업데이트
       dt.sort = pm;
       console.log(dt.sort);
@@ -652,6 +654,8 @@ const store = new Vuex.Store({
       dt.name = Object.keys(dt[pm]);
       console.log("이름:",dt.name);
 
+      
+      
       // 4. 해당 가격 업데이트
       // console.log("금액은얼마?",Object.values(dt[pm])[store.state.inum]["price"]);
       dt.price = Object.values(dt[pm]);
@@ -667,11 +671,12 @@ const store = new Vuex.Store({
       // console.log("아이템수:",dt[pm]["F155_CLAPTON"]["idx"]);
       // console.log("코드:",dt[pm]["F155_CLAPTON"]["code"]);
 
-      // console.log(dt[pm]["F512_VOYAGER"]["idx"])
     }, ///////// chgData 메서드 /////////
+    
     updateBig(st, pm) {
       st.bnum = pm;
       console.log("st.bnum", st.bnum);
+      
     },
   }, /////// mutations 구역 /////////
 }); ////////// 뷰엑스 인스턴스 ///////////
