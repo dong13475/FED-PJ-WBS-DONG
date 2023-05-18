@@ -3,7 +3,7 @@
 function item2() {
   /* 슬라이드 */
   const dragSlide = $(".islide");
-
+  
   dragSlide
     .draggable({
       axis: "x",
@@ -14,7 +14,7 @@ function item2() {
   let fpt2 = $(window).width() / 3;
   let lpt2 = dragSlide.width() - fpt2 * 2;
 
-  $("html,body").on("mousedown mouseup mousemove", () => {
+  $(".vSlide").on("mousedown mouseup mousemove", () => {
     // 1. 움직이는 요소 left 위치값
     let mpos2 = dragSlide.position().left;
 
