@@ -114,9 +114,7 @@ Vue.component("contents2-comp",{
 Vue.component("intro-comp",{
   template: subData.intro,
   methods:{
-    goData(pm){
-      store.commit('updateBig',pm);
-    },
+    
   }
 }); ///// 메인영역 Vue component /////
 

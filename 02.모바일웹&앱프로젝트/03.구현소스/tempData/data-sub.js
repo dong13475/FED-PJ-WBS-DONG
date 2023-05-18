@@ -126,26 +126,25 @@ const subData = {
       </ul>
       <div class="infoText">
         <div class="iInfo">
+
+        <!-- dimention 구역 -->
           <div class="dimen">
-            {{@store.state.price[$store.state.inum]}}
+            {{$store.state.price[$store.state.inum]["dimen"]}}
           </div>
+
+        <!-- material 구역 -->
           <div class="materi">
-            This unique article is made of approx. 76%* recycled materials:
-            <br>- car seat belt (polyester), 100% B-stock
-            <br>- distance fabric (polyester) - piping (polyester)
-            <br>- lining (post-consumer PET bottles), 100% recycled
-            <br>- used truck tarpaulin (polyester/PVC), 100% recycled
-            <br>- webbing (polyester) - Velcro fastener (polyamide)
-            <br>- label (PVC), 25% recycled
-            <br>- sewing thread (polyamide)
-            <br>- zipper (polyester/zinc)
-            <br>- laminated foam
-            <br>- tension buckle (polyamide)
-            <br>- woven label (polyester)
+            {{$store.state.price[$store.state.inum]["material"]}}
           </div>
-          <video class="vid" autoplay loop muted>
-            <source src="./video/F306_HAZZARD.mp4" />
+
+        <!-- video 구역 -->
+          <video class="vid" 
+          :src=" 
+          'video/' + 
+          $store.state.price[$store.state.inum]['video'] + 
+          '.mp4' " autoplay loop muted>
           </video>
+
           
         </div>
       </div>
