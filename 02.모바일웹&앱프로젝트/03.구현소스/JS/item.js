@@ -105,7 +105,6 @@ Vue.component("contents2-comp",{
     goData(pm){
       store.commit('updateBig',pm);
     },
-    
   },
 }); ///// 메인영역 Vue component /////
 
@@ -168,6 +167,7 @@ new Vue({
         console.log("숫자:",getInfo);
         
         store.state.inum = getInfo-1;
+        // console.log("inum:",store.state.inum.length)
         
         console.log("inum:",store.state.inum);
 
@@ -206,8 +206,8 @@ new Vue({
       // item2();
     });
 
-    $(".closebtn").click(function(){
-      // e.preventDefault();
+    $(".closebtn").click(function(e){
+      e.preventDefault();
       store.state.optview = 1;
       console.log("optview",store.state.optview)
     });

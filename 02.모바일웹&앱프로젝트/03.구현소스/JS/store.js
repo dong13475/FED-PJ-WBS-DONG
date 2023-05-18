@@ -1,5 +1,6 @@
 // 뷰JS 데이터처리 뷰엑스 스토어 JS - store.js
 
+
 const store = new Vuex.Store({
   // (1) 데이터 셋팅구역 :
   state: {
@@ -616,7 +617,7 @@ const store = new Vuex.Store({
     name: "",
     cnt: 0,
     optview: 1,
-    inum: 2,
+    inum: 0,
     bnum: 1,
     tname: "",
     dimen:"",
@@ -672,6 +673,7 @@ const store = new Vuex.Store({
       // console.log("코드:",dt[pm]["F155_CLAPTON"]["code"]);
 
     }, ///////// chgData 메서드 /////////
+
     
     updateBig(st, pm) {
       st.bnum = pm;

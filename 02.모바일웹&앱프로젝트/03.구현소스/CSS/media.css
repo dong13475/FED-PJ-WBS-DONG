@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+/* 프라이탁 미디어쿼리 CSS */
+
+/* 1200px 사이즈 이하 미디어쿼리 시작 */
+@media screen and (max-width: 1200px) {
+  /* 메인페이지 드래그 가방 */
+  .dragBag > ul li {
+    width: 250px;
+    padding-right: 50px;
+  }
+  .dragBag img {
+    width: 250px;
+    height: 250px;
+  }
+
+  /*** 드래그 가방 ***/
+  .bags {
+    width: 230px;
+    height: 230px;
+  }
+  .bags:nth-child(2) {
+    right: 77%;
+  }
+  .bags:nth-child(3) {
+    left: 66%;
+  }
+  .bags:nth-child(4) {
+    left: 82%;
+  }
+
+  /* 서브페이지 그리드 가방 */
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .igrid > li {
+    width: 300px;
+    height: 300px;
+  }
+}
+/* 1200px 사이즈 이하 미디어쿼리 끝 */
+
+/* 500px 사이즈 이하 미디어쿼리 시작 */
+@media screen and (max-width: 500px) {
+  /* 상단이동 버튼 */
+  .moveTop {
+    display: none;
+  }
+  /* 메인 텍스트 */
+  .vtit li:first-child {
+    font-size: 25px;
+  }
+  .vtit li:nth-child(2) {
+    font-size: 18px;
+    padding-top: 15px;
+  }
+  .vtit {
+    padding: 50px 20px 0;
+    font-size: 16px;
+    white-space: normal;
+  }
+  .videoTop {
+    padding: 50px 20px 0;
+  }
+  .ftxt span {
+    font-size: 30px;
+  }
+  /* 메인페이지 드래그 가방 */
+  #dragBx {
+    height: 200px;
+    padding-bottom: 20px;
+  }
+  .dragBag > ul li {
+    width: 150px;
+    padding-right: 20px;
+  }
+  .dragBag img {
+    width: 150px;
+    height: 150px;
+  }
+  .dragBag li span {
+    font-size: 15px;
+  }
+  .mainTop {
+    display: none;
+  }
+  .ftxt {
+    margin: 20px;
+  }
+  .ftxt span {
+    font-size: 20px;
+  }
+  /* 악세서리 드래그 */
+  .dragAcc > ul li {
+    width: 150px;
+    padding-right: 20px;
+  }
+  .dragAcc img {
+    width: 150px;
+    height: 150px;
+  }
+  .dragAcc li span {
+    font-size: 15px;
+  }
+  /* 엘리베이터 */
+  .ele{
+    width: 340px;
+    height: 400px;
+    bottom: 20%;
+  }
+  .bags{
+    width: 150px;
+    height: 150px;
+  }
+  .bags:nth-child(2) {
+    right: 65%;
+  }
+  .bags:nth-child(3) {
+    left: 25%;
+  }
+  .bags:nth-child(4) {
+    left: 65%;
+  }
+  .eleimg{
+    width: 40px;
+    height: 40px;
+  }
+  .dirT{
+    width: 35px;
+    height: 35px;
+  }
+  .dirD{
+    width: 35px;
+    height: 35px;
+  }
+  .btx{
+    width: 18px;
+    height: 20px;
+  }
+  .alldoor{
+    height: 99%;
+  }
+  .light{
+    width: 10px;
+    height: 5px;
+  }
+}
+/* 500px 사이즈 이하 미디어쿼리 끝 */

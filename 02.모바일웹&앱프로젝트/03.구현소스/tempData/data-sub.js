@@ -128,13 +128,11 @@ const subData = {
         <div class="iInfo">
 
         <!-- dimention 구역 -->
-          <div class="dimen">
-            {{$store.state.price[$store.state.inum]["dimen"]}}
+          <div class="dimen" v-html="$store.state.price[$store.state.inum]['dimen']">
           </div>
 
         <!-- material 구역 -->
-          <div class="materi">
-            {{$store.state.price[$store.state.inum]["material"]}}
+          <div class="materi" v-html="$store.state.price[$store.state.inum]['material']">
           </div>
 
         <!-- video 구역 -->

@@ -4,6 +4,7 @@
 /* 외부 CSS 합치기 */
 @import url(./core.css);
 @import url(./common.css);
+@import url(./media.css);
 
 body {
   position: relative;
