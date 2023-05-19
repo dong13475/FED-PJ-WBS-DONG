@@ -36,8 +36,6 @@ import store from "./store.js";
   // 파라미터 값만 추출함!
   // pm에 할당이 되었다면 undefined가 아니므로 true
   if (pm) store.commit("chgData", decodeURI(pm));
-  // 메뉴를 선택해서 파라미터로 들어오지 않으면 "남성"
-  // else store.commit("chgData", "남성");
 
   // decodeURI() - 변경할 문자열만 있어야 변환됨
   // decodeURIComponent() - url전체에 섞여 있어도 모두 변환
