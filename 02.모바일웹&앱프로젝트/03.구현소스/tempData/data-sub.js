@@ -27,7 +27,7 @@ const subData = {
         <a href="">
           <img :src="
           './images/bags/'+
-          $store.state.sort+
+          $store.state.sort.toLowerCase()+
           '/'+
           $store.state.name[$store.state.inum]+
           '/'+v+'.jpg' 
@@ -68,7 +68,7 @@ const subData = {
               <a href="">
                 <img :src="
                 './images/bags/'+
-                $store.state.sort+'/'+$store.state.name[$store.state.inum]+'/'+v+'.jpg'" @click.prevent="goData(v)"
+                $store.state.sort.toLowerCase()+'/'+$store.state.name[$store.state.inum]+'/'+v+'.jpg'" @click.prevent="goData(v)"
                 alt="아이템" />
               </a>
             </div>
@@ -80,7 +80,7 @@ const subData = {
         <ul class="igrid">
           <li v-for="v in 4">
             <img :src="
-            './images/bags/'+$store.state.sort+'/'+$store.state.name[$store.state.inum]+'/'+$store.state.bnum+'/'+v+'.jpg'
+            './images/bags/'+$store.state.sort.toLowerCase()+'/'+$store.state.name[$store.state.inum]+'/'+$store.state.bnum+'/'+v+'.jpg'
             " alt="">
           </li>
         </ul>
