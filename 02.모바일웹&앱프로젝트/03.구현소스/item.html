@@ -36,8 +36,8 @@
     <!-- 2. 메인영역 -->
     <div id="cont">
       <!-- 1. 컨텐츠영역 -->
-      <contents1-comp v-if="$store.state.optview==1"></contents1-comp>
-      <contents2-comp v-if="$store.state.optview==2"></contents2-comp>
+      <contents1-comp v-show="$store.state.optview==1"></contents1-comp>
+      <contents2-comp v-show="$store.state.optview==2"></contents2-comp>
       <!-- 
         v-if="$store.state.optview===1"
         v-if="$store.state.optview===2"
