@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 파비콘 -->
-  <!-- <link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico"/> -->
-  <link rel="shortcut icon" href="./images/logo/favicon.ico" type="image/x-icon" />
-  <title>Document</title>
-  <style>
-    @import url('https://webfontworld.github.io/116watermelon/116watermelon.css');
-    body{
-      background-color: skyblue;
-      font-family: '116watermelon';
-    }
-    .w{
-      width: 200px;
-      height: 100px;
-      background-color: #fff;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 100px 100px 0 0;
-    }
-    @font-face {
-    font-family: '116watermelon';
-    font-weight: normal;
-    font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/116watermelon/116watermelon.woff2') format('woff2');
-    font-display: swap;
-}
-  </style>
-</head>
-<body>
-  <div class="q">
-    <div class="w"></div>
-  </div>
-  <img src="./images/사막/사막.jpg" alt="">
-  <img src="./images/북극/3/4.jpg" alt="">
-  <div>
-    여행은 살아보는거야
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/logo/favicon.ico" type="image/x-icon" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="/03.SPA프로젝트/typed.js"></script>
+    <title>Document</title>
+    <style>
+      @import url("https://webfontworld.github.io/116watermelon/116watermelon.css");
+      body {
+        background-color: skyblue;
+        font-family: "116watermelon";
+      }
+      .w {
+        width: 200px;
+        height: 100px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100px 100px 0 0;
+      }
+      @font-face {
+        font-family: "116watermelon";
+        font-weight: normal;
+        font-style: normal;
+        src: url("https://cdn.jsdelivr.net/gh/webfontworld/116watermelon/116watermelon.woff2") format("woff2");
+        font-display: swap;
+      }
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .typed-cursor {
+        opacity: 0;
+        display: none;
+      }
+
+      .typed::after {
+        position: relative;
+        top: -4px;
+        content: "|";
+        display: inline-block;
+        animation: blink 0.7s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="q">
+      <div class="w"></div>
+    </div>
+    <img src="./images/사막/사막.jpg" alt="" />
+    <img src="./images/북극/3/4.jpg" alt="" />
+    <h1>여행은 <span class="typed"></span></h1>
+  </body>
+  <script>
+    $(".typed").typed({
+      strings: ["살아보는 거야"],
+      typeSpeed: 110,
+      loop: true,
+    });
+  </script>
 </html>
