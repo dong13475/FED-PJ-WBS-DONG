@@ -1,17 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// public/index.html 페이지에 적용되는 컴포넌트
+import React from "react";
+import ReactDOM from "react-dom/client";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Layout from "./airbnb/Layout";
+import Main from "./airbnb/Main";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+export default function App(){
+  return(
+    <BrowserRouter>
+      <Routes>
+        {/* 레이아웃 컴포넌트 루트로 잡기! */}
+        <Route path="/" element={<Layout />}>
+          {/* 하위라우트 셋팅 */}
+          {/* path대신 index만 쓰면 첫페이지! 
+          -> Layout의 Link to="/"에 해당하는 셋팅임 필수! */}
+          <Route index element={<Main />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
+  ;
+} //////////////// App 컴포넌트 /////////////////
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(
+  document.getElementById("root"));
+root.render(<App />);

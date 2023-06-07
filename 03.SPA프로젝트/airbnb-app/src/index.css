@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@charset "UTF-8";
+/* 전체 페이지 공통 CSS */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* type.js사용시 폰트 - font-family: "116watermelon"; */
+@import url("https://webfontworld.github.io/116watermelon/116watermelon.css");
+
+html,body,ul,ol,dl,dt,dd,p,figure,figcaption,h1,h2,h3,h4 {
+  margin: 0;
+  padding: 0;
+}
+body{
+  /* background-color: #fafafa; */
+}
+/* ul,ol */
+ul,ol{
+  list-style: none;
+}
+/* a요소 리셋 */
+a{
+  text-decoration: none;
+  color: #000;
+}
+/* 이미지 리셋 */
+img{
+  border: none;
+  /* 이미지 링크시 서버에서 볼때 파란색 자동보더 없애기 */
+  vertical-align: bottom;
+  /* 박스 이미지 하단간극 없애기(약4px) */
+}
+/* 배경이미지 설명넣기 숨기기 클래스
+IR(Image Replacement) */
+.ir{
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
