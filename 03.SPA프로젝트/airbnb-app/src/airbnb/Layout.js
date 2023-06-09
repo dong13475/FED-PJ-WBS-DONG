@@ -34,61 +34,61 @@ const Layout = () => {
             <li>
               <Link to="/">
                 <img src="./images/료칸/료칸.jpg" alt="료칸" />
-                <div class="navtit">료칸</div>
+                <div className="navtit">료칸</div>
               </Link>
             </li>
             <li>
               <Link to="/">
                 <img src="./images/리아드/리아드.jpg" alt="리아드" />
-                <div class="navtit">리아드</div>
+                <div className="navtit">리아드</div>
               </Link>
             </li>
             <li>
               <Link to="/">
                 <img src="./images/북극/북극.jpg" alt="북극" />
-                <div class="navtit">북극</div>
+                <div className="navtit">북극</div>
               </Link>
             </li>
             <li>
               <Link to="/">
                 <img src="./images/사막/사막.jpg" alt="사막" />
-                <div class="navtit">사막</div>
+                <div className="navtit">사막</div>
               </Link>
             </li>
             <li>
               <Link to="/">
                 <img src="./images/상징적 도시/상징적 도시.jpg" alt="상징적 도시" />
-                <div class="navtit">상징적 도시</div>
+                <div className="navtit">상징적 도시</div>
               </Link>
             </li>
             <li>
               <Link to="/">
                 <img src="./images/섬/섬.jpg" alt="섬" />
-                <div class="navtit">섬</div>
+                <div className="navtit">섬</div>
               </Link>
             </li>
             <li>
               <Link to="/">
                 <div><img src="./images/세상의 꼭대기/세상의 꼭대기.jpg" alt="세상의 꼭대기" /></div>
-                <div class="navtit">세상의 꼭대기</div>
+                <div className="navtit">세상의 꼭대기</div>
               </Link>
             </li>
             <li>
               <Link to="/">
                 <img src="./images/캐슬/캐슬.jpg" alt="캐슬" />
-                <div class="navtit">캐슬</div>
+                <div className="navtit">캐슬</div>
               </Link>
             </li>
             <li>
               <Link to="/">
                 <img src="./images/키클라데스 주택/키클라데스 주택.jpg" alt="키클라데스 주택" />
-                <div class="navtit">키클라데스 주택</div>
+                <div className="navtit">키클라데스 주택</div>
               </Link>
             </li>
             <li>
               <Link to="/">
                 <img src="./images/한옥/한옥.jpg" alt="한옥" />
-                <div class="navtit">한옥</div>
+                <div className="navtit">한옥</div>
               </Link>
             </li>
           </ul>

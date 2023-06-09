@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* 메인 레이아웃 CSS - layout.css */
 
+/* 전체 색상 */
+/* background-color: #fe5f64; */
+
 /********************* 1. 상단영역 *********************/
 .top{
   max-width: 1300px;
