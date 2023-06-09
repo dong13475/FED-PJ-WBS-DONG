@@ -1,6 +1,7 @@
 // 메인 레이아웃 컴포넌트
 import "./css/layout.css";
 import { Link, Outlet } from "react-router-dom";
+import $ from "jquery";
 
 /********************************************************* 
   [ 리액트 라우터와 연결하여 사용되는 라우터 컴포넌트 ]
@@ -11,7 +12,73 @@ import { Link, Outlet } from "react-router-dom";
   -> 라우터 연결 컴포넌트 출력자리 컴포넌트
 *********************************************************/
 
+// GNB데이터
+const gnb_data = [
+  {
+    txt: "료칸",
+    src: "./images/료칸/료칸.jpg",
+    link: "",
+  },
+  {
+    txt: "리아드",
+    src: "./images/리아드/리아드.jpg",
+    link: "",
+  },
+  {
+    txt: "북극",
+    src: "./images/북극/북극.jpg",
+    link: "",
+  },
+  {
+    txt: "사막",
+    src: "./images/사막/사막.jpg",
+    link: "",
+  },
+  {
+    txt: "상징적 도시",
+    src: "./images/상징적 도시/상징적 도시.jpg",
+    link: "",
+  },
+  {
+    txt: "섬",
+    src: "./images/섬/섬.jpg",
+    link: "",
+  },
+  {
+    txt: "세상의 꼭대기",
+    src: "./images/세상의 꼭대기/세상의 꼭대기.jpg",
+    link: "",
+  },
+  {
+    txt: "캐슬",
+    src: "./images/캐슬/캐슬.jpg",
+    link: "",
+  },
+  {
+    txt: "키클라데스 주택",
+    src: "./images/키클라데스 주택/키클라데스 주택.jpg",
+    link: "",
+  },
+  {
+    txt: "한옥",
+    src: "./images/한옥/한옥.jpg",
+    link: "",
+  },
+];
+
+// $(()=>{
+//   $(".gnb ul li a").click(()=>{
+//     $(".navtit",this).addClass("on").parents("li").siblings().find(".navtit").removeClass("on");
+//   })
+// }); /////////// JQB //////////////
+$(() => {
+  $(".gnb ul li a").click(() => {
+    $(this).find(".navtit").addClass("on").parent().siblings().find(".navtit").removeClass("on");
+  });
+});
+
 const Layout = () => {
+
   return (
     <>
       {/* 1. 상단영역 */}
@@ -31,66 +98,14 @@ const Layout = () => {
         {/* 네비게이션 파트 */}
         <nav className="gnb">
           <ul>
-            <li>
-              <Link to="/">
-                <img src="./images/료칸/료칸.jpg" alt="료칸" />
-                <div className="navtit">료칸</div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <img src="./images/리아드/리아드.jpg" alt="리아드" />
-                <div className="navtit">리아드</div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <img src="./images/북극/북극.jpg" alt="북극" />
-                <div className="navtit">북극</div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <img src="./images/사막/사막.jpg" alt="사막" />
-                <div className="navtit">사막</div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <img src="./images/상징적 도시/상징적 도시.jpg" alt="상징적 도시" />
-                <div className="navtit">상징적 도시</div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <img src="./images/섬/섬.jpg" alt="섬" />
-                <div className="navtit">섬</div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <div><img src="./images/세상의 꼭대기/세상의 꼭대기.jpg" alt="세상의 꼭대기" /></div>
-                <div className="navtit">세상의 꼭대기</div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <img src="./images/캐슬/캐슬.jpg" alt="캐슬" />
-                <div className="navtit">캐슬</div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <img src="./images/키클라데스 주택/키클라데스 주택.jpg" alt="키클라데스 주택" />
-                <div className="navtit">키클라데스 주택</div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <img src="./images/한옥/한옥.jpg" alt="한옥" />
-                <div className="navtit">한옥</div>
-              </Link>
-            </li>
+              {gnb_data.map((v, i) => (
+                <li key={i}>
+                  <Link to="/">
+                    <img src={v.src} alt={v.txt} />
+                    <div className="navtit">{v.txt}</div>
+                  </Link>
+                </li>
+              ))}
           </ul>
         </nav>
       </header>
