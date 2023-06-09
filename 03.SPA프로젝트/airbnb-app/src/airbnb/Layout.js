@@ -66,16 +66,11 @@ const gnb_data = [
   },
 ];
 
-// $(()=>{
-//   $(".gnb ul li a").click(()=>{
-//     $(".navtit",this).addClass("on").parents("li").siblings().find(".navtit").removeClass("on");
-//   })
-// }); /////////// JQB //////////////
-$(() => {
-  $(".gnb ul li a").click(() => {
-    $(this).find(".navtit").addClass("on").parent().siblings().find(".navtit").removeClass("on");
-  });
-});
+$(()=>{
+  $(".gnb ul li a").click(function(){
+    $(".navtit",this).addClass("on").parents("li").siblings().find(".navtit").removeClass("on");
+  })
+}); /////////// JQB //////////////
 
 const Layout = () => {
 

@@ -55,7 +55,6 @@
 }
 .navtit{
   font-size: 12px;
-  /* text-align: center; */
   padding-top: 5px;
 }
 .gnb ul li:hover .navtit::before{
@@ -67,7 +66,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 5%;
-  opacity: 0.64;
+  opacity: 0.44;
 }
 .navtit.on::before{
   content: '';
