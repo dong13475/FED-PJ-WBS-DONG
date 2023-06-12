@@ -1,5 +1,52 @@
 @charset "UTF-8";
 
-/* 아이템 컴포넌트 CSS - items.css */
+/* 아이템 모듈 CSS - items.css */
+
+@import url('https://webfontworld.github.io/NanumBarunGothic/NanumBarunGothic.css');
 
 
+/***** 전체 섹션 *****/
+.itemList{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(5,279px);
+  gap: 50px 30px;
+  padding: 50px 20px 20px;
+}
+/*** 각 아이템 ***/
+.item{
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  /* height: 100%; */
+  width: 279px;
+}
+/** 아이템 이미지 **/
+.itemImg{
+  width: 279px;
+  height: 265px;
+  border-radius: 5%;
+  overflow: hidden;
+}
+.itemImg>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/** 아이템 타이틀 **/
+.itemTit{
+  font-family: 'NanumBarunGothic';
+}
+.itemTit>ul{
+  display: flex;
+  flex-direction: column;
+}
+.iname{
+  font-weight: bold;
+  padding-top: 10px;
+  width: 100%;
+}
+.iloca{
+  padding-top: 5px;
+  width: 100%;
+}

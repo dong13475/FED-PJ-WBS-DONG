@@ -4,7 +4,7 @@ import Items from './modules/Items';
 const Main = () => {
   return (
     <>
-      <Items />
+      <Items cat={'료칸'} />
     </>
   );
 }; ////////////// Main 컴포넌트 //////////////

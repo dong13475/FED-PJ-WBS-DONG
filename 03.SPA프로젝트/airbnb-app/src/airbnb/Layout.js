@@ -66,11 +66,12 @@ const gnb_data = [
   },
 ];
 
-$(()=>{
-  $(".gnb ul li a").click(function(){
-    $(".navtit",this).addClass("on").parents("li").siblings().find(".navtit").removeClass("on");
-  })
-}); /////////// JQB //////////////
+$(() => {
+  $(".gnb ul li a").click(function() {
+    $(".navtit", this).addClass("on").parents("li").siblings().find(".navtit").removeClass("on");
+    $(this).css({ opacity: 1 }).siblings().css({ opacity: 0.64 });
+  });
+});
 
 const Layout = () => {
 
