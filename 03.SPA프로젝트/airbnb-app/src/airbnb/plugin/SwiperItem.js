@@ -18,7 +18,7 @@ import item_data from "../data/items";
 
 export default function SwiperItem(props) {
   // 데이터셋팅
-  const idata = item_data[props.cat]["src"];
+  const idata = item_data[props.cat];
 // console.log(idata);
   // const pvdt = props.vdt;
   
