@@ -18,8 +18,10 @@ import item_data from "../data/items";
 
 export default function SwiperItem(props) {
   // 데이터셋팅
-  const idata = item_data[props.cat];
-
+  const idata = item_data[props.cat]["src"];
+// console.log(idata);
+  // const pvdt = props.vdt;
+  
   return (
     <>
       <Swiper
@@ -32,11 +34,12 @@ export default function SwiperItem(props) {
         className="mySwiper"
       >
         {/* 반복이미지 */}
+        {console.log(props.seq)}
         {idata.map((v, i) => (
           <SwiperSlide key={i}>
             {/* 아이템 이미지 */}
             <div className="itemImg">
-              <img src={v.src + i + ".jpg"} alt={props.cat + "이미지"} />
+              <img src={v.src + v.inum + ".jpg"} alt={props.cat + "이미지"} />
               {/* "./images/료칸/1/1.jpeg" */}
               {/* {"./images/"+props.cat+"/"+i+"/"+i+".jpg"} */}
             </div>

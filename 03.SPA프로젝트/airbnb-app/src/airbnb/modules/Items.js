@@ -16,9 +16,10 @@ function Items(props) {
   return (
     <section className="itemList">
       {/* 각각아이템 */}
+      {console.log(props.vdt)}
       {item_D.map((v, i) => (
         <div className="item" key={i}>
-          <SwiperItem cat={"료칸"} />
+          <SwiperItem cat={"료칸"} seq={i} />
           {/* 아이템 타이틀 */}
           <div className="itemTit">
             <ul>
