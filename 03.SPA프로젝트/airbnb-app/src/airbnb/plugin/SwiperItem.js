@@ -19,8 +19,7 @@ import item_data from "../data/items";
 export default function SwiperItem(props) {
   // 데이터셋팅
   const idata = item_data;
-  // 확장자 함수
-  const 
+  
 
   return (
     <>
