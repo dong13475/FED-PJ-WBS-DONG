@@ -4,7 +4,7 @@ import "../css/items.css";
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import SwiperItem from "../plugin/SwiperItem";
-import item_data from "../data/items";
+// import item_data from "../data/items";
 
 function jqFn() {
   $(() => {}); ////////////////// JQB ///////////////////
@@ -18,7 +18,12 @@ function Items(props) {
       {/* 각각아이템 */}
       {item_D.map((v, i) => (
         <div className="item" key={i}>
-          <SwiperItem cat={"료칸"} />
+          {/* 아이템 이미지 */}
+          <div className="itemImg">
+            <img src="./images/료칸/1/1.jpeg" alt={props.cat + "이미지"} />
+            {/* "./images/료칸/1/1.jpeg" */}
+            {/* {"./images/"+props.cat+"/"+i+"/"+i+".jpg"} */}
+          </div>
           {/* 아이템 타이틀 */}
           <div className="itemTit">
             <ul>

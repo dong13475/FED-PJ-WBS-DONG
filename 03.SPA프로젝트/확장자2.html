@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Image Extension</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      #image-container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="image-container">
+      <img id="random-image" src="" alt="Random Image" style="display: none" />
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        var 이미지배열변수 = [".jpg", ".jpeg", ".png", ".gif"];
+
+        function getExtension() {
+          var path = window.location.pathname;
+          var extension = path.substring(path.lastIndexOf(".") + 1);
+          return extension;
+        }
+
+        function displayImageByExtension() {
+          var extension = getExtension();
+          var 이미지경로변수 = "./airbnb-app/public/images/세상의 꼭대기/6/1";
+          var imageFound = false;
+
+          for (var i = 0; i < 이미지배열변수.length; i++) {
+            var tempUrl = 이미지경로변수 + 이미지배열변수[i];
+
+            // Check if the image file exists using AJAX request
+            $.ajax({
+              url: tempUrl,
+              type: "HEAD",
+              async: false,
+              success: function () {
+                $("#random-image").attr("src", tempUrl);
+                $("#random-image").css("display", "block");
+                imageFound = true;
+              },
+              error: function () {
+                // Image file doesn't exist, continue the loop
+              },
+            });
+
+            // Break the loop if image is found
+            if (imageFound) {
+              break;
+            }
+          }
+        }
+
+        displayImageByExtension();
+      });
+    </script>
+  </body>
+</html>

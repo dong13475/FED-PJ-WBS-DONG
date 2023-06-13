@@ -8,6 +8,7 @@ const item_data = {
       iloca:"Yufu-shi, Ōita-ken, 일본",
       ihost:"和モダンな温泉旅館　湯布院らんぷの宿 님이 호스팅하는 료칸의 방",
       ietc:"",
+      inum:9,
     },
     {
       src:"./images/료칸/2/",
@@ -15,6 +16,7 @@ const item_data = {
       iloca:"Tonosho, Shozu District, Kagawa, 일본",
       ihost:"Aki 님이 호스팅하는 오두막의 방",
       ietc:"",
+      inum:9,
     },
     {
       src:"./images/료칸/3/",
@@ -22,6 +24,7 @@ const item_data = {
       iloca:"Fujieda, 시즈오카 현, 일본",
       ihost:"Daisuke 님이 호스팅하는 집 전체",
       ietc:"",
+      inum:8,
     },
     {
       src:"./images/료칸/4/",
@@ -29,6 +32,7 @@ const item_data = {
       iloca:"Koga-shi, Fukuoka-ken, 일본",
       ihost:"日出子 님이 호스팅하는 오두막 숙소",
       ietc:"",
+      inum:7,
     },
     {
       src:"./images/료칸/5/",
@@ -36,6 +40,7 @@ const item_data = {
       iloca:"京都市, 京都府, 일본",
       ihost:"旅館やまざき 님이 호스팅하는 료칸 숙소",
       ietc:"",
+      inum:8,
     },
     {
       src:"./images/료칸/6/",
@@ -43,6 +48,7 @@ const item_data = {
       iloca:"京都市上京区, 京都府, 일본",
       ihost:"Sayumi & Yasuhiro 님이 호스팅하는 집 전체",
       ietc:"",
+      inum:8,
     },
     {
       src:"./images/료칸/7/",
@@ -50,6 +56,7 @@ const item_data = {
       iloca:"Yamanouchi, 나가노 현, 일본",
       ihost:"Daisuke 님이 호스팅하는 료칸의 방",
       ietc:"",
+      inum:9,
     },
     {
       src:"./images/료칸/8/",
@@ -57,6 +64,7 @@ const item_data = {
       iloca:"교토(Kyoto), Kyoto, 일본",
       ihost:"Takuya 님이 호스팅하는 료칸 숙소",
       ietc:"",
+      inum:8,
     },
     {
       src:"./images/료칸/9/",
@@ -64,6 +72,7 @@ const item_data = {
       iloca:"교토(Kyoto), 교토 현, 일본",
       ihost:"Susan 님이 호스팅하는 집 전체",
       ietc:"",
+      inum:8,
     },
     {
       src:"./images/료칸/10/",
@@ -71,6 +80,7 @@ const item_data = {
       iloca:"京都市下京区木屋町通六軒上る都市町, 京都府, 일본",
       ihost:"Yaeya 님이 호스팅하는 집 전체",
       ietc:"",
+      inum:8,
     },
   ],
 
