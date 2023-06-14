@@ -21,9 +21,7 @@ function Items(props) {
       {idata.map((v, i) => (
         <div className="item" key={i}>
           {/* {console.log(v.inum)} */}
-          <div className="itemImg">
-            <SwiperItem seq={v.inum} />
-          </div>
+            <SwiperItem seq={v.inum} cat={props.cat} />
           {/* 아이템 타이틀 */}
           <div className="itemTit">
             <ul>

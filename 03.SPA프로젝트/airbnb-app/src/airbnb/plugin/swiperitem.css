@@ -5,8 +5,10 @@
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
+  width: 279px;
+  height: 265px;
+  border-radius: 5%;
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -27,21 +29,53 @@
   object-fit: cover;
 }
 
-/* 기존 스와이퍼 디자인 변경 */
+/***** 기존 스와이퍼 디자인 변경 *****/
 
+/* 스와이퍼 버튼 모양 */
 .swiper-button-prev,
 .swiper-button-next {
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background-color: #fff;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 5px #000;
+  transition: .4s;
+  opacity: 0;
 }
 
 .swiper-button-next {
-  transform: scale(0.8) translateX(15px);
+  transform: scale(0.8) translate(5%, 30%);
+}
+.swiper-button-prev {
+  transform: scale(0.8) translate(5%, 30%);
+}
+.item:hover 
+.swiper-button-prev,
+.swiper-button-next{
+  opacity: 1;
 }
 
-.swiper-button-prev {
-  transform: scale(0.8) translateX(-15px);
+/* 스와이퍼 버튼 방향 텍스트 */
+.swiper-button-next:after, 
+.swiper-button-prev:after{
+  font-family: swiper-icons;
+    font-size:20px;
+    font-weight: bold;
+    text-transform: none!important;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #000;
+}
+.swiper-button-next:after{
+  transform: translate(15%, 5%);
+}
+.swiper-button-prev:after{
+  transform: translate(-15%, 5%);
+}
+
+/* 스와이퍼 버튼 끝에서 안보이기 */
+.swiper-button-next.swiper-button-disabled, 
+.swiper-button-prev.swiper-button-disabled{
+  opacity: 0;
+  display: none;
 }

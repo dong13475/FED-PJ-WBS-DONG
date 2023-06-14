@@ -56,9 +56,11 @@
   font-size: 12px;
   padding-top: 5px;
 }
-
+.gnb ul li a.on{
+  opacity: 1;
+} 
 .gnb ul li a:hover .navtit::before,
-.navtit.on::before{
+.gnb ul li a.on .navtit::before{
   content: '';
   position: absolute;
   width: 100%;
