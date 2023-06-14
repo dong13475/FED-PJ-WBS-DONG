@@ -13,15 +13,14 @@ import "./swiperitem.css";
 
 // import required modules
 import { Navigation, Pagination } from "swiper";
-// 데이터 가져오기
-import item_data from "../data/items";
+
+
 
 export default function SwiperItem(props) {
   // 데이터셋팅
-  const idata = item_data[props.cat][props.inum];
-// console.log(idata);
-  // const pvdt = props.vdt;
-  
+  // const idata = item_data[props.cat];
+  // console.log(idata);
+
   return (
     <>
       <Swiper
@@ -34,15 +33,15 @@ export default function SwiperItem(props) {
         className="mySwiper"
       >
         {/* 반복이미지 */}
-        {console.log(props.seq)}
-        {idata.map((v, i) => (
+        {[props.seq].map((v, i) => (
           <SwiperSlide key={i}>
             {/* 아이템 이미지 */}
-            <div className="itemImg">
-              <img src={v.src + v.inum + ".jpg"} alt={props.cat + "이미지"} />
-              {/* "./images/료칸/1/1.jpeg" */}
-              {/* {"./images/"+props.cat+"/"+i+"/"+i+".jpg"} */}
-            </div>
+            {/* {console.log(v)} */}
+            {v.map((v,i)=>(
+              <img src={v+".jpg"} alt={props.cat + "이미지"} key={i} />
+            ))}
+            {/* "./images/료칸/1/1.jpg" */}
+            {/* {"./images/"+props.cat+"/"+i+"/"+i+".jpg"} */}
           </SwiperSlide>
         ))}
       </Swiper>

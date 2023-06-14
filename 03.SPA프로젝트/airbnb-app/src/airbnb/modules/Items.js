@@ -6,20 +6,24 @@ import { Link, Outlet } from "react-router-dom";
 import SwiperItem from "../plugin/SwiperItem";
 import item_data from "../data/items";
 
+
+
 function jqFn() {
   $(() => {}); ////////////////// JQB ///////////////////
 } /////////////// jqFn ////////////////
 
 function Items(props) {
-  const item_D = item_data[props.cat];
+  const idata = item_data[props.cat];
   // item_D에 담긴값은 data/item.js의 객체의 배열값
   return (
     <section className="itemList">
       {/* 각각아이템 */}
-      {console.log(props.vdt)}
-      {item_D.map((v, i) => (
+      {idata.map((v, i) => (
         <div className="item" key={i}>
-          <SwiperItem cat={"료칸"} seq={i} />
+          {/* {console.log(v.inum)} */}
+          <div className="itemImg">
+            <SwiperItem seq={v.inum} />
+          </div>
           {/* 아이템 타이틀 */}
           <div className="itemTit">
             <ul>

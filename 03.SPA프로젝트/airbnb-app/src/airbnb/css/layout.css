@@ -67,7 +67,12 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 5%;
+  /* opacity: 1; */
 }
+/* .gnb ul li a:hover,
+.navtit.on .gnb ul li a{
+  opacity: 1;
+} */
 
 
 
