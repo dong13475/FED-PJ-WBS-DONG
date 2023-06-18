@@ -53,3 +53,33 @@
   padding-top: 5px;
   width: 100%;
 }
+
+
+/* 아이템 리스트 미디어쿼리 */
+@media screen and (max-width: 1300px){
+  .itemList{
+    grid-template-columns: repeat(4,279px);
+  }
+} 
+/* 1300사이즈 이하 미디어쿼리 끝 */
+
+@media screen and (max-width: 1000px){
+  .itemList{
+    grid-template-columns: repeat(3,279px);
+  }
+} 
+/* 1000사이즈 이하 미디어쿼리 끝 */
+
+@media screen and (max-width: 800px){
+  .itemList{
+    grid-template-columns: repeat(2,279px);
+  }
+} 
+/* 800사이즈 이하 미디어쿼리 끝 */
+
+@media screen and (max-width: 500px){
+  .itemList{
+    grid-template-columns: repeat(1,279px);
+  }
+} 
+/* 500사이즈 이하 미디어쿼리 끝 */

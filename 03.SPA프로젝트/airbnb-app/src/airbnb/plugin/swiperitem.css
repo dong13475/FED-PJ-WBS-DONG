@@ -79,3 +79,8 @@
   opacity: 0;
   display: none;
 }
+
+/* 블릿선택된요소 배경색 주기 */
+.swiper-pagination-bullet-active {
+  background: #fe5f64;
+}
