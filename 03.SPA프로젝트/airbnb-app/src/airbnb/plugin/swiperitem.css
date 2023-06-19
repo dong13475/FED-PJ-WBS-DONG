@@ -5,12 +5,8 @@
 }
 
 .swiper {
-  width: 279px;
-  /* width: 100%; */
-  height: 265px;
-  /* height: 100%; */
-  border-radius: 5%;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {

@@ -3,12 +3,12 @@ const gnb_data = [
   {
     txt: "료칸",
     src: "./images/료칸/료칸.jpg",
-    link: "",
+    link: "/료칸",
   },
   {
     txt: "리아드",
     src: "./images/리아드/리아드.jpg",
-    link: "",
+    link: "/리아드",
   },
   {
     txt: "북극",

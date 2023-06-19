@@ -37,7 +37,7 @@ export default function SwiperItem(props) {
         {[props.seq].map((v, i) => (
           <div className="itemImg" key={i}>
             {/* 아이템 이미지 */}
-            {console.log(v)}
+            {/* {console.log(v)} */}
             {v.map((v, i) => (
               <SwiperSlide key={i}>
                 <img src={[props.src] + v + ".jpg"} alt={[props.cat] + "이미지"} key={i} />
@@ -46,7 +46,6 @@ export default function SwiperItem(props) {
             {/* "./images/료칸/1/1.jpg" */}
             {/* {"./images/"+props.cat+"/"+i+"/"+i+".jpg"} */}
           </div>
-          
         ))}
       </Swiper>
     </>
