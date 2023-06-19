@@ -23,6 +23,7 @@ export default function SwiperItem(props) {
     <>
       <Swiper
         spaceBetween={20}
+        cssMode={true}
         navigation={true}
         pagination={{
           dynamicBullets: true,
