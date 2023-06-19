@@ -24,7 +24,7 @@ function Items(props) {
         <div className="item" key={i}>
           {/* {console.log(v.inum)} */}
           {/* <Link> */}
-            <SwiperItem seq={v.inum} cat={props.cat} />
+            <SwiperItem seq={v.inum} cat={props.cat} src={v.src} />
           {/* </Link> */}
           {/* 아이템 타이틀 */}
           <div className="itemTit">

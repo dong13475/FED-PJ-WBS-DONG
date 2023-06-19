@@ -3,6 +3,7 @@ import "./css/layout.css";
 import { Link, Outlet } from "react-router-dom";
 import $ from "jquery";
 import gnb_data from "./data/gnbdata";
+import GnbList from "./plugin/GnbList";
 
 /********************************************************* 
   [ 리액트 라우터와 연결하여 사용되는 라우터 컴포넌트 ]
@@ -41,15 +42,7 @@ const Layout = () => {
         {/* 네비게이션 파트 */}
         <nav className="gnb">
           <ul>
-            {/* GNB메뉴 */}
-              {gnb_data.map((v, i) => (
-                <li key={i}>
-                  <Link to="/">
-                    <img src={v.src} alt={v.txt} />
-                    <div className="navtit">{v.txt}</div>
-                  </Link>
-                </li>
-              ))}
+            <GnbList />
           </ul>
         </nav>
       </header>

@@ -14,8 +14,6 @@ import "./swiperitem.css";
 // import required modules
 import { Navigation, Pagination } from "swiper";
 
-import item_Img from "../data/itemImg";
-
 export default function SwiperItem(props) {
   // 데이터셋팅
   // const idata = item_data[props.cat];
@@ -41,7 +39,7 @@ export default function SwiperItem(props) {
             {console.log(v)}
             {v.map((v, i) => (
               <SwiperSlide key={i}>
-                <img src={v + ".jpg"} alt={[props.cat] + "이미지"} key={i} />
+                <img src={[props.src] + v + ".jpg"} alt={[props.cat] + "이미지"} key={i} />
               </SwiperSlide>
             ))}
             {/* "./images/료칸/1/1.jpg" */}

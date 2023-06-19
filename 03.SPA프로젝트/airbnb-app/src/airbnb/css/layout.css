@@ -24,7 +24,7 @@
   height: 60px;
 }
 /* GNB 영역 */
-.gnb ul{
+/* .gnb ul{
   display: flex;
   justify-content: center;
   gap: 0 30px;
@@ -47,7 +47,7 @@
 }
 
 .gnb ul li a:hover{
-  /* opacity: 1; */
+  opacity: 1;
 }
 .gnb ul li img{
   width: 35px;
@@ -69,14 +69,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 5%;
-  /* opacity: 1; */
-}
-/* .gnb ul li a:hover,
-.navtit.on .gnb ul li a{
-  opacity: 1;
 } */
-
-
 
 
 /********************* 2. 메인영역 *********************/
