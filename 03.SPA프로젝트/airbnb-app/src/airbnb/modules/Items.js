@@ -16,9 +16,10 @@ function jqFn() {
 
 function Items(props) {
   const idata = item_data[props.cat];
+
   // item_D에 담긴값은 data/item.js의 객체의 배열값
   return (
-    <section className="itemList">
+    <section className="itemList"> 
       {/* 각각아이템 */}
       {idata.map((v, i) => (
         <div className="item" key={i}>

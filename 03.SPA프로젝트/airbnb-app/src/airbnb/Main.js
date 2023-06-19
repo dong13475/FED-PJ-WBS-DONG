@@ -1,11 +1,11 @@
 // 에어비앤비 메인 페이지 컴포넌트
 import Items from './modules/Items';
-import SwiperItem from './plugin/SwiperItem';
+import item_data from './data/items';
 
-const Main = () => {
+const Main = (props) => {
   return (
     <>
-      <Items cat={'료칸'} />
+      <Items cat={props.sub} />
     </>
   );
 }; ////////////// Main 컴포넌트 //////////////

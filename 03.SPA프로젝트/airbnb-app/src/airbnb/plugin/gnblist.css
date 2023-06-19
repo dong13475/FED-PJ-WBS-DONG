@@ -26,3 +26,13 @@
   height: 100%;
   object-fit: cover;
 }
+
+.gnb .swiper{
+  width: 1115px;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+
+.gnb .swiper-slide{
+  width: 100px !important;
+}

@@ -26,18 +26,23 @@ export default function GnbList() {
       breakpoints={{
         200: {
           slidesPerView: 3,
+          spaceBetween: 10,
         },
         500: {
           slidesPerView: 5,
+          spaceBetween: 10,
         },
         700: {
           slidesPerView: 7,
+          spaceBetween: 10,
         },
         900: {
           slidesPerView: 8,
+          spaceBetween: 10,
         },
         1250: {
           slidesPerView: 10,
+          spaceBetween: 10,
         },
       }}
       className="mySwiper">

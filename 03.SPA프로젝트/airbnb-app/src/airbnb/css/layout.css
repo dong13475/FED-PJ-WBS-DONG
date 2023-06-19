@@ -28,11 +28,12 @@
 .gnb ul{
   display: flex;
   justify-content: center;
-  gap: 0 30px;
+  /* gap: 0 30px; */
   font-size: 15px;
   padding: 10px 0 0;
   max-width: 1200px;
   margin: 0 auto;
+  user-select: none;
 }
 .gnb ul li{
   position: relative;
