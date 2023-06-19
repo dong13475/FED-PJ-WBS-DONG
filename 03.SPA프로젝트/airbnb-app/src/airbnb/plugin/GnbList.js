@@ -24,21 +24,21 @@ export default function GnbList() {
       navigation={true} 
       modules={[Navigation]} 
       breakpoints={{
-        200: {
+        300: {
           slidesPerView: 3,
-          spaceBetween: 10,
+          spaceBetween: 1,
         },
         500: {
-          slidesPerView: 5,
-          spaceBetween: 10,
+          slidesPerView: 6,
+          spaceBetween: 1,
         },
         700: {
           slidesPerView: 7,
-          spaceBetween: 10,
+          spaceBetween: 1,
         },
         900: {
           slidesPerView: 8,
-          spaceBetween: 10,
+          spaceBetween: 1,
         },
         1250: {
           slidesPerView: 10,

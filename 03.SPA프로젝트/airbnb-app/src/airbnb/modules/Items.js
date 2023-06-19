@@ -22,13 +22,12 @@ function Items(props) {
     <section className="itemList"> 
       {/* 각각아이템 */}
       {idata.map((v, i) => (
+          <Link>
         <div className="item" key={i}>
           {/* {console.log(v.inum)} */}
-          {/* <Link> */}
           <div className="itemImg">
             <SwiperItem seq={v.inum} cat={props.cat} src={v.src} />
           </div>
-          {/* </Link> */}
           {/* 아이템 타이틀 */}
           <div className="itemTit">
             <ul>
@@ -39,6 +38,7 @@ function Items(props) {
             </ul>
           </div>
         </div>
+          </Link>
       ))}
     </section>
     
