@@ -18,16 +18,16 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 279px;
+  width: 100%;
   user-select: none;
 }
 /** 아이템 이미지 **/
-.itemImg{
+/* .itemImg{
   width: 279px;
   height: 265px;
   border-radius: 5%;
   overflow: hidden;
-}
+} */
 
 .itemImg>img{
   width: 100%;

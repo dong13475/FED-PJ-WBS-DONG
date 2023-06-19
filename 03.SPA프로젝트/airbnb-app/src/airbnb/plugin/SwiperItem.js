@@ -45,6 +45,7 @@ export default function SwiperItem(props) {
             {/* "./images/료칸/1/1.jpg" */}
             {/* {"./images/"+props.cat+"/"+i+"/"+i+".jpg"} */}
           </div>
+          
         ))}
       </Swiper>
     </>

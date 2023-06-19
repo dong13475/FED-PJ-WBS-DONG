@@ -19,21 +19,21 @@ export default function GnbList() {
   return (
     <>
       <Swiper 
-      slidesPerView={3} 
-      spaceBetween={30} 
+      // slidesPerView={10}
+      spaceBetween={20} 
       modules={[Navigation]} 
       className="mySwiper">
-        <SwiperSlide>
-          {/* GNB메뉴 */}
-          {gnb_data.map((v, i) => (
-            <li key={i}>
-              <Link to="/">
+        {gnb_data.map((v, i) => (
+          <SwiperSlide key={i}>
+            <Link to="/">
+            {/* GNB메뉴 */}
+              <li>
                 <img src={v.src} alt={v.txt} />
                 <div className="navtit">{v.txt}</div>
-              </Link>
-            </li>
-          ))}
-        </SwiperSlide>
+              </li>
+            </Link>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

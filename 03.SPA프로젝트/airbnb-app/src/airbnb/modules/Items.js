@@ -38,6 +38,7 @@ function Items(props) {
         </div>
       ))}
     </section>
+    
   );
 } ///////////// Items 컴포넌트 //////////////
 

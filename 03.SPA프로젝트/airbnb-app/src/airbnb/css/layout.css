@@ -12,6 +12,7 @@
   margin: 0 auto;
   /* font-family: 'NanumSquareNeo'; */
   font-family: 'NanumBarunGothic';
+  font-weight: bold;
 }
 .toparea{
   display: flex;
@@ -24,7 +25,7 @@
   height: 60px;
 }
 /* GNB 영역 */
-/* .gnb ul{
+.gnb ul{
   display: flex;
   justify-content: center;
   gap: 0 30px;
@@ -69,7 +70,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 5%;
-} */
+}
 
 
 /********************* 2. 메인영역 *********************/
