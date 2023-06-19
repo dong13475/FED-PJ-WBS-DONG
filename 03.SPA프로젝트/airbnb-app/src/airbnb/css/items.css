@@ -10,7 +10,7 @@
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(5,279px);
-  gap: 40px 30px;
+  gap: 30px 30px;
   padding: 50px 20px 20px;
 }
 /*** 각 아이템 ***/

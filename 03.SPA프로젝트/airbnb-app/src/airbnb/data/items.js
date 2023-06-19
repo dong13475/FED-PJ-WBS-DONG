@@ -24,7 +24,7 @@ const item_data = {
       iloca: "Fujieda, 시즈오카 현, 일본",
       ihost: "Daisuke 님이 호스팅하는 집 전체",
       ietc: "",
-      inum: [1,2,3,4,5,6,7,8],
+      inum: [1,2,3,4,5,6,7],
     },
     {
       src: "./images/료칸/4/",
@@ -90,7 +90,7 @@ const item_data = {
       iloca: "페스, 페스불망, 모로코",
       ihost: "Abdellatif 님이 호스팅하는 리아드 숙소",
       ietc: "",
-      inum: [1,2,3,4,5,6,7,8],
+      inum: [1,2,3,4,5,6,7,8,9],
     },
     {
       src: "./images/리아드/2/",
@@ -98,7 +98,7 @@ const item_data = {
       iloca: "마라케시, 마라케시 텐시프트 엘 하우즈 지방, 모로코",
       ihost: "Yan 님이 호스팅하는 B&b의 방",
       ietc: "",
-      inum: [1,2,3,4,5,6,7,8,9],
+      inum: [1,2,3,4,5,6,7,8],
     },
     {
       src: "./images/리아드/3/",
@@ -114,7 +114,7 @@ const item_data = {
       iloca: "페스, 페스불망, 모로코",
       ihost: "Julian 님이 호스팅하는 B&b의 방",
       ietc: "",
-      inum: [1,2,3,4,5,6,7],
+      inum: [1,2,3,4,5,6,7,8],
     },
     {
       src: "./images/리아드/5/",
@@ -154,7 +154,7 @@ const item_data = {
       iloca: "마라케시, 모로코",
       ihost: "Yan Cedric 님이 호스팅하는 B&b 숙소",
       ietc: "",
-      inum: [1,2,3,4,5,6,7,8],
+      inum: [1,2,3,4,5,6,7],
     },
     {
       src: "./images/리아드/10/",
