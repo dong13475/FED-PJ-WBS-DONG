@@ -56,14 +56,14 @@
 
 
 /* 아이템 리스트 미디어쿼리 */
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1400px){
   .itemList{
     grid-template-columns: repeat(4,279px);
   }
 } 
 /* 1300사이즈 이하 미디어쿼리 끝 */
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1200px){
   .itemList{
     grid-template-columns: repeat(3,279px);
   }

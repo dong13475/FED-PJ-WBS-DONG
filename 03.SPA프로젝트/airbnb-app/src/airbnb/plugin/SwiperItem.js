@@ -26,7 +26,9 @@ export default function SwiperItem(props) {
       <Swiper
         spaceBetween={20}
         navigation={true}
-        pagination={true}
+        pagination={{
+          dynamicBullets: true,
+        }}
         modules={[Navigation, Pagination]}
         // 스와이퍼 사이즈별 슬라이드수 변경!
         breakpoints={{}}
@@ -36,7 +38,7 @@ export default function SwiperItem(props) {
         {[props.seq].map((v, i) => (
           <div className="itemImg" key={i}>
             {/* 아이템 이미지 */}
-            {/* {console.log(v)} */}
+            {console.log(v)}
             {v.map((v, i) => (
               <SwiperSlide key={i}>
                 <img src={v + ".jpg"} alt={[props.cat] + "이미지"} key={i} />

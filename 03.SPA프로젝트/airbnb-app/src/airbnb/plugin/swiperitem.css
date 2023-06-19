@@ -40,14 +40,16 @@
   background-color: #fff;
   box-shadow: 0 0 5px #000;
   transition: .4s;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .swiper-button-next {
   transform: scale(0.8) translate(5%, 30%);
+  
 }
 .swiper-button-prev {
   transform: scale(0.8) translate(5%, 30%);
+  
 }
 .item:hover 
 .swiper-button-prev,
