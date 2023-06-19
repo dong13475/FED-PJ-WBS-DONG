@@ -25,7 +25,7 @@
   height: 60px;
 }
 /* GNB 영역 */
-.gnb ul{
+/* .gnb ul{
   display: flex;
   justify-content: center;
   gap: 0 30px;
@@ -70,7 +70,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 5%;
-}
+} */
 
 
 /********************* 2. 메인영역 *********************/

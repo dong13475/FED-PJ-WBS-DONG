@@ -21,6 +21,7 @@ export default function GnbList() {
       <Swiper 
       // slidesPerView={10}
       spaceBetween={20} 
+      navigation={true}
       modules={[Navigation]} 
       className="mySwiper">
         {gnb_data.map((v, i) => (
