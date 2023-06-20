@@ -24,23 +24,32 @@ function ItemDetail(props) {
 
   return (
     <>
-      {/* 1.아이템 이름 */}
-      <div className="itemtit">
-        <h2>{iname}</h2>
-      </div>
-      {/* 2.아이템 주소 */}
-      <div className="iLoca">
-        <h3>{iloca}</h3>
-      </div>
-      {/* 3.아이템 이미지 */}
-      <div className="imgBx">
-        {inum.map((v, i) => (
-          <div className="gridImg" key={i} >
-            <img src={src + v + ".jpg"} alt="여행은 살아보는 거야"/>
-          </div>
-        ))}
-      </div>
-      {/* 4.호스트설명 */}
+      <section className="itemdetailbx">
+        {/* 1.아이템 이름 */}
+        <div className="itemtit">
+          <h2>{iname}</h2>
+        </div>
+        {/* 2.아이템 주소 */}
+        <div className="iLoca">
+          <h3>{iloca}</h3>
+        </div>
+        {/* 2-1.기타사항 */}
+        <div className="ietc">
+          <h3>{ietc}</h3>
+        </div>
+        {/* 3.아이템 이미지 */}
+        <div className="imgBx">
+          {inum.map((v, i) => (
+            <div className="gridImg" key={i}>
+              <img src={src + v + ".jpg"} alt="여행은 살아보는 거야" />
+            </div>
+          ))}
+        </div>
+        {/* 4.호스트설명 */}
+        <div className="host">
+          <h3>{ihost}</h3>
+        </div>
+      </section>
     </>
   );
 } //////////////// ItemDetail 컴포넌트 /////////////////

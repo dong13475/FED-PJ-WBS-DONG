@@ -3,3 +3,8 @@
 /* 아이템디테일 모듈 CSS - itemdetail.css */
 
 @import url('https://webfontworld.github.io/NanumBarunGothic/NanumBarunGothic.css');
+
+.itemdetailbx{
+  max-width: 1700px;
+  margin: 0 auto;
+}
