@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import {BrowserRouter, HashRouter, Route, Routes} from "react-router-dom";
 import Layout from "./airbnb/Layout";
 import Main from "./airbnb/Main";
+import ItemDetail from "./airbnb/modules/ItemDetail";
 import "./index.css";
 
 export default function App(){
@@ -26,6 +27,7 @@ export default function App(){
           <Route path="캐슬" element={<Main sub='캐슬'/>} />
           <Route path="키클라데스주택" element={<Main sub='키클라데스주택'/>} />
           <Route path="한옥" element={<Main sub='한옥'/>} />
+          <Route path="여행은살아보는거야" element={<ItemDetail />} />
         </Route>
       </Routes>
     </HashRouter>
