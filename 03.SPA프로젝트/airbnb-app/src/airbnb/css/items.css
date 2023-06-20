@@ -18,7 +18,8 @@
 .item{
   display: flex;
   flex-direction: column;
-  width: 17vw;
+  /* width: 17vw; */
+  width: min(290px, 18vw);
   /* height: 100%; */
   user-select: none;
   aspect-ratio: 1.1/1.1;
@@ -74,10 +75,10 @@
     grid-template-columns: repeat(3,1fr);
   }
   .item{
-    width: 30vw;
+    width: 29vw;
   }
 } 
-/* 1000사이즈 이하 미디어쿼리 끝 */
+/* 1200사이즈 이하 미디어쿼리 끝 */
 
 @media screen and (max-width: 800px){
   .itemList{

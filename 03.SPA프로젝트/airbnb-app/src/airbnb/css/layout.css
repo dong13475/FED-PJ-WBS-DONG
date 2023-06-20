@@ -8,11 +8,21 @@
 
 /********************* 1. 상단영역 *********************/
 .top {
-  max-width: 1600px;
+  position: fixed;
+  max-width: 1700px;
   margin: 0 auto;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   /* font-family: 'NanumSquareNeo'; */
   font-family: "NanumBarunGothic";
   font-weight: bold;
+  z-index: 999;
+  background-color: #fff;
+}
+/* 스크롤 다운시 .top에 on추가해 그림자주기 */
+.top.on{
+  border-bottom: 1px solid #cacaca7e;
 }
 .toparea {
   display: flex;
@@ -25,6 +35,13 @@
   height: 60px;
 }
 /* GNB 영역 */
+.gnb{
+  position: relative;
+  margin: 0 auto;
+  width: min(80%,1000px);
+  /* outline: 1px dashed red; */
+  overflow: hidden;
+}
 .gnb ul {
   /* 가상요소 부모자격 */
   position: relative;
@@ -32,22 +49,44 @@
   justify-content: center;
   gap: 0 30px;
   font-size: 15px;
-  padding: 10px 0 0;
+  padding: 5px 0;
   /* max-width: 1200px; */
   margin: 0 auto;
   user-select: none;
-  width: 1000px;
-  outline: 1px dotted #000;
+  width: 100%;
+  /* outline: 1px dotted #000; */
+  left: 0;
 }
+
 /***** 슬라이드 방향 버튼 *****/
+/* 버튼박스 */
+.mbtnLbx{
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.mbtnRbx{
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
 /* 버튼공용 */
 .mbtn {
   position: absolute;
-  width: 25px;
-  height: 25px;
-  outline: 1px solid red;
+  width: 22px;
+  height: 22px;
+  outline: 2px solid #fe5f64;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 1;
 }
 /* 왼쪽버튼 */
 .lb {
@@ -56,13 +95,13 @@
   transform: translate(25%, -50%);
 }
 .lbt {
-  top: 20%;
-  left: 35%;
+  top: 16%;
+  left: 37%;
   transform: rotate(45deg);
 }
 .lbb {
   top: 43%;
-  left: 35%;
+  left: 37%;
   transform: rotate(-45deg);
 }
 /* 화살표공용 */
@@ -70,7 +109,7 @@
   position: absolute;
   width: 2px;
   height: 10px;
-  background-color: #000;
+  background-color: #fe5f64;
 }
 /* 오른쪽버튼 */
 .rb {
@@ -79,13 +118,13 @@
   transform: translate(-25%, -50%);
 }
 .rbt {
-  top: 20%;
-  right: 35%;
+  top: 16%;
+  right: 37%;
   transform: rotate(135deg);
 }
 .rbb {
   top: 43%;
-  right: 35%;
+  right: 37%;
   transform: rotate(-135deg);
 }
 /* ********* 버튼 끝 ********* */
@@ -105,10 +144,10 @@
 }
 
 .gnb ul li a:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 .gnb ul li img {
-  width: 35px;
+  width: 30px;
 }
 .navtit {
   font-size: 12px;
@@ -134,5 +173,65 @@
 .cont {
   max-width: 1600px;
   margin: 0 auto;
+  /* margin-inline: auto; */
+  padding-top: 160px;
 }
 /********************* 3. 하단영역 *********************/
+.info{
+  font-family: "NanumBarunGothic";
+  max-width: 1700px;
+  margin: 0 auto;
+}
+.txt{
+  padding: 15px 80px;
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  border-top: 1px solid #cacaca7e;
+  /* border-bottom: 1px solid #cacaca7e; */
+}
+.txt2{
+  padding: 15px 80px;
+  /* max-width: 1500px; */
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgb(145, 145, 145);
+}
+
+
+
+/******* 미디어쿼리 *******/
+@media screen and (max-width: 1200px){
+  .mbtnLbx{
+    display: block;
+    background-color: #fff;
+    z-index: 2;
+  }
+  .mbtnRbx{
+    display: block;
+    background-color: #fff;
+    z-index: 2;
+  }
+  
+} 
+/* 1200사이즈 이하 미디어쿼리 끝 */
+
+@media screen and (max-width: 500px){
+  .toparea{
+    padding: 0 10px;
+  }
+  .gnb{
+    width: 94%;
+  }
+  .gnb ul{
+    gap: 0 15px;
+  }
+  .txt{
+    padding: 10px 40px;
+    font-size: 12px;
+  }
+  .txt2{
+    padding: 10px 40px;
+    font-size: 10px;
+  }
+} 
+/* 500사이즈 이하 미디어쿼리 끝 */
