@@ -25,6 +25,55 @@
   height: 60px;
 }
 /* GNB 영역 */
+.gnb ul{
+  display: flex;
+  justify-content: center;
+  /* gap: 0 30px; */
+  font-size: 15px;
+  padding: 10px 0 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  user-select: none;
+}
+.gnb ul li{
+  position: relative;
+}
+
+.gnb ul li a {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  color: #000;
+  opacity: 0.64;
+  transition: .2s;
+}
+
+.gnb ul li a:hover{
+  opacity: 1;
+}
+.gnb ul li img{
+  width: 35px;
+}
+.navtit{
+  font-size: 12px;
+  padding-top: 5px;
+}
+.gnb ul li a.on{
+  opacity: 1;
+} 
+.gnb ul li a:hover .navtit::before,
+.gnb ul li a.on .navtit::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+}
 
 
 

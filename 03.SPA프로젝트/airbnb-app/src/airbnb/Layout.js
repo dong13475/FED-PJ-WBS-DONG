@@ -16,7 +16,7 @@ import GnbList from "./plugin/GnbList";
 
 $(() => {
   $(".gnb ul li a").click(function () {
-    $(this).addClass("on").parents(".swiper-slide").siblings().find("a").removeClass("on");
+    $(this).addClass("on").parents("li").siblings().find("a").removeClass("on");
     // $(this).css({ opacity: 1 }).siblings().css({ opacity: 0.64 });
   });
 });
@@ -41,7 +41,22 @@ const Layout = () => {
         {/* 네비게이션 파트 */}
         <nav className="gnb">
           <ul>
-            <GnbList />
+            <div className="mbtn lb">
+              <div className="btbt lbt"></div>
+              <div className="btbt lbb"></div>
+            </div>
+            <div className="mbtn rb">
+              <div className="btbt rbt"></div>
+              <div className="btbt rbb"></div>
+            </div>
+            {gnb_data.map((v, i) => (
+              <li key={i}>
+                <Link to={v.link}>
+                  <img src={v.src} alt={v.txt} />
+                  <div className="navtit">{v.txt}</div>
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
       </header>

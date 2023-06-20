@@ -15,9 +15,10 @@ import GnbList from "./plugin/GnbList";
 *********************************************************/
 
 $(() => {
-  // $(".gnb ul li a").click(function () {
-  //   $(this).addClass("on").parents("li").siblings().find("a").removeClass("on");
-  // });
+  $(".gnb ul li a").click(function () {
+    $(this).addClass("on").parents(".swiper-slide").siblings().find("a").removeClass("on");
+    // $(this).css({ opacity: 1 }).siblings().css({ opacity: 0.64 });
+  });
 });
 
 const Layout = () => {
@@ -39,7 +40,9 @@ const Layout = () => {
         </div>
         {/* 네비게이션 파트 */}
         <nav className="gnb">
-          <GnbList />
+          <ul>
+            <GnbList />
+          </ul>
         </nav>
       </header>
       {/* 2. 메인영역 */}
