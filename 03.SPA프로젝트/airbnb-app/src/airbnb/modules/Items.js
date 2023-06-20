@@ -22,8 +22,8 @@ function Items(props) {
     <section className="itemList"> 
       {/* 각각아이템 */}
       {idata.map((v, i) => (
-          <Link>
-        <div className="item" key={i}>
+          <Link key={i}>
+        <div className="item">
           {/* {console.log(v.inum)} */}
           <div className="itemImg">
             <SwiperItem seq={v.inum} cat={props.cat} src={v.src} />
