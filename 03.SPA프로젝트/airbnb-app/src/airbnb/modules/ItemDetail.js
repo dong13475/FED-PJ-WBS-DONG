@@ -28,6 +28,7 @@ function ItemDetail(props) {
         {/* 1.아이템 이름 */}
         <div className="itemtit">
           <h2>{iname}</h2>
+          <img src="./images/airplane.png" alt="비행기" />
         </div>
         {/* 2.아이템 주소 */}
         <div className="iLoca">
