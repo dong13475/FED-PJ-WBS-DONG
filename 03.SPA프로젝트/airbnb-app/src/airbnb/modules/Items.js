@@ -29,7 +29,8 @@ function Items(props) {
             iloca:v.iloca,
             ihost:v.ihost,
             ietc:v.ietc,
-            inum:v.inum
+            inum:v.inum,
+            gmap:v.gmap
           }
         } key={i}>
         <div className="item">
