@@ -6,6 +6,7 @@ import Layout from "./airbnb/Layout";
 import Main from "./airbnb/Main";
 import ItemDetail from "./airbnb/modules/ItemDetail";
 import "./index.css";
+import ImgDetail from './airbnb/modules/ImgDetail';
 
 export default function App(){
   return(
@@ -28,6 +29,7 @@ export default function App(){
           <Route path="키클라데스주택" element={<Main sub='키클라데스주택'/>} />
           <Route path="한옥" element={<Main sub='한옥'/>} />
           <Route path="여행은살아보는거야" element={<ItemDetail />} />
+          <Route path="에어비앤비" element={<ImgDetail />} />
         </Route>
       </Routes>
     </HashRouter>

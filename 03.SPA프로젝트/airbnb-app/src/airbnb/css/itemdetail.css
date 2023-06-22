@@ -40,12 +40,18 @@
   grid-template-columns: repeat(12, 1fr);
   /* 세로방향 높이값 셋팅 */
   grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
   max-width: min(1300px,80vw);
+  gap: 10px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .gridImg{
   position: relative;
+  transition: .4s;
+}
+.gridImg:hover{
+  transform: scale(1.02);
+  filter: drop-shadow(2);
 }
 .gridImg img{
   position: absolute;
@@ -87,9 +93,10 @@
 
 /* 하단영역 */
 .btflex{
-  padding-top: 50px;
   display: flex;
-  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  justify-content: space-evenly;
 }
 .host{
   font-size: 18px;
@@ -103,13 +110,14 @@
 /* 숙소편의시설 */
 .convi{
   font-size: 18px;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 /* 시설종류 */
 .sortList{
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 30px;
+  gap: 0 40px;
 }
 /* 왼쪽구역 */
 .leftF{
@@ -117,10 +125,37 @@
   flex-direction: column;
   gap: 20px 0;
 }
+/* 오른쪽구역 */
 .rightF{
   display: flex;
   flex-direction: column;
   gap: 20px 0;
+}
+
+/* 편의시설 아이콘및 텍스트 전체 */
+.convList{
+  position: relative;
+  display: flex;
+  gap: 0 15px;
+  width: 100%;
+}
+.convList h3{
+  font-size: 17px;
+  /* text-decoration: line-through; */
+}
+/* 클래스 on주면 줄긋기 */
+/* .convList::before{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  top: 50%;
+  transform: translateY(-50%);
+} */
+/* 클래스 on주면 없애기 */
+.convList.on{
+  display: none;
 }
 
 
@@ -135,7 +170,7 @@
 .gmap{
   padding-top: 10px;
   width: 500px;
-  height: 500px;
+  height: 400px;
 }
 .gmap iframe{
   width: 100%;

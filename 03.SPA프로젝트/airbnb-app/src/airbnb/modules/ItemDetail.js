@@ -1,8 +1,19 @@
 // 아이템 디테일 모듈 - ItemDetail.js
 
-import { Link, useLocation } from "react-router-dom";
-import "../css/itemdetail.css";
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import '../css/itemdetail.css';
 
+import {
+  faCoffee,
+  faDog,
+  faParking,
+  faTemperatureLow,
+  faTv,
+  faUtensils,
+  faWifi,
+  faWind,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // 라우터 파라미터값 받아서 데이터 처리!
@@ -29,75 +40,107 @@ function ItemDetail(props) {
   return (
     <>
       {/* <img src="./images/group2.png" alt="비행기" /> */}
-      <section className="itemdetailbx">
+      <section className='itemdetailbx'>
         {/* 1.아이템 이름 */}
-        <div className="itemtit">
+        <div className='itemtit'>
           <h2>{iname}</h2>
         </div>
-        <div className="etclocabx">
+        <div className='etclocabx'>
           {/* 2.아이템 주소 */}
-          <div className="iLoca">
+          <div className='iLoca'>
             <h3>{iloca}</h3>
           </div>
           {/* 2-1.기타사항 */}
-          <div className="ietc">
+          <div className='ietc'>
             <h3>{ietc}</h3>
           </div>
         </div>
         {/* 3.아이템 이미지 */}
-        <Link to="/">
-          <div className="imgBx">
-            {inum.map((v, i) => (
-              <div className="gridImg" key={i} style={{ display: v > 5 ? "none" : "block" }}>
-                <img src={src + v + ".jpg"} alt="여행은 살아보는 거야" />
-              </div>
-            ))}
+        <Link to='/에어비앤비' state={
+          {
+            src:src,
+            inum:inum
+          }
+        }>
+          <div className='gwrapbx'>
+            <div className='imgBx'>
+              {inum.map((v, i) => (
+                <div
+                  className='gridImg'
+                  key={i}
+                  style={{ display: v > 5 ? 'none' : 'block' }}
+                >
+                  <img src={src + v + '.jpg'} alt='여행은 살아보는 거야' />
+                </div>
+              ))}
+            </div>
           </div>
         </Link>
         {/* 하단박스 */}
-        <div className="btflex">
+        <div className='btflex'>
           {/* 플렉스 왼쪽구역 */}
-          <section className="flexl">
+          <section className='flexl'>
             {/* 4.호스트설명 */}
-            <div className="host">
+            <div className='host'>
               <h2>{ihost}</h2>
             </div>
             {/* 숙소 편의시설 */}
-            <div className="convi">
+            <div className='convi'>
               <h3>숙소 편의시설</h3>
             </div>
             {/* 시설 종류 */}
-            <div className="sortList">
+            <div className='sortList'>
               {/* 플렉스 왼쪽 */}
-              <section className="leftF">
-                <div className="ki">
+              <section className='leftF'>
+                <div className='ki convList'>
                   <li>
-                    <FontAwesomeIcon icon={faSearch} />
+                    <FontAwesomeIcon icon={faUtensils} />
                   </li>
                   <h3>주방</h3>
                 </div>
-                <div className="pa">
+                <div className='pa convList'>
+                  <li>
+                    <FontAwesomeIcon icon={faParking} />
+                  </li>
                   <h3>건물 내 무료 주차</h3>
                 </div>
-                <div className="tv">
+                <div className='tv convList'>
+                  <li>
+                    <FontAwesomeIcon icon={faTv} />
+                  </li>
                   <h3>TV + 일반 케이블 TV</h3>
                 </div>
-                <div className="ha">
+                <div className='ha convList'>
+                  <li>
+                    <FontAwesomeIcon icon={faWind} />
+                  </li>
                   <h3>헤어드라이어</h3>
                 </div>
               </section>
               {/* 플렉스 오른쪽 */}
-              <section className="rightF">
-                <div className="wi">
+              <section className='rightF'>
+                <div className='wi convList'>
+                  <li>
+                    <FontAwesomeIcon icon={faWifi} />
+                  </li>
                   <h3>무선 인터넷</h3>
                 </div>
-                <div className="pe">
+                <div className='pe convList'>
+                  <li>
+                    <FontAwesomeIcon icon={faDog} />
+                  </li>
                   <h3>반려동물 입실 가능</h3>
                 </div>
-                <div className="br">
+                <div className='br convList'>
+                  <li>
+                    <FontAwesomeIcon icon={faCoffee} />
+                  </li>
                   <h3>아침식사</h3>
                 </div>
-                <div className="ai">
+                <div className='ai convList'>
+                  <li>
+                    <FontAwesomeIcon icon={faTemperatureLow} />
+                  </li>
                   <h3>에어컨</h3>
                 </div>
               </section>
@@ -105,14 +148,14 @@ function ItemDetail(props) {
           </section>
 
           {/* 플렉스 오른쪽구역 */}
-          <section className="flexr">
+          <section className='flexr'>
             {/* 맵설명 */}
-            <div className="mapinfo">
+            <div className='mapinfo'>
               <h3>호스팅 지역</h3>
             </div>
             {/* 구글맵 */}
-            <div className="gmap">
-              <iframe src={gmap} style={{ border: 0 }} loading="lazy"></iframe>
+            <div className='gmap'>
+              <iframe src={gmap} style={{ border: 0 }} loading='lazy'></iframe>
             </div>
           </section>
         </div>

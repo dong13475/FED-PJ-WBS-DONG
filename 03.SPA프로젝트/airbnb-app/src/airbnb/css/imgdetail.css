@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* 이미지디테일 모듈 CSS - imgdetail.css */
+
+.top{
+  /* display: none; */
+}
+.detailbx{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c36f6f32;
+  z-index: 9999;
+}
+/* 닫기버튼 */
+.closebt{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+}
+.closeL{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 3px;
+  background-color: #fff;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.closeR{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 3px;
+  background-color: #fff;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+
+.detailgrid{
+  display: grid;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+}
+.info{
+  /* display: none; */
+}

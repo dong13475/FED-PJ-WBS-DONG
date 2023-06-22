@@ -12,8 +12,8 @@ body{
   /* background-color: #fafafa; */
   /* overflow-x: hidden; */
 }
-/* ul,ol */
-ul,ol{
+/* ul,ol,li */
+ul,ol,li{
   list-style: none;
 }
 /* a요소 리셋 */
