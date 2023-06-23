@@ -41,13 +41,13 @@
   width: min(80%,1000px);
   /* outline: 1px dashed red; */
   overflow: hidden;
+  height: 100px;
 }
 .gnb ul {
   /* 가상요소 부모자격 */
-  position: relative;
+  position: absolute;
   display: flex;
-  justify-content: center;
-  gap: 0 30px;
+  /* justify-content: center; */
   font-size: 15px;
   padding: 5px 0;
   /* max-width: 1200px; */
@@ -129,10 +129,11 @@
 }
 /* ********* 버튼 끝 ********* */
 
-.gnb ul li {
+.slider li {
   position: relative;
+  padding-right: 25px;
 }
-.gnb ul li a {
+.slider li a {
   display: flex;
   padding: 10px;
   flex-direction: column;
@@ -143,10 +144,10 @@
   transition: 0.2s;
 }
 
-.gnb ul li a:hover {
+.slider li a:hover {
   opacity: 0.8;
 }
-.gnb ul li img {
+.slider li img {
   width: 30px;
 }
 .navtit {
@@ -154,11 +155,11 @@
   padding-top: 5px;
   white-space: nowrap;
 }
-.gnb ul li a.on {
+.slider li a.on {
   opacity: 1;
 }
-.gnb ul li a:hover .navtit::before,
-.gnb ul li a.on .navtit::before {
+.slider li a:hover .navtit::before,
+.slider li a.on .navtit::before {
   content: "";
   position: absolute;
   width: 100%;

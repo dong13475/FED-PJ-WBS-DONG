@@ -9,7 +9,8 @@ const item_data = {
       ihost: "和モダンな温泉旅館　湯布院らんぷの宿 님이 호스팅하는 료칸의 방",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/료칸/2/",
@@ -18,7 +19,8 @@ const item_data = {
       ihost: "Aki 님이 호스팅하는 오두막의 방",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8,9],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/료칸/3/",
@@ -27,7 +29,8 @@ const item_data = {
       ihost: "Daisuke 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/료칸/4/",
@@ -36,7 +39,8 @@ const item_data = {
       ihost: "日出子 님이 호스팅하는 오두막 숙소",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/료칸/5/",
@@ -45,7 +49,8 @@ const item_data = {
       ihost: "旅館やまざき 님이 호스팅하는 료칸 숙소",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/료칸/6/",
@@ -54,7 +59,8 @@ const item_data = {
       ihost: "Sayumi & Yasuhiro 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/료칸/7/",
@@ -63,7 +69,8 @@ const item_data = {
       ihost: "Daisuke 님이 호스팅하는 료칸의 방",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8,9],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/료칸/8/",
@@ -72,7 +79,8 @@ const item_data = {
       ihost: "Takuya 님이 호스팅하는 료칸 숙소",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/료칸/9/",
@@ -81,7 +89,8 @@ const item_data = {
       ihost: "Susan 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/료칸/10/",
@@ -90,7 +99,8 @@ const item_data = {
       ihost: "Yaeya 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr",
+      main:"",
     },
   ],
   리아드: [
@@ -101,7 +111,8 @@ const item_data = {
       ihost: "Abdellatif 님이 호스팅하는 리아드 숙소",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8,9],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/리아드/2/",
@@ -110,7 +121,8 @@ const item_data = {
       ihost: "Yan 님이 호스팅하는 B&b의 방",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/리아드/3/",
@@ -119,7 +131,8 @@ const item_data = {
       ihost: "Brahim 님이 호스팅하는 B&b의 방",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/리아드/4/",
@@ -128,7 +141,8 @@ const item_data = {
       ihost: "Julian 님이 호스팅하는 B&b의 방",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/리아드/5/",
@@ -137,7 +151,8 @@ const item_data = {
       ihost: "Belkacem 님이 호스팅하는 게스트용 별채",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/리아드/6/",
@@ -146,7 +161,8 @@ const item_data = {
       ihost: "Villa Mora 님이 호스팅하는 레지던스 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194348.23368305544!2d-3.844343787246038!3d40.437837285475865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2z7Iqk7Y6Y7J24IOuniOuTnOumrOuTnA!5e0!3m2!1sko!2skr!4v1687331834328!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194348.23368305544!2d-3.844343787246038!3d40.437837285475865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2z7Iqk7Y6Y7J24IOuniOuTnOumrOuTnA!5e0!3m2!1sko!2skr!4v1687331834328!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/리아드/7/",
@@ -155,7 +171,8 @@ const item_data = {
       ihost: "Suzanna 님이 호스팅하는 휴가용 주택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8,9],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/리아드/8/",
@@ -164,7 +181,8 @@ const item_data = {
       ihost: "Amanda 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/리아드/9/",
@@ -173,7 +191,8 @@ const item_data = {
       ihost: "Yan Cedric 님이 호스팅하는 B&b 숙소",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/리아드/10/",
@@ -182,7 +201,8 @@ const item_data = {
       ihost: "Riad 님이 호스팅하는 B&b 숙소",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12973830506!2d-8.090253998496715!3d31.634594989623096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2z66qo66Gc7L2UIOuniOudvOy8gOyLnA!5e0!3m2!1sko!2skr!4v1687331574519!5m2!1sko!2skr",
+      main:"",
     },
   ],
   북극: [
@@ -193,7 +213,8 @@ const item_data = {
       ihost: "Tanja 님이 호스팅하는 샬레 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235683.9441494128!2d27.324951779129552!3d62.51638707897973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf4b32f6dd%3A0x146d63c75a810!2z7ZWA656A65Oc!5e0!3m2!1sko!2skr!4v1687331750458!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235683.9441494128!2d27.324951779129552!3d62.51638707897973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf4b32f6dd%3A0x146d63c75a810!2z7ZWA656A65Oc!5e0!3m2!1sko!2skr!4v1687331750458!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/북극/2/",
@@ -202,7 +223,8 @@ const item_data = {
       ihost: "Arttu 님이 호스팅하는 통나무집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235683.9441494128!2d27.324951779129552!3d62.51638707897973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf4b32f6dd%3A0x146d63c75a810!2z7ZWA656A65Oc!5e0!3m2!1sko!2skr!4v1687331750458!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235683.9441494128!2d27.324951779129552!3d62.51638707897973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf4b32f6dd%3A0x146d63c75a810!2z7ZWA656A65Oc!5e0!3m2!1sko!2skr!4v1687331750458!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/북극/3/",
@@ -211,7 +233,8 @@ const item_data = {
       ihost: "Antti 님이 호스팅하는 아이스 돔의 방",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235683.9441494128!2d27.324951779129552!3d62.51638707897973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf4b32f6dd%3A0x146d63c75a810!2z7ZWA656A65Oc!5e0!3m2!1sko!2skr!4v1687331750458!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235683.9441494128!2d27.324951779129552!3d62.51638707897973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf4b32f6dd%3A0x146d63c75a810!2z7ZWA656A65Oc!5e0!3m2!1sko!2skr!4v1687331750458!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/북극/4/",
@@ -220,7 +243,8 @@ const item_data = {
       ihost: "Maria 님이 호스팅하는 통나무집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23336243.430112567!2d-68.29893749999998!3d69.08445114999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e753c9b20485bfd%3A0x4e5f0d379253c31!2z7JWE7YGs7Yux!5e0!3m2!1sko!2skr!4v1687331681667!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23336243.430112567!2d-68.29893749999998!3d69.08445114999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e753c9b20485bfd%3A0x4e5f0d379253c31!2z7JWE7YGs7Yux!5e0!3m2!1sko!2skr!4v1687331681667!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/북극/5/",
@@ -229,7 +253,8 @@ const item_data = {
       ihost: "Reidar 님이 호스팅하는 통나무집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23336243.430112567!2d-68.29893749999998!3d69.08445114999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e753c9b20485bfd%3A0x4e5f0d379253c31!2z7JWE7YGs7Yux!5e0!3m2!1sko!2skr!4v1687331681667!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23336243.430112567!2d-68.29893749999998!3d69.08445114999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e753c9b20485bfd%3A0x4e5f0d379253c31!2z7JWE7YGs7Yux!5e0!3m2!1sko!2skr!4v1687331681667!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/북극/6/",
@@ -238,7 +263,8 @@ const item_data = {
       ihost: "Mervi 님이 호스팅하는 휴가용 주택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235683.9441494128!2d27.324951779129552!3d62.51638707897973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf4b32f6dd%3A0x146d63c75a810!2z7ZWA656A65Oc!5e0!3m2!1sko!2skr!4v1687331750458!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235683.9441494128!2d27.324951779129552!3d62.51638707897973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf4b32f6dd%3A0x146d63c75a810!2z7ZWA656A65Oc!5e0!3m2!1sko!2skr!4v1687331750458!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/북극/7/",
@@ -247,7 +273,8 @@ const item_data = {
       ihost: "Marita 님이 호스팅하는 통나무집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235683.9441494128!2d27.324951779129552!3d62.51638707897973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf4b32f6dd%3A0x146d63c75a810!2z7ZWA656A65Oc!5e0!3m2!1sko!2skr!4v1687331750458!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235683.9441494128!2d27.324951779129552!3d62.51638707897973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf4b32f6dd%3A0x146d63c75a810!2z7ZWA656A65Oc!5e0!3m2!1sko!2skr!4v1687331750458!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/북극/8/",
@@ -256,7 +283,8 @@ const item_data = {
       ihost: "Aurora 님이 호스팅하는 부티크 호텔",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8,9],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23336243.430112567!2d-68.29893749999998!3d69.08445114999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e753c9b20485bfd%3A0x4e5f0d379253c31!2z7JWE7YGs7Yux!5e0!3m2!1sko!2skr!4v1687331681667!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23336243.430112567!2d-68.29893749999998!3d69.08445114999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e753c9b20485bfd%3A0x4e5f0d379253c31!2z7JWE7YGs7Yux!5e0!3m2!1sko!2skr!4v1687331681667!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/북극/9/",
@@ -265,7 +293,8 @@ const item_data = {
       ihost: "Lone 님이 호스팅하는 통나무집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23336243.430112567!2d-68.29893749999998!3d69.08445114999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e753c9b20485bfd%3A0x4e5f0d379253c31!2z7JWE7YGs7Yux!5e0!3m2!1sko!2skr!4v1687331681667!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23336243.430112567!2d-68.29893749999998!3d69.08445114999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e753c9b20485bfd%3A0x4e5f0d379253c31!2z7JWE7YGs7Yux!5e0!3m2!1sko!2skr!4v1687331681667!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/북극/10/",
@@ -274,7 +303,8 @@ const item_data = {
       ihost: "Petur Haukur 님이 호스팅하는 공동 주택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23336243.430112567!2d-68.29893749999998!3d69.08445114999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e753c9b20485bfd%3A0x4e5f0d379253c31!2z7JWE7YGs7Yux!5e0!3m2!1sko!2skr!4v1687331681667!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23336243.430112567!2d-68.29893749999998!3d69.08445114999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e753c9b20485bfd%3A0x4e5f0d379253c31!2z7JWE7YGs7Yux!5e0!3m2!1sko!2skr!4v1687331681667!5m2!1sko!2skr",
+      main:"",
     },
   ],
   사막: [
@@ -285,7 +315,8 @@ const item_data = {
       ihost: "John 님이 호스팅하는 초소형 주택",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/사막/2/",
@@ -294,7 +325,8 @@ const item_data = {
       ihost: "Anna 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/사막/3/",
@@ -303,7 +335,8 @@ const item_data = {
       ihost: "Martin 님이 호스팅하는 캠핑카",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/사막/4/",
@@ -312,7 +345,8 @@ const item_data = {
       ihost: "Keith 님이 호스팅하는 저택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/사막/5/",
@@ -321,7 +355,8 @@ const item_data = {
       ihost: "Sol To Soul 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/사막/6/",
@@ -330,7 +365,8 @@ const item_data = {
       ihost: "Rasmus 님이 호스팅하는 저택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/사막/7/",
@@ -339,7 +375,8 @@ const item_data = {
       ihost: "Somewhere Management 님이 호스팅하는 저택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/사막/8/",
@@ -348,7 +385,8 @@ const item_data = {
       ihost: "Boaz 님이 호스팅하는 텐트",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1757315.6431993474!2d32.36104291444011!3d30.654887546280374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x150071f87e58f3fb%3A0xf532a48035a81019!2z7J207Iqk65287JeYIO2VmOuLpOuhrA!5e0!3m2!1sko!2skr!4v1687331995795!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1757315.6431993474!2d32.36104291444011!3d30.654887546280374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x150071f87e58f3fb%3A0xf532a48035a81019!2z7J207Iqk65287JeYIO2VmOuLpOuhrA!5e0!3m2!1sko!2skr!4v1687331995795!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/사막/9/",
@@ -357,7 +395,8 @@ const item_data = {
       ihost: "Carla 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/사막/10/",
@@ -366,7 +405,8 @@ const item_data = {
       ihost: "Karen 님이 호스팅하는 돔하우스",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr",
+      main:"",
     },
   ],
   상징적도시: [
@@ -377,7 +417,8 @@ const item_data = {
       ihost: "Alee 님이 호스팅하는 공동 주택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462563.0326323847!2d54.897838824777544!3d25.075658417854694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2z7JWE656N7JeQ66-466as7Yq4IOuRkOuwlOydtA!5e0!3m2!1sko!2skr!4v1687332050323!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462563.0326323847!2d54.897838824777544!3d25.075658417854694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2z7JWE656N7JeQ66-466as7Yq4IOuRkOuwlOydtA!5e0!3m2!1sko!2skr!4v1687332050323!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/상징적 도시/2/",
@@ -386,7 +427,8 @@ const item_data = {
       ihost: "Paris Perfect 님이 호스팅하는 공동 주택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.96777863706!2d2.264634906542121!3d48.85882549236371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2z7ZSE656R7IqkIO2MjOumrA!5e0!3m2!1sko!2skr!4v1687332097705!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.96777863706!2d2.264634906542121!3d48.85882549236371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2z7ZSE656R7IqkIO2MjOumrA!5e0!3m2!1sko!2skr!4v1687332097705!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/상징적 도시/3/",
@@ -395,7 +437,8 @@ const item_data = {
       ihost: "베니스, Veneto, 이탈리아의 럭셔리 숙소",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358412.3239675927!2d12.15557878402345!3d45.427560448467034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1daf1d63d89%3A0x7ba3c6f0bd92102f!2z7J207YOI66as7JWEIOuyoOuEpOy5mOyVhA!5e0!3m2!1sko!2skr!4v1687332324828!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358412.3239675927!2d12.15557878402345!3d45.427560448467034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1daf1d63d89%3A0x7ba3c6f0bd92102f!2z7J207YOI66as7JWEIOuyoOuEpOy5mOyVhA!5e0!3m2!1sko!2skr!4v1687332324828!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/상징적 도시/4/",
@@ -404,7 +447,8 @@ const item_data = {
       ihost: "Gabriel 님이 호스팅하는 로프트 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423809.4950539758!2d18.32641589148999!3d-33.915098959732305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc500f8826eed7%3A0x687fe1fc2828aa87!2z64Ko7JWE7ZSE66as7Lm0IOqzte2ZlOq1rSDsvIDsnbTtlITtg4DsmrQ!5e0!3m2!1sko!2skr!4v1687332390333!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423809.4950539758!2d18.32641589148999!3d-33.915098959732305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc500f8826eed7%3A0x687fe1fc2828aa87!2z64Ko7JWE7ZSE66as7Lm0IOqzte2ZlOq1rSDsvIDsnbTtlITtg4DsmrQ!5e0!3m2!1sko!2skr!4v1687332390333!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/상징적 도시/5/",
@@ -413,7 +457,8 @@ const item_data = {
       ihost: "HomeSpot 님이 호스팅하는 공동 주택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/상징적 도시/6/",
@@ -422,7 +467,8 @@ const item_data = {
       ihost: "María 님이 호스팅하는 공동 주택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194348.23368305544!2d-3.844343787246038!3d40.437837285475865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2z7Iqk7Y6Y7J24IOuniOuTnOumrOuTnA!5e0!3m2!1sko!2skr!4v1687331834328!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194348.23368305544!2d-3.844343787246038!3d40.437837285475865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2z7Iqk7Y6Y7J24IOuniOuTnOumrOuTnA!5e0!3m2!1sko!2skr!4v1687331834328!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/상징적 도시/7/",
@@ -431,7 +477,8 @@ const item_data = {
       ihost: "Carlo 님이 호스팅하는 공동 주택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190029.1150727502!2d12.371191052948381!3d41.909953275046554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2z7J207YOI66as7JWEIOuhnOuniA!5e0!3m2!1sko!2skr!4v1687332196108!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190029.1150727502!2d12.371191052948381!3d41.909953275046554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2z7J207YOI66as7JWEIOuhnOuniA!5e0!3m2!1sko!2skr!4v1687332196108!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/상징적 도시/8/",
@@ -440,7 +487,8 @@ const item_data = {
       ihost: "Naoyuki 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/상징적 도시/9/",
@@ -449,7 +497,8 @@ const item_data = {
       ihost: "Maria 님이 호스팅하는 저택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31568.269074367454!2d115.24543983515214!3d-8.496110608899373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d739f22c9c3%3A0x54a38afd6b773d1c!2z7J2464-E64Sk7Iuc7JWEIOuwnOumrCDquLDslYjsnbwg7Jqw67aTIOyngOq1rCBVYnVkLCDsmrDrtoDrk5w!5e0!3m2!1sko!2skr!4v1687332149282!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31568.269074367454!2d115.24543983515214!3d-8.496110608899373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d739f22c9c3%3A0x54a38afd6b773d1c!2z7J2464-E64Sk7Iuc7JWEIOuwnOumrCDquLDslYjsnbwg7Jqw67aTIOyngOq1rCBVYnVkLCDsmrDrtoDrk5w!5e0!3m2!1sko!2skr!4v1687332149282!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/상징적 도시/10/",
@@ -458,7 +507,8 @@ const item_data = {
       ihost: "Cédric 님이 호스팅하는 로프트 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.96777863706!2d2.264634906542121!3d48.85882549236371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2z7ZSE656R7IqkIO2MjOumrA!5e0!3m2!1sko!2skr!4v1687332097705!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.96777863706!2d2.264634906542121!3d48.85882549236371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2z7ZSE656R7IqkIO2MjOumrA!5e0!3m2!1sko!2skr!4v1687332097705!5m2!1sko!2skr",
+      main:"",
     },
   ],
   섬: [
@@ -469,7 +519,8 @@ const item_data = {
       ihost: "Herry 님이 호스팅하는 섬 숙소",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31568.269074367454!2d115.24543983515214!3d-8.496110608899373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d739f22c9c3%3A0x54a38afd6b773d1c!2z7J2464-E64Sk7Iuc7JWEIOuwnOumrCDquLDslYjsnbwg7Jqw67aTIOyngOq1rCBVYnVkLCDsmrDrtoDrk5w!5e0!3m2!1sko!2skr!4v1687332149282!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31568.269074367454!2d115.24543983515214!3d-8.496110608899373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d739f22c9c3%3A0x54a38afd6b773d1c!2z7J2464-E64Sk7Iuc7JWEIOuwnOumrCDquLDslYjsnbwg7Jqw67aTIOyngOq1rCBVYnVkLCDsmrDrtoDrk5w!5e0!3m2!1sko!2skr!4v1687332149282!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/섬/2/",
@@ -478,7 +529,8 @@ const item_data = {
       ihost: "Struan 님이 호스팅하는 섬의 방",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8002838.706467721!2d117.3254007650327!3d11.649259953577575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x324053215f87de63%3A0x784790ef7a29da57!2z7ZWE66as7ZWA!5e0!3m2!1sko!2skr!4v1687332587576!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8002838.706467721!2d117.3254007650327!3d11.649259953577575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x324053215f87de63%3A0x784790ef7a29da57!2z7ZWE66as7ZWA!5e0!3m2!1sko!2skr!4v1687332587576!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/섬/3/",
@@ -487,7 +539,8 @@ const item_data = {
       ihost: "Karan 님이 호스팅하는 통나무집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4079561.4464387484!2d70.59857285130384!3d3.108797273792836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24b599bfaafb7bbd%3A0x414509e181956289!2z66qw65SU67iM!5e0!3m2!1sko!2skr!4v1687332727427!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4079561.4464387484!2d70.59857285130384!3d3.108797273792836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24b599bfaafb7bbd%3A0x414509e181956289!2z66qw65SU67iM!5e0!3m2!1sko!2skr!4v1687332727427!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/섬/4/",
@@ -496,7 +549,8 @@ const item_data = {
       ihost: "Olivers 님이 호스팅하는 저택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/섬/5/",
@@ -505,7 +559,8 @@ const item_data = {
       ihost: "Sajjad 님이 호스팅하는 호텔",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4079561.4464387484!2d70.59857285130384!3d3.108797273792836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24b599bfaafb7bbd%3A0x414509e181956289!2z66qw65SU67iM!5e0!3m2!1sko!2skr!4v1687332727427!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4079561.4464387484!2d70.59857285130384!3d3.108797273792836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24b599bfaafb7bbd%3A0x414509e181956289!2z66qw65SU67iM!5e0!3m2!1sko!2skr!4v1687332727427!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/섬/6/",
@@ -514,7 +569,8 @@ const item_data = {
       ihost: "Jerry 님이 호스팅하는 저택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8,9],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9584856.814581933!2d-15.000576055374596!3d54.09053685223327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2z7JiB6rWt!5e0!3m2!1sko!2skr!4v1687332691299!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9584856.814581933!2d-15.000576055374596!3d54.09053685223327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2z7JiB6rWt!5e0!3m2!1sko!2skr!4v1687332691299!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/섬/7/",
@@ -523,7 +579,8 @@ const item_data = {
       ihost: "The Arctic Hideaway 님이 호스팅하는 섬 숙소",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7117261.445418281!2d7.219903625081597!3d64.1821398219697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z64W466W07Juo7J20IOuFuOuNlOuenOuTnA!5e0!3m2!1sko!2skr!4v1687332650591!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7117261.445418281!2d7.219903625081597!3d64.1821398219697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z64W466W07Juo7J20IOuFuOuNlOuenOuTnA!5e0!3m2!1sko!2skr!4v1687332650591!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/섬/8/",
@@ -532,7 +589,8 @@ const item_data = {
       ihost: "Dado 님이 호스팅하는 등대",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93308.9532872092!2d16.071165953908995!3d43.04343469285569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1335bd8be21cc089%3A0x372021452eb33b56!2z67mE7IqkIOyErA!5e0!3m2!1sko!2skr!4v1687332522785!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93308.9532872092!2d16.071165953908995!3d43.04343469285569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1335bd8be21cc089%3A0x372021452eb33b56!2z67mE7IqkIOyErA!5e0!3m2!1sko!2skr!4v1687332522785!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/섬/9/",
@@ -541,7 +599,8 @@ const item_data = {
       ihost: "Ann Sol 님이 호스팅하는 저택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7746488.736717517!2d36.74686315297495!3d-18.553054214446693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21d1a4e3ea238545%3A0x5244e3c1977b1388!2z66eI64uk6rCA7Iqk7Lm066W0!5e0!3m2!1sko!2skr!4v1687332475886!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7746488.736717517!2d36.74686315297495!3d-18.553054214446693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21d1a4e3ea238545%3A0x5244e3c1977b1388!2z66eI64uk6rCA7Iqk7Lm066W0!5e0!3m2!1sko!2skr!4v1687332475886!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/섬/10/",
@@ -550,7 +609,8 @@ const item_data = {
       ihost: "Airstar 님이 호스팅하는 저택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr",
+      main:"",
     },
   ],
   세상의꼭대기: [
@@ -561,7 +621,8 @@ const item_data = {
       ihost: "Dharamveer Singh 님이 호스팅하는 호스텔 다인실",
       ietc: "해발 3,061m",
       inum: [1,2,3,4,5,6,7,8,9],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1735960.3834903592!2d75.98249769576607!3d31.81007663850776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390453c367f901f7%3A0x7cfe04c5564b7725!2z7J2464-EIO2eiOuniOywsCDtlITrnbzrjbDsiaw!5e0!3m2!1sko!2skr!4v1687332800089!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1735960.3834903592!2d75.98249769576607!3d31.81007663850776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390453c367f901f7%3A0x7cfe04c5564b7725!2z7J2464-EIO2eiOuniOywsCDtlITrnbzrjbDsiaw!5e0!3m2!1sko!2skr!4v1687332800089!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/세상의 꼭대기/2/",
@@ -570,7 +631,8 @@ const item_data = {
       ihost: "Nomads 님이 호스팅하는 초소형 주택",
       ietc: "해발 3,596m",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.025979397324!2d-78.82723934564204!3d-1.4693017762699636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d372d7706a480b%3A0x69d5c66d2e629dff!2z7Lmo67O065287IaMIOyCsA!5e0!3m2!1sko!2skr!4v1687332830275!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.025979397324!2d-78.82723934564204!3d-1.4693017762699636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d372d7706a480b%3A0x69d5c66d2e629dff!2z7Lmo67O065287IaMIOyCsA!5e0!3m2!1sko!2skr!4v1687332830275!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/세상의 꼭대기/3/",
@@ -579,7 +641,8 @@ const item_data = {
       ihost: "Panorama 님이 호스팅하는 산장의 방",
       ietc: "해발 3,836m",
       inum: [1,2,3,4,5],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16137221.785558254!2d-85.68983470683742!3d-9.086395894094814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2z7Y6Y66Oo!5e0!3m2!1sko!2skr!4v1687332917474!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16137221.785558254!2d-85.68983470683742!3d-9.086395894094814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2z7Y6Y66Oo!5e0!3m2!1sko!2skr!4v1687332917474!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/세상의 꼭대기/4/",
@@ -588,7 +651,8 @@ const item_data = {
       ihost: "Ishan 님이 호스팅하는 복토 주택 숙소",
       ietc: "해발 3,076m",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1735960.3834903592!2d75.98249769576607!3d31.81007663850776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390453c367f901f7%3A0x7cfe04c5564b7725!2z7J2464-EIO2eiOuniOywsCDtlITrnbzrjbDsiaw!5e0!3m2!1sko!2skr!4v1687332800089!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1735960.3834903592!2d75.98249769576607!3d31.81007663850776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390453c367f901f7%3A0x7cfe04c5564b7725!2z7J2464-EIO2eiOuniOywsCDtlITrnbzrjbDsiaw!5e0!3m2!1sko!2skr!4v1687332800089!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/세상의 꼭대기/5/",
@@ -597,7 +661,8 @@ const item_data = {
       ihost: "Evolve 님이 호스팅하는 집 전체",
       ietc: "해발 3,049m",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664593.4374864476!2d-118.87596477784945!3d35.4260896593102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2z66-46rWtIOy6mOumrO2PrOuLiOyVhA!5e0!3m2!1sko!2skr!4v1687331933298!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/세상의 꼭대기/6/",
@@ -606,7 +671,8 @@ const item_data = {
       ihost: "Bob 님이 호스팅하는 돔하우스 숙소",
       ietc: "해발 3,340m",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16137221.785558254!2d-85.68983470683742!3d-9.086395894094814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2z7Y6Y66Oo!5e0!3m2!1sko!2skr!4v1687332917474!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16137221.785558254!2d-85.68983470683742!3d-9.086395894094814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2z7Y6Y66Oo!5e0!3m2!1sko!2skr!4v1687332917474!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/세상의 꼭대기/7/",
@@ -615,7 +681,8 @@ const item_data = {
       ihost: "Pristine 님이 호스팅하는 부티크 호텔",
       ietc: "해발 3,409m",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356541.1700240877!2d-71.17127478882371!3d-34.75881111626573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679745b5dd5fffd%3A0x902586f1d047824!2z7JWE66W07Zeo7Yuw64KYIOupmOuPhOyCrA!5e0!3m2!1sko!2skr!4v1687333007978!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356541.1700240877!2d-71.17127478882371!3d-34.75881111626573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679745b5dd5fffd%3A0x902586f1d047824!2z7JWE66W07Zeo7Yuw64KYIOupmOuPhOyCrA!5e0!3m2!1sko!2skr!4v1687333007978!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/세상의 꼭대기/8/",
@@ -624,7 +691,8 @@ const item_data = {
       ihost: "Liz Karen 님이 호스팅하는 캠핑장",
       ietc: "해발 4,034m",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16137221.785558254!2d-85.68983470683742!3d-9.086395894094814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2z7Y6Y66Oo!5e0!3m2!1sko!2skr!4v1687332917474!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16137221.785558254!2d-85.68983470683742!3d-9.086395894094814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2z7Y6Y66Oo!5e0!3m2!1sko!2skr!4v1687332917474!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/세상의 꼭대기/9/",
@@ -633,7 +701,8 @@ const item_data = {
       ihost: "Jesus Angel 님이 호스팅하는 공동 주택의 방",
       ietc: "해발 3,416m",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16137221.785558254!2d-85.68983470683742!3d-9.086395894094814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2z7Y6Y66Oo!5e0!3m2!1sko!2skr!4v1687332917474!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16137221.785558254!2d-85.68983470683742!3d-9.086395894094814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2z7Y6Y66Oo!5e0!3m2!1sko!2skr!4v1687332917474!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/세상의 꼭대기/10/",
@@ -642,7 +711,8 @@ const item_data = {
       ihost: "Zdeněk 님이 호스팅하는 집 전체",
       ietc: "해발 3,462m",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16137221.785558254!2d-85.68983470683742!3d-9.086395894094814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2z7Y6Y66Oo!5e0!3m2!1sko!2skr!4v1687332917474!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16137221.785558254!2d-85.68983470683742!3d-9.086395894094814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2z7Y6Y66Oo!5e0!3m2!1sko!2skr!4v1687332917474!5m2!1sko!2skr",
+      main:"",
     },
   ],
   캐슬: [
@@ -653,7 +723,8 @@ const item_data = {
       ihost: "John 님이 호스팅하는 캐슬",
       ietc: "건축 연도: 1856",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9584856.814581933!2d-15.000576055374596!3d54.09053685223327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2z7JiB6rWt!5e0!3m2!1sko!2skr!4v1687332691299!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9584856.814581933!2d-15.000576055374596!3d54.09053685223327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2z7JiB6rWt!5e0!3m2!1sko!2skr!4v1687332691299!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/캐슬/2/",
@@ -662,7 +733,8 @@ const item_data = {
       ihost: "Nicola 님이 호스팅하는 캐슬",
       ietc: "건축 연도: 998",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190029.1150727502!2d12.371191052948381!3d41.909953275046554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2z7J207YOI66as7JWEIOuhnOuniA!5e0!3m2!1sko!2skr!4v1687332196108!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190029.1150727502!2d12.371191052948381!3d41.909953275046554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2z7J207YOI66as7JWEIOuhnOuniA!5e0!3m2!1sko!2skr!4v1687332196108!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/캐슬/3/",
@@ -671,7 +743,8 @@ const item_data = {
       ihost: "Paul 님이 호스팅하는 캐슬",
       ietc: "건축 연도: 1890",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9584856.814581933!2d-15.000576055374596!3d54.09053685223327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2z7JiB6rWt!5e0!3m2!1sko!2skr!4v1687332691299!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9584856.814581933!2d-15.000576055374596!3d54.09053685223327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2z7JiB6rWt!5e0!3m2!1sko!2skr!4v1687332691299!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/캐슬/4/",
@@ -680,7 +753,8 @@ const item_data = {
       ihost: "Rebecca 님이 호스팅하는 캐슬",
       ietc: "건축 시기: 19세기",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.96777863706!2d2.264634906542121!3d48.85882549236371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2z7ZSE656R7IqkIO2MjOumrA!5e0!3m2!1sko!2skr!4v1687332097705!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.96777863706!2d2.264634906542121!3d48.85882549236371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2z7ZSE656R7IqkIO2MjOumrA!5e0!3m2!1sko!2skr!4v1687332097705!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/캐슬/5/",
@@ -689,7 +763,8 @@ const item_data = {
       ihost: "Amaury 님이 호스팅하는 캐슬 숙소",
       ietc: "건축 연도: 1360",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.96777863706!2d2.264634906542121!3d48.85882549236371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2z7ZSE656R7IqkIO2MjOumrA!5e0!3m2!1sko!2skr!4v1687332097705!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.96777863706!2d2.264634906542121!3d48.85882549236371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2z7ZSE656R7IqkIO2MjOumrA!5e0!3m2!1sko!2skr!4v1687332097705!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/캐슬/6/",
@@ -698,7 +773,8 @@ const item_data = {
       ihost: "Roberta E Marina 님이 호스팅하는 캐슬",
       ietc: "건축 시기: 16세기",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190029.1150727502!2d12.371191052948381!3d41.909953275046554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2z7J207YOI66as7JWEIOuhnOuniA!5e0!3m2!1sko!2skr!4v1687332196108!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190029.1150727502!2d12.371191052948381!3d41.909953275046554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2z7J207YOI66as7JWEIOuhnOuniA!5e0!3m2!1sko!2skr!4v1687332196108!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/캐슬/7/",
@@ -707,7 +783,8 @@ const item_data = {
       ihost: "Daisy And Amanda 님이 호스팅하는 캐슬",
       ietc: "건축 연도: 1450",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9584856.814581933!2d-15.000576055374596!3d54.09053685223327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2z7JiB6rWt!5e0!3m2!1sko!2skr!4v1687332691299!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9584856.814581933!2d-15.000576055374596!3d54.09053685223327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2z7JiB6rWt!5e0!3m2!1sko!2skr!4v1687332691299!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/캐슬/8/",
@@ -716,7 +793,8 @@ const item_data = {
       ihost: "Benedikt 님이 호스팅하는 캐슬",
       ietc: "건축 시기: 13세기",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314523.713770613!2d5.991390980629503!3d49.947052151651434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797cc6973da8163%3A0x1778927bb80ecffc!2z64-F7J28IOudvOyduOuegO2KuO2MlOy4oA!5e0!3m2!1sko!2skr!4v1687333118505!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314523.713770613!2d5.991390980629503!3d49.947052151651434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797cc6973da8163%3A0x1778927bb80ecffc!2z64-F7J28IOudvOyduOuegO2KuO2MlOy4oA!5e0!3m2!1sko!2skr!4v1687333118505!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/캐슬/9/",
@@ -725,7 +803,8 @@ const item_data = {
       ihost: "Georges 님이 호스팅하는 캐슬",
       ietc: "건축 시기: 15세기",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1398238.0864304574!2d6.905212878488389!3d46.80561066001887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64ef6f596d61%3A0x5c56b5110fcb7b15!2z7Iqk7JyE7Iqk!5e0!3m2!1sko!2skr!4v1687333144199!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1398238.0864304574!2d6.905212878488389!3d46.80561066001887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64ef6f596d61%3A0x5c56b5110fcb7b15!2z7Iqk7JyE7Iqk!5e0!3m2!1sko!2skr!4v1687333144199!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/캐슬/10/",
@@ -734,7 +813,8 @@ const item_data = {
       ihost: "Nicky 님이 호스팅하는 공동 주택 전체",
       ietc: "건축 연도: 1729",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9584856.814581933!2d-15.000576055374596!3d54.09053685223327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2z7JiB6rWt!5e0!3m2!1sko!2skr!4v1687332691299!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9584856.814581933!2d-15.000576055374596!3d54.09053685223327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2z7JiB6rWt!5e0!3m2!1sko!2skr!4v1687332691299!5m2!1sko!2skr",
+      main:"",
     },
   ],
   키클라데스주택: [
@@ -745,7 +825,8 @@ const item_data = {
       ihost: "Faye 님이 호스팅하는 키클라데스 주택",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/키클라데스 주택/2/",
@@ -754,7 +835,8 @@ const item_data = {
       ihost: "Martine & Sebastian 님이 호스팅하는 키클라데스 주택",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/키클라데스 주택/3/",
@@ -763,7 +845,8 @@ const item_data = {
       ihost: "Laskarina 님이 호스팅하는 키클라데스 주택",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/키클라데스 주택/4/",
@@ -772,7 +855,8 @@ const item_data = {
       ihost: "Alexandra 님이 호스팅하는 저택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/키클라데스 주택/5/",
@@ -781,7 +865,8 @@ const item_data = {
       ihost: "Jacqueline 님이 호스팅하는 키클라데스 주택",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/키클라데스 주택/6/",
@@ -790,7 +875,8 @@ const item_data = {
       ihost: "Βαλασια 님이 호스팅하는 저택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/키클라데스 주택/7/",
@@ -799,7 +885,8 @@ const item_data = {
       ihost: "George 님이 호스팅하는 저택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/키클라데스 주택/8/",
@@ -808,7 +895,8 @@ const item_data = {
       ihost: "Potis 님이 호스팅하는 저택 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/키클라데스 주택/9/",
@@ -817,7 +905,8 @@ const item_data = {
       ihost: "Michail 님이 호스팅하는 레지던스 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/키클라데스 주택/10/",
@@ -826,7 +915,8 @@ const item_data = {
       ihost: "Maria Konstantina 님이 호스팅하는 키클라데스 주택",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50678.29233259712!2d25.339648219802594!3d37.451435499312595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b8b4f03c9b91%3A0x78d164471e79b4a1!2zzp3Ot8-Dzq8gzpzPjc66zr_Ovc6_z4I!5e0!3m2!1sko!2skr!4v1687332238363!5m2!1sko!2skr",
+      main:"",
     },
   ],
   한옥: [
@@ -837,7 +927,8 @@ const item_data = {
       ihost: "Sunny 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/한옥/2/",
@@ -846,7 +937,8 @@ const item_data = {
       ihost: "남제 님이 호스팅하는 펜션",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/한옥/3/",
@@ -855,7 +947,8 @@ const item_data = {
       ihost: "한준 님이 호스팅하는 집의 방",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/한옥/4/",
@@ -864,7 +957,8 @@ const item_data = {
       ihost: "Soyeon 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/한옥/5/",
@@ -873,7 +967,8 @@ const item_data = {
       ihost: "연옥 님이 호스팅하는 펜션",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/한옥/6/",
@@ -882,7 +977,8 @@ const item_data = {
       ihost: "리나 님이 호스팅하는 트리하우스",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/한옥/7/",
@@ -891,7 +987,8 @@ const item_data = {
       ihost: "Liz 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/한옥/8/",
@@ -900,7 +997,8 @@ const item_data = {
       ihost: "버틀러리 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/한옥/9/",
@@ -909,7 +1007,8 @@ const item_data = {
       ihost: "미경 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr",
+      main:"",
     },
     {
       src: "./images/한옥/10/",
@@ -918,7 +1017,8 @@ const item_data = {
       ihost: "Taesung 님이 호스팅하는 집 전체",
       ietc: "",
       inum: [1,2,3,4,5,6,7,8],
-      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr"
+      gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103531.29779775621!2d127.03371917056941!3d35.81581253300878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023430316d863%3A0xc7bc17e091c3429a!2z7KCE652867aB64-EIOyghOyjvOyLnA!5e0!3m2!1sko!2skr!4v1687333184602!5m2!1sko!2skr",
+      main:"",
     },
   ],
   

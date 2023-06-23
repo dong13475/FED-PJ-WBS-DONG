@@ -21,7 +21,8 @@
   right: 5%;
   width: 50px;
   height: 50px;
-  background-color: #000;
+  /* background-color: #000; */
+  cursor: pointer;
 }
 .closeL{
   position: absolute;
@@ -29,7 +30,7 @@
   left: 50%;
   width: 80%;
   height: 3px;
-  background-color: #fff;
+  background-color: #000;
   transform: translate(-50%, -50%) rotate(45deg);
 }
 .closeR{
@@ -38,7 +39,7 @@
   left: 50%;
   width: 80%;
   height: 3px;
-  background-color: #fff;
+  background-color: #000;
   transform: translate(-50%, -50%) rotate(135deg);
 }
 

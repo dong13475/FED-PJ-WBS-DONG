@@ -3,7 +3,7 @@
 /* 아이템 모듈 CSS - items.css */
 
 @import url('https://webfontworld.github.io/NanumBarunGothic/NanumBarunGothic.css');
-
+@import url('https://webfontworld.github.io/116watermelon/116watermelon.css');
 
 /***** 전체 섹션 *****/
 .itemList{
@@ -43,6 +43,7 @@
   font-family: 'NanumBarunGothic';
   width: 100%;
   height: 100px;
+  /* font-family: "116watermelon"; */
 }
 .itemTit>ul{
   display: flex;
