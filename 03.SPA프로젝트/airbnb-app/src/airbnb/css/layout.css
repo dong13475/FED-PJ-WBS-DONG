@@ -131,7 +131,7 @@
 
 .slider li {
   position: relative;
-  padding-right: 25px;
+  padding-left: 30px;
 }
 .slider li a {
   display: flex;
@@ -206,12 +206,12 @@
 @media screen and (max-width: 1200px){
   .mbtnLbx{
     display: block;
-    background-color: #fff;
+    /* background-color: #fff; */
     z-index: 2;
   }
   .mbtnRbx{
     display: block;
-    background-color: #fff;
+    /* background-color: #fff; */
     z-index: 2;
   }
   

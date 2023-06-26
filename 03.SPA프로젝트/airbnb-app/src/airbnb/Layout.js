@@ -62,7 +62,7 @@ const Layout = () => {
       temp--;
       if(temp===-1) temp = 0;
     }
-    tg.animate({left:-(liW*temp)+"px"}, 400)
+    tg.animate({left:-(liW*temp)+"px"}, 300)
     console.log(liW);
     console.log(temp)
     console.log(-temp*liW+"px")
