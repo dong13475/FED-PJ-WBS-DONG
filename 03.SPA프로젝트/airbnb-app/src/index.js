@@ -32,6 +32,8 @@ export default function App(){
           <Route path="여행은살아보는거야" element={<ItemDetail />} />
           <Route path="에어비앤비" element={<ImgDetail />} />
           <Route path="air" element={<Airplane />} />
+          <Route path="자연" element={<Main />} />
+          <Route path="건축" element={<Main />} />
         </Route>
       </Routes>
     </HashRouter>

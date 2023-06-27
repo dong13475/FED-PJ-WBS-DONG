@@ -173,6 +173,15 @@
 }
 
 /* 미디어쿼리 */
+
+@media screen and (max-width: 1200px){
+  .gridImg:nth-child(5){
+    /* display: none; */
+  }
+} 
+/* 1200px 미디어쿼리끝 */
+
+
 @media screen and (max-width: 500px) {
   .itemdetailbx {
     width: 80%;

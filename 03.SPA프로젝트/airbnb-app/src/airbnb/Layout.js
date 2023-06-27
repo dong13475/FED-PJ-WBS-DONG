@@ -3,7 +3,9 @@ import "./css/layout.css";
 import { Link, Outlet } from "react-router-dom";
 import $ from "jquery";
 import gnb_data from "./data/gnbdata";
-import GnbList from "./plugin/GnbList";
+import {  faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Typed from "react-typed";
 
 /********************************************************* 
   [ 리액트 라우터와 연결하여 사용되는 라우터 컴포넌트 ]
@@ -26,7 +28,7 @@ const Layout = () => {
   let prot = 0;
 
   let temp = 1;
-  
+
   // 네비버튼 이동슬라이드 함수 //
   const goSlide = (e) => {
     // 1. 이벤트가 발생한 버튼요소
@@ -43,32 +45,53 @@ const Layout = () => {
     console.log("오른쪽?", isB);
 
     // 슬라이드 타겟설정
-    let tg = $(ele).parents().siblings(".slider");
+    let tg = $(".slider");
     console.log(tg);
 
     // li a요소 넓이
-    let liW = $(".gnb ul").width()/10;
-    // console.log(-liW)
+    let liW = $(".slider").width() / 10;
+    console.log("liW:",liW)
 
-
-    
     // 2. 분기하여 기능구현하기
     // (1) 오른쪽 버튼 클릭시 : (left: 0 -> -100%)
-    if(isB){
+    if (isB) {
       temp++;
-      if(temp===10) temp =9;
-    }
-    else{
+      if (temp === 15) temp = 14;
+    } else {
       temp--;
-      if(temp===-1) temp = 0;
+      if (temp === -1) temp = 0;
     }
-    tg.animate({left:-(liW*temp)+"px"}, 300)
+    tg.animate({ left: -(liW * temp) + "px" }, 300);
     console.log(liW);
-    console.log(temp)
-    console.log(-temp*liW+"px")
-    
+    console.log(temp);
+    console.log(-temp * liW + "px");
   }; /////////// goSlide 함수 ////////////
+
+  // window크기가 1200px이 넘어가면 새로고침
+  // 이유: 네비 버튼을 움직인상태에서 크기를 늘리면
+  // 움직여진채로 버튼이사라지기 때문
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 1200) {
+      window.location.reload();
+    }
+  }); //////////// resize ///////////
+
+
+  // 스크롤 up/down 이벤트 함수
+  // 이전 스크롤Y 위치값
+  let prevScY = window.pageYOffset;
+  window.addEventListener('scroll', function(){
+    // 현재 스크롤Y 위치값
+    let currentScY = window.pageYOffset;
+    if (currentScY > prevScY){
+      this.document.querySelector(".top").classList.add("on");
+    } /////////// if ///////////
+    else {
+      this.document.querySelector(".top").classList.remove("on");
+    } ////////// else ////////////
+  }); ////////////// scroll ///////////////
   
+
   return (
     <>
       {/* 1. 상단영역 */}
@@ -81,7 +104,19 @@ const Layout = () => {
             </Link>
           </h1>
           {/* 위치 */}
-          <div className="loca"></div>
+          <Link to="/">
+            <div className="loca">
+              <div className="intro">
+                  <Typed strings={['어디든지','언제든지']} 
+                  typeSpeed={90}
+                  showCursor={true}
+                  backSpeed={60} loop></Typed>
+                <div className="arw">
+                  <FontAwesomeIcon icon={faArrowLeftLong} />
+                </div>
+              </div>
+            </div>
+          </Link>
           {/* 회원가입 */}
           <div className="log"></div>
         </div>
@@ -101,23 +136,25 @@ const Layout = () => {
               <div className="btbt rbb"></div>
             </div>
           </div>
-          <ul className="slider">
-            {gnb_data.map((v, i) => (
-              <li key={i}>
-                <Link to={v.link}>
-                  <img src={v.src} alt={v.txt} />
-                  <div className="navtit">{v.txt}</div>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          {/* ul박스 */}
+          <div className="ulbx">
+            <ul className="slider">
+              {gnb_data.map((v, i) => (
+                <li key={i}>
+                  <Link to={v.link}>
+                    <img src={v.src} alt={v.txt} />
+                    <div className="navtit">{v.txt}</div>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </nav>
       </header>
       {/* 2. 메인영역 */}
       <main className="cont">
         {/* 출력파트 : 각페이지의 컴포넌트가 출력 */}
         <Outlet />
-        
       </main>
       {/* 3. 하단영역 */}
       <footer className="info">

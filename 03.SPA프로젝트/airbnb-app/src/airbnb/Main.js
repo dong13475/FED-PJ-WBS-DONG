@@ -16,7 +16,7 @@ const Main = (props) => {
         <div className='mbx'>
           {/* 자연 */}
           <div className='nature'>
-            <Link to='/료칸'>
+            <Link to='/자연'>
               {/* <Items cat={props.sub} /> */}
               자연
             </Link>

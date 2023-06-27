@@ -7,6 +7,7 @@
 @import url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css");
 
 /********************* 1. 상단영역 *********************/
+
 .top {
   position: fixed;
   max-width: 1700px;
@@ -25,6 +26,7 @@
   border-bottom: 1px solid #cacaca7e;
 }
 .toparea {
+  position: relative;
   display: flex;
   padding: 10px 20px;
   border-bottom: 1px solid rgba(202, 202, 202, 0.493);
@@ -38,10 +40,16 @@
 .gnb{
   position: relative;
   margin: 0 auto;
-  width: min(80%,1000px);
-  /* outline: 1px dashed red; */
+  width: 80%;
+  /* background-color: rgb(53, 53, 53); */
+}
+.ulbx{
+  position: relative;
+  margin: 0 auto;
+  width: min(90%,1000px);
+  /* width: 91%; */
   overflow: hidden;
-  height: 100px;
+  height: 70px;
 }
 .gnb ul {
   /* 가상요소 부모자격 */
@@ -49,7 +57,7 @@
   display: flex;
   /* justify-content: center; */
   font-size: 15px;
-  padding: 5px 0;
+  /* padding: 5px 0; */
   /* max-width: 1200px; */
   margin: 0 auto;
   user-select: none;
@@ -58,24 +66,27 @@
   left: 0;
 }
 
+
 /***** 슬라이드 방향 버튼 *****/
 /* 버튼박스 */
 .mbtnLbx{
   position: absolute;
-  width: 40px;
+  width: 30px;
   height: 100%;
-  top: 0;
-  left: 0;
+  /* top: 0; */
+  /* left: 0; */
   display: none;
+  background-color: #fff;
 }
 
 .mbtnRbx{
   position: absolute;
-  width: 40px;
+  width: 30px;
   height: 100%;
-  top: 0;
+  /* top: 0; */
   right: 0;
   display: none;
+  background-color: #fff;
 }
 
 /* 버튼공용 */
@@ -92,7 +103,7 @@
 .lb {
   left: 0;
   top: 50%;
-  transform: translate(25%, -100%);
+  transform: translate(25%, -50%);
 }
 .lbt {
   top: 16%;
@@ -115,7 +126,7 @@
 .rb {
   right: 0;
   top: 50%;
-  transform: translate(-25%, -100%);
+  transform: translate(-25%, -50%);
 }
 .rbt {
   top: 16%;
@@ -173,6 +184,41 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 5%;
+}
+
+/* 위치 */
+.loca{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.intro{
+  position: relative;
+  width: 200px;
+  height: 46px;
+  /* background-color: skyblue; */
+  border-radius: 30px;
+  text-align: center;
+  line-height: 46px;
+  outline: 1px solid rgba(151, 151, 151, 0.171);
+  box-shadow: .5px .8px 3px rgba(0, 0, 0, 0.603);
+  /* color: #fe5f64; */
+}
+/* 화살표 */
+.arw{
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform:translateY(-50%) rotate(140deg) ;
+  /* transform:; */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fe5f64;
+  line-height: 34px;
+  font-size: 18px;
+  color: #fff;
 }
 
 /********************* 2. 메인영역 *********************/
@@ -241,6 +287,9 @@
   .txt2{
     padding: 10px 40px;
     font-size: 10px;
+  }
+  .loca{
+    display: none;
   }
 } 
 /* 500사이즈 이하 미디어쿼리 끝 */
