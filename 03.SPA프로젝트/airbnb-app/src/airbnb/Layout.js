@@ -71,7 +71,7 @@ const Layout = () => {
   // 이유: 네비 버튼을 움직인상태에서 크기를 늘리면
   // 움직여진채로 버튼이사라지기 때문
   window.addEventListener('resize', function() {
-    if (window.innerWidth > 1200) {
+    if (  window.innerWidth > 1200 && window.innerWidth < 1300) {
       window.location.reload();
     }
   }); //////////// resize ///////////
