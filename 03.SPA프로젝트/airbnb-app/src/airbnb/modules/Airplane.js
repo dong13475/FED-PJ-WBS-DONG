@@ -12,7 +12,7 @@ function Airplane(props) {
       <div className="bg">
         {/* 구름1 */}
         <div className="cloud1">
-          <img src="./images/cloud4.png" alt="구름1" />
+          <img src="./images/cloud5.png" alt="구름1" />
         </div>
         {/* 구름2 */}
         <div className="cloud2">
@@ -28,7 +28,7 @@ function Airplane(props) {
         </div>
         {/* 구름4 */}
         <div className="cloud4">
-          <img src="./images/cloud4.png" alt="구름4" />
+          <img src="./images/cd.png" alt="구름4" />
         </div>
       </div>
       <div className="ty">

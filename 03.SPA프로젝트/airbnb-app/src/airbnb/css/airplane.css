@@ -28,7 +28,7 @@
 /* 구름 */
 .cloud1 {
   position: absolute;
-  top: -15%;
+  top: -18%;
   right: -10%;
   width: 45%;
   /* animation: cd1 .6s linear 1.3s forwards; */
@@ -51,7 +51,7 @@
   position: absolute;
   bottom: -15%;
   left: -10%;
-  width: 55%;
+  width: 60%;
   object-fit: cover;
   /* animation: cd4 1s linear 1.3s forwards; */
 }
@@ -93,7 +93,7 @@
 @keyframes cd3 {
   100%{
     top: 50%;
-    right: 13%;
+    right: 4%;
   }
 }
 /* 구름4 애니 */
@@ -117,7 +117,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -70%);
-  font-size: 500%;
+  font-size: 8vw;
   color: #000;
   z-index: 999999;
   font-family: "116watermelon";

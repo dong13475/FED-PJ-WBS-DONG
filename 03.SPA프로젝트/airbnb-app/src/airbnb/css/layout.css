@@ -92,7 +92,7 @@
 .lb {
   left: 0;
   top: 50%;
-  transform: translate(25%, -50%);
+  transform: translate(25%, -100%);
 }
 .lbt {
   top: 16%;
@@ -115,7 +115,7 @@
 .rb {
   right: 0;
   top: 50%;
-  transform: translate(-25%, -50%);
+  transform: translate(-25%, -100%);
 }
 .rbt {
   top: 16%;
@@ -131,9 +131,13 @@
 
 .slider li {
   position: relative;
-  padding-left: 30px;
+  width: 100%;
+  padding: 0 15px;
 }
 .slider li a {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   padding: 10px;
   flex-direction: column;
@@ -142,10 +146,11 @@
   color: #000;
   opacity: 0.64;
   transition: 0.2s;
+  width: 100%;
 }
 
 .slider li a:hover {
-  opacity: 0.8;
+  opacity: .8;
 }
 .slider li img {
   width: 30px;
@@ -158,11 +163,11 @@
 .slider li a.on {
   opacity: 1;
 }
-.slider li a:hover .navtit::before,
-.slider li a.on .navtit::before {
+.slider li a:hover ::before,
+.slider li a.on::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 80%;
   height: 2px;
   background-color: #000;
   left: 50%;
@@ -227,6 +232,9 @@
   }
   .gnb ul{
     gap: 0 15px;
+  }
+  .slider li{
+    padding: 0;
   }
   .txt{
     padding: 10px 40px;

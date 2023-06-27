@@ -7,7 +7,7 @@ const Main = (props) => {
   return (
     <>
       <Items cat={props.sub} />
-      <Airplane />
+      {/* <Airplane /> */}
     </>
   );
 }; ////////////// Main 컴포넌트 //////////////
