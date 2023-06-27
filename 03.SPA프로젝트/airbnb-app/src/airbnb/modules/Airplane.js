@@ -24,7 +24,7 @@ function Airplane(props) {
         </div>
         {/* 구름3 */}
         <div className="cloud3">
-          <img src="./images/cloud3.png" alt="구름3" />
+          <img src="./images/5.png" alt="구름3" />
         </div>
         {/* 구름4 */}
         <div className="cloud4">
