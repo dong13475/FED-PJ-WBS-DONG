@@ -10,7 +10,7 @@ const Main = (props) => {
   return (
     <>
       <Items cat={props.sub} />
-      {/* <Airplane /> */}
+      <Airplane />
       <section className='mainbx'>
         {/* 메인박스영역 */}
         <div className='mbx'>
