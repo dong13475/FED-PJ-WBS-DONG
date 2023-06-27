@@ -1,3 +1,27 @@
 @charset "UTF-8";
 
 /* 메인 모듈 CSS - main.css */
+
+.mainbx{
+  padding: 150px 0 220px;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+}
+.mbx{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.nature{
+  width: 300px;
+  height: 300px;
+  background-color: coral;
+  margin: 0 auto;
+}
+.build{
+  width: 300px;
+  height: 300px;
+  background-color: skyblue;
+  margin: 0 auto;
+}

@@ -36,6 +36,8 @@ function ItemDetail(props) {
   let inum = useL.state.inum;
   // 7. 구글맵 주소
   let gmap = useL.state.gmap;
+  // 8. 대분류
+  let main = useL.state.main;
 
   return (
     <>

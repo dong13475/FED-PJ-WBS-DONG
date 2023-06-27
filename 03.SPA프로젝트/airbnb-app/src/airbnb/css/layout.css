@@ -186,9 +186,7 @@
 .info{
   font-family: "NanumBarunGothic";
   max-width: 1700px;
-  /* position: fixed; */
   margin: 0 auto;
-  bottom: 0;
 }
 .txt{
   padding: 15px 80px;

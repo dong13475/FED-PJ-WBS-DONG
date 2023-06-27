@@ -14,8 +14,16 @@ function jqFn() {
   }); ////////////////// JQB ///////////////////
 } /////////////// jqFn ////////////////
 
+// item_data.sort((x,y)=>{
+//   return x.main===y.main?0:x.main>y.main?1:-1;
+// });
+
 function Items(props) {
   const idata = item_data[props.cat];
+  console.log("idata:",idata);
+
+  let mdt = idata.main;
+  console.log("mdt:",mdt);
 
   // item_D에 담긴값은 data/item.js의 객체의 배열값
   return (
@@ -30,7 +38,8 @@ function Items(props) {
             ihost:v.ihost,
             ietc:v.ietc,
             inum:v.inum,
-            gmap:v.gmap
+            gmap:v.gmap,
+            main:v.main
           }
         } key={i}>
         <div className="item">
