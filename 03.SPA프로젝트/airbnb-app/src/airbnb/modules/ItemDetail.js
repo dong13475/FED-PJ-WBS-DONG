@@ -15,6 +15,7 @@ import {
   faWind,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Airplane from './Airplane';
 
 // 라우터 파라미터값 받아서 데이터 처리!
 function ItemDetail(props) {
@@ -42,6 +43,7 @@ function ItemDetail(props) {
   return (
     <>
       {/* <img src="./images/group2.png" alt="비행기" /> */}
+      {/* <Airplane /> */}
       <section className='itemdetailbx'>
         {/* 1.아이템 이름 */}
         <div className='itemtit'>

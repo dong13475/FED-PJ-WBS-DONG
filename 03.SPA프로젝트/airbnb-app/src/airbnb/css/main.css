@@ -3,7 +3,7 @@
 /* 메인 모듈 CSS - main.css */
 
 .mainbx{
-  padding: 150px 0 220px;
+  padding: 100px 0 100px;
   max-width: 1400px;
   margin: 0 auto;
   height: 100%;
@@ -16,12 +16,21 @@
 .nature{
   width: 300px;
   height: 300px;
-  background-color: coral;
+  /* background-color: coral; */
   margin: 0 auto;
 }
 .build{
   width: 300px;
   height: 300px;
-  background-color: skyblue;
+  /* background-color: skyblue; */
   margin: 0 auto;
+}
+.imgbx{
+  width: 100%;
+  height: 100%;
+  outline: 7px solid #000;
+}
+.imgbx img{
+  width: 100%;
+  height: 100%;
 }

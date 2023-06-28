@@ -14,7 +14,7 @@
   z-index: 999;
   background-color: #fff;
   opacity: 0;
-  animation: bg 1s linear 1s forwards;
+  animation: bg linear forwards;
   display: block;
 }
 @keyframes bg {
@@ -29,29 +29,29 @@
 /* 구름 */
 .cloud1 {
   position: absolute;
-  top: -18%;
-  right: -10%;
-  width: 45%;
+  top: 2%;
+  right: 3%;
+  width: 28%;
   /* animation: cd1 .6s linear 1.3s forwards; */
 }
 .cloud2 {
   position: absolute;
   top: -25%;
   left: 5%;
-  width: 28%;
-  animation: cd2 .8s linear 1.3s forwards;
+  width: 25%;
+  animation: cd2 .8s linear .9s forwards;
 }
 .cloud3 {
   position: absolute;
   top: 100%;
   right: 0%;
-  width: 33%;
+  width: 28%;
   animation: cd3 .5s linear 1.3s forwards;
 }
 .cloud4 {
   position: absolute;
-  bottom: -15%;
-  left: -10%;
+  bottom: -19%;
+  left: -16%;
   width: 60%;
   object-fit: cover;
   /* animation: cd4 1s linear 1.3s forwards; */
@@ -86,15 +86,15 @@
 /* 구름2 애니 */
 @keyframes cd2 {
   100% {
-    top: 15%;
+    top: 10%;
     left: 12%;
   }
 }
 /* 구름3 애니 */
 @keyframes cd3 {
   100%{
-    top: 50%;
-    right: 4%;
+    top: 55%;
+    right: 7%;
   }
 }
 /* 구름4 애니 */

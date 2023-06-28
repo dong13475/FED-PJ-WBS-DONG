@@ -12,11 +12,11 @@ function Airplane(props) {
       <div className="bg">
         {/* 구름1 */}
         <div className="cloud1">
-          <img src="./images/cloud5.png" alt="구름1" />
+          <img src="./images/cd2.png" alt="구름1" />
         </div>
         {/* 구름2 */}
         <div className="cloud2">
-          <img src="./images/cloud2.png" alt="구름2" />
+          <img src="./images/cd3.png" alt="구름2" />
         </div>
         {/* 비행기 */}
         <div className="airplane">
@@ -24,17 +24,17 @@ function Airplane(props) {
         </div>
         {/* 구름3 */}
         <div className="cloud3">
-          <img src="./images/5.png" alt="구름3" />
+          <img src="./images/cd5.png" alt="구름3" />
         </div>
         {/* 구름4 */}
         <div className="cloud4">
-          <img src="./images/cd.png" alt="구름4" />
+          <img src="./images/cd4.png" alt="구름4" />
         </div>
       </div>
       <div className="ty">
         <span>
           <Typed strings={["여행은 살아보는 거야"]} 
-          typeSpeed={65} 
+          typeSpeed={72} 
           showCursor={false}
           startDelay={4700} />
         </span>
