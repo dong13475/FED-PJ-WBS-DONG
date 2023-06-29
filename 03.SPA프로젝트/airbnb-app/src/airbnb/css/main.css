@@ -45,3 +45,23 @@
   text-align: center;
   padding: 25px 0;
 }
+
+/******* 미디어쿼리 *******/
+@media screen and (max-width: 500px){
+  .mainbx{
+    padding: 25px 0 100px;
+  }
+  .mbx{
+    flex-direction: column;
+    gap: 80px 0;
+  }
+  .nature{
+    width: 250px;
+    height: 250px;
+  }
+  .build{
+    width: 250px;
+    height: 250px;
+  }
+} 
+/* 500사이즈 이하 미디어쿼리 끝 */
