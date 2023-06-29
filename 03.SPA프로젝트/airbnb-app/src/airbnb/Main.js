@@ -42,7 +42,14 @@ const Main = (props) => {
 
   return (
     <>
-      {mainSts == 1 && <Items cat={props.sub} />}
+      {mainSts == 1 && 
+      <>
+      {
+        props.sub &&
+        <Items cat={props.sub} />
+      }
+      </>
+      }
       {mainSts == 2 && <Airplane />}
       {mainSts == 0 && (
         <section className="mainbx">
