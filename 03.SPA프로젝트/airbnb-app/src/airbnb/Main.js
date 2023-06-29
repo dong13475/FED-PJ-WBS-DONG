@@ -14,7 +14,6 @@ const Main = (props) => {
   const [mainSts, setMainSts] = useState(0);
 
   const chgIntro = (e) => {
-    
     let txt = e.target["alt"];
     // console.log(e.target["alt"]);
     console.log(txt);
@@ -42,14 +41,7 @@ const Main = (props) => {
 
   return (
     <>
-      {mainSts == 1 && 
-      <>
-      {
-        props.sub &&
-        <Items cat={props.sub} />
-      }
-      </>
-      }
+      {mainSts == 1 && <Items cat={props.sub} />}
       {mainSts == 2 && <Airplane />}
       {mainSts == 0 && (
         <section className="mainbx">
@@ -59,10 +51,10 @@ const Main = (props) => {
             <div className="nature">
               <a href="#" onClick={chgIntro}>
                 {/* <Items cat={props.sub} /> */}
-                
-              <div className="imgbx">
-                <img src="./images/자연.png" alt="자연" />
-              </div>
+
+                <div className="imgbx">
+                  <img src="./images/자연.png" alt="자연" />
+                </div>
                 <div className="txtbx">자연</div>
               </a>
             </div>
@@ -70,11 +62,11 @@ const Main = (props) => {
             <div className="build">
               <a href="#" onClick={chgIntro}>
                 {/* <Items cat={props.sub} /> */}
-                
+
                 <div className="imgbx">
                   <img src="./images/건축.png" alt="건축" />
                 </div>
-                  <div className="txtbx">건축</div>
+                <div className="txtbx">건축</div>
               </a>
             </div>
           </div>

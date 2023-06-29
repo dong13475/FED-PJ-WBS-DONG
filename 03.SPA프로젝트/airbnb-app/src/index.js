@@ -18,7 +18,7 @@ export default function App(){
           {/* 하위라우트 셋팅 */}
           {/* path대신 index만 쓰면 첫페이지! 
           -> Layout의 Link to="/"에 해당하는 셋팅임 필수! */}
-          <Route index element={<Main />} />
+          <Route index element={<Main sub='료칸' />} />
           <Route path="료칸" element={<Main sub='료칸'/>} />
           <Route path="리아드" element={<Main sub='리아드'/>} />
           <Route path="북극" element={<Main sub='북극'/>} />

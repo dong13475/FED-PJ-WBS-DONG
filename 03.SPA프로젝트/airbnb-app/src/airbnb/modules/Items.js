@@ -16,7 +16,7 @@ function jqFn() {
 
 function Items(props) {
   const idata = item_data[props.cat];
-  console.log('idata:', idata);
+  // console.log('idata:', idata);
   if (props.cat == '자연' || props.cat == '건축') {
     let temp = Object.keys(item_data);
     // console.log('자연/건축 키배열:', temp);
