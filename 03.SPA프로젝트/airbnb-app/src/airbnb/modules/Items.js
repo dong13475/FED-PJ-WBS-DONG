@@ -19,7 +19,7 @@ function Items(props) {
   console.log('idata:', idata);
   if (props.cat == '자연' || props.cat == '건축') {
     let temp = Object.keys(item_data);
-    console.log('자연/건축 키배열:', temp);
+    // console.log('자연/건축 키배열:', temp);
 
     return temp.map((tv, ti) => (
       <section className='itemList' key={ti}>
@@ -62,8 +62,8 @@ function Items(props) {
     ));
   }
 
-  let mdt = idata.main;
-  console.log('mdt:', mdt);
+  // let mdt = idata.main;
+  // console.log('mdt:', mdt);
 
   // item_D에 담긴값은 data/item.js의 객체의 배열값
   return (

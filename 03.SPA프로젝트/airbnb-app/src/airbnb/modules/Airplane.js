@@ -34,7 +34,7 @@ function Airplane(props) {
       <div className="ty">
         <span>
           <Typed strings={["여행은 살아보는 거야"]} 
-          typeSpeed={72} 
+          typeSpeed={67} 
           showCursor={false}
           startDelay={4700} />
         </span>

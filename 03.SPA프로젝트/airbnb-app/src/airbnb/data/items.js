@@ -18,7 +18,7 @@ const item_data = {
       iloca: "Tonosho, Shozu District, Kagawa, 일본",
       ihost: "Aki 님이 호스팅하는 오두막의 방",
       ietc: "",
-      inum: [1,2,3,4,5,6,7,8,9],
+      inum: [1,2,3,4,5,6,7,8],
       gmap:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208918.10687116365!2d135.55406128093486!3d35.0980846936442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z7J2867O4IOq1kO2GoOu2gCDqtZDthqDsi5w!5e0!3m2!1sko!2skr!4v1687331507524!5m2!1sko!2skr",
       main:"자연",
     },

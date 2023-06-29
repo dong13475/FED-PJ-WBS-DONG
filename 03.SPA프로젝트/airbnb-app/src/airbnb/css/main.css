@@ -29,8 +29,10 @@
   width: 100%;
   height: 100%;
   outline: 7px solid #000;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
+  overflow: hidden;
 }
+
 .imgbx img{
   width: 100%;
   height: 100%;

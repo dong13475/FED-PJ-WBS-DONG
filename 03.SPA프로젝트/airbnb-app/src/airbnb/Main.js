@@ -14,8 +14,7 @@ const Main = (props) => {
   const [mainSts, setMainSts] = useState(0);
 
   const chgIntro = (e) => {
-    const imgbx = document.querySelector(".imgbx");
-    console.log(imgbx);
+    
     let txt = e.target["alt"];
     // console.log(e.target["alt"]);
     console.log(txt);
@@ -27,14 +26,14 @@ const Main = (props) => {
   }; ////////////// chgIntro ///////////
 
   const chkFn = () => {
-    console.log("여기링크");
+    // console.log("여기링크");
     let tg = document.querySelectorAll(".slider a");
     // console.log(tg);
     tg.forEach(
       (ele) =>
         (ele.onclick = () => {
           setMainSts(1);
-          console.log("링크!!!");
+          // console.log("링크!!!");
         })
     );
   }; ////////// chkFn /////////////////
