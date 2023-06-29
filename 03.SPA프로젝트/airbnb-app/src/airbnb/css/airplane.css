@@ -14,12 +14,16 @@
   z-index: 999;
   background-color: #fff;
   opacity: 0;
-  animation: bg linear forwards;
+  animation: bg .8s linear forwards;
   display: block;
+  transform: scale(0);
+  border-radius: 50%;
 }
 @keyframes bg {
   to{
+    border-radius: 0;
     opacity: 1;
+    transform: scale(1);
   }
 }
 .bg img {
@@ -32,13 +36,15 @@
   top: 2%;
   right: 3%;
   width: 28%;
-  /* animation: cd1 .6s linear 1.3s forwards; */
+  animation: cd1 .6s linear 1.3s forwards;
+  opacity: 0;
 }
 .cloud2 {
   position: absolute;
   top: -25%;
   left: 5%;
   width: 25%;
+  opacity: 0;
   animation: cd2 .8s linear .9s forwards;
 }
 .cloud3 {
@@ -46,6 +52,7 @@
   top: 100%;
   right: 0%;
   width: 32%;
+  opacity: 0;
   animation: cd3 .5s linear 1.3s forwards;
 }
 .cloud4 {
@@ -54,7 +61,8 @@
   left: -16%;
   width: 60%;
   object-fit: cover;
-  /* animation: cd4 1s linear 1.3s forwards; */
+  animation: cd4 1s linear 1.3s forwards;
+  opacity: 0;
 }
 /* 비행기 */
 .airplane {
@@ -64,9 +72,13 @@
   width: 35%;
   transform: translate(-50%, -50%);
   animation: air 2.7s linear 2.5s forwards;
+  opacity: 0;
 }
 /* 비행기 애니 */
 @keyframes air {
+  0%{
+    opacity: 1;
+  }
   50%{
     width: 80%;
   }
@@ -74,13 +86,13 @@
     top: -30%;
     left: 145%;
     width: 120%;
+    opacity: 1;
   }
 }
 /* 구름1 애니 */
 @keyframes cd1 {
   100% {
-    top: 5%;
-    right: 12%;
+    opacity: 1;
   }
 }
 /* 구름2 애니 */
@@ -88,6 +100,7 @@
   100% {
     top: 10%;
     left: 12%;
+    opacity: 1;
   }
 }
 /* 구름3 애니 */
@@ -95,13 +108,13 @@
   100%{
     top: 55%;
     right: 7%;
+    opacity: 1;
   }
 }
 /* 구름4 애니 */
 @keyframes cd4 {
   100%{
-    bottom: 5%;
-    left: 5%;
+    opacity: 1;
   }
 }
 
