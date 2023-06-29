@@ -3,7 +3,7 @@
 /* 메인 모듈 CSS - main.css */
 
 .mainbx{
-  padding: 100px 0 100px;
+  padding: 100px 0 200px;
   max-width: 1400px;
   margin: 0 auto;
   height: 100%;
@@ -14,14 +14,14 @@
   margin: 0 auto;
 }
 .nature{
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   /* background-color: coral; */
   margin: 0 auto;
 }
 .build{
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   /* background-color: skyblue; */
   margin: 0 auto;
 }
@@ -29,8 +29,17 @@
   width: 100%;
   height: 100%;
   outline: 7px solid #000;
+  filter: grayscale(100%);
 }
 .imgbx img{
   width: 100%;
   height: 100%;
+}
+
+.txtbx{
+  font-family: "NanumBarunGothic";
+  font-size: 35px;
+  /* font-weight: bold; */
+  text-align: center;
+  padding: 25px 0;
 }
