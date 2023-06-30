@@ -10,9 +10,6 @@ function jqFn() {
   $(() => {}); ////////////////// JQB ///////////////////
 } /////////////// jqFn ////////////////
 
-// item_data.sort((x,y)=>{
-//   return x.main===y.main?0:x.main>y.main?1:-1;
-// });
 
 function Items(props) {
   const idata = item_data[props.cat];

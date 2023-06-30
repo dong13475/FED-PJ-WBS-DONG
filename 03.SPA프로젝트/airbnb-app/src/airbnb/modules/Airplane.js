@@ -5,7 +5,6 @@ import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import "../css/airplane.css";
 import $ from "jquery";
 import Typed from "react-typed";
-import Main from "../MainA";
 
 function Airplane(props) {
   
