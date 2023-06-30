@@ -8,6 +8,11 @@ import "./css/main.css";
 import { useEffect, useState } from "react";
 
 const Main = (props) => {
+
+  // window.addEventListener("DOMContentLoaded",()=>{
+  //   <Airplane />
+  // });
+  
   // 라우터 이동
   // const goPage = useNavigate();
 
@@ -41,37 +46,38 @@ const Main = (props) => {
 
   return (
     <>
-    <Items cat={props.sub} />
+      {/* <Airplane /> */}
+      <Items cat={props.sub} />
       {/* {mainSts == 1 && <Items cat={props.sub} />} */}
       {/* {mainSts == 2 && <Airplane />} */}
       {/* {mainSts == 0 && ( */}
-        {/* <section className="mainbx"> */}
-          {/* 메인박스영역 */}
-          {/* <div className="mbx"> */}
-            {/* 자연 */}
-            {/* <div className="nature"> */}
-              {/* <a href="#" onClick={chgIntro}> */}
-                {/* <Items cat={props.sub} /> */}
+      {/* <section className="mainbx"> */}
+      {/* 메인박스영역 */}
+      {/* <div className="mbx"> */}
+      {/* 자연 */}
+      {/* <div className="nature"> */}
+      {/* <a href="#" onClick={chgIntro}> */}
+      {/* <Items cat={props.sub} /> */}
 
-                {/* <div className="imgbx"> */}
-                  {/* <img src="./images/자연.png" alt="자연" /> */}
-                {/* </div> */}
-                {/* <div className="txtbx">자연</div> */}
-              {/* </a> */}
-            {/* </div> */}
-            {/* 건축 */}
-            {/* <div className="build"> */}
-              {/* <a href="#" onClick={chgIntro}> */}
-                {/* <Items cat={props.sub} /> */}
+      {/* <div className="imgbx"> */}
+      {/* <img src="./images/자연.png" alt="자연" /> */}
+      {/* </div> */}
+      {/* <div className="txtbx">자연</div> */}
+      {/* </a> */}
+      {/* </div> */}
+      {/* 건축 */}
+      {/* <div className="build"> */}
+      {/* <a href="#" onClick={chgIntro}> */}
+      {/* <Items cat={props.sub} /> */}
 
-                {/* <div className="imgbx"> */}
-                  {/* <img src="./images/건축.png" alt="건축" /> */}
-                {/* </div> */}
-                {/* <div className="txtbx">건축</div> */}
-              {/* </a> */}
-            {/* </div> */}
-          {/* </div> */}
-        {/* </section> */}
+      {/* <div className="imgbx"> */}
+      {/* <img src="./images/건축.png" alt="건축" /> */}
+      {/* </div> */}
+      {/* <div className="txtbx">건축</div> */}
+      {/* </a> */}
+      {/* </div> */}
+      {/* </div> */}
+      {/* </section> */}
       {/* )} */}
     </>
   );

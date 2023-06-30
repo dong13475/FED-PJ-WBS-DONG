@@ -1,12 +1,30 @@
 // 화면전환효과 - 비행기 모듈 - Airplane.js
 
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import "../css/airplane.css";
 import $ from "jquery";
 import Typed from "react-typed";
+import Main from "../MainA";
 
 function Airplane(props) {
+  
+  function Hs (){
+    const Navigate = useNavigate();
+    setTimeout(()=>{
+      Navigate('/료칸', {replace:true})
+    },7000)
+    setTimeout(() => {
+      $(".bg").css({
+        display:"none"
+      }).siblings(".ty").css({
+        display:"none"
+      })
+    }, 7000);
+  }
+  
+  
+  
   return (
     <>
       <div className="bg">
@@ -39,6 +57,7 @@ function Airplane(props) {
           startDelay={4700} />
         </span>
       </div>
+      {Hs()}
     </>
   );
 } //////////////// Airplane 컴포넌트 ///////////////
