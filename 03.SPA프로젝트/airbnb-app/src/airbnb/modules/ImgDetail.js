@@ -9,6 +9,7 @@ import '../css/imgdetail.css';
 // 라우터 파라미터값 받아서 데이터 처리
 function ImgDetail(props) {
 
+  // x버튼 클릭시 페이지 뒤로가기
   function goBack(){
     window.history.back();
   }
